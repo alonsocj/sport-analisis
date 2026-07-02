@@ -1,5 +1,25 @@
-# Datos (capas bronze/silver/gold) — nunca versionar
-data/
+# Datos: por defecto NO versionar (bronze crudo, dumps, etc.)
+data/*
+!data/gold
+!data/silver
+!data/knockouts
+!data/rosters
+
+# Excepción: artefactos derivados (datos públicos) que la app Streamlit
+# necesita para desplegar. El secreto (API key) sigue solo en .env.
+data/gold/*
+!data/gold/team_features.csv
+!data/gold/elo_history.csv
+!data/gold/external_elo.csv
+!data/gold/player_factor.csv
+!data/gold/dixon_coles_params.json
+data/silver/*
+!data/silver/matches.csv
+data/knockouts/*
+!data/knockouts/r32_fixtures.csv
+data/rosters/*
+!data/rosters/r32_rosters.csv
+!data/rosters/r32_unavailable.csv
 
 # Secretos
 .env

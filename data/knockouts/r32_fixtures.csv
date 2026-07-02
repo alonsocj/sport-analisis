@@ -1,0 +1,17 @@
+draw_order,date,stage,home_code,away_code,source
+1,2026-06-29,R32,GER,PAR,fotmob_official
+2,2026-06-30,R32,FRA,SWE,fotmob_official
+3,2026-06-28,R32,RSA,CAN,fotmob_official
+4,2026-06-29,R32,NED,MAR,fotmob_official
+5,2026-07-02,R32,POR,CRO,fotmob_official
+6,2026-07-02,R32,ESP,AUT,fotmob_official
+7,2026-07-01,R32,USA,BIH,fotmob_official
+8,2026-07-01,R32,BEL,SEN,fotmob_official
+9,2026-06-29,R32,BRA,JPN,fotmob_official
+10,2026-06-30,R32,CIV,NOR,fotmob_official
+11,2026-06-30,R32,MEX,ECU,fotmob_official
+12,2026-07-01,R32,ENG,COD,fotmob_official
+13,2026-07-03,R32,ARG,CPV,fotmob_official
+14,2026-07-03,R32,AUS,EGY,fotmob_official
+15,2026-07-03,R32,SUI,ALG,fotmob_official
+16,2026-07-03,R32,COL,GHA,fotmob_official
