@@ -4,6 +4,11 @@ data/*
 !data/silver
 !data/knockouts
 !data/rosters
+!data/bronze
+data/bronze/*
+!data/bronze/public_results
+data/bronze/public_results/*
+!data/bronze/public_results/results.csv
 
 # Excepción: artefactos derivados (datos públicos) que la app Streamlit
 # necesita para desplegar. El secreto (API key) sigue solo en .env.
