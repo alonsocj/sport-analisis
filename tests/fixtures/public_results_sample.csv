@@ -1,0 +1,18 @@
+date,home_team,away_team,home_score,away_score,tournament,city,country,neutral
+1950-07-16,Brazil,Uruguay,1,2,FIFA World Cup,Rio de Janeiro,Brazil,FALSE
+2022-11-21,Senegal,Netherlands,0,2,FIFA World Cup,Doha,Qatar,TRUE
+2022-12-18,Argentina,France,3,3,FIFA World Cup,Lusail,Qatar,TRUE
+2024-03-21,United States,Jamaica,3,1,CONCACAF Nations League,Arlington,United States,FALSE
+2024-06-08,Mexico,Uruguay,0,4,Friendly,Denver,United States,TRUE
+2024-09-10,Canada,United States,1,2,Friendly,Kansas City,United States,FALSE
+2025-03-25,Curaçao,Haiti,1,1,FIFA World Cup qualification,Willemstad,Curaçao,FALSE
+2025-06-10,Scotland,Czech Republic,2,0,FIFA World Cup qualification,Glasgow,Scotland,FALSE
+2025-09-09,San Marino,Liechtenstein,0,0,Friendly,Serravalle,San Marino,FALSE
+2025-10-14,Gibraltar,Andorra,1,0,Friendly,Gibraltar,Gibraltar,FALSE
+2025-11-18,South Korea,Japan,2,1,Friendly,Seoul,South Korea,FALSE
+2025-11-18,Ivory Coast,Senegal,1,0,Friendly,Abidjan,Ivory Coast,FALSE
+2026-03-31,Jordan,South Africa,1,1,Friendly,Amman,Jordan,FALSE
+26-06-2026,Spain,France,1,1,Friendly,Madrid,Spain,FALSE
+2026-06-11,Mexico,South Africa,NA,NA,FIFA World Cup,Mexico City,Mexico,FALSE
+2026-06-12,United States,Haiti,NA,NA,FIFA World Cup,Inglewood,United States,FALSE
+2026-06-13,Canada,Curaçao,NA

@@ -1,0 +1,7 @@
+[    1551ms] [WARNING] AdSense head tag doesn't support data-nscript attribute. @ https://www.fotmob.com/_next/static/chunks/pages/_app-ebee00a411c36c31.js:5
+[    1719ms] [WARNING] [GPT] PubAdsService.disableInitialLoad is deprecated, use googletag.setConfig({disableInitialLoad: ...}) instead.
+https://goo.gle/gpt-message#170 @ https://www.fotmob.com/_next/static/chunks/pages/_app-ebee00a411c36c31.js:5
+[    2597ms] [ERROR] Not signed in with the identity provider. @ https://www.fotmob.com/leagues/77/playoff/world-cup:0
+[    2884ms] [ERROR] Attestation check for Attribution Reporting on https://ad.doubleclick.net failed. @ https://www.fotmob.com/leagues/77/playoff/world-cup:0
+[    3048ms] [ERROR] Attestation check for Attribution Reporting on https://ad.doubleclick.net failed. @ https://www.fotmob.com/leagues/77/playoff/world-cup:0
+[    3140ms] [ERROR] Attestation check for Shared Storage on https://www.googleadservices.com failed. @ https://www.googleadservices.com/pagead/managed/js/activeview/current/reach_worklet.html:0

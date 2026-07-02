@@ -1,0 +1,9 @@
+{
+  "parse": {
+    "title": "2026_FIFA_World_Cup_Group_A",
+    "pageid": 12345678,
+    "text": {
+      "*": "<div class=\"mw-parser-output\"><table class=\"wikitable\"><tbody><tr><th>Team</th><th>Shots</th><th>Shots on target</th><th>Possession (%)</th></tr><tr><td>MEX</td><td>15</td><td>5</td><td>52</td></tr><tr><td>USA</td><td>10</td><td>3</td><td>48</td></tr></tbody></table></div>"
+    }
+  }
+}

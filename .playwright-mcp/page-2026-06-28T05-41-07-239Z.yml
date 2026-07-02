@@ -1,0 +1,2074 @@
+- generic [ref=e1]:
+  - heading "World Cup 2026 Latest Results, World Cup 2026 Current Season's Scores" [level=1] [ref=e18]
+  - banner [ref=e22]:
+    - generic [ref=e23]:
+      - link [ref=e24] [cursor=pointer]:
+        - /url: /
+        - img [ref=e25]
+      - generic [ref=e45]:
+        - link "Scores" [ref=e46] [cursor=pointer]:
+          - /url: /
+          - img [ref=e47]
+          - generic [ref=e48]: Scores
+        - link "News" [ref=e49] [cursor=pointer]:
+          - /url: /news/
+          - img [ref=e50]
+          - generic [ref=e51]: News
+        - link "World Cup" [ref=e52] [cursor=pointer]:
+          - /url: /football/world/world-championship/
+          - img [ref=e53]
+          - generic [ref=e55]: World Cup
+      - img "Search" [ref=e59] [cursor=pointer]
+      - button "LOGIN" [ref=e62] [cursor=pointer]:
+        - img [ref=e63]
+        - generic [ref=e65]: LOGIN
+      - button [ref=e67] [cursor=pointer]:
+        - img [ref=e68]
+  - navigation [ref=e70]:
+    - generic [ref=e71]:
+      - link "Favorites 0" [ref=e72] [cursor=pointer]:
+        - /url: /favorites/
+        - img [ref=e73]
+        - generic [ref=e74]: Favorites
+        - text: "0"
+      - generic [ref=e75]:
+        - link "Football" [ref=e76] [cursor=pointer]:
+          - /url: /
+          - img [ref=e78]
+          - generic [ref=e79]: Football
+        - link "Tennis" [ref=e80] [cursor=pointer]:
+          - /url: /tennis/
+          - img [ref=e82]
+          - generic [ref=e83]: Tennis
+        - link "Basketball" [ref=e84] [cursor=pointer]:
+          - /url: /basketball/
+          - img [ref=e86]
+          - generic [ref=e87]: Basketball
+        - link "Hockey" [ref=e88] [cursor=pointer]:
+          - /url: /hockey/
+          - img [ref=e90]
+          - generic [ref=e91]: Hockey
+        - link "Golf" [ref=e92] [cursor=pointer]:
+          - /url: /golf/
+          - img [ref=e94]
+          - generic [ref=e95]: Golf
+        - link "Handball" [ref=e96] [cursor=pointer]:
+          - /url: /handball/
+          - img [ref=e98]
+          - generic [ref=e99]: Handball
+        - link "Baseball" [ref=e100] [cursor=pointer]:
+          - /url: /baseball/
+          - img [ref=e102]
+          - generic [ref=e103]: Baseball
+        - link "Snooker" [ref=e104] [cursor=pointer]:
+          - /url: /snooker/
+          - img [ref=e106]
+          - generic [ref=e107]: Snooker
+      - generic [ref=e108]:
+        - generic [ref=e109] [cursor=pointer]:
+          - img [ref=e110]
+          - generic [ref=e111]: More
+        - text: 22 10 10 66 132 5 7 9 9 5 11 678 8 9 15 6 238 42 12 2 9 20 26 12 32 94 16 3
+  - generic [ref=e114]:
+    - generic [ref=e115]:
+      - main [ref=e118]:
+        - generic [ref=e123]:
+          - generic [ref=e124]:
+            - heading "Football World" [level=2] [ref=e125]:
+              - img [ref=e126]
+              - link "Football" [ref=e127] [cursor=pointer]:
+                - /url: /football/
+              - img [ref=e128]
+              - link "World" [ref=e130] [cursor=pointer]:
+                - /url: /football/world/
+            - generic [ref=e131]:
+              - img "World Championship" [ref=e132]
+              - generic [ref=e133]:
+                - generic [ref=e134]: World Championship
+                - generic "Unpin this league from Pinned Leagues!" [ref=e136] [cursor=pointer]:
+                  - img [ref=e137]
+              - generic [ref=e138]: "2026"
+              - button "11.06. 19.07." [ref=e140]:
+                - generic [ref=e141]:
+                  - generic [ref=e142]: 11.06.
+                  - generic [ref=e143]: 19.07.
+                  - img [ref=e154]
+                - button [ref=e156] [cursor=pointer]
+          - generic [ref=e159]:
+            - generic [ref=e161]:
+              - link "Summary" [ref=e162] [cursor=pointer]:
+                - /url: /football/world/world-championship/
+              - link "Odds" [ref=e163] [cursor=pointer]:
+                - /url: /football/world/world-championship/odds/
+              - link "News" [ref=e164] [cursor=pointer]:
+                - /url: /football/world/world-championship/news/
+              - link "Results":
+                - /url: /football/world/world-championship/results/
+              - link "Fixtures" [ref=e165] [cursor=pointer]:
+                - /url: /football/world/world-championship/fixtures/
+              - link "Standings" [ref=e166] [cursor=pointer]:
+                - /url: /football/world/world-championship/standings
+              - link "Archive" [ref=e167] [cursor=pointer]:
+                - /url: /football/world/world-championship/archive/
+            - generic [ref=e169]:
+              - generic [ref=e170]:
+                - generic [ref=e172]:
+                  - img [ref=e176] [cursor=pointer]
+                  - generic [ref=e177]:
+                    - generic "World" [ref=e178]
+                    - generic [ref=e179]:
+                      - link "World Championship" [ref=e180] [cursor=pointer]:
+                        - /url: /football/world/world-championship/
+                        - generic [ref=e181]: World Championship
+                      - generic [ref=e183]: "WORLD:"
+                  - button "Unpin this league from Pinned Leagues!" [pressed] [ref=e185] [cursor=pointer]:
+                    - img [ref=e186]
+                  - generic [ref=e189] [cursor=pointer]: Standings
+                - generic [ref=e190]: Round 3
+                - generic [ref=e191] [cursor=pointer]:
+                  - link "Click for details!" [ref=e192]:
+                    - /url: https://www.flashscore.com/match/football/algeria-nc87N1BR/austria-naHiWdnt/?mid=4rOtRK7l
+                  - button "Add this game to Favorites!" [ref=e193]:
+                    - img [ref=e194]
+                  - generic [ref=e196]: 27.06. 20:00
+                  - generic [ref=e199]:
+                    - img [ref=e200]
+                    - generic [ref=e201]: Algeria
+                  - generic [ref=e204]:
+                    - img [ref=e205]
+                    - generic [ref=e206]: Austria
+                  - generic: "3"
+                  - generic: "3"
+                - generic [ref=e207] [cursor=pointer]:
+                  - link "Click for details!" [ref=e208]:
+                    - /url: https://www.flashscore.com/match/football/argentina-f9OppQjp/jordan-vNcmJoU2/?mid=KAnAWtpR
+                  - button "Add this game to Favorites!" [ref=e209]:
+                    - img [ref=e210]
+                  - generic [ref=e212]: 27.06. 20:00
+                  - generic [ref=e215]:
+                    - img [ref=e216]
+                    - generic [ref=e217]: Jordan
+                  - generic [ref=e220]:
+                    - img [ref=e221]
+                    - generic [ref=e222]: Argentina
+                  - generic: "1"
+                  - generic: "3"
+                - generic [ref=e223] [cursor=pointer]:
+                  - link "Click for details!" [ref=e224]:
+                    - /url: https://www.flashscore.com/match/football/colombia-G02s4PCS/portugal-WvJrjFVN/?mid=vL2qotaK
+                  - button "Add this game to Favorites!" [ref=e225]:
+                    - img [ref=e226]
+                  - generic [ref=e228]: 27.06. 17:30
+                  - generic [ref=e231]:
+                    - img [ref=e232]
+                    - generic [ref=e233]: Colombia
+                  - generic [ref=e236]:
+                    - img [ref=e237]
+                    - generic [ref=e238]: Portugal
+                  - generic: "0"
+                  - generic: "0"
+                - generic [ref=e239] [cursor=pointer]:
+                  - link "Click for details!" [ref=e240]:
+                    - /url: https://www.flashscore.com/match/football/d-r-congo-phn9mm8H/uzbekistan-EZYKKRMc/?mid=hEWfCwid
+                  - button "Add this game to Favorites!" [ref=e241]:
+                    - img [ref=e242]
+                  - generic [ref=e244]: 27.06. 17:30
+                  - generic [ref=e247]:
+                    - img [ref=e248]
+                    - generic [ref=e249]: D.R. Congo
+                  - generic [ref=e252]:
+                    - img [ref=e253]
+                    - generic [ref=e254]: Uzbekistan
+                  - generic: "3"
+                  - generic: "1"
+                - generic [ref=e255] [cursor=pointer]:
+                  - link "Click for details!" [ref=e256]:
+                    - /url: https://www.flashscore.com/match/football/croatia-K8aznggo/ghana-nNBjHale/?mid=6mbbuBSb
+                  - button "Add this game to Favorites!" [ref=e257]:
+                    - img [ref=e258]
+                  - generic [ref=e260]: 27.06. 15:00
+                  - generic [ref=e263]:
+                    - img [ref=e264]
+                    - generic [ref=e265]: Croatia
+                  - generic [ref=e268]:
+                    - img [ref=e269]
+                    - generic [ref=e270]: Ghana
+                  - generic: "2"
+                  - generic: "1"
+                - generic [ref=e271] [cursor=pointer]:
+                  - link "Click for details!" [ref=e272]:
+                    - /url: https://www.flashscore.com/match/football/england-j9N9ZNFA/panama-OWKqbCfi/?mid=YZajsXcn
+                  - button "Add this game to Favorites!" [ref=e273]:
+                    - img [ref=e274]
+                  - generic [ref=e276]: 27.06. 15:00
+                  - generic [ref=e279]:
+                    - img [ref=e280]
+                    - generic [ref=e281]: Panama
+                  - generic [ref=e284]:
+                    - img [ref=e285]
+                    - generic [ref=e286]: England
+                  - generic: "0"
+                  - generic: "2"
+                - generic [ref=e287] [cursor=pointer]:
+                  - link "Click for details!" [ref=e288]:
+                    - /url: https://www.flashscore.com/match/football/egypt-bejDn7NN/iran-xrRx85iA/?mid=OjRH5DuB
+                  - button "Add this game to Favorites!" [ref=e289]:
+                    - img [ref=e290]
+                  - generic [ref=e292]: 26.06. 21:00
+                  - generic [ref=e295]:
+                    - img [ref=e296]
+                    - generic [ref=e297]: Egypt
+                  - generic [ref=e300]:
+                    - img [ref=e301]
+                    - generic [ref=e302]: Iran
+                  - generic: "1"
+                  - generic: "1"
+                - generic [ref=e303] [cursor=pointer]:
+                  - link "Click for details!" [ref=e304]:
+                    - /url: https://www.flashscore.com/match/football/belgium-GbB957na/new-zealand-rLctHkpU/?mid=jwT97ZAb
+                  - button "Add this game to Favorites!" [ref=e305]:
+                    - img [ref=e306]
+                  - generic [ref=e308]: 26.06. 21:00
+                  - generic [ref=e311]:
+                    - img [ref=e312]
+                    - generic [ref=e313]: New Zealand
+                  - generic [ref=e316]:
+                    - img [ref=e317]
+                    - generic [ref=e318]: Belgium
+                  - generic: "1"
+                  - generic: "5"
+                - generic [ref=e319] [cursor=pointer]:
+                  - link "Click for details!" [ref=e320]:
+                    - /url: https://www.flashscore.com/match/football/cape-verde-MocyWdm7/saudi-arabia-biSY8ox4/?mid=487Xar9k
+                  - button "Add this game to Favorites!" [ref=e321]:
+                    - img [ref=e322]
+                  - generic [ref=e324]: 26.06. 18:00
+                  - generic [ref=e327]:
+                    - img [ref=e328]
+                    - generic [ref=e329]: Cape Verde
+                  - generic [ref=e332]:
+                    - img [ref=e333]
+                    - generic [ref=e334]: Saudi Arabia
+                  - generic: "0"
+                  - generic: "0"
+                - generic [ref=e335] [cursor=pointer]:
+                  - link "Click for details!" [ref=e336]:
+                    - /url: https://www.flashscore.com/match/football/spain-bLyo6mco/uruguay-xMk44orG/?mid=8xM154oS
+                  - button "Add this game to Favorites!" [ref=e337]:
+                    - img [ref=e338]
+                  - generic [ref=e340]: 26.06. 18:00
+                  - generic [ref=e341]:
+                    - generic [ref=e343]:
+                      - img [ref=e344]
+                      - generic [ref=e345]: Uruguay
+                    - img [ref=e346]
+                  - generic [ref=e350]:
+                    - img [ref=e351]
+                    - generic [ref=e352]: Spain
+                  - generic: "0"
+                  - generic: "1"
+                - generic [ref=e353] [cursor=pointer]:
+                  - link "Click for details!" [ref=e354]:
+                    - /url: https://www.flashscore.com/match/football/france-QkGeVG1n/norway-8rP6JO0H/?mid=bsJSJ30L
+                  - button "Add this game to Favorites!" [ref=e355]:
+                    - img [ref=e356]
+                  - generic [ref=e358]: 26.06. 13:00
+                  - generic [ref=e361]:
+                    - img [ref=e362]
+                    - generic [ref=e363]: Norway
+                  - generic [ref=e366]:
+                    - img [ref=e367]
+                    - generic [ref=e368]: France
+                  - generic: "1"
+                  - generic: "4"
+                - generic [ref=e369] [cursor=pointer]:
+                  - link "Click for details!" [ref=e370]:
+                    - /url: https://www.flashscore.com/match/football/iraq-K8aAGt6r/senegal-hOIsJLJr/?mid=j5IhOwop
+                  - button "Add this game to Favorites!" [ref=e371]:
+                    - img [ref=e372]
+                  - generic [ref=e374]: 26.06. 13:00
+                  - generic [ref=e377]:
+                    - img [ref=e378]
+                    - generic [ref=e379]: Senegal
+                  - generic [ref=e380]:
+                    - generic [ref=e382]:
+                      - img [ref=e383]
+                      - generic [ref=e384]: Iraq
+                    - img [ref=e385]
+                  - generic: "5"
+                  - generic: "0"
+                - generic [ref=e387] [cursor=pointer]:
+                  - link "Click for details!" [ref=e388]:
+                    - /url: https://www.flashscore.com/match/football/australia-xSrf6qMM/paraguay-YaNlqp6j/?mid=lGmJTJSg
+                  - generic [ref=e390]: 25.06. 20:00
+                  - generic [ref=e393]:
+                    - img [ref=e394]
+                    - generic [ref=e395]: Paraguay
+                  - generic [ref=e398]:
+                    - img [ref=e399]
+                    - generic [ref=e400]: Australia
+                  - generic: "0"
+                  - generic: "0"
+                - generic [ref=e401] [cursor=pointer]:
+                  - link "Click for details!" [ref=e402]:
+                    - /url: https://www.flashscore.com/match/football/turkey-QeijuHo5/usa-fuitL4CF/?mid=SCvmMa2U
+                  - generic [ref=e404]: 25.06. 20:00
+                  - generic [ref=e407]:
+                    - img [ref=e408]
+                    - generic [ref=e409]: Turkey
+                  - generic [ref=e412]:
+                    - img [ref=e413]
+                    - generic [ref=e414]: USA
+                  - generic: "3"
+                  - generic: "2"
+                - generic [ref=e415] [cursor=pointer]:
+                  - link "Click for details!" [ref=e416]:
+                    - /url: https://www.flashscore.com/match/football/japan-ULXPdOUj/sweden-OQyqbHWB/?mid=Sl2xgtXi
+                  - generic [ref=e418]: 25.06. 17:00
+                  - generic [ref=e421]:
+                    - img [ref=e422]
+                    - generic [ref=e423]: Japan
+                  - generic [ref=e426]:
+                    - img [ref=e427]
+                    - generic [ref=e428]: Sweden
+                  - generic: "1"
+                  - generic: "1"
+                - generic [ref=e429] [cursor=pointer]:
+                  - link "Click for details!" [ref=e430]:
+                    - /url: https://www.flashscore.com/match/football/netherlands-WYintcWb/tunisia-QqZVYk95/?mid=0lERfdRh
+                  - generic [ref=e432]: 25.06. 17:00
+                  - generic [ref=e435]:
+                    - img [ref=e436]
+                    - generic [ref=e437]: Tunisia
+                  - generic [ref=e440]:
+                    - img [ref=e441]
+                    - generic [ref=e442]: Netherlands
+                  - generic: "1"
+                  - generic: "3"
+                - generic [ref=e443] [cursor=pointer]:
+                  - link "Click for details!" [ref=e444]:
+                    - /url: https://www.flashscore.com/match/football/curacao-bLLGpOkQ/ivory-coast-G2FRjBgn/?mid=d2S1vysC
+                  - generic [ref=e446]: 25.06. 14:00
+                  - generic [ref=e449]:
+                    - img [ref=e450]
+                    - generic [ref=e451]: Curacao
+                  - generic [ref=e454]:
+                    - img [ref=e455]
+                    - generic [ref=e456]: Ivory Coast
+                  - generic: "0"
+                  - generic: "2"
+                - generic [ref=e457] [cursor=pointer]:
+                  - link "Click for details!" [ref=e458]:
+                    - /url: https://www.flashscore.com/match/football/ecuador-8tbm8Tri/germany-ptQide1O/?mid=zmvgtcCa
+                  - generic [ref=e460]: 25.06. 14:00
+                  - generic [ref=e463]:
+                    - img [ref=e464]
+                    - generic [ref=e465]: Ecuador
+                  - generic [ref=e468]:
+                    - img [ref=e469]
+                    - generic [ref=e470]: Germany
+                  - generic: "2"
+                  - generic: "1"
+                - generic [ref=e471] [cursor=pointer]:
+                  - link "Click for details!" [ref=e472]:
+                    - /url: https://www.flashscore.com/match/football/czech-republic-6LHwBDGU/mexico-O6iHcNkd/?mid=GCoIA5bf
+                  - generic [ref=e474]: 24.06. 19:00
+                  - generic [ref=e477]:
+                    - img [ref=e478]
+                    - generic [ref=e479]: Czech Republic
+                  - generic [ref=e482]:
+                    - img [ref=e483]
+                    - generic [ref=e484]: Mexico
+                  - generic: "0"
+                  - generic: "3"
+                - generic [ref=e485] [cursor=pointer]:
+                  - link "Click for details!" [ref=e486]:
+                    - /url: https://www.flashscore.com/match/football/south-africa-W2ijYvlr/south-korea-K6Gs7P6G/?mid=4rr4ngNc
+                  - generic [ref=e488]: 24.06. 19:00
+                  - generic [ref=e491]:
+                    - img [ref=e492]
+                    - generic [ref=e493]: South Africa
+                  - generic [ref=e496]:
+                    - img [ref=e497]
+                    - generic [ref=e498]: South Korea
+                  - generic: "1"
+                  - generic: "0"
+                - generic [ref=e499] [cursor=pointer]:
+                  - link "Click for details!" [ref=e500]:
+                    - /url: https://www.flashscore.com/match/football/haiti-nk4v10Z1/morocco-IDKYO3R8/?mid=n7TsyKKD
+                  - generic [ref=e502]: 24.06. 16:00
+                  - generic [ref=e505]:
+                    - img [ref=e506]
+                    - generic [ref=e507]: Morocco
+                  - generic [ref=e510]:
+                    - img [ref=e511]
+                    - generic [ref=e512]: Haiti
+                  - generic: "4"
+                  - generic: "2"
+                - generic [ref=e513] [cursor=pointer]:
+                  - link "Click for details!" [ref=e514]:
+                    - /url: https://www.flashscore.com/match/football/brazil-I9l9aqLq/scotland-fZRU25WH/?mid=EgVZxtj1
+                  - generic [ref=e516]: 24.06. 16:00
+                  - generic [ref=e519]:
+                    - img [ref=e520]
+                    - generic [ref=e521]: Scotland
+                  - generic [ref=e524]:
+                    - img [ref=e525]
+                    - generic [ref=e526]: Brazil
+                  - generic: "0"
+                  - generic: "3"
+                - generic [ref=e527] [cursor=pointer]:
+                  - link "Click for details!" [ref=e528]:
+                    - /url: https://www.flashscore.com/match/football/bosnia-herzegovina-fqe7WYTr/qatar-zqzHL77i/?mid=jRyHEZGP
+                  - generic [ref=e530]: 24.06. 13:00
+                  - generic [ref=e533]:
+                    - img [ref=e534]
+                    - generic [ref=e535]: Bosnia & Herzegovina
+                  - generic [ref=e538]:
+                    - img [ref=e539]
+                    - generic [ref=e540]: Qatar
+                  - generic: "3"
+                  - generic: "1"
+                - generic [ref=e541] [cursor=pointer]:
+                  - link "Click for details!" [ref=e542]:
+                    - /url: https://www.flashscore.com/match/football/canada-x4toKORL/switzerland-rHJ2vy1B/?mid=2wQjwkpp
+                  - generic [ref=e544]: 24.06. 13:00
+                  - generic [ref=e547]:
+                    - img [ref=e548]
+                    - generic [ref=e549]: Switzerland
+                  - generic [ref=e552]:
+                    - img [ref=e553]
+                    - generic [ref=e554]: Canada
+                  - generic: "2"
+                  - generic: "1"
+                - generic [ref=e555]: Round 2
+                - generic [ref=e556] [cursor=pointer]:
+                  - link "Click for details!" [ref=e557]:
+                    - /url: https://www.flashscore.com/match/football/colombia-G02s4PCS/d-r-congo-phn9mm8H/?mid=K0YnEaMq
+                  - generic [ref=e559]: 23.06. 20:00
+                  - generic [ref=e562]:
+                    - img [ref=e563]
+                    - generic [ref=e564]: Colombia
+                  - generic [ref=e567]:
+                    - img [ref=e568]
+                    - generic [ref=e569]: D.R. Congo
+                  - generic: "1"
+                  - generic: "0"
+                - generic [ref=e570] [cursor=pointer]:
+                  - link "Click for details!" [ref=e571]:
+                    - /url: https://www.flashscore.com/match/football/croatia-K8aznggo/panama-OWKqbCfi/?mid=CSkWyxM6
+                  - generic [ref=e573]: 23.06. 17:00
+                  - generic [ref=e576]:
+                    - img [ref=e577]
+                    - generic [ref=e578]: Panama
+                  - generic [ref=e581]:
+                    - img [ref=e582]
+                    - generic [ref=e583]: Croatia
+                  - generic: "0"
+                  - generic: "1"
+                - generic [ref=e584] [cursor=pointer]:
+                  - link "Click for details!" [ref=e585]:
+                    - /url: https://www.flashscore.com/match/football/england-j9N9ZNFA/ghana-nNBjHale/?mid=KhgvzGjJ
+                  - generic [ref=e587]: 23.06. 14:00
+                  - generic [ref=e590]:
+                    - img [ref=e591]
+                    - generic [ref=e592]: England
+                  - generic [ref=e595]:
+                    - img [ref=e596]
+                    - generic [ref=e597]: Ghana
+                  - generic: "0"
+                  - generic: "0"
+                - generic [ref=e598] [cursor=pointer]:
+                  - link "Click for details!" [ref=e599]:
+                    - /url: https://www.flashscore.com/match/football/portugal-WvJrjFVN/uzbekistan-EZYKKRMc/?mid=nRFcNx7D
+                  - generic [ref=e601]: 23.06. 11:00
+                  - generic [ref=e604]:
+                    - img [ref=e605]
+                    - generic [ref=e606]: Portugal
+                  - generic [ref=e609]:
+                    - img [ref=e610]
+                    - generic [ref=e611]: Uzbekistan
+                  - generic: "5"
+                  - generic: "0"
+                - generic [ref=e612] [cursor=pointer]:
+                  - link "Click for details!" [ref=e613]:
+                    - /url: https://www.flashscore.com/match/football/algeria-nc87N1BR/jordan-vNcmJoU2/?mid=dx1FAaN7
+                  - generic [ref=e615]: 22.06. 21:00
+                  - generic [ref=e618]:
+                    - img [ref=e619]
+                    - generic [ref=e620]: Jordan
+                  - generic [ref=e623]:
+                    - img [ref=e624]
+                    - generic [ref=e625]: Algeria
+                  - generic: "1"
+                  - generic: "2"
+                - generic [ref=e626] [cursor=pointer]:
+                  - link "Click for details!" [ref=e627]:
+                    - /url: https://www.flashscore.com/match/football/norway-8rP6JO0H/senegal-hOIsJLJr/?mid=xSUJLPV8
+                  - generic [ref=e629]: 22.06. 18:00
+                  - generic [ref=e632]:
+                    - img [ref=e633]
+                    - generic [ref=e634]: Norway
+                  - generic [ref=e637]:
+                    - img [ref=e638]
+                    - generic [ref=e639]: Senegal
+                  - generic: "3"
+                  - generic: "2"
+                - generic [ref=e640] [cursor=pointer]:
+                  - link "Click for details!" [ref=e641]:
+                    - /url: https://www.flashscore.com/match/football/france-QkGeVG1n/iraq-K8aAGt6r/?mid=KMRMTaNM
+                  - generic [ref=e643]: 22.06. 15:00
+                  - generic [ref=e646]:
+                    - img [ref=e647]
+                    - generic [ref=e648]: France
+                  - generic [ref=e651]:
+                    - img [ref=e652]
+                    - generic [ref=e653]: Iraq
+                  - generic: "3"
+                  - generic: "0"
+                - generic [ref=e654] [cursor=pointer]:
+                  - link "Click for details!" [ref=e655]:
+                    - /url: https://www.flashscore.com/match/football/argentina-f9OppQjp/austria-naHiWdnt/?mid=Cpq2Y2FE
+                  - generic [ref=e657]: 22.06. 11:00
+                  - generic [ref=e660]:
+                    - img [ref=e661]
+                    - generic [ref=e662]: Argentina
+                  - generic [ref=e665]:
+                    - img [ref=e666]
+                    - generic [ref=e667]: Austria
+                  - generic: "2"
+                  - generic: "0"
+                - generic [ref=e668] [cursor=pointer]:
+                  - link "Click for details!" [ref=e669]:
+                    - /url: https://www.flashscore.com/match/football/egypt-bejDn7NN/new-zealand-rLctHkpU/?mid=QeaikheU
+                  - generic [ref=e671]: 21.06. 19:00
+                  - generic [ref=e674]:
+                    - img [ref=e675]
+                    - generic [ref=e676]: New Zealand
+                  - generic [ref=e679]:
+                    - img [ref=e680]
+                    - generic [ref=e681]: Egypt
+                  - generic: "1"
+                  - generic: "3"
+                - generic [ref=e682] [cursor=pointer]:
+                  - link "Click for details!" [ref=e683]:
+                    - /url: https://www.flashscore.com/match/football/cape-verde-MocyWdm7/uruguay-xMk44orG/?mid=4pPp9nn3
+                  - generic [ref=e685]: 21.06. 16:00
+                  - generic [ref=e688]:
+                    - img [ref=e689]
+                    - generic [ref=e690]: Uruguay
+                  - generic [ref=e693]:
+                    - img [ref=e694]
+                    - generic [ref=e695]: Cape Verde
+                  - generic: "2"
+                  - generic: "2"
+                - generic [ref=e696] [cursor=pointer]:
+                  - link "Click for details!" [ref=e697]:
+                    - /url: https://www.flashscore.com/match/football/belgium-GbB957na/iran-xrRx85iA/?mid=fBZ09etn
+                  - generic [ref=e699]: 21.06. 13:00
+                  - generic [ref=e700]:
+                    - generic [ref=e702]:
+                      - img [ref=e703]
+                      - generic [ref=e704]: Belgium
+                    - img [ref=e705]
+                  - generic [ref=e709]:
+                    - img [ref=e710]
+                    - generic [ref=e711]: Iran
+                  - generic: "0"
+                  - generic: "0"
+                - generic [ref=e712] [cursor=pointer]:
+                  - link "Click for details!" [ref=e713]:
+                    - /url: https://www.flashscore.com/match/football/saudi-arabia-biSY8ox4/spain-bLyo6mco/?mid=CASh7QGF
+                  - generic [ref=e715]: 21.06. 10:00
+                  - generic [ref=e718]:
+                    - img [ref=e719]
+                    - generic [ref=e720]: Spain
+                  - generic [ref=e723]:
+                    - img [ref=e724]
+                    - generic [ref=e725]: Saudi Arabia
+                  - generic: "4"
+                  - generic: "0"
+                - generic [ref=e726] [cursor=pointer]:
+                  - link "Click for details!" [ref=e727]:
+                    - /url: https://www.flashscore.com/match/football/japan-ULXPdOUj/tunisia-QqZVYk95/?mid=SzGJdIdt
+                  - generic [ref=e729]: 20.06. 22:00
+                  - generic [ref=e732]:
+                    - img [ref=e733]
+                    - generic [ref=e734]: Tunisia
+                  - generic [ref=e737]:
+                    - img [ref=e738]
+                    - generic [ref=e739]: Japan
+                  - generic: "0"
+                  - generic: "4"
+                - generic [ref=e740] [cursor=pointer]:
+                  - link "Click for details!" [ref=e741]:
+                    - /url: https://www.flashscore.com/match/football/curacao-bLLGpOkQ/ecuador-8tbm8Tri/?mid=p2XLmuKP
+                  - generic [ref=e743]: 20.06. 18:00
+                  - generic [ref=e746]:
+                    - img [ref=e747]
+                    - generic [ref=e748]: Ecuador
+                  - generic [ref=e751]:
+                    - img [ref=e752]
+                    - generic [ref=e753]: Curacao
+                  - generic: "0"
+                  - generic: "0"
+                - generic [ref=e754] [cursor=pointer]:
+                  - link "Click for details!" [ref=e755]:
+                    - /url: https://www.flashscore.com/match/football/germany-ptQide1O/ivory-coast-G2FRjBgn/?mid=SMzorJsm
+                  - generic [ref=e757]: 20.06. 14:00
+                  - generic [ref=e760]:
+                    - img [ref=e761]
+                    - generic [ref=e762]: Germany
+                  - generic [ref=e765]:
+                    - img [ref=e766]
+                    - generic [ref=e767]: Ivory Coast
+                  - generic: "2"
+                  - generic: "1"
+                - generic [ref=e768] [cursor=pointer]:
+                  - link "Click for details!" [ref=e769]:
+                    - /url: https://www.flashscore.com/match/football/netherlands-WYintcWb/sweden-OQyqbHWB/?mid=0rAjVxuo
+                  - generic [ref=e771]: 20.06. 11:00
+                  - generic [ref=e774]:
+                    - img [ref=e775]
+                    - generic [ref=e776]: Netherlands
+                  - generic [ref=e779]:
+                    - img [ref=e780]
+                    - generic [ref=e781]: Sweden
+                  - generic: "5"
+                  - generic: "1"
+                - generic [ref=e782] [cursor=pointer]:
+                  - link "Click for details!" [ref=e783]:
+                    - /url: https://www.flashscore.com/match/football/paraguay-YaNlqp6j/turkey-QeijuHo5/?mid=KnyuOLXH
+                  - generic [ref=e785]: 19.06. 21:00
+                  - generic [ref=e788]:
+                    - img [ref=e789]
+                    - generic [ref=e790]: Turkey
+                  - generic [ref=e791]:
+                    - generic [ref=e793]:
+                      - img [ref=e794]
+                      - generic [ref=e795]: Paraguay
+                    - img [ref=e796]
+                  - generic: "0"
+                  - generic: "1"
+                - generic [ref=e798] [cursor=pointer]:
+                  - link "Click for details!" [ref=e799]:
+                    - /url: https://www.flashscore.com/match/football/brazil-I9l9aqLq/haiti-nk4v10Z1/?mid=IRyRv2Ll
+                  - generic [ref=e801]: 19.06. 18:30
+                  - generic [ref=e804]:
+                    - img [ref=e805]
+                    - generic [ref=e806]: Brazil
+                  - generic [ref=e809]:
+                    - img [ref=e810]
+                    - generic [ref=e811]: Haiti
+                  - generic: "3"
+                  - generic: "0"
+                - generic [ref=e812] [cursor=pointer]:
+                  - link "Click for details!" [ref=e813]:
+                    - /url: https://www.flashscore.com/match/football/morocco-IDKYO3R8/scotland-fZRU25WH/?mid=nRafcAyG
+                  - generic [ref=e815]: 19.06. 16:00
+                  - generic [ref=e818]:
+                    - img [ref=e819]
+                    - generic [ref=e820]: Scotland
+                  - generic [ref=e823]:
+                    - img [ref=e824]
+                    - generic [ref=e825]: Morocco
+                  - generic: "0"
+                  - generic: "1"
+                - generic [ref=e826] [cursor=pointer]:
+                  - link "Click for details!" [ref=e827]:
+                    - /url: https://www.flashscore.com/match/football/australia-xSrf6qMM/usa-fuitL4CF/?mid=S0aAVubs
+                  - generic [ref=e829]: 19.06. 13:00
+                  - generic [ref=e832]:
+                    - img [ref=e833]
+                    - generic [ref=e834]: USA
+                  - generic [ref=e837]:
+                    - img [ref=e838]
+                    - generic [ref=e839]: Australia
+                  - generic: "2"
+                  - generic: "0"
+                - generic [ref=e840] [cursor=pointer]:
+                  - link "Click for details!" [ref=e841]:
+                    - /url: https://www.flashscore.com/match/football/mexico-O6iHcNkd/south-korea-K6Gs7P6G/?mid=On5HOkVj
+                  - generic [ref=e843]: 18.06. 19:00
+                  - generic [ref=e846]:
+                    - img [ref=e847]
+                    - generic [ref=e848]: Mexico
+                  - generic [ref=e851]:
+                    - img [ref=e852]
+                    - generic [ref=e853]: South Korea
+                  - generic: "1"
+                  - generic: "0"
+                - generic [ref=e854] [cursor=pointer]:
+                  - link "Click for details!" [ref=e855]:
+                    - /url: https://www.flashscore.com/match/football/canada-x4toKORL/qatar-zqzHL77i/?mid=67vLrBMM
+                  - generic [ref=e857]: 18.06. 16:00
+                  - generic [ref=e860]:
+                    - img [ref=e861]
+                    - generic [ref=e862]: Canada
+                  - generic [ref=e863]:
+                    - generic [ref=e865]:
+                      - img [ref=e866]
+                      - generic [ref=e867]: Qatar
+                    - img [ref=e868]:
+                      - generic [ref=e870]: "2"
+                  - generic: "6"
+                  - generic: "0"
+                - generic [ref=e871] [cursor=pointer]:
+                  - link "Click for details!" [ref=e872]:
+                    - /url: https://www.flashscore.com/match/football/bosnia-herzegovina-fqe7WYTr/switzerland-rHJ2vy1B/?mid=djmY6NcJ
+                  - generic [ref=e874]: 18.06. 13:00
+                  - generic [ref=e877]:
+                    - img [ref=e878]
+                    - generic [ref=e879]: Switzerland
+                  - generic [ref=e880]:
+                    - generic [ref=e882]:
+                      - img [ref=e883]
+                      - generic [ref=e884]: Bosnia & Herzegovina
+                    - img [ref=e885]
+                  - generic: "4"
+                  - generic: "1"
+                - generic [ref=e887] [cursor=pointer]:
+                  - link "Click for details!" [ref=e888]:
+                    - /url: https://www.flashscore.com/match/football/czech-republic-6LHwBDGU/south-africa-W2ijYvlr/?mid=8nrACRTs
+                  - generic [ref=e890]: 18.06. 10:00
+                  - generic [ref=e893]:
+                    - img [ref=e894]
+                    - generic [ref=e895]: Czech Republic
+                  - generic [ref=e898]:
+                    - img [ref=e899]
+                    - generic [ref=e900]: South Africa
+                  - generic: "1"
+                  - generic: "1"
+                - generic [ref=e901]: Round 1
+                - generic [ref=e902] [cursor=pointer]:
+                  - link "Click for details!" [ref=e903]:
+                    - /url: https://www.flashscore.com/match/football/colombia-G02s4PCS/uzbekistan-EZYKKRMc/?mid=jaMlPbx1
+                  - generic [ref=e905]: 17.06. 20:00
+                  - generic [ref=e908]:
+                    - img [ref=e909]
+                    - generic [ref=e910]: Uzbekistan
+                  - generic [ref=e913]:
+                    - img [ref=e914]
+                    - generic [ref=e915]: Colombia
+                  - generic: "1"
+                  - generic: "3"
+                - generic [ref=e916] [cursor=pointer]:
+                  - link "Click for details!" [ref=e917]:
+                    - /url: https://www.flashscore.com/match/football/ghana-nNBjHale/panama-OWKqbCfi/?mid=jD1Nwbif
+                  - generic [ref=e919]: 17.06. 17:00
+                  - generic [ref=e922]:
+                    - img [ref=e923]
+                    - generic [ref=e924]: Ghana
+                  - generic [ref=e927]:
+                    - img [ref=e928]
+                    - generic [ref=e929]: Panama
+                  - generic: "1"
+                  - generic: "0"
+                - generic [ref=e930] [cursor=pointer]:
+                  - link "Click for details!" [ref=e931]:
+                    - /url: https://www.flashscore.com/match/football/croatia-K8aznggo/england-j9N9ZNFA/?mid=b5qGuKMs
+                  - generic [ref=e933]: 17.06. 14:00
+                  - generic [ref=e936]:
+                    - img [ref=e937]
+                    - generic [ref=e938]: England
+                  - generic [ref=e941]:
+                    - img [ref=e942]
+                    - generic [ref=e943]: Croatia
+                  - generic: "4"
+                  - generic: "2"
+                - generic [ref=e944] [cursor=pointer]:
+                  - link "Click for details!" [ref=e945]:
+                    - /url: https://www.flashscore.com/match/football/d-r-congo-phn9mm8H/portugal-WvJrjFVN/?mid=4zTHJLbM
+                  - generic [ref=e947]: 17.06. 11:00
+                  - generic [ref=e950]:
+                    - img [ref=e951]
+                    - generic [ref=e952]: Portugal
+                  - generic [ref=e955]:
+                    - img [ref=e956]
+                    - generic [ref=e957]: D.R. Congo
+                  - generic: "1"
+                  - generic: "1"
+                - generic [ref=e958] [cursor=pointer]:
+                  - link "Click for details!" [ref=e959]:
+                    - /url: https://www.flashscore.com/match/football/austria-naHiWdnt/jordan-vNcmJoU2/?mid=OO27CLhe
+                  - generic [ref=e961]: 16.06. 22:00
+                  - generic [ref=e964]:
+                    - img [ref=e965]
+                    - generic [ref=e966]: Austria
+                  - generic [ref=e969]:
+                    - img [ref=e970]
+                    - generic [ref=e971]: Jordan
+                  - generic: "3"
+                  - generic: "1"
+                - generic [ref=e972] [cursor=pointer]:
+                  - link "Click for details!" [ref=e973]:
+                    - /url: https://www.flashscore.com/match/football/algeria-nc87N1BR/argentina-f9OppQjp/?mid=UP9bEsOr
+                  - generic [ref=e975]: 16.06. 19:00
+                  - generic [ref=e978]:
+                    - img [ref=e979]
+                    - generic [ref=e980]: Argentina
+                  - generic [ref=e983]:
+                    - img [ref=e984]
+                    - generic [ref=e985]: Algeria
+                  - generic: "3"
+                  - generic: "0"
+                - generic [ref=e986] [cursor=pointer]:
+                  - link "Click for details!" [ref=e987]:
+                    - /url: https://www.flashscore.com/match/football/iraq-K8aAGt6r/norway-8rP6JO0H/?mid=n9TEVLhA
+                  - generic [ref=e989]: 16.06. 16:00
+                  - generic [ref=e992]:
+                    - img [ref=e993]
+                    - generic [ref=e994]: Iraq
+                  - generic [ref=e997]:
+                    - img [ref=e998]
+                    - generic [ref=e999]: Norway
+                  - generic: "1"
+                  - generic: "4"
+                - generic [ref=e1000] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1001]:
+                    - /url: https://www.flashscore.com/match/football/france-QkGeVG1n/senegal-hOIsJLJr/?mid=ALxYcMw2
+                  - generic [ref=e1003]: 16.06. 13:00
+                  - generic [ref=e1006]:
+                    - img [ref=e1007]
+                    - generic [ref=e1008]: France
+                  - generic [ref=e1011]:
+                    - img [ref=e1012]
+                    - generic [ref=e1013]: Senegal
+                  - generic: "3"
+                  - generic: "1"
+                - generic [ref=e1014] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1015]:
+                    - /url: https://www.flashscore.com/match/football/iran-xrRx85iA/new-zealand-rLctHkpU/?mid=4tBriEQH
+                  - generic [ref=e1017]: 15.06. 19:00
+                  - generic [ref=e1020]:
+                    - img [ref=e1021]
+                    - generic [ref=e1022]: Iran
+                  - generic [ref=e1025]:
+                    - img [ref=e1026]
+                    - generic [ref=e1027]: New Zealand
+                  - generic: "2"
+                  - generic: "2"
+                - generic [ref=e1028] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1029]:
+                    - /url: https://www.flashscore.com/match/football/saudi-arabia-biSY8ox4/uruguay-xMk44orG/?mid=Olnboqfd
+                  - generic [ref=e1031]: 15.06. 16:00
+                  - generic [ref=e1034]:
+                    - img [ref=e1035]
+                    - generic [ref=e1036]: Saudi Arabia
+                  - generic [ref=e1039]:
+                    - img [ref=e1040]
+                    - generic [ref=e1041]: Uruguay
+                  - generic: "1"
+                  - generic: "1"
+                - generic [ref=e1042] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1043]:
+                    - /url: https://www.flashscore.com/match/football/belgium-GbB957na/egypt-bejDn7NN/?mid=dG7zgzd5
+                  - generic [ref=e1045]: 15.06. 13:00
+                  - generic [ref=e1048]:
+                    - img [ref=e1049]
+                    - generic [ref=e1050]: Belgium
+                  - generic [ref=e1053]:
+                    - img [ref=e1054]
+                    - generic [ref=e1055]: Egypt
+                  - generic: "1"
+                  - generic: "1"
+                - generic [ref=e1056] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1057]:
+                    - /url: https://www.flashscore.com/match/football/cape-verde-MocyWdm7/spain-bLyo6mco/?mid=Iiqjm5Pq
+                  - generic [ref=e1059]: 15.06. 10:00
+                  - generic [ref=e1062]:
+                    - img [ref=e1063]
+                    - generic [ref=e1064]: Spain
+                  - generic [ref=e1067]:
+                    - img [ref=e1068]
+                    - generic [ref=e1069]: Cape Verde
+                  - generic: "0"
+                  - generic: "0"
+                - generic [ref=e1070] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1071]:
+                    - /url: https://www.flashscore.com/match/football/sweden-OQyqbHWB/tunisia-QqZVYk95/?mid=UaJKzaHN
+                  - generic [ref=e1073]: 14.06. 20:00
+                  - generic [ref=e1076]:
+                    - img [ref=e1077]
+                    - generic [ref=e1078]: Sweden
+                  - generic [ref=e1081]:
+                    - img [ref=e1082]
+                    - generic [ref=e1083]: Tunisia
+                  - generic: "5"
+                  - generic: "1"
+                - generic [ref=e1084] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1085]:
+                    - /url: https://www.flashscore.com/match/football/ecuador-8tbm8Tri/ivory-coast-G2FRjBgn/?mid=h8pzQySI
+                  - generic [ref=e1087]: 14.06. 17:00
+                  - generic [ref=e1090]:
+                    - img [ref=e1091]
+                    - generic [ref=e1092]: Ivory Coast
+                  - generic [ref=e1095]:
+                    - img [ref=e1096]
+                    - generic [ref=e1097]: Ecuador
+                  - generic: "1"
+                  - generic: "0"
+                - generic [ref=e1098] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1099]:
+                    - /url: https://www.flashscore.com/match/football/japan-ULXPdOUj/netherlands-WYintcWb/?mid=4SV9xFBO
+                  - generic [ref=e1101]: 14.06. 14:00
+                  - generic [ref=e1104]:
+                    - img [ref=e1105]
+                    - generic [ref=e1106]: Netherlands
+                  - generic [ref=e1109]:
+                    - img [ref=e1110]
+                    - generic [ref=e1111]: Japan
+                  - generic: "2"
+                  - generic: "2"
+                - generic [ref=e1112] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1113]:
+                    - /url: https://www.flashscore.com/match/football/curacao-bLLGpOkQ/germany-ptQide1O/?mid=dtiRRcc6
+                  - generic [ref=e1115]: 14.06. 11:00
+                  - generic [ref=e1118]:
+                    - img [ref=e1119]
+                    - generic [ref=e1120]: Germany
+                  - generic [ref=e1123]:
+                    - img [ref=e1124]
+                    - generic [ref=e1125]: Curacao
+                  - generic: "7"
+                  - generic: "1"
+                - generic [ref=e1126] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1127]:
+                    - /url: https://www.flashscore.com/match/football/australia-xSrf6qMM/turkey-QeijuHo5/?mid=nLNXPs35
+                  - generic [ref=e1129]: 13.06. 22:00
+                  - generic [ref=e1132]:
+                    - img [ref=e1133]
+                    - generic [ref=e1134]: Australia
+                  - generic [ref=e1137]:
+                    - img [ref=e1138]
+                    - generic [ref=e1139]: Turkey
+                  - generic: "2"
+                  - generic: "0"
+                - generic [ref=e1140] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1141]:
+                    - /url: https://www.flashscore.com/match/football/haiti-nk4v10Z1/scotland-fZRU25WH/?mid=QBBoaW63
+                  - generic [ref=e1143]: 13.06. 19:00
+                  - generic [ref=e1146]:
+                    - img [ref=e1147]
+                    - generic [ref=e1148]: Haiti
+                  - generic [ref=e1151]:
+                    - img [ref=e1152]
+                    - generic [ref=e1153]: Scotland
+                  - generic: "0"
+                  - generic: "1"
+                - generic [ref=e1154] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1155]:
+                    - /url: https://www.flashscore.com/match/football/brazil-I9l9aqLq/morocco-IDKYO3R8/?mid=b5JayTEd
+                  - generic [ref=e1157]: 13.06. 16:00
+                  - generic [ref=e1160]:
+                    - img [ref=e1161]
+                    - generic [ref=e1162]: Brazil
+                  - generic [ref=e1165]:
+                    - img [ref=e1166]
+                    - generic [ref=e1167]: Morocco
+                  - generic: "1"
+                  - generic: "1"
+                - generic [ref=e1168] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1169]:
+                    - /url: https://www.flashscore.com/match/football/qatar-zqzHL77i/switzerland-rHJ2vy1B/?mid=C8oCpXiA
+                  - generic [ref=e1171]: 13.06. 13:00
+                  - generic [ref=e1174]:
+                    - img [ref=e1175]
+                    - generic [ref=e1176]: Qatar
+                  - generic [ref=e1179]:
+                    - img [ref=e1180]
+                    - generic [ref=e1181]: Switzerland
+                  - generic: "1"
+                  - generic: "1"
+                - generic [ref=e1182] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1183]:
+                    - /url: https://www.flashscore.com/match/football/paraguay-YaNlqp6j/usa-fuitL4CF/?mid=bo9vy2zK
+                  - generic [ref=e1185]: 12.06. 19:00
+                  - generic [ref=e1188]:
+                    - img [ref=e1189]
+                    - generic [ref=e1190]: USA
+                  - generic [ref=e1193]:
+                    - img [ref=e1194]
+                    - generic [ref=e1195]: Paraguay
+                  - generic: "4"
+                  - generic: "1"
+                - generic [ref=e1196] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1197]:
+                    - /url: https://www.flashscore.com/match/football/bosnia-herzegovina-fqe7WYTr/canada-x4toKORL/?mid=OxkQ8qT6
+                  - generic [ref=e1199]: 12.06. 13:00
+                  - generic [ref=e1202]:
+                    - img [ref=e1203]
+                    - generic [ref=e1204]: Canada
+                  - generic [ref=e1207]:
+                    - img [ref=e1208]
+                    - generic [ref=e1209]: Bosnia & Herzegovina
+                  - generic: "1"
+                  - generic: "1"
+                - generic [ref=e1210] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1211]:
+                    - /url: https://www.flashscore.com/match/football/czech-republic-6LHwBDGU/south-korea-K6Gs7P6G/?mid=CGdvIm6K
+                  - generic [ref=e1213]: 11.06. 20:00
+                  - generic [ref=e1216]:
+                    - img [ref=e1217]
+                    - generic [ref=e1218]: South Korea
+                  - generic [ref=e1221]:
+                    - img [ref=e1222]
+                    - generic [ref=e1223]: Czech Republic
+                  - generic: "2"
+                  - generic: "1"
+                - generic [ref=e1224] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1225]:
+                    - /url: https://www.flashscore.com/match/football/mexico-O6iHcNkd/south-africa-W2ijYvlr/?mid=h4EoUB7T
+                  - generic [ref=e1227]: 11.06. 13:00
+                  - generic [ref=e1228]:
+                    - generic [ref=e1230]:
+                      - img [ref=e1231]
+                      - generic [ref=e1232]: Mexico
+                    - img [ref=e1233]
+                  - generic [ref=e1235]:
+                    - generic [ref=e1237]:
+                      - img [ref=e1238]
+                      - generic [ref=e1239]: South Africa
+                    - img [ref=e1240]:
+                      - generic [ref=e1242]: "2"
+                  - generic: "2"
+                  - generic: "0"
+                - generic [ref=e1244]:
+                  - generic [ref=e1245]:
+                    - generic "World" [ref=e1246]
+                    - generic [ref=e1247]:
+                      - link "World Championship - Qualification - Promotion" [ref=e1248] [cursor=pointer]:
+                        - /url: /football/world/world-championship/
+                        - generic [ref=e1249]: World Championship - Qualification - Promotion
+                      - generic [ref=e1251]: "WORLD:"
+                  - button "Unpin this league from Pinned Leagues!" [pressed] [ref=e1253] [cursor=pointer]:
+                    - img [ref=e1254]
+                  - generic [ref=e1257] [cursor=pointer]: Draw
+                - generic [ref=e1258]: Final
+                - generic [ref=e1259] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1260]:
+                    - /url: https://www.flashscore.com/match/football/bolivia-nXdi7mbc/iraq-K8aAGt6r/?mid=nu8tqnGs
+                  - generic [ref=e1262]: 31.03. 21:00
+                  - generic [ref=e1263]:
+                    - generic [ref=e1265]:
+                      - img [ref=e1266]
+                      - generic [ref=e1267]: Iraq
+                    - 'img "Advancing to next round: Iraq" [ref=e1268]'
+                  - generic [ref=e1272]:
+                    - img [ref=e1273]
+                    - generic [ref=e1274]: Bolivia
+                  - generic: "2"
+                  - generic: "1"
+                  - img [ref=e1275]
+                - generic [ref=e1277] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1278]:
+                    - /url: https://www.flashscore.com/match/football/d-r-congo-phn9mm8H/jamaica-CWmDb3zj/?mid=nHRhJvF8
+                  - generic [ref=e1280]:
+                    - text: 31.03. 15:00
+                    - generic [ref=e1282]: AET
+                  - generic [ref=e1283]:
+                    - generic [ref=e1285]:
+                      - img [ref=e1286]
+                      - generic [ref=e1287]: D.R. Congo
+                    - 'img "Winner: D.R. Congo" [ref=e1288]'
+                  - generic [ref=e1292]:
+                    - img [ref=e1293]
+                    - generic [ref=e1294]: Jamaica
+                  - generic: "1"
+                  - generic: "0"
+                  - img [ref=e1295]
+                - generic [ref=e1298]:
+                  - generic [ref=e1299]:
+                    - generic "Europe" [ref=e1300]
+                    - generic [ref=e1301]:
+                      - link "World Championship - Qualification - Promotion" [ref=e1302] [cursor=pointer]:
+                        - /url: /football/europe/world-championship/
+                        - generic [ref=e1303]: World Championship - Qualification - Promotion
+                      - generic [ref=e1305]: "EUROPE:"
+                  - button "Unpin this league from Pinned Leagues!" [pressed] [ref=e1307] [cursor=pointer]:
+                    - img [ref=e1308]
+                  - generic [ref=e1311] [cursor=pointer]: Draw
+                - generic [ref=e1312]: Final
+                - generic [ref=e1313] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1314]:
+                    - /url: https://www.flashscore.com/match/football/bosnia-herzegovina-fqe7WYTr/italy-hlKvieGH/?mid=2B8dzIX9
+                  - generic [ref=e1316]:
+                    - text: 31.03. 12:45
+                    - generic [ref=e1318]: Pen
+                  - generic [ref=e1319]:
+                    - generic [ref=e1321]:
+                      - img [ref=e1322]
+                      - generic [ref=e1323]: Bosnia & Herzegovina
+                    - 'img "Winner: Bosnia & Herzegovina" [ref=e1324]'
+                  - generic [ref=e1326]:
+                    - generic [ref=e1328]:
+                      - img [ref=e1329]
+                      - generic [ref=e1330]: Italy
+                    - img [ref=e1331]
+                  - generic:
+                    - text: "1"
+                    - superscript: (4)
+                  - generic:
+                    - text: "1"
+                    - superscript: (1)
+                - generic [ref=e1333] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1334]:
+                    - /url: https://www.flashscore.com/match/football/czech-republic-6LHwBDGU/denmark-0KUdxQVi/?mid=zP64Ye2M
+                  - generic [ref=e1336]:
+                    - text: 31.03. 12:45
+                    - generic [ref=e1338]: Pen
+                  - generic [ref=e1339]:
+                    - generic [ref=e1341]:
+                      - img [ref=e1342]
+                      - generic [ref=e1343]: Czech Republic
+                    - 'img "Advancing to next round: Czech Republic" [ref=e1344]'
+                  - generic [ref=e1348]:
+                    - img [ref=e1349]
+                    - generic [ref=e1350]: Denmark
+                  - generic:
+                    - text: "2"
+                    - superscript: (3)
+                  - generic:
+                    - text: "2"
+                    - superscript: (1)
+                - generic [ref=e1351] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1352]:
+                    - /url: https://www.flashscore.com/match/football/kosovo-v1DTPQwI/turkey-QeijuHo5/?mid=xlsPC2Il
+                  - generic [ref=e1354]: 31.03. 12:45
+                  - generic [ref=e1357]:
+                    - img [ref=e1358]
+                    - generic [ref=e1359]: Kosovo
+                  - generic [ref=e1360]:
+                    - generic [ref=e1362]:
+                      - img [ref=e1363]
+                      - generic [ref=e1364]: Turkey
+                    - 'img "Advancing to next round: Turkey" [ref=e1365]'
+                  - generic: "0"
+                  - generic: "1"
+                - generic [ref=e1367] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1368]:
+                    - /url: https://www.flashscore.com/match/football/poland-2HzmcynI/sweden-OQyqbHWB/?mid=pEpXAtm1
+                  - generic [ref=e1370]: 31.03. 12:45
+                  - generic [ref=e1371]:
+                    - generic [ref=e1373]:
+                      - img [ref=e1374]
+                      - generic [ref=e1375]: Sweden
+                    - 'img "Advancing to next round: Sweden" [ref=e1376]'
+                  - generic [ref=e1380]:
+                    - img [ref=e1381]
+                    - generic [ref=e1382]: Poland
+                  - generic: "3"
+                  - generic: "2"
+                - generic [ref=e1384]:
+                  - generic [ref=e1385]:
+                    - generic "World" [ref=e1386]
+                    - generic [ref=e1387]:
+                      - link "World Championship - Qualification - Promotion" [ref=e1388] [cursor=pointer]:
+                        - /url: /football/world/world-championship/
+                        - generic [ref=e1389]: World Championship - Qualification - Promotion
+                      - generic [ref=e1391]: "WORLD:"
+                  - button "Unpin this league from Pinned Leagues!" [pressed] [ref=e1393] [cursor=pointer]:
+                    - img [ref=e1394]
+                  - generic [ref=e1397] [cursor=pointer]: Draw
+                - generic [ref=e1398]: Semi-finals
+                - generic [ref=e1399] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1400]:
+                    - /url: https://www.flashscore.com/match/football/jamaica-CWmDb3zj/new-caledonia-0d8yIVUN/?mid=bsLmfNVN
+                  - generic [ref=e1402]: 26.03. 21:00
+                  - generic [ref=e1405]:
+                    - img [ref=e1406]
+                    - generic [ref=e1407]: New Caledonia
+                  - generic [ref=e1408]:
+                    - generic [ref=e1410]:
+                      - img [ref=e1411]
+                      - generic [ref=e1412]: Jamaica
+                    - 'img "Advancing to next round: Jamaica" [ref=e1413]'
+                  - generic: "0"
+                  - generic: "1"
+                  - img [ref=e1415]
+                - generic [ref=e1417] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1418]:
+                    - /url: https://www.flashscore.com/match/football/bolivia-nXdi7mbc/suriname-jefTDM4k/?mid=UPBJl1go
+                  - generic [ref=e1420]: 26.03. 16:00
+                  - generic [ref=e1421]:
+                    - generic [ref=e1423]:
+                      - img [ref=e1424]
+                      - generic [ref=e1425]: Bolivia
+                    - 'img "Advancing to next round: Bolivia" [ref=e1426]'
+                  - generic [ref=e1430]:
+                    - img [ref=e1431]
+                    - generic [ref=e1432]: Suriname
+                  - generic: "2"
+                  - generic: "1"
+                  - img [ref=e1433]
+                - generic [ref=e1436]:
+                  - generic [ref=e1437]:
+                    - generic "Europe" [ref=e1438]
+                    - generic [ref=e1439]:
+                      - link "World Championship - Qualification - Promotion" [ref=e1440] [cursor=pointer]:
+                        - /url: /football/europe/world-championship/
+                        - generic [ref=e1441]: World Championship - Qualification - Promotion
+                      - generic [ref=e1443]: "EUROPE:"
+                  - button "Unpin this league from Pinned Leagues!" [pressed] [ref=e1445] [cursor=pointer]:
+                    - img [ref=e1446]
+                  - generic [ref=e1449] [cursor=pointer]: Draw
+                - generic [ref=e1450]: Semi-finals
+                - generic [ref=e1451] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1452]:
+                    - /url: https://www.flashscore.com/match/football/czech-republic-6LHwBDGU/ireland-Gfyqk1aG/?mid=x297yduB
+                  - generic [ref=e1454]:
+                    - text: 26.03. 13:45
+                    - generic [ref=e1456]: Pen
+                  - generic [ref=e1457]:
+                    - generic [ref=e1459]:
+                      - img [ref=e1460]
+                      - generic [ref=e1461]: Czech Republic
+                    - 'img "Advancing to next round: Czech Republic" [ref=e1462]'
+                  - generic [ref=e1466]:
+                    - img [ref=e1467]
+                    - generic [ref=e1468]: Ireland
+                  - generic:
+                    - text: "2"
+                    - superscript: (4)
+                  - generic:
+                    - text: "2"
+                    - superscript: (3)
+                - generic [ref=e1469] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1470]:
+                    - /url: https://www.flashscore.com/match/football/denmark-0KUdxQVi/north-macedonia-GrTQ3oHB/?mid=IigYMdQH
+                  - generic [ref=e1472]: 26.03. 13:45
+                  - generic [ref=e1473]:
+                    - generic [ref=e1475]:
+                      - img [ref=e1476]
+                      - generic [ref=e1477]: Denmark
+                    - 'img "Advancing to next round: Denmark" [ref=e1478]'
+                  - generic [ref=e1482]:
+                    - img [ref=e1483]
+                    - generic [ref=e1484]: North Macedonia
+                  - generic: "4"
+                  - generic: "0"
+                - generic [ref=e1485] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1486]:
+                    - /url: https://www.flashscore.com/match/football/italy-hlKvieGH/northern-ireland-lQADNSWu/?mid=v7ssLzeU
+                  - generic [ref=e1488]: 26.03. 13:45
+                  - generic [ref=e1489]:
+                    - generic [ref=e1491]:
+                      - img [ref=e1492]
+                      - generic [ref=e1493]: Italy
+                    - 'img "Advancing to next round: Italy" [ref=e1494]'
+                  - generic [ref=e1498]:
+                    - img [ref=e1499]
+                    - generic [ref=e1500]: Northern Ireland
+                  - generic: "2"
+                  - generic: "0"
+                - generic [ref=e1501] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1502]:
+                    - /url: https://www.flashscore.com/match/football/albania-ELP2K4oB/poland-2HzmcynI/?mid=ruWYiHPi
+                  - generic [ref=e1504]: 26.03. 13:45
+                  - generic [ref=e1505]:
+                    - generic [ref=e1507]:
+                      - img [ref=e1508]
+                      - generic [ref=e1509]: Poland
+                    - 'img "Advancing to next round: Poland" [ref=e1510]'
+                  - generic [ref=e1514]:
+                    - img [ref=e1515]
+                    - generic [ref=e1516]: Albania
+                  - generic: "2"
+                  - generic: "1"
+                - generic [ref=e1517] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1518]:
+                    - /url: https://www.flashscore.com/match/football/kosovo-v1DTPQwI/slovakia-KpLb2q1U/?mid=8MHjuvtn
+                  - generic [ref=e1520]: 26.03. 13:45
+                  - generic [ref=e1523]:
+                    - img [ref=e1524]
+                    - generic [ref=e1525]: Slovakia
+                  - generic [ref=e1526]:
+                    - generic [ref=e1528]:
+                      - img [ref=e1529]
+                      - generic [ref=e1530]: Kosovo
+                    - 'img "Advancing to next round: Kosovo" [ref=e1531]'
+                  - generic: "3"
+                  - generic: "4"
+                - generic [ref=e1533] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1534]:
+                    - /url: https://www.flashscore.com/match/football/sweden-OQyqbHWB/ukraine-j1JtDMwo/?mid=YT2GZZ9N
+                  - generic [ref=e1536]: 26.03. 13:45
+                  - generic [ref=e1539]:
+                    - img [ref=e1540]
+                    - generic [ref=e1541]: Ukraine
+                  - generic [ref=e1542]:
+                    - generic [ref=e1544]:
+                      - img [ref=e1545]
+                      - generic [ref=e1546]: Sweden
+                    - 'img "Advancing to next round: Sweden" [ref=e1547]'
+                  - generic: "1"
+                  - generic: "3"
+                  - img [ref=e1549]
+                - generic [ref=e1551] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1552]:
+                    - /url: https://www.flashscore.com/match/football/bosnia-herzegovina-fqe7WYTr/wales-YcUP0Nqp/?mid=4lBawIAb
+                  - generic [ref=e1554]:
+                    - text: 26.03. 13:45
+                    - generic [ref=e1556]: Pen
+                  - generic [ref=e1559]:
+                    - img [ref=e1560]
+                    - generic [ref=e1561]: Wales
+                  - generic [ref=e1562]:
+                    - generic [ref=e1564]:
+                      - img [ref=e1565]
+                      - generic [ref=e1566]: Bosnia & Herzegovina
+                    - 'img "Advancing to next round: Bosnia & Herzegovina" [ref=e1567]'
+                  - generic:
+                    - text: "1"
+                    - superscript: (2)
+                  - generic:
+                    - text: "1"
+                    - superscript: (4)
+                - generic [ref=e1569] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1570]:
+                    - /url: https://www.flashscore.com/match/football/romania-IaD8jZpU/turkey-QeijuHo5/?mid=2qgnUDXp
+                  - generic [ref=e1572]: 26.03. 11:00
+                  - generic [ref=e1573]:
+                    - generic [ref=e1575]:
+                      - img [ref=e1576]
+                      - generic [ref=e1577]: Turkey
+                    - 'img "Advancing to next round: Turkey" [ref=e1578]'
+                  - generic [ref=e1582]:
+                    - img [ref=e1583]
+                    - generic [ref=e1584]: Romania
+                  - generic: "1"
+                  - generic: "0"
+                - generic [ref=e1586]:
+                  - generic [ref=e1587]:
+                    - generic "North & Central America" [ref=e1588]
+                    - generic [ref=e1589]:
+                      - link "World Championship - Qualification - Third stage" [ref=e1590] [cursor=pointer]:
+                        - /url: /football/north-central-america/world-championship/
+                        - generic [ref=e1591]: World Championship - Qualification - Third stage
+                      - generic [ref=e1593]: "NORTH & CENTRAL AMERICA:"
+                  - button "Unpin this league from Pinned Leagues!" [pressed] [ref=e1595] [cursor=pointer]:
+                    - img [ref=e1596]
+                  - generic [ref=e1599] [cursor=pointer]: Standings
+                - generic [ref=e1600]: Round 6
+                - generic [ref=e1601] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1602]:
+                    - /url: https://www.flashscore.com/match/football/costa-rica-C4ePE2kq/honduras-fP8cJrsS/?mid=ruCkETbS
+                  - generic [ref=e1604]: 18.11.2025
+                  - generic [ref=e1605]:
+                    - generic [ref=e1607]:
+                      - img [ref=e1608]
+                      - generic [ref=e1609]: Costa Rica
+                    - img [ref=e1610]
+                  - generic [ref=e1614]:
+                    - img [ref=e1615]
+                    - generic [ref=e1616]: Honduras
+                  - generic: "0"
+                  - generic: "0"
+                - generic [ref=e1617] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1618]:
+                    - /url: https://www.flashscore.com/match/football/guatemala-8KhCLQs3/suriname-jefTDM4k/?mid=UuzkMNeD
+                  - generic [ref=e1620]: 18.11.2025
+                  - generic [ref=e1623]:
+                    - img [ref=e1624]
+                    - generic [ref=e1625]: Guatemala
+                  - generic [ref=e1628]:
+                    - img [ref=e1629]
+                    - generic [ref=e1630]: Suriname
+                  - generic: "3"
+                  - generic: "1"
+                - generic [ref=e1631] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1632]:
+                    - /url: https://www.flashscore.com/match/football/haiti-nk4v10Z1/nicaragua-6L9QjkfT/?mid=0dhM87Mk
+                  - generic [ref=e1634]: 18.11.2025
+                  - generic [ref=e1637]:
+                    - img [ref=e1638]
+                    - generic [ref=e1639]: Haiti
+                  - generic [ref=e1642]:
+                    - img [ref=e1643]
+                    - generic [ref=e1644]: Nicaragua
+                  - generic: "2"
+                  - generic: "0"
+                  - img [ref=e1645]
+                - generic [ref=e1647] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1648]:
+                    - /url: https://www.flashscore.com/match/football/curacao-bLLGpOkQ/jamaica-CWmDb3zj/?mid=WrPF5sAt
+                  - generic [ref=e1650]: 18.11.2025
+                  - generic [ref=e1651]:
+                    - generic [ref=e1653]:
+                      - img [ref=e1654]
+                      - generic [ref=e1655]: Jamaica
+                    - img [ref=e1656]
+                  - generic [ref=e1660]:
+                    - img [ref=e1661]
+                    - generic [ref=e1662]: Curacao
+                  - generic: "0"
+                  - generic: "0"
+                - generic [ref=e1663] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1664]:
+                    - /url: https://www.flashscore.com/match/football/el-salvador-8b5z2tKe/panama-OWKqbCfi/?mid=YDttOqR0
+                  - generic [ref=e1666]: 18.11.2025
+                  - generic [ref=e1669]:
+                    - img [ref=e1670]
+                    - generic [ref=e1671]: Panama
+                  - generic [ref=e1674]:
+                    - img [ref=e1675]
+                    - generic [ref=e1676]: El Salvador
+                  - generic: "3"
+                  - generic: "0"
+                - generic [ref=e1677] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1678]:
+                    - /url: https://www.flashscore.com/match/football/bermuda-EDkSyUht/trinidad-tobago-UTg8M6Sd/?mid=SAIO3Lvg
+                  - generic [ref=e1680]: 18.11.2025
+                  - generic [ref=e1683]:
+                    - img [ref=e1684]
+                    - generic [ref=e1685]: Trinidad & Tobago
+                  - generic [ref=e1688]:
+                    - img [ref=e1689]
+                    - generic [ref=e1690]: Bermuda
+                  - generic: "2"
+                  - generic: "2"
+                - generic [ref=e1692]:
+                  - generic [ref=e1693]:
+                    - generic "Europe" [ref=e1694]
+                    - generic [ref=e1695]:
+                      - link "World Championship - Qualification" [ref=e1696] [cursor=pointer]:
+                        - /url: /football/europe/world-championship/
+                        - generic [ref=e1697]: World Championship - Qualification
+                      - generic [ref=e1699]: "EUROPE:"
+                  - button "Unpin this league from Pinned Leagues!" [pressed] [ref=e1701] [cursor=pointer]:
+                    - img [ref=e1702]
+                  - generic [ref=e1705] [cursor=pointer]: Standings
+                - generic [ref=e1706] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1707]:
+                    - /url: https://www.flashscore.com/match/football/austria-naHiWdnt/bosnia-herzegovina-fqe7WYTr/?mid=fHhO66jf
+                  - generic [ref=e1709]: 18.11.2025
+                  - generic [ref=e1712]:
+                    - img [ref=e1713]
+                    - generic [ref=e1714]: Austria
+                  - generic [ref=e1717]:
+                    - img [ref=e1718]
+                    - generic [ref=e1719]: Bosnia & Herzegovina
+                  - generic: "1"
+                  - generic: "1"
+                - generic [ref=e1720] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1721]:
+                    - /url: https://www.flashscore.com/match/football/belarus-lhXEH2VT/greece-COuk57Ci/?mid=xjkxqZN6
+                  - generic [ref=e1723]: 18.11.2025
+                  - generic [ref=e1726]:
+                    - img [ref=e1727]
+                    - generic [ref=e1728]: Belarus
+                  - generic [ref=e1731]:
+                    - img [ref=e1732]
+                    - generic [ref=e1733]: Greece
+                  - generic: "0"
+                  - generic: "0"
+                  - img [ref=e1734]
+                - generic [ref=e1736] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1737]:
+                    - /url: https://www.flashscore.com/match/football/belgium-GbB957na/liechtenstein-8KIf01Ed/?mid=IXpmWMJ5
+                  - generic [ref=e1739]: 18.11.2025
+                  - generic [ref=e1742]:
+                    - img [ref=e1743]
+                    - generic [ref=e1744]: Belgium
+                  - generic [ref=e1747]:
+                    - img [ref=e1748]
+                    - generic [ref=e1749]: Liechtenstein
+                  - generic: "7"
+                  - generic: "0"
+                - generic [ref=e1750] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1751]:
+                    - /url: https://www.flashscore.com/match/football/bulgaria-WEeqYLaT/georgia-YVovjspA/?mid=KA0P8J2b
+                  - generic [ref=e1753]: 18.11.2025
+                  - generic [ref=e1756]:
+                    - img [ref=e1757]
+                    - generic [ref=e1758]: Bulgaria
+                  - generic [ref=e1761]:
+                    - img [ref=e1762]
+                    - generic [ref=e1763]: Georgia
+                  - generic: "2"
+                  - generic: "1"
+                - generic [ref=e1764] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1765]:
+                    - /url: https://www.flashscore.com/match/football/kosovo-v1DTPQwI/switzerland-rHJ2vy1B/?mid=4IfDhne3
+                  - generic [ref=e1767]: 18.11.2025
+                  - generic [ref=e1770]:
+                    - img [ref=e1771]
+                    - generic [ref=e1772]: Kosovo
+                  - generic [ref=e1775]:
+                    - img [ref=e1776]
+                    - generic [ref=e1777]: Switzerland
+                  - generic: "1"
+                  - generic: "1"
+                - generic [ref=e1778] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1779]:
+                    - /url: https://www.flashscore.com/match/football/romania-IaD8jZpU/san-marino-Wlrb53yT/?mid=tGkvwMD6
+                  - generic [ref=e1781]: 18.11.2025
+                  - generic [ref=e1784]:
+                    - img [ref=e1785]
+                    - generic [ref=e1786]: Romania
+                  - generic [ref=e1789]:
+                    - img [ref=e1790]
+                    - generic [ref=e1791]: San Marino
+                  - generic: "7"
+                  - generic: "1"
+                - generic [ref=e1792] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1793]:
+                    - /url: https://www.flashscore.com/match/football/denmark-0KUdxQVi/scotland-fZRU25WH/?mid=IF1lMyQr
+                  - generic [ref=e1795]: 18.11.2025
+                  - generic [ref=e1798]:
+                    - img [ref=e1799]
+                    - generic [ref=e1800]: Scotland
+                  - generic [ref=e1801]:
+                    - generic [ref=e1803]:
+                      - img [ref=e1804]
+                      - generic [ref=e1805]: Denmark
+                    - img [ref=e1806]
+                  - generic: "4"
+                  - generic: "2"
+                - generic [ref=e1808] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1809]:
+                    - /url: https://www.flashscore.com/match/football/spain-bLyo6mco/turkey-QeijuHo5/?mid=Eu6koqaB
+                  - generic [ref=e1811]: 18.11.2025
+                  - generic [ref=e1814]:
+                    - img [ref=e1815]
+                    - generic [ref=e1816]: Spain
+                  - generic [ref=e1819]:
+                    - img [ref=e1820]
+                    - generic [ref=e1821]: Turkey
+                  - generic: "2"
+                  - generic: "2"
+                - generic [ref=e1822] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1823]:
+                    - /url: https://www.flashscore.com/match/football/slovenia-tfMf3PoO/sweden-OQyqbHWB/?mid=2VVVu9Bc
+                  - generic [ref=e1825]: 18.11.2025
+                  - generic [ref=e1828]:
+                    - img [ref=e1829]
+                    - generic [ref=e1830]: Sweden
+                  - generic [ref=e1833]:
+                    - img [ref=e1834]
+                    - generic [ref=e1835]: Slovenia
+                  - generic: "1"
+                  - generic: "1"
+                - generic [ref=e1836] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1837]:
+                    - /url: https://www.flashscore.com/match/football/north-macedonia-GrTQ3oHB/wales-YcUP0Nqp/?mid=Mo1vXmn9
+                  - generic [ref=e1839]: 18.11.2025
+                  - generic [ref=e1842]:
+                    - img [ref=e1843]
+                    - generic [ref=e1844]: Wales
+                  - generic [ref=e1847]:
+                    - img [ref=e1848]
+                    - generic [ref=e1849]: North Macedonia
+                  - generic: "7"
+                  - generic: "1"
+                - generic [ref=e1851]:
+                  - generic [ref=e1852]:
+                    - generic "Asia" [ref=e1853]
+                    - generic [ref=e1854]:
+                      - link "World Championship - Qualification - Fifth stage" [ref=e1855] [cursor=pointer]:
+                        - /url: /football/asia/world-championship/
+                        - generic [ref=e1856]: World Championship - Qualification - Fifth stage
+                      - generic [ref=e1858]: "ASIA:"
+                  - button "Unpin this league from Pinned Leagues!" [pressed] [ref=e1860] [cursor=pointer]:
+                    - img [ref=e1861]
+                  - generic [ref=e1864] [cursor=pointer]: Draw
+                - generic [ref=e1865]: Final
+                - generic [ref=e1866] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1867]:
+                    - /url: https://www.flashscore.com/match/football/iraq-K8aAGt6r/united-arab-emirates-Knrj3QiN/?mid=nHQ6REdJ
+                  - generic [ref=e1869]: 18.11.2025
+                  - generic [ref=e1870]:
+                    - generic [ref=e1872]:
+                      - img [ref=e1873]
+                      - generic [ref=e1874]: Iraq
+                    - 'img "Winner: Iraq" [ref=e1875]'
+                  - generic [ref=e1879]:
+                    - img [ref=e1880]
+                    - generic [ref=e1881]: United Arab Emirates
+                  - generic: "2"
+                  - generic: "1"
+                  - img [ref=e1882]
+                - generic [ref=e1885]:
+                  - generic [ref=e1886]:
+                    - generic "Europe" [ref=e1887]
+                    - generic [ref=e1888]:
+                      - link "World Championship - Qualification" [ref=e1889] [cursor=pointer]:
+                        - /url: /football/europe/world-championship/
+                        - generic [ref=e1890]: World Championship - Qualification
+                      - generic [ref=e1892]: "EUROPE:"
+                  - button "Unpin this league from Pinned Leagues!" [pressed] [ref=e1894] [cursor=pointer]:
+                    - img [ref=e1895]
+                  - generic [ref=e1898] [cursor=pointer]: Standings
+                - generic [ref=e1899] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1900]:
+                    - /url: https://www.flashscore.com/match/football/czech-republic-6LHwBDGU/gibraltar-CEihsqe7/?mid=EwyYabwA
+                  - generic [ref=e1902]: 17.11.2025
+                  - generic [ref=e1905]:
+                    - img [ref=e1906]
+                    - generic [ref=e1907]: Czech Republic
+                  - generic [ref=e1910]:
+                    - img [ref=e1911]
+                    - generic [ref=e1912]: Gibraltar
+                  - generic: "6"
+                  - generic: "0"
+                - generic [ref=e1913] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1914]:
+                    - /url: https://www.flashscore.com/match/football/germany-ptQide1O/slovakia-KpLb2q1U/?mid=x21OTMSp
+                  - generic [ref=e1916]: 17.11.2025
+                  - generic [ref=e1919]:
+                    - img [ref=e1920]
+                    - generic [ref=e1921]: Germany
+                  - generic [ref=e1924]:
+                    - img [ref=e1925]
+                    - generic [ref=e1926]: Slovakia
+                  - generic: "6"
+                  - generic: "0"
+                - generic [ref=e1927] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1928]:
+                    - /url: https://www.flashscore.com/match/football/malta-YHpMYsVG/poland-2HzmcynI/?mid=I35QXQyR
+                  - generic [ref=e1930]: 17.11.2025
+                  - generic [ref=e1933]:
+                    - img [ref=e1934]
+                    - generic [ref=e1935]: Malta
+                  - generic [ref=e1938]:
+                    - img [ref=e1939]
+                    - generic [ref=e1940]: Poland
+                  - generic: "2"
+                  - generic: "3"
+                - generic [ref=e1941] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1942]:
+                    - /url: https://www.flashscore.com/match/football/croatia-K8aznggo/montenegro-hOduZ1pN/?mid=OU5qCXKO
+                  - generic [ref=e1944]: 17.11.2025
+                  - generic [ref=e1947]:
+                    - img [ref=e1948]
+                    - generic [ref=e1949]: Montenegro
+                  - generic [ref=e1952]:
+                    - img [ref=e1953]
+                    - generic [ref=e1954]: Croatia
+                  - generic: "2"
+                  - generic: "3"
+                - generic [ref=e1955] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1956]:
+                    - /url: https://www.flashscore.com/match/football/lithuania-lfrBTu8p/netherlands-WYintcWb/?mid=StJedUO9
+                  - generic [ref=e1958]: 17.11.2025
+                  - generic [ref=e1961]:
+                    - img [ref=e1962]
+                    - generic [ref=e1963]: Netherlands
+                  - generic [ref=e1966]:
+                    - img [ref=e1967]
+                    - generic [ref=e1968]: Lithuania
+                  - generic: "4"
+                  - generic: "0"
+                - generic [ref=e1969] [cursor=pointer]:
+                  - link "Click for details!" [ref=e1970]:
+                    - /url: https://www.flashscore.com/match/football/luxembourg-2cnFSaNj/northern-ireland-lQADNSWu/?mid=UNYVAlCN
+                  - generic [ref=e1972]: 17.11.2025
+                  - generic [ref=e1975]:
+                    - img [ref=e1976]
+                    - generic [ref=e1977]: Northern Ireland
+                  - generic [ref=e1980]:
+                    - img [ref=e1981]
+                    - generic [ref=e1982]: Luxembourg
+                  - generic: "1"
+                  - generic: "0"
+              - button "Show more matches" [ref=e1984] [cursor=pointer]:
+                - generic [ref=e1985]: Show more matches
+                - img [ref=e1986]
+      - complementary [ref=e1988]:
+        - generic [ref=e1989]:
+          - generic [ref=e1991]:
+            - generic [ref=e1994]: World
+            - link "World Championship" [ref=e1996] [cursor=pointer]:
+              - /url: /football/world/world-championship/
+            - link "Olympic Games" [ref=e1998] [cursor=pointer]:
+              - /url: /football/world/olympic-games/
+            - link "FIFA Club World Cup" [ref=e2000] [cursor=pointer]:
+              - /url: /football/world/fifa-club-world-cup/
+            - link "FIFA Intercontinental Cup" [ref=e2002] [cursor=pointer]:
+              - /url: /football/world/fifa-intercontinental-cup/
+            - link "World Cup U20" [ref=e2004] [cursor=pointer]:
+              - /url: /football/world/world-cup-u20/
+            - link "World Cup U17" [ref=e2006] [cursor=pointer]:
+              - /url: /football/world/world-cup-u17/
+            - link "Finalissima" [ref=e2008] [cursor=pointer]:
+              - /url: /football/world/finalissima/
+            - link "FIFA Series" [ref=e2010] [cursor=pointer]:
+              - /url: /football/world/fifa-series/
+            - link "Friendly International" [ref=e2012] [cursor=pointer]:
+              - /url: /football/world/friendly-international/
+            - link "Club Friendly" [ref=e2014] [cursor=pointer]:
+              - /url: /football/world/club-friendly/
+            - generic [ref=e2015] [cursor=pointer]:
+              - text: Show more (32)
+              - img [ref=e2016]
+          - generic [ref=e2020]:
+            - generic [ref=e2021]:
+              - img [ref=e2022]
+              - generic [ref=e2023]: Pinned Leagues
+            - generic [ref=e2024]:
+              - generic [ref=e2025]:
+                - 'generic "ENGLAND: Premier League" [ref=e2026]':
+                  - link "Premier League" [ref=e2027] [cursor=pointer]:
+                    - /url: /football/england/premier-league/
+                    - generic [ref=e2029]: Premier League
+                - 'generic "FRANCE: Ligue 1" [ref=e2030]':
+                  - link "Ligue 1" [ref=e2031] [cursor=pointer]:
+                    - /url: /football/france/ligue-1/
+                    - generic [ref=e2033]: Ligue 1
+                - 'generic "GERMANY: Bundesliga" [ref=e2034]':
+                  - link "Bundesliga" [ref=e2035] [cursor=pointer]:
+                    - /url: /football/germany/bundesliga/
+                    - generic [ref=e2037]: Bundesliga
+                - 'generic "ITALY: Serie A" [ref=e2038]':
+                  - link "Serie A" [ref=e2039] [cursor=pointer]:
+                    - /url: /football/italy/serie-a/
+                    - generic [ref=e2041]: Serie A
+                - 'generic "NETHERLANDS: Eredivisie" [ref=e2042]':
+                  - link "Eredivisie" [ref=e2043] [cursor=pointer]:
+                    - /url: /football/netherlands/eredivisie/
+                    - generic [ref=e2045]: Eredivisie
+                - 'generic "SPAIN: LaLiga" [ref=e2046]':
+                  - link "LaLiga" [ref=e2047] [cursor=pointer]:
+                    - /url: /football/spain/laliga/
+                    - generic [ref=e2049]: LaLiga
+                - 'generic "EUROPE: Euro" [ref=e2050]':
+                  - link "Euro" [ref=e2051] [cursor=pointer]:
+                    - /url: /football/europe/euro/
+                    - generic [ref=e2053]: Euro
+                - 'generic "EUROPE: Champions League" [ref=e2054]':
+                  - link "Champions League" [ref=e2055] [cursor=pointer]:
+                    - /url: /football/europe/champions-league/
+                    - generic [ref=e2057]: Champions League
+                - 'generic "EUROPE: Europa League" [ref=e2058]':
+                  - link "Europa League" [ref=e2059] [cursor=pointer]:
+                    - /url: /football/europe/europa-league/
+                    - generic [ref=e2061]: Europa League
+                - 'generic "EUROPE: Conference League" [ref=e2062]':
+                  - link "Conference League" [ref=e2063] [cursor=pointer]:
+                    - /url: /football/europe/conference-league/
+                    - generic [ref=e2065]: Conference League
+              - generic [ref=e2066]:
+                - 'generic "EUROPE: UEFA Nations League" [ref=e2067]':
+                  - link "UEFA Nations League" [ref=e2068] [cursor=pointer]:
+                    - /url: /football/europe/uefa-nations-league/
+                    - generic [ref=e2070]: UEFA Nations League
+                - 'generic "EUROPE: Euro U19" [ref=e2071]':
+                  - link "Euro U19" [ref=e2072] [cursor=pointer]:
+                    - /url: /football/europe/euro-u19/
+                    - generic [ref=e2074]: Euro U19
+                - 'generic "EUROPE: Euro U19 Women" [ref=e2075]':
+                  - link "Euro U19 Women" [ref=e2076] [cursor=pointer]:
+                    - /url: /football/europe/euro-u19-women/
+                    - generic [ref=e2078]: Euro U19 Women
+                - 'generic "SOUTH AMERICA: Copa Libertadores" [ref=e2079]':
+                  - link "Copa Libertadores" [ref=e2080] [cursor=pointer]:
+                    - /url: /football/south-america/copa-libertadores/
+                    - generic [ref=e2082]: Copa Libertadores
+                - 'generic "WORLD: World Championship" [ref=e2083]':
+                  - link "World Championship" [ref=e2084] [cursor=pointer]:
+                    - /url: /football/world/world-championship/
+                    - generic [ref=e2086]: World Championship
+          - generic [ref=e2088]:
+            - generic [ref=e2089]:
+              - img [ref=e2090]
+              - generic [ref=e2091]: My Teams
+            - generic [ref=e2093] [cursor=pointer]:
+              - generic [ref=e2094]: Add the team
+              - img [ref=e2095]
+          - generic [ref=e2097]:
+            - generic [ref=e2098]:
+              - img [ref=e2099]
+              - generic [ref=e2100]: Rankings
+            - generic "FIFA" [ref=e2101]:
+              - link "FIFA" [ref=e2102] [cursor=pointer]:
+                - /url: /football/rankings/fifa/
+                - generic [ref=e2104]: FIFA
+          - generic [ref=e2106]:
+            - generic [ref=e2108]: Countries
+            - link "Albania" [ref=e2110] [cursor=pointer]:
+              - /url: /football/albania/
+              - generic [ref=e2111]: Albania
+            - link "Algeria" [ref=e2113] [cursor=pointer]:
+              - /url: /football/algeria/
+              - generic [ref=e2114]: Algeria
+            - link "Andorra" [ref=e2116] [cursor=pointer]:
+              - /url: /football/andorra/
+              - generic [ref=e2117]: Andorra
+            - link "Angola" [ref=e2119] [cursor=pointer]:
+              - /url: /football/angola/
+              - generic [ref=e2120]: Angola
+            - link "Antigua & Barbuda" [ref=e2122] [cursor=pointer]:
+              - /url: /football/antigua-barbuda/
+              - generic [ref=e2123]: Antigua & Barbuda
+            - link "Argentina" [ref=e2125] [cursor=pointer]:
+              - /url: /football/argentina/
+              - generic [ref=e2126]: Argentina
+            - link "Armenia" [ref=e2128] [cursor=pointer]:
+              - /url: /football/armenia/
+              - generic [ref=e2129]: Armenia
+            - link "Aruba" [ref=e2131] [cursor=pointer]:
+              - /url: /football/aruba/
+              - generic [ref=e2132]: Aruba
+            - link "Australia" [ref=e2134] [cursor=pointer]:
+              - /url: /football/australia/
+              - generic [ref=e2135]: Australia
+            - link "Austria" [ref=e2137] [cursor=pointer]:
+              - /url: /football/austria/
+              - generic [ref=e2138]: Austria
+            - link "Azerbaijan" [ref=e2140] [cursor=pointer]:
+              - /url: /football/azerbaijan/
+              - generic [ref=e2141]: Azerbaijan
+            - link "Bahrain" [ref=e2143] [cursor=pointer]:
+              - /url: /football/bahrain/
+              - generic [ref=e2144]: Bahrain
+            - link "Bangladesh" [ref=e2146] [cursor=pointer]:
+              - /url: /football/bangladesh/
+              - generic [ref=e2147]: Bangladesh
+            - link "Barbados" [ref=e2149] [cursor=pointer]:
+              - /url: /football/barbados/
+              - generic [ref=e2150]: Barbados
+            - link "Belarus" [ref=e2152] [cursor=pointer]:
+              - /url: /football/belarus/
+              - generic [ref=e2153]: Belarus
+            - link "Belgium" [ref=e2155] [cursor=pointer]:
+              - /url: /football/belgium/
+              - generic [ref=e2156]: Belgium
+            - link "Benin" [ref=e2158] [cursor=pointer]:
+              - /url: /football/benin/
+              - generic [ref=e2159]: Benin
+            - link "Bermuda" [ref=e2161] [cursor=pointer]:
+              - /url: /football/bermuda/
+              - generic [ref=e2162]: Bermuda
+            - link "Bhutan" [ref=e2164] [cursor=pointer]:
+              - /url: /football/bhutan/
+              - generic [ref=e2165]: Bhutan
+            - link "Bolivia" [ref=e2167] [cursor=pointer]:
+              - /url: /football/bolivia/
+              - generic [ref=e2168]: Bolivia
+            - link "Bosnia and Herzegovina" [ref=e2170] [cursor=pointer]:
+              - /url: /football/bosnia-and-herzegovina/
+              - generic [ref=e2171]: Bosnia and Herzegovina
+            - link "Botswana" [ref=e2173] [cursor=pointer]:
+              - /url: /football/botswana/
+              - generic [ref=e2174]: Botswana
+            - generic [ref=e2175] [cursor=pointer]:
+              - text: Show more
+              - img [ref=e2176]
+    - complementary [ref=e2178]:
+      - generic [ref=e2180]:
+        - text: "Help: Follow World Cup 2026 latest results, today's scores and all of the current season's World Cup 2026 results. Flashscore.com provides all World Cup 2026 final results, live scores and upcoming matches with current standings, head-to-head stats and odds comparison. See also current season's"
+        - link "World Championship fixtures" [ref=e2181] [cursor=pointer]:
+          - /url: ../fixtures
+        - text: ","
+        - link "results archive," [ref=e2182] [cursor=pointer]:
+          - /url: ../archive
+        - text: and the
+        - strong [ref=e2183]: Football
+        - text: page with all today's Football results and fixtures.
+  - contentinfo [ref=e2184]:
+    - generic [ref=e2185]:
+      - generic [ref=e2188]:
+        - generic [ref=e2189]:
+          - generic [ref=e2190]: World Cup 2026
+          - generic [ref=e2191]:
+            - link "World Cup 2026 scores" [ref=e2193] [cursor=pointer]:
+              - /url: /football/world/world-championship/
+            - link "World Cup results" [ref=e2195] [cursor=pointer]:
+              - /url: https://www.flashscore.com/football/world/world-championship/results/
+            - link "World Cup fixtures" [ref=e2197] [cursor=pointer]:
+              - /url: https://www.flashscore.com/football/world/world-championship/fixtures/
+            - link "World Cup standings, groups" [ref=e2199] [cursor=pointer]:
+              - /url: https://www.flashscore.com/football/world/world-championship/standings/
+            - link "World Cup 2026 news" [ref=e2201] [cursor=pointer]:
+              - /url: https://www.flashscore.com/news/world-championship/lvUBR5F8CdnS0XT8/
+            - link "England" [ref=e2203] [cursor=pointer]:
+              - /url: /team/england/j9N9ZNFA/
+            - link "Spain" [ref=e2205] [cursor=pointer]:
+              - /url: /team/spain/bLyo6mco/
+            - link "Argentina" [ref=e2207] [cursor=pointer]:
+              - /url: /team/argentina/f9OppQjp/
+            - link "Brazil" [ref=e2209] [cursor=pointer]:
+              - /url: /team/brazil/I9l9aqLq/
+            - link "World Cup 2026 previews - Flashscore Edge" [ref=e2211] [cursor=pointer]:
+              - /url: https://www.youtube.com/@FlashscoreEdge
+        - generic [ref=e2212]:
+          - generic [ref=e2213]: OTHER Sports
+          - generic [ref=e2214]:
+            - link "Tennis News" [ref=e2216] [cursor=pointer]:
+              - /url: https://www.flashscore.com/news/tennis/
+            - link "ATP Wimbledon 2026" [ref=e2218] [cursor=pointer]:
+              - /url: /tennis/atp-singles/wimbledon/
+            - link "ATP Eastbourne 2026" [ref=e2220] [cursor=pointer]:
+              - /url: /tennis/atp-singles/eastbourne/
+            - link "WTA Bad Homburg" [ref=e2222] [cursor=pointer]:
+              - /url: /tennis/wta-singles/bad-homburg/
+            - link "MLB 2026" [ref=e2224] [cursor=pointer]:
+              - /url: /baseball/usa/mlb/
+            - link "VNL 2026 Women" [ref=e2226] [cursor=pointer]:
+              - /url: /volleyball/world/nations-league-women/
+            - link "Nations League 2026" [ref=e2228] [cursor=pointer]:
+              - /url: /volleyball/world/nations-league/
+            - link "World Matchplay 2026" [ref=e2230] [cursor=pointer]:
+              - /url: /darts/world/world-matchplay/
+            - link "Ligi Kuu Bara" [ref=e2232] [cursor=pointer]:
+              - /url: /football/tanzania/ligi-kuu-bara/
+            - link "British Open 2026" [ref=e2234] [cursor=pointer]:
+              - /url: https://www.flashscore.com/golf/pga-tour/the-open-championship/
+        - generic [ref=e2235]:
+          - link "Match results" [ref=e2237] [cursor=pointer]:
+            - /url: https://www.flashscore.com/
+          - generic [ref=e2238]:
+            - link "South Africa - Canada" [ref=e2240] [cursor=pointer]:
+              - /url: /match/football/canada-x4toKORL/south-africa-W2ijYvlr/
+            - link "Brazil - Japan" [ref=e2242] [cursor=pointer]:
+              - /url: /match/football/brazil-I9l9aqLq/japan-ULXPdOUj/
+            - link "JKT Tanzania - Young Africans" [ref=e2244] [cursor=pointer]:
+              - /url: /match/football/jkt-tanzania-tWnWFCSs/young-africans-dMbOiRbT/
+            - link "Simba - Kinondoni MC" [ref=e2246] [cursor=pointer]:
+              - /url: /match/football/kinondoni-mc-OfxyFWsl/simba-C2SQy01d/
+            - link "Mexico - Ecuador" [ref=e2248] [cursor=pointer]:
+              - /url: /match/football/ecuador-8tbm8Tri/mexico-O6iHcNkd/
+            - link "USA - Bosnia & Herzegovina" [ref=e2250] [cursor=pointer]:
+              - /url: /match/football/bosnia-herzegovina-fqe7WYTr/usa-fuitL4CF/
+            - link "Switzerland - Algeria" [ref=e2252] [cursor=pointer]:
+              - /url: /match/football/algeria-nc87N1BR/switzerland-rHJ2vy1B/
+            - link "Simba - Azam" [ref=e2254] [cursor=pointer]:
+              - /url: /match/football/azam-SrpJwYn3/simba-C2SQy01d/
+            - link "Canada - Brazil" [ref=e2256] [cursor=pointer]:
+              - /url: /match/volleyball/brazil-46lUNu72/canada-jc5KOIgE/
+            - link "Serbia - USA" [ref=e2258] [cursor=pointer]:
+              - /url: /match/volleyball/serbia-QwWn3Qis/usa-QXpoGyUl/
+        - generic [ref=e2259]:
+          - link "LIVE SCORES" [ref=e2261] [cursor=pointer]:
+            - /url: https://www.flashscore.com/
+          - generic [ref=e2262]:
+            - link "Germany - Paraguay" [ref=e2264] [cursor=pointer]:
+              - /url: /match/football/germany-ptQide1O/paraguay-YaNlqp6j/
+            - link "Netherlands - Morocco" [ref=e2266] [cursor=pointer]:
+              - /url: /match/football/morocco-IDKYO3R8/netherlands-WYintcWb/
+            - link "Mexico - Ecuador" [ref=e2268] [cursor=pointer]:
+              - /url: /match/football/ecuador-8tbm8Tri/mexico-O6iHcNkd/
+            - link "Belgium - Senegal" [ref=e2270] [cursor=pointer]:
+              - /url: /match/football/belgium-GbB957na/senegal-hOIsJLJr/
+            - link "Spain - Austria" [ref=e2272] [cursor=pointer]:
+              - /url: /match/football/austria-naHiWdnt/spain-bLyo6mco/
+            - link "Australia - Egypt" [ref=e2274] [cursor=pointer]:
+              - /url: /match/football/australia-xSrf6qMM/egypt-bejDn7NN/
+            - link "Sinner - Kecmanovic" [ref=e2276] [cursor=pointer]:
+              - /url: /match/tennis/kecmanovic-miomir-MTQ5CPOR/sinner-jannik-6HdC3z4H/
+            - link "Wu - Djokovic" [ref=e2278] [cursor=pointer]:
+              - /url: /match/tennis/djokovic-novak-AZg49Et9/wu-yibing-8ASNvPfK/
+            - link "Blockx - Zverev" [ref=e2280] [cursor=pointer]:
+              - /url: /match/tennis/blockx-alexander-xll0TzGG/zverev-alexander-dGbUhw9m/
+            - link "Australia U20 - Fiji U20" [ref=e2282] [cursor=pointer]:
+              - /url: /match/rugby-union/australia-Qk5EFveC/fiji-Cn1AGKu6/
+        - generic [ref=e2283]:
+          - generic [ref=e2284]: LIVESCORE
+          - generic [ref=e2285]:
+            - link "Ivory Coast - Norway" [ref=e2287] [cursor=pointer]:
+              - /url: /match/football/ivory-coast-G2FRjBgn/norway-8rP6JO0H/
+            - link "France - Sweden" [ref=e2289] [cursor=pointer]:
+              - /url: /match/football/france-QkGeVG1n/sweden-OQyqbHWB/
+            - link "England - D.R. Congo" [ref=e2291] [cursor=pointer]:
+              - /url: /match/football/d-r-congo-phn9mm8H/england-j9N9ZNFA/
+            - link "Belgium - Senegal" [ref=e2293] [cursor=pointer]:
+              - /url: /match/football/belgium-GbB957na/senegal-hOIsJLJr/
+            - link "Spain - Austria" [ref=e2295] [cursor=pointer]:
+              - /url: /match/football/austria-naHiWdnt/spain-bLyo6mco/
+            - link "Portugal - Croatia" [ref=e2297] [cursor=pointer]:
+              - /url: /match/football/croatia-K8aznggo/portugal-WvJrjFVN/
+            - link "Switzerland - Algeria" [ref=e2299] [cursor=pointer]:
+              - /url: /match/football/algeria-nc87N1BR/switzerland-rHJ2vy1B/
+            - link "Argentina - Cape Verde" [ref=e2301] [cursor=pointer]:
+              - /url: /match/football/argentina-f9OppQjp/cape-verde-MocyWdm7/
+            - link "Colombia - Ghana" [ref=e2303] [cursor=pointer]:
+              - /url: /match/football/colombia-G02s4PCS/ghana-nNBjHale/
+            - link "Braga - Sao Joao Ver" [ref=e2305] [cursor=pointer]:
+              - /url: /match/football/braga-dpUer7ht/sao-joao-de-ver-UDP0oQHO/
+      - generic [ref=e2307]:
+        - generic [ref=e2308]:
+          - generic [ref=e2309]: Flashscore.com
+          - generic [ref=e2311]:
+            - link "Terms of Use" [ref=e2313] [cursor=pointer]:
+              - /url: /terms-of-use/
+            - link "Privacy Policy" [ref=e2315] [cursor=pointer]:
+              - /url: /privacy-policy/
+            - link "GDPR and Journalism" [ref=e2317] [cursor=pointer]:
+              - /url: /gdpr/
+            - link "Impressum" [ref=e2319] [cursor=pointer]:
+              - /url: /impressum/
+            - link "Advertise" [ref=e2321] [cursor=pointer]:
+              - /url: /advertise/
+            - link "Contact" [ref=e2323] [cursor=pointer]:
+              - /url: /contact/
+            - link "Mobile" [ref=e2325] [cursor=pointer]:
+              - /url: /mobile/
+            - link "Live Scores" [ref=e2327] [cursor=pointer]:
+              - /url: /live-scores/
+            - link "Recommended Sites" [ref=e2329] [cursor=pointer]:
+              - /url: /recommended/
+            - link "FAQ" [ref=e2331] [cursor=pointer]:
+              - /url: /faq/
+            - link "Audio" [ref=e2333] [cursor=pointer]:
+              - /url: /audio/
+        - generic [ref=e2334]:
+          - generic [ref=e2335]: Follow us
+          - generic [ref=e2336]:
+            - link "Facebook" [ref=e2338] [cursor=pointer]:
+              - /url: https://www.facebook.com/Flashscorecom
+              - img [ref=e2339]
+              - generic [ref=e2340]: Facebook
+            - link "X" [ref=e2342] [cursor=pointer]:
+              - /url: https://twitter.com/flashscorecom
+              - img [ref=e2343]
+              - generic [ref=e2344]: X
+            - link "Instagram" [ref=e2346] [cursor=pointer]:
+              - /url: https://instagram.com/flashscoreofficial
+              - img [ref=e2347]
+              - generic [ref=e2348]: Instagram
+            - link "TikTok" [ref=e2350] [cursor=pointer]:
+              - /url: https://tiktok.com/@flashscorecom
+              - img [ref=e2351]
+              - generic [ref=e2352]: TikTok
+        - generic [ref=e2353]:
+          - generic [ref=e2354]:
+            - generic [ref=e2355]: Mobile applications
+            - generic [ref=e2356]: Our mobile app is optimized for your phone. Download it for free!
+          - generic [ref=e2357]:
+            - link "App Store" [ref=e2358] [cursor=pointer]:
+              - /url: https://flashscore.onelink.me/BvSv/aidepbi1
+              - img "App Store" [ref=e2359]
+            - link "App Store" [ref=e2360] [cursor=pointer]:
+              - /url: https://flashscore.onelink.me/BvSv/aidepbi1
+              - img "App Store" [ref=e2361]
+      - generic [ref=e2363]:
+        - link "Lite version" [ref=e2365] [cursor=pointer]:
+          - /url: http://www.flashscore.mobi/
+        - generic [ref=e2368]:
+          - text: Gamble Responsibly.
+          - link "Gambling Therapy" [ref=e2369] [cursor=pointer]:
+            - /url: http://www.gamblingtherapy.org/
+          - text: . 18+
+        - generic [ref=e2370]:
+          - generic [ref=e2371]: Copyright © 2006-26 Flashscore.com
+          - generic [ref=e2372]: "| Set privacy"
+    - link [ref=e2374] [cursor=pointer]:
+      - /url: /mobile/
+  - dialog "We Care About Your Privacy" [ref=e2376]:
+    - generic [ref=e2378]:
+      - generic [ref=e2380]:
+        - heading "We Care About Your Privacy" [level=2] [ref=e2381]
+        - generic [ref=e2382]:
+          - text: We and our 997 partners store and access personal data, like browsing data or unique identifiers, on your device. Selecting I Accept enables tracking technologies to support the purposes shown under we and our partners process data to provide. Selecting Reject All or withdrawing your consent will disable them. If trackers are disabled, some content and ads you see may not be as relevant to you. You can resurface this menu to change your choices or withdraw consent at any time by clicking the Manage Preferences link on the bottom of the webpage [or the floating icon on the bottom-left of the webpage, if applicable]. Your choices will have effect within our Website. For more details, refer to our Privacy Policy.
+          - link "Data on third parties, opens in a new tab" [ref=e2383] [cursor=pointer]:
+            - /url: https://www.flashscore.com/third-parties/
+            - text: Third parties
+        - generic [ref=e2384]:
+          - heading "We and our partners process data to provide:" [level=3] [ref=e2385]
+          - paragraph [ref=e2387]:
+            - text: Use precise geolocation data. Actively scan device characteristics for identification. Store and/or access information on a device. Personalised advertising and content, advertising and content measurement, audience research and services development.
+            - button "List of Partners (vendors)" [ref=e2388] [cursor=pointer]
+      - generic [ref=e2390]:
+        - button "I Accept" [ref=e2391] [cursor=pointer]
+        - button "Reject All" [ref=e2392] [cursor=pointer]
+        - button "Manage Preferences, Opens the preference center dialog" [ref=e2393] [cursor=pointer]: Manage Preferences

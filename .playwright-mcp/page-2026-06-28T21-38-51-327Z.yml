@@ -1,0 +1,2143 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "Skip to main content" [ref=e3] [cursor=pointer]:
+      - /url: "#main-content"
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - link "Link to Home" [ref=e8] [cursor=pointer]:
+            - /url: /
+            - img [ref=e10]
+          - generic [ref=e18]:
+            - textbox "Search input" [ref=e19]:
+              - /placeholder: Search
+            - img
+        - generic [ref=e20]:
+          - generic [ref=e21]:
+            - link "News" [ref=e23] [cursor=pointer]:
+              - /url: /news
+            - link "Transfers" [ref=e25] [cursor=pointer]:
+              - /url: /transfers
+              - generic [ref=e26]: Transfers
+            - link "TV schedules" [ref=e28] [cursor=pointer]:
+              - /url: /tv-guide
+              - generic [ref=e29]: TV schedules
+            - button "Settings" [ref=e30] [cursor=pointer]:
+              - img [ref=e31]
+          - generic [ref=e34]:
+            - link "Download FotMob from Apple Store" [ref=e35] [cursor=pointer]:
+              - /url: https://apps.apple.com/app/apple-store/id488575683?pt=338473&ct=fotmobdotcomheader&mt=8
+              - img [ref=e36]
+            - link "Download FotMob from Google App Store" [ref=e43] [cursor=pointer]:
+              - /url: https://play.google.com/store/apps/details?id=com.mobilefootie.wc2010&referrer=utm_source%3Dfotmob.com%26utm_medium%3Dweb%26utm_campaign%3Dfotmobdotcomheader
+              - img [ref=e44]
+    - main [ref=e51]:
+      - complementary
+      - main [ref=e52]:
+        - iframe [ref=e56]:
+          - generic [ref=f11e2]:
+            - iframe [ref=f11e5]:
+              - generic [active] [ref=f14e1]:
+                - link:
+                  - /url: clickTag
+                - generic [ref=f14e3] [cursor=pointer]:
+                  - img [ref=f14e8]
+                  - img [ref=f14e16]
+            - generic [ref=f11e6]:
+              - generic:
+                - img [ref=f11e10] [cursor=pointer]
+                - button [ref=f11e12] [cursor=pointer]:
+                  - img [ref=f11e13]
+        - generic [ref=e58]:
+          - generic [ref=e60]:
+            - generic:
+              - generic:
+                - img
+            - generic [ref=e61]:
+              - generic [ref=e62]:
+                - button "View league logo" [ref=e63] [cursor=pointer]
+                - generic [ref=e64]:
+                  - heading "FIFA World Cup" [level=1] [ref=e65]
+                  - generic [ref=e66]: International
+              - generic [ref=e67]:
+                - generic [ref=e68]:
+                  - link "Sync to calendar" [ref=e69] [cursor=pointer]:
+                    - /url: /leagues/77/synccalendar/fifa-world-cup
+                    - generic [ref=e70]: Sync to calendar
+                    - img [ref=e71]
+                  - link "TV schedules" [ref=e74] [cursor=pointer]:
+                    - /url: /tv-guide
+                    - generic [ref=e75]: TV schedules
+                    - img [ref=e76]
+                - generic [ref=e80]:
+                  - 'combobox "Selected: 2026" [ref=e83] [cursor=pointer]':
+                    - option "2026" [selected]
+                    - option "2022"
+                    - option "2018"
+                    - option "2014"
+                    - option "2010"
+                    - option "2006"
+                    - option "2002"
+                    - option "1998"
+                    - option "1994"
+                    - option "1990"
+                    - option "1986"
+                    - option "1982"
+                    - option "1978"
+                    - option "1974"
+                    - option "1970"
+                    - option "1966"
+                    - option "1962"
+                    - option "1958"
+                    - option "1954"
+                    - option "1950"
+                    - option "1938"
+                    - option "1934"
+                    - option "1930"
+                  - button "Follow" [ref=e84] [cursor=pointer]
+            - navigation [ref=e85]:
+              - link "Overview" [ref=e86] [cursor=pointer]:
+                - /url: /leagues/77/overview/world-cup
+              - link "Table" [ref=e87] [cursor=pointer]:
+                - /url: /leagues/77/table/world-cup
+              - link "Knockout" [ref=e88] [cursor=pointer]:
+                - /url: /leagues/77/playoff/world-cup
+              - link "Fixtures" [ref=e89] [cursor=pointer]:
+                - /url: /leagues/77/fixtures/world-cup
+              - link "Player stats" [ref=e90] [cursor=pointer]:
+                - /url: /leagues/77/stats/world-cup/players
+              - link "Team stats" [ref=e91] [cursor=pointer]:
+                - /url: /leagues/77/stats/world-cup/teams
+              - link "Seasons" [ref=e92] [cursor=pointer]:
+                - /url: /leagues/77/seasons/world-cup
+              - link "News" [ref=e93] [cursor=pointer]:
+                - /url: /leagues/77/news/world-cup
+          - generic [ref=e97]:
+            - generic [ref=e98]:
+              - article [ref=e102]:
+                - generic [ref=e103]:
+                  - generic [ref=e104]:
+                    - link "Grp. A" [ref=e106] [cursor=pointer]:
+                      - /url: /leagues/77/overview
+                    - generic [ref=e108]:
+                      - generic [ref=e109]:
+                        - generic [ref=e110]: "#"
+                        - generic [ref=e111]: PL
+                        - generic [ref=e112]: +/-
+                        - generic [ref=e113]: GD
+                        - generic [ref=e114]: PTS
+                        - generic [ref=e115]: Form
+                      - generic [ref=e116]:
+                        - generic [ref=e118]:
+                          - generic [ref=e119]: "1"
+                          - link "Mexico" [ref=e122] [cursor=pointer]:
+                            - /url: /teams/6710/overview/mexico
+                            - generic [ref=e123]: Mexico
+                          - generic [ref=e124]: "3"
+                          - generic [ref=e125]:
+                            - generic [ref=e126]: "6"
+                            - text: "-"
+                            - generic [ref=e127]: "0"
+                          - generic [ref=e129]: "+6"
+                          - generic [ref=e130]: "9"
+                          - generic [ref=e132]:
+                            - link "W" [ref=e133] [cursor=pointer]:
+                              - /url: /matches/south-africa-vs-mexico/1einvt#4667751
+                              - generic [ref=e134]: W
+                            - link "W" [ref=e135] [cursor=pointer]:
+                              - /url: /matches/mexico-vs-south-korea/1qpvav#4667754
+                              - generic [ref=e136]: W
+                            - link "W" [ref=e137] [cursor=pointer]:
+                              - /url: /matches/mexico-vs-czechia/1wualx#4667755
+                              - generic [ref=e138]: W
+                        - generic [ref=e140]:
+                          - generic [ref=e141]: "2"
+                          - link "South Africa" [ref=e144] [cursor=pointer]:
+                            - /url: /teams/6316/overview/south-africa
+                            - generic [ref=e145]: South Africa
+                          - generic [ref=e146]: "3"
+                          - generic [ref=e147]:
+                            - generic [ref=e148]: "2"
+                            - text: "-"
+                            - generic [ref=e149]: "3"
+                          - generic [ref=e151]: "-1"
+                          - generic [ref=e152]: "4"
+                          - generic [ref=e154]:
+                            - link "L" [ref=e155] [cursor=pointer]:
+                              - /url: /matches/south-africa-vs-mexico/1einvt#4667751
+                              - generic [ref=e156]: L
+                            - link "D" [ref=e157] [cursor=pointer]:
+                              - /url: /matches/south-africa-vs-czechia/1tbjja#4667753
+                              - generic [ref=e158]: D
+                            - link "W" [ref=e159] [cursor=pointer]:
+                              - /url: /matches/south-africa-vs-south-korea/1ncyls#4667756
+                              - generic [ref=e160]: W
+                            - link "L" [ref=e161] [cursor=pointer]:
+                              - /url: /matches/canada-vs-south-africa/17s1wd#4653705
+                              - generic [ref=e162]: L
+                        - generic [ref=e164]:
+                          - generic [ref=e165]: "3"
+                          - link "South Korea" [ref=e168] [cursor=pointer]:
+                            - /url: /teams/7804/overview/south-korea
+                            - generic [ref=e169]: South Korea
+                          - generic [ref=e170]: "3"
+                          - generic [ref=e171]:
+                            - generic [ref=e172]: "2"
+                            - text: "-"
+                            - generic [ref=e173]: "3"
+                          - generic [ref=e175]: "-1"
+                          - generic [ref=e176]: "3"
+                          - generic [ref=e178]:
+                            - link "W" [ref=e179] [cursor=pointer]:
+                              - /url: /matches/south-korea-vs-czechia/273opa#4667752
+                              - generic [ref=e180]: W
+                            - link "L" [ref=e181] [cursor=pointer]:
+                              - /url: /matches/mexico-vs-south-korea/1qpvav#4667754
+                              - generic [ref=e182]: L
+                            - link "L" [ref=e183] [cursor=pointer]:
+                              - /url: /matches/south-africa-vs-south-korea/1ncyls#4667756
+                              - generic [ref=e184]: L
+                        - generic [ref=e186]:
+                          - generic [ref=e187]: "4"
+                          - link "Czechia" [ref=e190] [cursor=pointer]:
+                            - /url: /teams/8496/overview/czechia
+                            - generic [ref=e191]: Czechia
+                          - generic [ref=e192]: "3"
+                          - generic [ref=e193]:
+                            - generic [ref=e194]: "2"
+                            - text: "-"
+                            - generic [ref=e195]: "6"
+                          - generic [ref=e197]: "-4"
+                          - generic [ref=e198]: "1"
+                          - generic [ref=e200]:
+                            - link "L" [ref=e201] [cursor=pointer]:
+                              - /url: /matches/south-korea-vs-czechia/273opa#4667752
+                              - generic [ref=e202]: L
+                            - link "D" [ref=e203] [cursor=pointer]:
+                              - /url: /matches/south-africa-vs-czechia/1tbjja#4667753
+                              - generic [ref=e204]: D
+                            - link "L" [ref=e205] [cursor=pointer]:
+                              - /url: /matches/mexico-vs-czechia/1wualx#4667755
+                              - generic [ref=e206]: L
+                  - generic [ref=e207]:
+                    - link "Grp. B" [ref=e209] [cursor=pointer]:
+                      - /url: /leagues/77/overview
+                    - generic [ref=e211]:
+                      - generic [ref=e212]:
+                        - generic [ref=e213]: "#"
+                        - generic [ref=e214]: PL
+                        - generic [ref=e215]: +/-
+                        - generic [ref=e216]: GD
+                        - generic [ref=e217]: PTS
+                        - generic [ref=e218]: Form
+                      - generic [ref=e219]:
+                        - generic [ref=e221]:
+                          - generic [ref=e222]: "1"
+                          - link "Switzerland" [ref=e225] [cursor=pointer]:
+                            - /url: /teams/6717/overview/switzerland
+                            - generic [ref=e226]: Switzerland
+                          - generic [ref=e227]: "3"
+                          - generic [ref=e228]:
+                            - generic [ref=e229]: "7"
+                            - text: "-"
+                            - generic [ref=e230]: "3"
+                          - generic [ref=e232]: "+4"
+                          - generic [ref=e233]: "7"
+                          - generic [ref=e235]:
+                            - link "D" [ref=e236] [cursor=pointer]:
+                              - /url: /matches/qatar-vs-switzerland/1beswv#4667758
+                              - generic [ref=e237]: D
+                            - link "W" [ref=e238] [cursor=pointer]:
+                              - /url: /matches/switzerland-vs-bosnia-herzegovina/2c9awx#4667759
+                              - generic [ref=e239]: W
+                            - link "W" [ref=e240] [cursor=pointer]:
+                              - /url: /matches/canada-vs-switzerland/1aq0cl#4667761
+                              - generic [ref=e241]: W
+                        - generic [ref=e243]:
+                          - generic [ref=e244]: "2"
+                          - link "Canada" [ref=e247] [cursor=pointer]:
+                            - /url: /teams/5810/overview/canada
+                            - generic [ref=e248]: Canada
+                          - generic [ref=e249]: "3"
+                          - generic [ref=e250]:
+                            - generic [ref=e251]: "8"
+                            - text: "-"
+                            - generic [ref=e252]: "3"
+                          - generic [ref=e254]: "+5"
+                          - generic [ref=e255]: "4"
+                          - generic [ref=e257]:
+                            - link "D" [ref=e258] [cursor=pointer]:
+                              - /url: /matches/canada-vs-bosnia-herzegovina/23f1qo#4667757
+                              - generic [ref=e259]: D
+                            - link "W" [ref=e260] [cursor=pointer]:
+                              - /url: /matches/canada-vs-qatar/14u9ym#4667760
+                              - generic [ref=e261]: W
+                            - link "L" [ref=e262] [cursor=pointer]:
+                              - /url: /matches/canada-vs-switzerland/1aq0cl#4667761
+                              - generic [ref=e263]: L
+                            - link "W" [ref=e264] [cursor=pointer]:
+                              - /url: /matches/canada-vs-south-africa/17s1wd#4653705
+                              - generic [ref=e265]: W
+                        - generic [ref=e267]:
+                          - generic [ref=e268]: "3"
+                          - link "Bosnia and Herzegovina" [ref=e271] [cursor=pointer]:
+                            - /url: /teams/10106/overview/bosnia-herzegovina
+                            - generic [ref=e272]: Bosnia and Herzegovina
+                          - generic [ref=e273]: "3"
+                          - generic [ref=e274]:
+                            - generic [ref=e275]: "5"
+                            - text: "-"
+                            - generic [ref=e276]: "6"
+                          - generic [ref=e278]: "-1"
+                          - generic [ref=e279]: "4"
+                          - generic [ref=e281]:
+                            - link "D" [ref=e282] [cursor=pointer]:
+                              - /url: /matches/canada-vs-bosnia-herzegovina/23f1qo#4667757
+                              - generic [ref=e283]: D
+                            - link "L" [ref=e284] [cursor=pointer]:
+                              - /url: /matches/switzerland-vs-bosnia-herzegovina/2c9awx#4667759
+                              - generic [ref=e285]: L
+                            - link "W" [ref=e286] [cursor=pointer]:
+                              - /url: /matches/qatar-vs-bosnia-herzegovina/24aiya#4667762
+                              - generic [ref=e287]: W
+                        - generic [ref=e289]:
+                          - generic [ref=e290]: "4"
+                          - link "Qatar" [ref=e293] [cursor=pointer]:
+                            - /url: /teams/5902/overview/qatar
+                            - generic [ref=e294]: Qatar
+                          - generic [ref=e295]: "3"
+                          - generic [ref=e296]:
+                            - generic [ref=e297]: "2"
+                            - text: "-"
+                            - generic [ref=e298]: "10"
+                          - generic [ref=e300]: "-8"
+                          - generic [ref=e301]: "1"
+                          - generic [ref=e303]:
+                            - link "D" [ref=e304] [cursor=pointer]:
+                              - /url: /matches/qatar-vs-switzerland/1beswv#4667758
+                              - generic [ref=e305]: D
+                            - link "L" [ref=e306] [cursor=pointer]:
+                              - /url: /matches/canada-vs-qatar/14u9ym#4667760
+                              - generic [ref=e307]: L
+                            - link "L" [ref=e308] [cursor=pointer]:
+                              - /url: /matches/qatar-vs-bosnia-herzegovina/24aiya#4667762
+                              - generic [ref=e309]: L
+                  - generic [ref=e310]:
+                    - link "Grp. C" [ref=e312] [cursor=pointer]:
+                      - /url: /leagues/77/overview
+                    - generic [ref=e314]:
+                      - generic [ref=e315]:
+                        - generic [ref=e316]: "#"
+                        - generic [ref=e317]: PL
+                        - generic [ref=e318]: +/-
+                        - generic [ref=e319]: GD
+                        - generic [ref=e320]: PTS
+                        - generic [ref=e321]: Form
+                      - generic [ref=e322]:
+                        - generic [ref=e324]:
+                          - generic [ref=e325]: "1"
+                          - link "Brazil" [ref=e328] [cursor=pointer]:
+                            - /url: /teams/8256/overview/brazil
+                            - generic [ref=e329]: Brazil
+                          - generic [ref=e330]: "3"
+                          - generic [ref=e331]:
+                            - generic [ref=e332]: "7"
+                            - text: "-"
+                            - generic [ref=e333]: "1"
+                          - generic [ref=e335]: "+6"
+                          - generic [ref=e336]: "7"
+                          - generic [ref=e338]:
+                            - link "D" [ref=e339] [cursor=pointer]:
+                              - /url: /matches/morocco-vs-brazil/1qr4gd#4667764
+                              - generic [ref=e340]: D
+                            - link "W" [ref=e341] [cursor=pointer]:
+                              - /url: /matches/haiti-vs-brazil/1ny7ix#4667767
+                              - generic [ref=e342]: W
+                            - link "W" [ref=e343] [cursor=pointer]:
+                              - /url: /matches/brazil-vs-scotland/2bkifh#4667768
+                              - generic [ref=e344]: W
+                        - generic [ref=e346]:
+                          - generic [ref=e347]: "2"
+                          - link "Morocco" [ref=e350] [cursor=pointer]:
+                            - /url: /teams/6262/overview/morocco
+                            - generic [ref=e351]: Morocco
+                          - generic [ref=e352]: "3"
+                          - generic [ref=e353]:
+                            - generic [ref=e354]: "6"
+                            - text: "-"
+                            - generic [ref=e355]: "3"
+                          - generic [ref=e357]: "+3"
+                          - generic [ref=e358]: "7"
+                          - generic [ref=e360]:
+                            - link "D" [ref=e361] [cursor=pointer]:
+                              - /url: /matches/morocco-vs-brazil/1qr4gd#4667764
+                              - generic [ref=e362]: D
+                            - link "W" [ref=e363] [cursor=pointer]:
+                              - /url: /matches/morocco-vs-scotland/1sv292#4667766
+                              - generic [ref=e364]: W
+                            - link "W" [ref=e365] [cursor=pointer]:
+                              - /url: /matches/haiti-vs-morocco/18aaq8#4667769
+                              - generic [ref=e366]: W
+                        - generic [ref=e368]:
+                          - generic [ref=e369]: "3"
+                          - link "Scotland" [ref=e372] [cursor=pointer]:
+                            - /url: /teams/8498/overview/scotland
+                            - generic [ref=e373]: Scotland
+                          - generic [ref=e374]: "3"
+                          - generic [ref=e375]:
+                            - generic [ref=e376]: "1"
+                            - text: "-"
+                            - generic [ref=e377]: "4"
+                          - generic [ref=e379]: "-3"
+                          - generic [ref=e380]: "3"
+                          - generic [ref=e382]:
+                            - link "W" [ref=e383] [cursor=pointer]:
+                              - /url: /matches/haiti-vs-scotland/1q0g2q#4667765
+                              - generic [ref=e384]: W
+                            - link "L" [ref=e385] [cursor=pointer]:
+                              - /url: /matches/morocco-vs-scotland/1sv292#4667766
+                              - generic [ref=e386]: L
+                            - link "L" [ref=e387] [cursor=pointer]:
+                              - /url: /matches/brazil-vs-scotland/2bkifh#4667768
+                              - generic [ref=e388]: L
+                        - generic [ref=e390]:
+                          - generic [ref=e391]: "4"
+                          - link "Haiti" [ref=e394] [cursor=pointer]:
+                            - /url: /teams/5934/overview/haiti
+                            - generic [ref=e395]: Haiti
+                          - generic [ref=e396]: "3"
+                          - generic [ref=e397]:
+                            - generic [ref=e398]: "2"
+                            - text: "-"
+                            - generic [ref=e399]: "8"
+                          - generic [ref=e401]: "-6"
+                          - generic [ref=e402]: "0"
+                          - generic [ref=e404]:
+                            - link "L" [ref=e405] [cursor=pointer]:
+                              - /url: /matches/haiti-vs-scotland/1q0g2q#4667765
+                              - generic [ref=e406]: L
+                            - link "L" [ref=e407] [cursor=pointer]:
+                              - /url: /matches/haiti-vs-brazil/1ny7ix#4667767
+                              - generic [ref=e408]: L
+                            - link "L" [ref=e409] [cursor=pointer]:
+                              - /url: /matches/haiti-vs-morocco/18aaq8#4667769
+                              - generic [ref=e410]: L
+                  - generic [ref=e411]:
+                    - link "Grp. D" [ref=e413] [cursor=pointer]:
+                      - /url: /leagues/77/overview
+                    - generic [ref=e415]:
+                      - generic [ref=e416]:
+                        - generic [ref=e417]: "#"
+                        - generic [ref=e418]: PL
+                        - generic [ref=e419]: +/-
+                        - generic [ref=e420]: GD
+                        - generic [ref=e421]: PTS
+                        - generic [ref=e422]: Form
+                      - generic [ref=e423]:
+                        - generic [ref=e425]:
+                          - generic [ref=e426]: "1"
+                          - link "USA" [ref=e429] [cursor=pointer]:
+                            - /url: /teams/6713/overview/usa
+                            - generic [ref=e430]: USA
+                          - generic [ref=e431]: "3"
+                          - generic [ref=e432]:
+                            - generic [ref=e433]: "8"
+                            - text: "-"
+                            - generic [ref=e434]: "4"
+                          - generic [ref=e436]: "+4"
+                          - generic [ref=e437]: "6"
+                          - generic [ref=e439]:
+                            - link "W" [ref=e440] [cursor=pointer]:
+                              - /url: /matches/usa-vs-paraguay/1hr85j#4667771
+                              - generic [ref=e441]: W
+                            - link "W" [ref=e442] [cursor=pointer]:
+                              - /url: /matches/usa-vs-australia/1hox83#4667774
+                              - generic [ref=e443]: W
+                            - link "L" [ref=e444] [cursor=pointer]:
+                              - /url: /matches/turkiye-vs-usa/1gq91b#4667775
+                              - generic [ref=e445]: L
+                        - generic [ref=e447]:
+                          - generic [ref=e448]: "2"
+                          - link "Australia" [ref=e451] [cursor=pointer]:
+                            - /url: /teams/6716/overview/australia
+                            - generic [ref=e452]: Australia
+                          - generic [ref=e453]: "3"
+                          - generic [ref=e454]:
+                            - generic [ref=e455]: "2"
+                            - text: "-"
+                            - generic [ref=e456]: "2"
+                          - generic [ref=e458]: "0"
+                          - generic [ref=e459]: "4"
+                          - generic [ref=e461]:
+                            - link "W" [ref=e462] [cursor=pointer]:
+                              - /url: /matches/turkiye-vs-australia/1gr3uk#4667772
+                              - generic [ref=e463]: W
+                            - link "L" [ref=e464] [cursor=pointer]:
+                              - /url: /matches/usa-vs-australia/1hox83#4667774
+                              - generic [ref=e465]: L
+                            - link "D" [ref=e466] [cursor=pointer]:
+                              - /url: /matches/australia-vs-paraguay/1hs39g#4667776
+                              - generic [ref=e467]: D
+                        - generic [ref=e469]:
+                          - generic [ref=e470]: "3"
+                          - link "Paraguay" [ref=e473] [cursor=pointer]:
+                            - /url: /teams/6724/overview/paraguay
+                            - generic [ref=e474]: Paraguay
+                          - generic [ref=e475]: "3"
+                          - generic [ref=e476]:
+                            - generic [ref=e477]: "2"
+                            - text: "-"
+                            - generic [ref=e478]: "4"
+                          - generic [ref=e480]: "-2"
+                          - generic [ref=e481]: "4"
+                          - generic [ref=e483]:
+                            - link "L" [ref=e484] [cursor=pointer]:
+                              - /url: /matches/usa-vs-paraguay/1hr85j#4667771
+                              - generic [ref=e485]: L
+                            - link "W" [ref=e486] [cursor=pointer]:
+                              - /url: /matches/turkiye-vs-paraguay/1gte1s#4667773
+                              - generic [ref=e487]: W
+                            - link "D" [ref=e488] [cursor=pointer]:
+                              - /url: /matches/australia-vs-paraguay/1hs39g#4667776
+                              - generic [ref=e489]: D
+                        - generic [ref=e491]:
+                          - generic [ref=e492]: "4"
+                          - link "Turkiye" [ref=e495] [cursor=pointer]:
+                            - /url: /teams/6595/overview/turkiye
+                            - generic [ref=e496]: Turkiye
+                          - generic [ref=e497]: "3"
+                          - generic [ref=e498]:
+                            - generic [ref=e499]: "3"
+                            - text: "-"
+                            - generic [ref=e500]: "5"
+                          - generic [ref=e502]: "-2"
+                          - generic [ref=e503]: "3"
+                          - generic [ref=e505]:
+                            - link "L" [ref=e506] [cursor=pointer]:
+                              - /url: /matches/turkiye-vs-australia/1gr3uk#4667772
+                              - generic [ref=e507]: L
+                            - link "L" [ref=e508] [cursor=pointer]:
+                              - /url: /matches/turkiye-vs-paraguay/1gte1s#4667773
+                              - generic [ref=e509]: L
+                            - link "W" [ref=e510] [cursor=pointer]:
+                              - /url: /matches/turkiye-vs-usa/1gq91b#4667775
+                              - generic [ref=e511]: W
+                  - generic [ref=e512]:
+                    - link "Grp. E" [ref=e514] [cursor=pointer]:
+                      - /url: /leagues/77/overview
+                    - generic [ref=e516]:
+                      - generic [ref=e517]:
+                        - generic [ref=e518]: "#"
+                        - generic [ref=e519]: PL
+                        - generic [ref=e520]: +/-
+                        - generic [ref=e521]: GD
+                        - generic [ref=e522]: PTS
+                        - generic [ref=e523]: Form
+                      - generic [ref=e524]:
+                        - generic [ref=e526]:
+                          - generic [ref=e527]: "1"
+                          - link "Germany" [ref=e530] [cursor=pointer]:
+                            - /url: /teams/8570/overview/germany
+                            - generic [ref=e531]: Germany
+                          - generic [ref=e532]: "3"
+                          - generic [ref=e533]:
+                            - generic [ref=e534]: "10"
+                            - text: "-"
+                            - generic [ref=e535]: "4"
+                          - generic [ref=e537]: "+6"
+                          - generic [ref=e538]: "6"
+                          - generic [ref=e540]:
+                            - link "W" [ref=e541] [cursor=pointer]:
+                              - /url: /matches/germany-vs-curacao/k77fsyu#4667777
+                              - generic [ref=e542]: W
+                            - link "W" [ref=e543] [cursor=pointer]:
+                              - /url: /matches/ivory-coast-vs-germany/1xi59e#4667780
+                              - generic [ref=e544]: W
+                            - link "L" [ref=e545] [cursor=pointer]:
+                              - /url: /matches/ecuador-vs-germany/1xhhol#4667781
+                              - generic [ref=e546]: L
+                        - generic [ref=e548]:
+                          - generic [ref=e549]: "2"
+                          - link "Ivory Coast" [ref=e552] [cursor=pointer]:
+                            - /url: /teams/6709/overview/ivory-coast
+                            - generic [ref=e553]: Ivory Coast
+                          - generic [ref=e554]: "3"
+                          - generic [ref=e555]:
+                            - generic [ref=e556]: "4"
+                            - text: "-"
+                            - generic [ref=e557]: "2"
+                          - generic [ref=e559]: "+2"
+                          - generic [ref=e560]: "6"
+                          - generic [ref=e562]:
+                            - link "W" [ref=e563] [cursor=pointer]:
+                              - /url: /matches/ecuador-vs-ivory-coast/1hl6kp#4667778
+                              - generic [ref=e564]: W
+                            - link "L" [ref=e565] [cursor=pointer]:
+                              - /url: /matches/ivory-coast-vs-germany/1xi59e#4667780
+                              - generic [ref=e566]: L
+                            - link "W" [ref=e567] [cursor=pointer]:
+                              - /url: /matches/ivory-coast-vs-curacao/jy3w4js#4667782
+                              - generic [ref=e568]: W
+                        - generic [ref=e570]:
+                          - generic [ref=e571]: "3"
+                          - link "Ecuador" [ref=e574] [cursor=pointer]:
+                            - /url: /teams/6707/overview/ecuador
+                            - generic [ref=e575]: Ecuador
+                          - generic [ref=e576]: "3"
+                          - generic [ref=e577]:
+                            - generic [ref=e578]: "2"
+                            - text: "-"
+                            - generic [ref=e579]: "2"
+                          - generic [ref=e581]: "0"
+                          - generic [ref=e582]: "4"
+                          - generic [ref=e584]:
+                            - link "L" [ref=e585] [cursor=pointer]:
+                              - /url: /matches/ecuador-vs-ivory-coast/1hl6kp#4667778
+                              - generic [ref=e586]: L
+                            - link "D" [ref=e587] [cursor=pointer]:
+                              - /url: /matches/ecuador-vs-curacao/jy3jhs3#4667779
+                              - generic [ref=e588]: D
+                            - link "W" [ref=e589] [cursor=pointer]:
+                              - /url: /matches/ecuador-vs-germany/1xhhol#4667781
+                              - generic [ref=e590]: W
+                        - generic [ref=e592]:
+                          - generic [ref=e593]: "4"
+                          - link "Curacao" [ref=e596] [cursor=pointer]:
+                            - /url: /teams/287981/overview/curacao
+                            - generic [ref=e597]: Curacao
+                          - generic [ref=e598]: "3"
+                          - generic [ref=e599]:
+                            - generic [ref=e600]: "1"
+                            - text: "-"
+                            - generic [ref=e601]: "9"
+                          - generic [ref=e603]: "-8"
+                          - generic [ref=e604]: "1"
+                          - generic [ref=e606]:
+                            - link "L" [ref=e607] [cursor=pointer]:
+                              - /url: /matches/germany-vs-curacao/k77fsyu#4667777
+                              - generic [ref=e608]: L
+                            - link "D" [ref=e609] [cursor=pointer]:
+                              - /url: /matches/ecuador-vs-curacao/jy3jhs3#4667779
+                              - generic [ref=e610]: D
+                            - link "L" [ref=e611] [cursor=pointer]:
+                              - /url: /matches/ivory-coast-vs-curacao/jy3w4js#4667782
+                              - generic [ref=e612]: L
+                  - generic [ref=e613]:
+                    - link "Grp. F" [ref=e615] [cursor=pointer]:
+                      - /url: /leagues/77/overview
+                    - generic [ref=e617]:
+                      - generic [ref=e618]:
+                        - generic [ref=e619]: "#"
+                        - generic [ref=e620]: PL
+                        - generic [ref=e621]: +/-
+                        - generic [ref=e622]: GD
+                        - generic [ref=e623]: PTS
+                        - generic [ref=e624]: Form
+                      - generic [ref=e625]:
+                        - generic [ref=e627]:
+                          - generic [ref=e628]: "1"
+                          - link "Netherlands" [ref=e631] [cursor=pointer]:
+                            - /url: /teams/6708/overview/netherlands
+                            - generic [ref=e632]: Netherlands
+                          - generic [ref=e633]: "3"
+                          - generic [ref=e634]:
+                            - generic [ref=e635]: "10"
+                            - text: "-"
+                            - generic [ref=e636]: "4"
+                          - generic [ref=e638]: "+6"
+                          - generic [ref=e639]: "7"
+                          - generic [ref=e641]:
+                            - link "D" [ref=e642] [cursor=pointer]:
+                              - /url: /matches/netherlands-vs-japan/1hn72b#4667783
+                              - generic [ref=e643]: D
+                            - link "W" [ref=e644] [cursor=pointer]:
+                              - /url: /matches/netherlands-vs-sweden/1x1gy6#4667786
+                              - generic [ref=e645]: W
+                            - link "W" [ref=e646] [cursor=pointer]:
+                              - /url: /matches/netherlands-vs-tunisia/1hoci5#4667787
+                              - generic [ref=e647]: W
+                        - generic [ref=e649]:
+                          - generic [ref=e650]: "2"
+                          - link "Japan" [ref=e653] [cursor=pointer]:
+                            - /url: /teams/6715/overview/japan
+                            - generic [ref=e654]: Japan
+                          - generic [ref=e655]: "3"
+                          - generic [ref=e656]:
+                            - generic [ref=e657]: "7"
+                            - text: "-"
+                            - generic [ref=e658]: "3"
+                          - generic [ref=e660]: "+4"
+                          - generic [ref=e661]: "5"
+                          - generic [ref=e663]:
+                            - link "D" [ref=e664] [cursor=pointer]:
+                              - /url: /matches/netherlands-vs-japan/1hn72b#4667783
+                              - generic [ref=e665]: D
+                            - link "W" [ref=e666] [cursor=pointer]:
+                              - /url: /matches/japan-vs-tunisia/1hqd1q#4667785
+                              - generic [ref=e667]: W
+                            - link "D" [ref=e668] [cursor=pointer]:
+                              - /url: /matches/japan-vs-sweden/1x3r7y#4667788
+                              - generic [ref=e669]: D
+                        - generic [ref=e671]:
+                          - generic [ref=e672]: "3"
+                          - link "Sweden" [ref=e675] [cursor=pointer]:
+                            - /url: /teams/8520/overview/sweden
+                            - generic [ref=e676]: Sweden
+                          - generic [ref=e677]: "3"
+                          - generic [ref=e678]:
+                            - generic [ref=e679]: "7"
+                            - text: "-"
+                            - generic [ref=e680]: "7"
+                          - generic [ref=e682]: "0"
+                          - generic [ref=e683]: "4"
+                          - generic [ref=e685]:
+                            - link "W" [ref=e686] [cursor=pointer]:
+                              - /url: /matches/tunisia-vs-sweden/1x5290#4667784
+                              - generic [ref=e687]: W
+                            - link "L" [ref=e688] [cursor=pointer]:
+                              - /url: /matches/netherlands-vs-sweden/1x1gy6#4667786
+                              - generic [ref=e689]: L
+                            - link "D" [ref=e690] [cursor=pointer]:
+                              - /url: /matches/japan-vs-sweden/1x3r7y#4667788
+                              - generic [ref=e691]: D
+                        - generic [ref=e693]:
+                          - generic [ref=e694]: "4"
+                          - link "Tunisia" [ref=e697] [cursor=pointer]:
+                            - /url: /teams/6719/overview/tunisia
+                            - generic [ref=e698]: Tunisia
+                          - generic [ref=e699]: "3"
+                          - generic [ref=e700]:
+                            - generic [ref=e701]: "2"
+                            - text: "-"
+                            - generic [ref=e702]: "12"
+                          - generic [ref=e704]: "-10"
+                          - generic [ref=e705]: "0"
+                          - generic [ref=e707]:
+                            - link "L" [ref=e708] [cursor=pointer]:
+                              - /url: /matches/tunisia-vs-sweden/1x5290#4667784
+                              - generic [ref=e709]: L
+                            - link "L" [ref=e710] [cursor=pointer]:
+                              - /url: /matches/japan-vs-tunisia/1hqd1q#4667785
+                              - generic [ref=e711]: L
+                            - link "L" [ref=e712] [cursor=pointer]:
+                              - /url: /matches/netherlands-vs-tunisia/1hoci5#4667787
+                              - generic [ref=e713]: L
+                  - generic [ref=e714]:
+                    - link "Grp. G" [ref=e716] [cursor=pointer]:
+                      - /url: /leagues/77/overview
+                    - generic [ref=e718]:
+                      - generic [ref=e719]:
+                        - generic [ref=e720]: "#"
+                        - generic [ref=e721]: PL
+                        - generic [ref=e722]: +/-
+                        - generic [ref=e723]: GD
+                        - generic [ref=e724]: PTS
+                        - generic [ref=e725]: Form
+                      - generic [ref=e726]:
+                        - generic [ref=e728]:
+                          - generic [ref=e729]: "1"
+                          - link "Belgium" [ref=e732] [cursor=pointer]:
+                            - /url: /teams/8263/overview/belgium
+                            - generic [ref=e733]: Belgium
+                          - generic [ref=e734]: "3"
+                          - generic [ref=e735]:
+                            - generic [ref=e736]: "6"
+                            - text: "-"
+                            - generic [ref=e737]: "2"
+                          - generic [ref=e739]: "+4"
+                          - generic [ref=e740]: "5"
+                          - generic [ref=e742]:
+                            - link "D" [ref=e743] [cursor=pointer]:
+                              - /url: /matches/belgium-vs-egypt/2u3bhg#4667790
+                              - generic [ref=e744]: D
+                            - link "D" [ref=e745] [cursor=pointer]:
+                              - /url: /matches/iran-vs-belgium/1ur91k#4667793
+                              - generic [ref=e746]: D
+                            - link "W" [ref=e747] [cursor=pointer]:
+                              - /url: /matches/new-zealand-vs-belgium/1n1sct#4667794
+                              - generic [ref=e748]: W
+                        - generic [ref=e750]:
+                          - generic [ref=e751]: "2"
+                          - link "Egypt" [ref=e754] [cursor=pointer]:
+                            - /url: /teams/10255/overview/egypt
+                            - generic [ref=e755]: Egypt
+                          - generic [ref=e756]: "3"
+                          - generic [ref=e757]:
+                            - generic [ref=e758]: "5"
+                            - text: "-"
+                            - generic [ref=e759]: "3"
+                          - generic [ref=e761]: "+2"
+                          - generic [ref=e762]: "5"
+                          - generic [ref=e764]:
+                            - link "D" [ref=e765] [cursor=pointer]:
+                              - /url: /matches/belgium-vs-egypt/2u3bhg#4667790
+                              - generic [ref=e766]: D
+                            - link "W" [ref=e767] [cursor=pointer]:
+                              - /url: /matches/new-zealand-vs-egypt/24xk7y#4667792
+                              - generic [ref=e768]: W
+                            - link "D" [ref=e769] [cursor=pointer]:
+                              - /url: /matches/iran-vs-egypt/2dp33g#4667795
+                              - generic [ref=e770]: D
+                        - generic [ref=e772]:
+                          - generic [ref=e773]: "3"
+                          - link "Iran" [ref=e776] [cursor=pointer]:
+                            - /url: /teams/6711/overview/iran
+                            - generic [ref=e777]: Iran
+                          - generic [ref=e778]: "3"
+                          - generic [ref=e779]:
+                            - generic [ref=e780]: "3"
+                            - text: "-"
+                            - generic [ref=e781]: "3"
+                          - generic [ref=e783]: "0"
+                          - generic [ref=e784]: "3"
+                          - generic [ref=e786]:
+                            - link "D" [ref=e787] [cursor=pointer]:
+                              - /url: /matches/new-zealand-vs-iran/1ar30l#4667791
+                              - generic [ref=e788]: D
+                            - link "D" [ref=e789] [cursor=pointer]:
+                              - /url: /matches/iran-vs-belgium/1ur91k#4667793
+                              - generic [ref=e790]: D
+                            - link "D" [ref=e791] [cursor=pointer]:
+                              - /url: /matches/iran-vs-egypt/2dp33g#4667795
+                              - generic [ref=e792]: D
+                        - generic [ref=e794]:
+                          - generic [ref=e795]: "4"
+                          - link "New Zealand" [ref=e798] [cursor=pointer]:
+                            - /url: /teams/5820/overview/new-zealand
+                            - generic [ref=e799]: New Zealand
+                          - generic [ref=e800]: "3"
+                          - generic [ref=e801]:
+                            - generic [ref=e802]: "4"
+                            - text: "-"
+                            - generic [ref=e803]: "10"
+                          - generic [ref=e805]: "-6"
+                          - generic [ref=e806]: "1"
+                          - generic [ref=e808]:
+                            - link "D" [ref=e809] [cursor=pointer]:
+                              - /url: /matches/new-zealand-vs-iran/1ar30l#4667791
+                              - generic [ref=e810]: D
+                            - link "L" [ref=e811] [cursor=pointer]:
+                              - /url: /matches/new-zealand-vs-egypt/24xk7y#4667792
+                              - generic [ref=e812]: L
+                            - link "L" [ref=e813] [cursor=pointer]:
+                              - /url: /matches/new-zealand-vs-belgium/1n1sct#4667794
+                              - generic [ref=e814]: L
+                  - generic [ref=e815]:
+                    - link "Grp. H" [ref=e817] [cursor=pointer]:
+                      - /url: /leagues/77/overview
+                    - generic [ref=e819]:
+                      - generic [ref=e820]:
+                        - generic [ref=e821]: "#"
+                        - generic [ref=e822]: PL
+                        - generic [ref=e823]: +/-
+                        - generic [ref=e824]: GD
+                        - generic [ref=e825]: PTS
+                        - generic [ref=e826]: Form
+                      - generic [ref=e827]:
+                        - generic [ref=e829]:
+                          - generic [ref=e830]: "1"
+                          - link "Spain" [ref=e833] [cursor=pointer]:
+                            - /url: /teams/6720/overview/spain
+                            - generic [ref=e834]: Spain
+                          - generic [ref=e835]: "3"
+                          - generic [ref=e836]:
+                            - generic [ref=e837]: "5"
+                            - text: "-"
+                            - generic [ref=e838]: "0"
+                          - generic [ref=e840]: "+5"
+                          - generic [ref=e841]: "7"
+                          - generic [ref=e843]:
+                            - link "D" [ref=e844] [cursor=pointer]:
+                              - /url: /matches/cape-verde-vs-spain/1bbtuo#4667798
+                              - generic [ref=e845]: D
+                            - link "W" [ref=e846] [cursor=pointer]:
+                              - /url: /matches/spain-vs-saudi-arabia/1qq6ht#4667801
+                              - generic [ref=e847]: W
+                            - link "W" [ref=e848] [cursor=pointer]:
+                              - /url: /matches/uruguay-vs-spain/1an22i#4667802
+                              - generic [ref=e849]: W
+                        - generic [ref=e851]:
+                          - generic [ref=e852]: "2"
+                          - link "Cape Verde" [ref=e855] [cursor=pointer]:
+                            - /url: /teams/5888/overview/cape-verde
+                            - generic [ref=e856]: Cape Verde
+                          - generic [ref=e857]: "3"
+                          - generic [ref=e858]:
+                            - generic [ref=e859]: "2"
+                            - text: "-"
+                            - generic [ref=e860]: "2"
+                          - generic [ref=e862]: "0"
+                          - generic [ref=e863]: "3"
+                          - generic [ref=e865]:
+                            - link "D" [ref=e866] [cursor=pointer]:
+                              - /url: /matches/cape-verde-vs-spain/1bbtuo#4667798
+                              - generic [ref=e867]: D
+                            - link "D" [ref=e868] [cursor=pointer]:
+                              - /url: /matches/uruguay-vs-cape-verde/14n97e#4667800
+                              - generic [ref=e869]: D
+                            - link "D" [ref=e870] [cursor=pointer]:
+                              - /url: /matches/cape-verde-vs-saudi-arabia/1jqqyp#4667803
+                              - generic [ref=e871]: D
+                        - generic [ref=e873]:
+                          - generic [ref=e874]: "3"
+                          - link "Uruguay" [ref=e877] [cursor=pointer]:
+                            - /url: /teams/5796/overview/uruguay
+                            - generic [ref=e878]: Uruguay
+                          - generic [ref=e879]: "3"
+                          - generic [ref=e880]:
+                            - generic [ref=e881]: "3"
+                            - text: "-"
+                            - generic [ref=e882]: "4"
+                          - generic [ref=e884]: "-1"
+                          - generic [ref=e885]: "2"
+                          - generic [ref=e887]:
+                            - link "D" [ref=e888] [cursor=pointer]:
+                              - /url: /matches/uruguay-vs-saudi-arabia/1izuvb#4667799
+                              - generic [ref=e889]: D
+                            - link "D" [ref=e890] [cursor=pointer]:
+                              - /url: /matches/uruguay-vs-cape-verde/14n97e#4667800
+                              - generic [ref=e891]: D
+                            - link "L" [ref=e892] [cursor=pointer]:
+                              - /url: /matches/uruguay-vs-spain/1an22i#4667802
+                              - generic [ref=e893]: L
+                        - generic [ref=e895]:
+                          - generic [ref=e896]: "4"
+                          - link "Saudi Arabia" [ref=e899] [cursor=pointer]:
+                            - /url: /teams/7795/overview/saudi-arabia
+                            - generic [ref=e900]: Saudi Arabia
+                          - generic [ref=e901]: "3"
+                          - generic [ref=e902]:
+                            - generic [ref=e903]: "1"
+                            - text: "-"
+                            - generic [ref=e904]: "5"
+                          - generic [ref=e906]: "-4"
+                          - generic [ref=e907]: "2"
+                          - generic [ref=e909]:
+                            - link "D" [ref=e910] [cursor=pointer]:
+                              - /url: /matches/uruguay-vs-saudi-arabia/1izuvb#4667799
+                              - generic [ref=e911]: D
+                            - link "L" [ref=e912] [cursor=pointer]:
+                              - /url: /matches/spain-vs-saudi-arabia/1qq6ht#4667801
+                              - generic [ref=e913]: L
+                            - link "D" [ref=e914] [cursor=pointer]:
+                              - /url: /matches/cape-verde-vs-saudi-arabia/1jqqyp#4667803
+                              - generic [ref=e915]: D
+                  - generic [ref=e916]:
+                    - link "Grp. I" [ref=e918] [cursor=pointer]:
+                      - /url: /leagues/77/overview
+                    - generic [ref=e920]:
+                      - generic [ref=e921]:
+                        - generic [ref=e922]: "#"
+                        - generic [ref=e923]: PL
+                        - generic [ref=e924]: +/-
+                        - generic [ref=e925]: GD
+                        - generic [ref=e926]: PTS
+                        - generic [ref=e927]: Form
+                      - generic [ref=e928]:
+                        - generic [ref=e930]:
+                          - generic [ref=e931]: "1"
+                          - link "France" [ref=e934] [cursor=pointer]:
+                            - /url: /teams/6723/overview/france
+                            - generic [ref=e935]: France
+                          - generic [ref=e936]: "3"
+                          - generic [ref=e937]:
+                            - generic [ref=e938]: "10"
+                            - text: "-"
+                            - generic [ref=e939]: "2"
+                          - generic [ref=e941]: "+8"
+                          - generic [ref=e942]: "9"
+                          - generic [ref=e944]:
+                            - link "W" [ref=e945] [cursor=pointer]:
+                              - /url: /matches/senegal-vs-france/1f8fvo#4667804
+                              - generic [ref=e946]: W
+                            - link "W" [ref=e947] [cursor=pointer]:
+                              - /url: /matches/iraq-vs-france/1au1fo#4667807
+                              - generic [ref=e948]: W
+                            - link "W" [ref=e949] [cursor=pointer]:
+                              - /url: /matches/france-vs-norway/1wx88k#4667808
+                              - generic [ref=e950]: W
+                        - generic [ref=e952]:
+                          - generic [ref=e953]: "2"
+                          - link "Norway" [ref=e956] [cursor=pointer]:
+                            - /url: /teams/8492/overview/norway
+                            - generic [ref=e957]: Norway
+                          - generic [ref=e958]: "3"
+                          - generic [ref=e959]:
+                            - generic [ref=e960]: "8"
+                            - text: "-"
+                            - generic [ref=e961]: "7"
+                          - generic [ref=e963]: "+1"
+                          - generic [ref=e964]: "6"
+                          - generic [ref=e966]:
+                            - link "W" [ref=e967] [cursor=pointer]:
+                              - /url: /matches/iraq-vs-norway/1oz68o#4667805
+                              - generic [ref=e968]: W
+                            - link "W" [ref=e969] [cursor=pointer]:
+                              - /url: /matches/senegal-vs-norway/1tzewo#4667806
+                              - generic [ref=e970]: W
+                            - link "L" [ref=e971] [cursor=pointer]:
+                              - /url: /matches/france-vs-norway/1wx88k#4667808
+                              - generic [ref=e972]: L
+                        - generic [ref=e974]:
+                          - generic [ref=e975]: "3"
+                          - link "Senegal" [ref=e978] [cursor=pointer]:
+                            - /url: /teams/6395/overview/senegal
+                            - generic [ref=e979]: Senegal
+                          - generic [ref=e980]: "3"
+                          - generic [ref=e981]:
+                            - generic [ref=e982]: "8"
+                            - text: "-"
+                            - generic [ref=e983]: "6"
+                          - generic [ref=e985]: "+2"
+                          - generic [ref=e986]: "3"
+                          - generic [ref=e988]:
+                            - link "L" [ref=e989] [cursor=pointer]:
+                              - /url: /matches/senegal-vs-france/1f8fvo#4667804
+                              - generic [ref=e990]: L
+                            - link "L" [ref=e991] [cursor=pointer]:
+                              - /url: /matches/senegal-vs-norway/1tzewo#4667806
+                              - generic [ref=e992]: L
+                            - link "W" [ref=e993] [cursor=pointer]:
+                              - /url: /matches/iraq-vs-senegal/18f0co#4667809
+                              - generic [ref=e994]: W
+                        - generic [ref=e996]:
+                          - generic [ref=e997]: "4"
+                          - link "Iraq" [ref=e1000] [cursor=pointer]:
+                            - /url: /teams/5819/overview/iraq
+                            - generic [ref=e1001]: Iraq
+                          - generic [ref=e1002]: "3"
+                          - generic [ref=e1003]:
+                            - generic [ref=e1004]: "1"
+                            - text: "-"
+                            - generic [ref=e1005]: "12"
+                          - generic [ref=e1007]: "-11"
+                          - generic [ref=e1008]: "0"
+                          - generic [ref=e1010]:
+                            - link "L" [ref=e1011] [cursor=pointer]:
+                              - /url: /matches/iraq-vs-norway/1oz68o#4667805
+                              - generic [ref=e1012]: L
+                            - link "L" [ref=e1013] [cursor=pointer]:
+                              - /url: /matches/iraq-vs-france/1au1fo#4667807
+                              - generic [ref=e1014]: L
+                            - link "L" [ref=e1015] [cursor=pointer]:
+                              - /url: /matches/iraq-vs-senegal/18f0co#4667809
+                              - generic [ref=e1016]: L
+                  - generic [ref=e1017]:
+                    - link "Grp. J" [ref=e1019] [cursor=pointer]:
+                      - /url: /leagues/77/overview
+                    - generic [ref=e1021]:
+                      - generic [ref=e1022]:
+                        - generic [ref=e1023]: "#"
+                        - generic [ref=e1024]: PL
+                        - generic [ref=e1025]: +/-
+                        - generic [ref=e1026]: GD
+                        - generic [ref=e1027]: PTS
+                        - generic [ref=e1028]: Form
+                      - generic [ref=e1029]:
+                        - generic [ref=e1031]:
+                          - generic [ref=e1032]: "1"
+                          - link "Argentina" [ref=e1035] [cursor=pointer]:
+                            - /url: /teams/6706/overview/argentina
+                            - generic [ref=e1036]: Argentina
+                          - generic [ref=e1037]: "3"
+                          - generic [ref=e1038]:
+                            - generic [ref=e1039]: "8"
+                            - text: "-"
+                            - generic [ref=e1040]: "1"
+                          - generic [ref=e1042]: "+7"
+                          - generic [ref=e1043]: "9"
+                          - generic [ref=e1045]:
+                            - link "W" [ref=e1046] [cursor=pointer]:
+                              - /url: /matches/algeria-vs-argentina/1ehtqa#4667812
+                              - generic [ref=e1047]: W
+                            - link "W" [ref=e1048] [cursor=pointer]:
+                              - /url: /matches/argentina-vs-austria/1un2w8#4667815
+                              - generic [ref=e1049]: W
+                            - link "W" [ref=e1050] [cursor=pointer]:
+                              - /url: /matches/jordan-vs-argentina/1aoo0p#4667816
+                              - generic [ref=e1051]: W
+                        - generic [ref=e1053]:
+                          - generic [ref=e1054]: "2"
+                          - link "Austria" [ref=e1057] [cursor=pointer]:
+                            - /url: /teams/8255/overview/austria
+                            - generic [ref=e1058]: Austria
+                          - generic [ref=e1059]: "3"
+                          - generic [ref=e1060]:
+                            - generic [ref=e1061]: "6"
+                            - text: "-"
+                            - generic [ref=e1062]: "6"
+                          - generic [ref=e1064]: "0"
+                          - generic [ref=e1065]: "4"
+                          - generic [ref=e1067]:
+                            - link "W" [ref=e1068] [cursor=pointer]:
+                              - /url: /matches/jordan-vs-austria/1my603#4667813
+                              - generic [ref=e1069]: W
+                            - link "L" [ref=e1070] [cursor=pointer]:
+                              - /url: /matches/argentina-vs-austria/1un2w8#4667815
+                              - generic [ref=e1071]: L
+                            - link "D" [ref=e1072] [cursor=pointer]:
+                              - /url: /matches/algeria-vs-austria/1r7yil#4667817
+                              - generic [ref=e1073]: D
+                        - generic [ref=e1075]:
+                          - generic [ref=e1076]: "3"
+                          - link "Algeria" [ref=e1079] [cursor=pointer]:
+                            - /url: /teams/6317/overview/algeria
+                            - generic [ref=e1080]: Algeria
+                          - generic [ref=e1081]: "3"
+                          - generic [ref=e1082]:
+                            - generic [ref=e1083]: "5"
+                            - text: "-"
+                            - generic [ref=e1084]: "7"
+                          - generic [ref=e1086]: "-2"
+                          - generic [ref=e1087]: "4"
+                          - generic [ref=e1089]:
+                            - link "L" [ref=e1090] [cursor=pointer]:
+                              - /url: /matches/algeria-vs-argentina/1ehtqa#4667812
+                              - generic [ref=e1091]: L
+                            - link "W" [ref=e1092] [cursor=pointer]:
+                              - /url: /matches/jordan-vs-algeria/17tvf0#4667814
+                              - generic [ref=e1093]: W
+                            - link "D" [ref=e1094] [cursor=pointer]:
+                              - /url: /matches/algeria-vs-austria/1r7yil#4667817
+                              - generic [ref=e1095]: D
+                        - generic [ref=e1097]:
+                          - generic [ref=e1098]: "4"
+                          - link "Jordan" [ref=e1101] [cursor=pointer]:
+                            - /url: /teams/5816/overview/jordan
+                            - generic [ref=e1102]: Jordan
+                          - generic [ref=e1103]: "3"
+                          - generic [ref=e1104]:
+                            - generic [ref=e1105]: "3"
+                            - text: "-"
+                            - generic [ref=e1106]: "8"
+                          - generic [ref=e1108]: "-5"
+                          - generic [ref=e1109]: "0"
+                          - generic [ref=e1111]:
+                            - link "L" [ref=e1112] [cursor=pointer]:
+                              - /url: /matches/jordan-vs-austria/1my603#4667813
+                              - generic [ref=e1113]: L
+                            - link "L" [ref=e1114] [cursor=pointer]:
+                              - /url: /matches/jordan-vs-algeria/17tvf0#4667814
+                              - generic [ref=e1115]: L
+                            - link "L" [ref=e1116] [cursor=pointer]:
+                              - /url: /matches/jordan-vs-argentina/1aoo0p#4667816
+                              - generic [ref=e1117]: L
+                  - generic [ref=e1118]:
+                    - link "Grp. K" [ref=e1120] [cursor=pointer]:
+                      - /url: /leagues/77/overview
+                    - generic [ref=e1122]:
+                      - generic [ref=e1123]:
+                        - generic [ref=e1124]: "#"
+                        - generic [ref=e1125]: PL
+                        - generic [ref=e1126]: +/-
+                        - generic [ref=e1127]: GD
+                        - generic [ref=e1128]: PTS
+                        - generic [ref=e1129]: Form
+                      - generic [ref=e1130]:
+                        - generic [ref=e1132]:
+                          - generic [ref=e1133]: "1"
+                          - link "Colombia" [ref=e1136] [cursor=pointer]:
+                            - /url: /teams/8258/overview/colombia
+                            - generic [ref=e1137]: Colombia
+                          - generic [ref=e1138]: "3"
+                          - generic [ref=e1139]:
+                            - generic [ref=e1140]: "4"
+                            - text: "-"
+                            - generic [ref=e1141]: "1"
+                          - generic [ref=e1143]: "+3"
+                          - generic [ref=e1144]: "7"
+                          - generic [ref=e1146]:
+                            - link "W" [ref=e1147] [cursor=pointer]:
+                              - /url: /matches/colombia-vs-uzbekistan/2dm7x9#4667820
+                              - generic [ref=e1148]: W
+                            - link "W" [ref=e1149] [cursor=pointer]:
+                              - /url: /matches/dr-congo-vs-colombia/1ra58w#4667821
+                              - generic [ref=e1150]: W
+                            - link "D" [ref=e1151] [cursor=pointer]:
+                              - /url: /matches/colombia-vs-portugal/2a883f#4667823
+                              - generic [ref=e1152]: D
+                        - generic [ref=e1154]:
+                          - generic [ref=e1155]: "2"
+                          - link "Portugal" [ref=e1158] [cursor=pointer]:
+                            - /url: /teams/8361/overview/portugal
+                            - generic [ref=e1159]: Portugal
+                          - generic [ref=e1160]: "3"
+                          - generic [ref=e1161]:
+                            - generic [ref=e1162]: "6"
+                            - text: "-"
+                            - generic [ref=e1163]: "1"
+                          - generic [ref=e1165]: "+5"
+                          - generic [ref=e1166]: "5"
+                          - generic [ref=e1168]:
+                            - link "D" [ref=e1169] [cursor=pointer]:
+                              - /url: /matches/dr-congo-vs-portugal/1s6g4o#4667819
+                              - generic [ref=e1170]: D
+                            - link "W" [ref=e1171] [cursor=pointer]:
+                              - /url: /matches/portugal-vs-uzbekistan/2enrsr#4667822
+                              - generic [ref=e1172]: W
+                            - link "D" [ref=e1173] [cursor=pointer]:
+                              - /url: /matches/colombia-vs-portugal/2a883f#4667823
+                              - generic [ref=e1174]: D
+                        - generic [ref=e1176]:
+                          - generic [ref=e1177]: "3"
+                          - link "DR Congo" [ref=e1180] [cursor=pointer]:
+                            - /url: /teams/6321/overview/dr-congo
+                            - generic [ref=e1181]: DR Congo
+                          - generic [ref=e1182]: "3"
+                          - generic [ref=e1183]:
+                            - generic [ref=e1184]: "4"
+                            - text: "-"
+                            - generic [ref=e1185]: "3"
+                          - generic [ref=e1187]: "+1"
+                          - generic [ref=e1188]: "4"
+                          - generic [ref=e1190]:
+                            - link "D" [ref=e1191] [cursor=pointer]:
+                              - /url: /matches/dr-congo-vs-portugal/1s6g4o#4667819
+                              - generic [ref=e1192]: D
+                            - link "L" [ref=e1193] [cursor=pointer]:
+                              - /url: /matches/dr-congo-vs-colombia/1ra58w#4667821
+                              - generic [ref=e1194]: L
+                            - link "W" [ref=e1195] [cursor=pointer]:
+                              - /url: /matches/dr-congo-vs-uzbekistan/1v6daf#4667824
+                              - generic [ref=e1196]: W
+                        - generic [ref=e1198]:
+                          - generic [ref=e1199]: "4"
+                          - link "Uzbekistan" [ref=e1202] [cursor=pointer]:
+                            - /url: /teams/8700/overview/uzbekistan
+                            - generic [ref=e1203]: Uzbekistan
+                          - generic [ref=e1204]: "3"
+                          - generic [ref=e1205]:
+                            - generic [ref=e1206]: "2"
+                            - text: "-"
+                            - generic [ref=e1207]: "11"
+                          - generic [ref=e1209]: "-9"
+                          - generic [ref=e1210]: "0"
+                          - generic [ref=e1212]:
+                            - link "L" [ref=e1213] [cursor=pointer]:
+                              - /url: /matches/colombia-vs-uzbekistan/2dm7x9#4667820
+                              - generic [ref=e1214]: L
+                            - link "L" [ref=e1215] [cursor=pointer]:
+                              - /url: /matches/portugal-vs-uzbekistan/2enrsr#4667822
+                              - generic [ref=e1216]: L
+                            - link "L" [ref=e1217] [cursor=pointer]:
+                              - /url: /matches/dr-congo-vs-uzbekistan/1v6daf#4667824
+                              - generic [ref=e1218]: L
+                  - generic [ref=e1219]:
+                    - link "Grp. L" [ref=e1221] [cursor=pointer]:
+                      - /url: /leagues/77/overview
+                    - generic [ref=e1223]:
+                      - generic [ref=e1224]:
+                        - generic [ref=e1225]: "#"
+                        - generic [ref=e1226]: PL
+                        - generic [ref=e1227]: +/-
+                        - generic [ref=e1228]: GD
+                        - generic [ref=e1229]: PTS
+                        - generic [ref=e1230]: Form
+                      - generic [ref=e1231]:
+                        - generic [ref=e1233]:
+                          - generic [ref=e1234]: "1"
+                          - link "England" [ref=e1237] [cursor=pointer]:
+                            - /url: /teams/8491/overview/england
+                            - generic [ref=e1238]: England
+                          - generic [ref=e1239]: "3"
+                          - generic [ref=e1240]:
+                            - generic [ref=e1241]: "6"
+                            - text: "-"
+                            - generic [ref=e1242]: "2"
+                          - generic [ref=e1244]: "+4"
+                          - generic [ref=e1245]: "7"
+                          - generic [ref=e1247]:
+                            - link "W" [ref=e1248] [cursor=pointer]:
+                              - /url: /matches/england-vs-croatia/2viayw#4667825
+                              - generic [ref=e1249]: W
+                            - link "D" [ref=e1250] [cursor=pointer]:
+                              - /url: /matches/ghana-vs-england/1wtyve#4667828
+                              - generic [ref=e1251]: D
+                            - link "W" [ref=e1252] [cursor=pointer]:
+                              - /url: /matches/panama-vs-england/1pukme#4667829
+                              - generic [ref=e1253]: W
+                        - generic [ref=e1255]:
+                          - generic [ref=e1256]: "2"
+                          - link "Croatia" [ref=e1259] [cursor=pointer]:
+                            - /url: /teams/10155/overview/croatia
+                            - generic [ref=e1260]: Croatia
+                          - generic [ref=e1261]: "3"
+                          - generic [ref=e1262]:
+                            - generic [ref=e1263]: "5"
+                            - text: "-"
+                            - generic [ref=e1264]: "5"
+                          - generic [ref=e1266]: "0"
+                          - generic [ref=e1267]: "6"
+                          - generic [ref=e1269]:
+                            - link "L" [ref=e1270] [cursor=pointer]:
+                              - /url: /matches/england-vs-croatia/2viayw#4667825
+                              - generic [ref=e1271]: L
+                            - link "W" [ref=e1272] [cursor=pointer]:
+                              - /url: /matches/panama-vs-croatia/24y93x#4667827
+                              - generic [ref=e1273]: W
+                            - link "W" [ref=e1274] [cursor=pointer]:
+                              - /url: /matches/ghana-vs-croatia/2cpwux#4667830
+                              - generic [ref=e1275]: W
+                        - generic [ref=e1277]:
+                          - generic [ref=e1278]: "3"
+                          - link "Ghana" [ref=e1281] [cursor=pointer]:
+                            - /url: /teams/6714/overview/ghana
+                            - generic [ref=e1282]: Ghana
+                          - generic [ref=e1283]: "3"
+                          - generic [ref=e1284]:
+                            - generic [ref=e1285]: "2"
+                            - text: "-"
+                            - generic [ref=e1286]: "2"
+                          - generic [ref=e1288]: "0"
+                          - generic [ref=e1289]: "4"
+                          - generic [ref=e1291]:
+                            - link "W" [ref=e1292] [cursor=pointer]:
+                              - /url: /matches/panama-vs-ghana/1bjek0#4667826
+                              - generic [ref=e1293]: W
+                            - link "D" [ref=e1294] [cursor=pointer]:
+                              - /url: /matches/ghana-vs-england/1wtyve#4667828
+                              - generic [ref=e1295]: D
+                            - link "L" [ref=e1296] [cursor=pointer]:
+                              - /url: /matches/ghana-vs-croatia/2cpwux#4667830
+                              - generic [ref=e1297]: L
+                        - generic [ref=e1299]:
+                          - generic [ref=e1300]: "4"
+                          - link "Panama" [ref=e1303] [cursor=pointer]:
+                            - /url: /teams/5922/overview/panama
+                            - generic [ref=e1304]: Panama
+                          - generic [ref=e1305]: "3"
+                          - generic [ref=e1306]:
+                            - generic [ref=e1307]: "0"
+                            - text: "-"
+                            - generic [ref=e1308]: "4"
+                          - generic [ref=e1310]: "-4"
+                          - generic [ref=e1311]: "0"
+                          - generic [ref=e1313]:
+                            - link "L" [ref=e1314] [cursor=pointer]:
+                              - /url: /matches/panama-vs-ghana/1bjek0#4667826
+                              - generic [ref=e1315]: L
+                            - link "L" [ref=e1316] [cursor=pointer]:
+                              - /url: /matches/panama-vs-croatia/24y93x#4667827
+                              - generic [ref=e1317]: L
+                            - link "L" [ref=e1318] [cursor=pointer]:
+                              - /url: /matches/panama-vs-england/1pukme#4667829
+                              - generic [ref=e1319]: L
+                  - generic [ref=e1320]:
+                    - link "Best 3rd placed teams" [ref=e1322] [cursor=pointer]:
+                      - /url: /leagues/77/overview
+                    - generic [ref=e1324]:
+                      - generic [ref=e1325]:
+                        - generic [ref=e1326]: "#"
+                        - generic [ref=e1327]: PL
+                        - generic [ref=e1328]: +/-
+                        - generic [ref=e1329]: GD
+                        - generic [ref=e1330]: PTS
+                        - generic [ref=e1331]: Form
+                      - generic [ref=e1332]:
+                        - generic [ref=e1334]:
+                          - generic [ref=e1335]: "1"
+                          - link "DR Congo" [ref=e1338] [cursor=pointer]:
+                            - /url: /teams/6321/overview/dr-congo
+                            - generic [ref=e1339]: DR Congo
+                          - generic [ref=e1340]: "3"
+                          - generic [ref=e1341]:
+                            - generic [ref=e1342]: "4"
+                            - text: "-"
+                            - generic [ref=e1343]: "3"
+                          - generic [ref=e1345]: "+1"
+                          - generic [ref=e1346]: "4"
+                          - generic [ref=e1348]:
+                            - link "D" [ref=e1349] [cursor=pointer]:
+                              - /url: /matches/dr-congo-vs-portugal/1s6g4o#4667819
+                              - generic [ref=e1350]: D
+                            - link "L" [ref=e1351] [cursor=pointer]:
+                              - /url: /matches/dr-congo-vs-colombia/1ra58w#4667821
+                              - generic [ref=e1352]: L
+                            - link "W" [ref=e1353] [cursor=pointer]:
+                              - /url: /matches/dr-congo-vs-uzbekistan/1v6daf#4667824
+                              - generic [ref=e1354]: W
+                        - generic [ref=e1356]:
+                          - generic [ref=e1357]: "2"
+                          - link "Sweden" [ref=e1360] [cursor=pointer]:
+                            - /url: /teams/8520/overview/sweden
+                            - generic [ref=e1361]: Sweden
+                          - generic [ref=e1362]: "3"
+                          - generic [ref=e1363]:
+                            - generic [ref=e1364]: "7"
+                            - text: "-"
+                            - generic [ref=e1365]: "7"
+                          - generic [ref=e1367]: "0"
+                          - generic [ref=e1368]: "4"
+                          - generic [ref=e1370]:
+                            - link "W" [ref=e1371] [cursor=pointer]:
+                              - /url: /matches/tunisia-vs-sweden/1x5290#4667784
+                              - generic [ref=e1372]: W
+                            - link "L" [ref=e1373] [cursor=pointer]:
+                              - /url: /matches/netherlands-vs-sweden/1x1gy6#4667786
+                              - generic [ref=e1374]: L
+                            - link "D" [ref=e1375] [cursor=pointer]:
+                              - /url: /matches/japan-vs-sweden/1x3r7y#4667788
+                              - generic [ref=e1376]: D
+                        - generic [ref=e1378]:
+                          - generic [ref=e1379]: "3"
+                          - link "Ecuador" [ref=e1382] [cursor=pointer]:
+                            - /url: /teams/6707/overview/ecuador
+                            - generic [ref=e1383]: Ecuador
+                          - generic [ref=e1384]: "3"
+                          - generic [ref=e1385]:
+                            - generic [ref=e1386]: "2"
+                            - text: "-"
+                            - generic [ref=e1387]: "2"
+                          - generic [ref=e1389]: "0"
+                          - generic [ref=e1390]: "4"
+                          - generic [ref=e1392]:
+                            - link "L" [ref=e1393] [cursor=pointer]:
+                              - /url: /matches/ecuador-vs-ivory-coast/1hl6kp#4667778
+                              - generic [ref=e1394]: L
+                            - link "D" [ref=e1395] [cursor=pointer]:
+                              - /url: /matches/ecuador-vs-curacao/jy3jhs3#4667779
+                              - generic [ref=e1396]: D
+                            - link "W" [ref=e1397] [cursor=pointer]:
+                              - /url: /matches/ecuador-vs-germany/1xhhol#4667781
+                              - generic [ref=e1398]: W
+                        - generic [ref=e1400]:
+                          - generic [ref=e1401]: "4"
+                          - link "Ghana" [ref=e1404] [cursor=pointer]:
+                            - /url: /teams/6714/overview/ghana
+                            - generic [ref=e1405]: Ghana
+                          - generic [ref=e1406]: "3"
+                          - generic [ref=e1407]:
+                            - generic [ref=e1408]: "2"
+                            - text: "-"
+                            - generic [ref=e1409]: "2"
+                          - generic [ref=e1411]: "0"
+                          - generic [ref=e1412]: "4"
+                          - generic [ref=e1414]:
+                            - link "W" [ref=e1415] [cursor=pointer]:
+                              - /url: /matches/panama-vs-ghana/1bjek0#4667826
+                              - generic [ref=e1416]: W
+                            - link "D" [ref=e1417] [cursor=pointer]:
+                              - /url: /matches/ghana-vs-england/1wtyve#4667828
+                              - generic [ref=e1418]: D
+                            - link "L" [ref=e1419] [cursor=pointer]:
+                              - /url: /matches/ghana-vs-croatia/2cpwux#4667830
+                              - generic [ref=e1420]: L
+                        - generic [ref=e1422]:
+                          - generic [ref=e1423]: "5"
+                          - link "Bosnia and Herzegovina" [ref=e1426] [cursor=pointer]:
+                            - /url: /teams/10106/overview/bosnia-herzegovina
+                            - generic [ref=e1427]: Bosnia and Herzegovina
+                          - generic [ref=e1428]: "3"
+                          - generic [ref=e1429]:
+                            - generic [ref=e1430]: "5"
+                            - text: "-"
+                            - generic [ref=e1431]: "6"
+                          - generic [ref=e1433]: "-1"
+                          - generic [ref=e1434]: "4"
+                          - generic [ref=e1436]:
+                            - link "D" [ref=e1437] [cursor=pointer]:
+                              - /url: /matches/canada-vs-bosnia-herzegovina/23f1qo#4667757
+                              - generic [ref=e1438]: D
+                            - link "L" [ref=e1439] [cursor=pointer]:
+                              - /url: /matches/switzerland-vs-bosnia-herzegovina/2c9awx#4667759
+                              - generic [ref=e1440]: L
+                            - link "W" [ref=e1441] [cursor=pointer]:
+                              - /url: /matches/qatar-vs-bosnia-herzegovina/24aiya#4667762
+                              - generic [ref=e1442]: W
+                        - generic [ref=e1444]:
+                          - generic [ref=e1445]: "6"
+                          - link "Algeria" [ref=e1448] [cursor=pointer]:
+                            - /url: /teams/6317/overview/algeria
+                            - generic [ref=e1449]: Algeria
+                          - generic [ref=e1450]: "3"
+                          - generic [ref=e1451]:
+                            - generic [ref=e1452]: "5"
+                            - text: "-"
+                            - generic [ref=e1453]: "7"
+                          - generic [ref=e1455]: "-2"
+                          - generic [ref=e1456]: "4"
+                          - generic [ref=e1458]:
+                            - link "L" [ref=e1459] [cursor=pointer]:
+                              - /url: /matches/algeria-vs-argentina/1ehtqa#4667812
+                              - generic [ref=e1460]: L
+                            - link "W" [ref=e1461] [cursor=pointer]:
+                              - /url: /matches/jordan-vs-algeria/17tvf0#4667814
+                              - generic [ref=e1462]: W
+                            - link "D" [ref=e1463] [cursor=pointer]:
+                              - /url: /matches/algeria-vs-austria/1r7yil#4667817
+                              - generic [ref=e1464]: D
+                        - generic [ref=e1466]:
+                          - generic [ref=e1467]: "7"
+                          - link "Paraguay" [ref=e1470] [cursor=pointer]:
+                            - /url: /teams/6724/overview/paraguay
+                            - generic [ref=e1471]: Paraguay
+                          - generic [ref=e1472]: "3"
+                          - generic [ref=e1473]:
+                            - generic [ref=e1474]: "2"
+                            - text: "-"
+                            - generic [ref=e1475]: "4"
+                          - generic [ref=e1477]: "-2"
+                          - generic [ref=e1478]: "4"
+                          - generic [ref=e1480]:
+                            - link "L" [ref=e1481] [cursor=pointer]:
+                              - /url: /matches/usa-vs-paraguay/1hr85j#4667771
+                              - generic [ref=e1482]: L
+                            - link "W" [ref=e1483] [cursor=pointer]:
+                              - /url: /matches/turkiye-vs-paraguay/1gte1s#4667773
+                              - generic [ref=e1484]: W
+                            - link "D" [ref=e1485] [cursor=pointer]:
+                              - /url: /matches/australia-vs-paraguay/1hs39g#4667776
+                              - generic [ref=e1486]: D
+                        - generic [ref=e1488]:
+                          - generic [ref=e1489]: "8"
+                          - link "Senegal" [ref=e1492] [cursor=pointer]:
+                            - /url: /teams/6395/overview/senegal
+                            - generic [ref=e1493]: Senegal
+                          - generic [ref=e1494]: "3"
+                          - generic [ref=e1495]:
+                            - generic [ref=e1496]: "8"
+                            - text: "-"
+                            - generic [ref=e1497]: "6"
+                          - generic [ref=e1499]: "+2"
+                          - generic [ref=e1500]: "3"
+                          - generic [ref=e1502]:
+                            - link "L" [ref=e1503] [cursor=pointer]:
+                              - /url: /matches/senegal-vs-france/1f8fvo#4667804
+                              - generic [ref=e1504]: L
+                            - link "L" [ref=e1505] [cursor=pointer]:
+                              - /url: /matches/senegal-vs-norway/1tzewo#4667806
+                              - generic [ref=e1506]: L
+                            - link "W" [ref=e1507] [cursor=pointer]:
+                              - /url: /matches/iraq-vs-senegal/18f0co#4667809
+                              - generic [ref=e1508]: W
+                        - generic [ref=e1510]:
+                          - generic [ref=e1511]: "9"
+                          - link "Iran" [ref=e1514] [cursor=pointer]:
+                            - /url: /teams/6711/overview/iran
+                            - generic [ref=e1515]: Iran
+                          - generic [ref=e1516]: "3"
+                          - generic [ref=e1517]:
+                            - generic [ref=e1518]: "3"
+                            - text: "-"
+                            - generic [ref=e1519]: "3"
+                          - generic [ref=e1521]: "0"
+                          - generic [ref=e1522]: "3"
+                          - generic [ref=e1524]:
+                            - link "D" [ref=e1525] [cursor=pointer]:
+                              - /url: /matches/new-zealand-vs-iran/1ar30l#4667791
+                              - generic [ref=e1526]: D
+                            - link "D" [ref=e1527] [cursor=pointer]:
+                              - /url: /matches/iran-vs-belgium/1ur91k#4667793
+                              - generic [ref=e1528]: D
+                            - link "D" [ref=e1529] [cursor=pointer]:
+                              - /url: /matches/iran-vs-egypt/2dp33g#4667795
+                              - generic [ref=e1530]: D
+                        - generic [ref=e1532]:
+                          - generic [ref=e1533]: "10"
+                          - link "South Korea" [ref=e1536] [cursor=pointer]:
+                            - /url: /teams/7804/overview/south-korea
+                            - generic [ref=e1537]: South Korea
+                          - generic [ref=e1538]: "3"
+                          - generic [ref=e1539]:
+                            - generic [ref=e1540]: "2"
+                            - text: "-"
+                            - generic [ref=e1541]: "3"
+                          - generic [ref=e1543]: "-1"
+                          - generic [ref=e1544]: "3"
+                          - generic [ref=e1546]:
+                            - link "W" [ref=e1547] [cursor=pointer]:
+                              - /url: /matches/south-korea-vs-czechia/273opa#4667752
+                              - generic [ref=e1548]: W
+                            - link "L" [ref=e1549] [cursor=pointer]:
+                              - /url: /matches/mexico-vs-south-korea/1qpvav#4667754
+                              - generic [ref=e1550]: L
+                            - link "L" [ref=e1551] [cursor=pointer]:
+                              - /url: /matches/south-africa-vs-south-korea/1ncyls#4667756
+                              - generic [ref=e1552]: L
+                        - generic [ref=e1554]:
+                          - generic [ref=e1555]: "11"
+                          - link "Scotland" [ref=e1558] [cursor=pointer]:
+                            - /url: /teams/8498/overview/scotland
+                            - generic [ref=e1559]: Scotland
+                          - generic [ref=e1560]: "3"
+                          - generic [ref=e1561]:
+                            - generic [ref=e1562]: "1"
+                            - text: "-"
+                            - generic [ref=e1563]: "4"
+                          - generic [ref=e1565]: "-3"
+                          - generic [ref=e1566]: "3"
+                          - generic [ref=e1568]:
+                            - link "W" [ref=e1569] [cursor=pointer]:
+                              - /url: /matches/haiti-vs-scotland/1q0g2q#4667765
+                              - generic [ref=e1570]: W
+                            - link "L" [ref=e1571] [cursor=pointer]:
+                              - /url: /matches/morocco-vs-scotland/1sv292#4667766
+                              - generic [ref=e1572]: L
+                            - link "L" [ref=e1573] [cursor=pointer]:
+                              - /url: /matches/brazil-vs-scotland/2bkifh#4667768
+                              - generic [ref=e1574]: L
+                        - generic [ref=e1576]:
+                          - generic [ref=e1577]: "12"
+                          - link "Uruguay" [ref=e1580] [cursor=pointer]:
+                            - /url: /teams/5796/overview/uruguay
+                            - generic [ref=e1581]: Uruguay
+                          - generic [ref=e1582]: "3"
+                          - generic [ref=e1583]:
+                            - generic [ref=e1584]: "3"
+                            - text: "-"
+                            - generic [ref=e1585]: "4"
+                          - generic [ref=e1587]: "-1"
+                          - generic [ref=e1588]: "2"
+                          - generic [ref=e1590]:
+                            - link "D" [ref=e1591] [cursor=pointer]:
+                              - /url: /matches/uruguay-vs-saudi-arabia/1izuvb#4667799
+                              - generic [ref=e1592]: D
+                            - link "D" [ref=e1593] [cursor=pointer]:
+                              - /url: /matches/uruguay-vs-cape-verde/14n97e#4667800
+                              - generic [ref=e1594]: D
+                            - link "L" [ref=e1595] [cursor=pointer]:
+                              - /url: /matches/uruguay-vs-spain/1an22i#4667802
+                              - generic [ref=e1596]: L
+                - list [ref=e1597]:
+                  - listitem [ref=e1598]: Qualification next stage
+                  - listitem [ref=e1600]: Possible qualification next stage
+              - generic [ref=e1604]:
+                - generic [ref=e1605]:
+                  - generic [ref=e1606]: Top rated
+                  - generic [ref=e1607]:
+                    - link "Erling Haaland Norway 9.11" [ref=e1608] [cursor=pointer]:
+                      - /url: /players/737066
+                      - generic [ref=e1609]:
+                        - generic [ref=e1611]: Erling Haaland
+                        - generic [ref=e1613]: Norway
+                      - generic [ref=e1614]: "9.11"
+                    - link "Kylian Mbappé France 8.99" [ref=e1615] [cursor=pointer]:
+                      - /url: /players/701154
+                      - generic [ref=e1616]:
+                        - generic [ref=e1618]: Kylian Mbappé
+                        - generic [ref=e1620]: France
+                      - generic [ref=e1621]: "8.99"
+                    - link "Lionel Messi Argentina 8.67" [ref=e1622] [cursor=pointer]:
+                      - /url: /players/30981
+                      - generic [ref=e1623]:
+                        - generic [ref=e1625]: Lionel Messi
+                        - generic [ref=e1627]: Argentina
+                      - generic [ref=e1628]: "8.67"
+                  - link "All" [ref=e1630] [cursor=pointer]:
+                    - /url: /leagues/77/stats/season/24254/players/rating/world-cup
+                - generic [ref=e1631]:
+                  - generic [ref=e1632]: Top scorers
+                  - generic [ref=e1633]:
+                    - link "Lionel Messi Argentina 6" [ref=e1634] [cursor=pointer]:
+                      - /url: /players/30981
+                      - generic [ref=e1635]:
+                        - generic [ref=e1637]: Lionel Messi
+                        - generic [ref=e1639]: Argentina
+                      - generic [ref=e1640]: "6"
+                    - link "Kylian Mbappé France 4" [ref=e1641] [cursor=pointer]:
+                      - /url: /players/701154
+                      - generic [ref=e1642]:
+                        - generic [ref=e1644]: Kylian Mbappé
+                        - generic [ref=e1646]: France
+                      - generic [ref=e1647]: "4"
+                    - link "Ousmane Dembélé France 4" [ref=e1648] [cursor=pointer]:
+                      - /url: /players/692984
+                      - generic [ref=e1649]:
+                        - generic [ref=e1651]: Ousmane Dembélé
+                        - generic [ref=e1653]: France
+                      - generic [ref=e1654]: "4"
+                  - link "All" [ref=e1656] [cursor=pointer]:
+                    - /url: /leagues/77/stats/season/24254/players/goals/world-cup
+                - generic [ref=e1657]:
+                  - generic [ref=e1658]: Top assists
+                  - generic [ref=e1659]:
+                    - link "Michael Olise France 3" [ref=e1660] [cursor=pointer]:
+                      - /url: /players/1029063
+                      - generic [ref=e1661]:
+                        - generic [ref=e1663]: Michael Olise
+                        - generic [ref=e1665]: France
+                      - generic [ref=e1666]: "3"
+                    - link "Bruno Guimarães Brazil 3" [ref=e1667] [cursor=pointer]:
+                      - /url: /players/850354
+                      - generic [ref=e1668]:
+                        - generic [ref=e1670]: Bruno Guimarães
+                        - generic [ref=e1672]: Brazil
+                      - generic [ref=e1673]: "3"
+                    - link "Alexander Isak Sweden 3" [ref=e1674] [cursor=pointer]:
+                      - /url: /players/690107
+                      - generic [ref=e1675]:
+                        - generic [ref=e1677]: Alexander Isak
+                        - generic [ref=e1679]: Sweden
+                      - generic [ref=e1680]: "3"
+                  - link "All" [ref=e1682] [cursor=pointer]:
+                    - /url: /leagues/77/stats/season/24254/players/goal_assist/world-cup
+              - generic [ref=e1684]:
+                - heading "All-time top scorers" [level=2] [ref=e1686]
+                - generic [ref=e1687]:
+                  - 'link "Lionel Messi Penalty goals: 4 19" [ref=e1688] [cursor=pointer]':
+                    - /url: /players/30981/lionel-messi
+                    - generic [ref=e1691]:
+                      - generic [ref=e1692]: Lionel Messi
+                      - generic [ref=e1693]: "Penalty goals: 4"
+                    - generic [ref=e1694]: "19"
+                  - 'link "Miroslav Klose Penalty goals: 0 16" [ref=e1695] [cursor=pointer]':
+                    - /url: /players/30638/miroslav-klose
+                    - generic [ref=e1698]:
+                      - generic [ref=e1699]: Miroslav Klose
+                      - generic [ref=e1700]: "Penalty goals: 0"
+                    - generic [ref=e1701]: "16"
+                  - 'link "Kylian Mbappé Penalty goals: 2 16" [ref=e1702] [cursor=pointer]':
+                    - /url: /players/701154/kylian-mbappe
+                    - generic [ref=e1705]:
+                      - generic [ref=e1706]: Kylian Mbappé
+                      - generic [ref=e1707]: "Penalty goals: 2"
+                    - generic [ref=e1708]: "16"
+                  - 'link "Ronaldo Penalty goals: 1 15" [ref=e1709] [cursor=pointer]':
+                    - /url: /players/33972/ronaldo
+                    - generic [ref=e1712]:
+                      - generic [ref=e1713]: Ronaldo
+                      - generic [ref=e1714]: "Penalty goals: 1"
+                    - generic [ref=e1715]: "15"
+                  - 'link "Gerd Mueller Penalty goals: 1 14" [ref=e1716] [cursor=pointer]':
+                    - /url: /players/1767816/gerd-mueller
+                    - generic [ref=e1719]:
+                      - generic [ref=e1720]: Gerd Mueller
+                      - generic [ref=e1721]: "Penalty goals: 1"
+                    - generic [ref=e1722]: "14"
+                - link "All" [ref=e1724] [cursor=pointer]:
+                  - /url: /leagues/77/stats/all-time/players/goals
+              - generic [ref=e1726]:
+                - heading "News" [level=3] [ref=e1727]
+                - generic [ref=e1728]:
+                  - 'link "South Africa 0-1 Canada: Eustaquio heroics book historic last-16 berth for co-hosts FotMob · 8 minutes ago" [ref=e1730] [cursor=pointer]':
+                    - /url: /news/1agfrexrvy7r61btndyvczjbuw-south-africa-0-1-canada-eustaquio-heroics-book-historic-last-16-berth-co-hosts
+                    - generic [ref=e1731]:
+                      - generic [ref=e1732]: "South Africa 0-1 Canada: Eustaquio heroics book historic last-16 berth for co-hosts"
+                      - generic [ref=e1733]:
+                        - generic [ref=e1734]: FotMob
+                        - generic [ref=e1735]: · 8 minutes ago
+                    - img [ref=e1737]
+                  - link "Neymar can 'shut the mouths' of his critics at World Cup, says Brazil icon Ronaldo FotMob · 1 hour ago" [ref=e1739] [cursor=pointer]:
+                    - /url: /news/1f9p4y4x3b6k01adn5u9i4tnks-neymar-can-shut-mouths-his-critics-at-world-cup-says-brazil-icon-ronaldo
+                    - generic [ref=e1740]:
+                      - generic [ref=e1741]: Neymar can 'shut the mouths' of his critics at World Cup, says Brazil icon Ronaldo
+                      - generic [ref=e1742]:
+                        - generic [ref=e1743]: FotMob
+                        - generic [ref=e1744]: · 1 hour ago
+                    - img [ref=e1746]
+                  - link "Jesse Marsch held back from referee by his own player as Canada boss fumes at decision talkSPORT · 1 hour ago" [ref=e1748] [cursor=pointer]:
+                    - /url: https://talksport.com/football/world-cup/4373701/jesse-marsch-canada-referee-penalty-decision-south-africa/
+                    - generic [ref=e1749]:
+                      - generic [ref=e1750]: Jesse Marsch held back from referee by his own player as Canada boss fumes at decision
+                      - generic [ref=e1751]:
+                        - generic [ref=e1752]: talkSPORT
+                        - generic [ref=e1753]: · 1 hour ago
+                    - img [ref=e1755]
+                  - 'link "Germany Predicted Lineup vs. Paraguay: World Cup Round of 32 SI · 2 hours ago" [ref=e1757] [cursor=pointer]':
+                    - /url: /embed/news/01kw5ba7f9xe/germany-predicted-lineup-vs-paraguay-world-cup-round-32
+                    - generic [ref=e1758]:
+                      - generic [ref=e1759]: "Germany Predicted Lineup vs. Paraguay: World Cup Round of 32"
+                      - generic [ref=e1760]:
+                        - generic [ref=e1761]: SI
+                        - generic [ref=e1762]: · 2 hours ago
+                    - img [ref=e1764]
+                  - link "The Six Biggest Disappointments of the 2026 World Cup Group Stage SI · 3 hours ago" [ref=e1766] [cursor=pointer]:
+                    - /url: /embed/news/01kw7h3mp2a3/six-biggest-disappointments-2026-world-cup-group-stage
+                    - generic [ref=e1767]:
+                      - generic [ref=e1768]: The Six Biggest Disappointments of the 2026 World Cup Group Stage
+                      - generic [ref=e1769]:
+                        - generic [ref=e1770]: SI
+                        - generic [ref=e1771]: · 3 hours ago
+                    - img [ref=e1773]
+                  - link "Knee ligament injury confirmed for Ugarte FotMob · 3 hours ago" [ref=e1775] [cursor=pointer]:
+                    - /url: /news/1libod907rcrs199lvko3v1wtu-knee-ligament-injury-confirmed-ugarte
+                    - generic [ref=e1776]:
+                      - generic [ref=e1777]: Knee ligament injury confirmed for Ugarte
+                      - generic [ref=e1778]:
+                        - generic [ref=e1779]: FotMob
+                        - generic [ref=e1780]: · 3 hours ago
+                    - img [ref=e1782]
+                  - link "Tuchel made huge mistake leaving Premier League winner at home, England have a problem talkSPORT · 3 hours ago" [ref=e1784] [cursor=pointer]:
+                    - /url: https://talksport.com/football/world-cup/4373500/england-thomas-tuchel-trent-alexander-arnold-alan-pardew/
+                    - generic [ref=e1785]:
+                      - generic [ref=e1786]: Tuchel made huge mistake leaving Premier League winner at home, England have a problem
+                      - generic [ref=e1787]:
+                        - generic [ref=e1788]: talkSPORT
+                        - generic [ref=e1789]: · 3 hours ago
+                    - img [ref=e1791]
+                  - link "Japan prepared for their biggest-ever World Cup tie as Brazil test awaits FotMob · 5 hours ago" [ref=e1793] [cursor=pointer]:
+                    - /url: /news/fi7476hkjv5p1tj0yzyfzqsll-japan-prepared-their-biggest-ever-world-cup-tie-brazil-test-awaits
+                    - generic [ref=e1794]:
+                      - generic [ref=e1795]: Japan prepared for their biggest-ever World Cup tie as Brazil test awaits
+                      - generic [ref=e1796]:
+                        - generic [ref=e1797]: FotMob
+                        - generic [ref=e1798]: · 5 hours ago
+                    - img [ref=e1800]
+                - link "See more" [ref=e1802] [cursor=pointer]:
+                  - /url: /leagues/77/news/world-cup
+            - generic [ref=e1803]:
+              - generic [ref=e1805]:
+                - generic [ref=e1806]:
+                  - text: Team of the Week
+                  - link [ref=e1807] [cursor=pointer]:
+                    - /url: /api/data/league/totw?leagueId=77&season=2026&roundId=3&lang=en-US,en
+                    - img [ref=e1809]
+                - generic [ref=e1814]:
+                  - generic [ref=e1815]:
+                    - button [ref=e1816] [cursor=pointer]:
+                      - img [ref=e1817]
+                    - 'combobox "Selected: Round 3" [ref=e1825] [cursor=pointer]':
+                      - option "Round 3" [selected]
+                      - option "Round 2"
+                      - option "Round 1"
+                    - button [disabled] [ref=e1826]:
+                      - img [ref=e1827]
+                  - generic [ref=e1835]:
+                    - generic [ref=e1836]:
+                      - img
+                    - img [ref=e1838]
+                    - generic [ref=e1843]:
+                      - link "8.8 Kobel" [ref=e1844] [cursor=pointer]:
+                        - /url: /match/4667761/matchfacts/player-match-card/764018
+                        - button "8.8 Kobel" [ref=e1845]:
+                          - generic [ref=e1848]: "8.8"
+                          - generic [ref=e1849]: Kobel
+                      - link "9.0 Hakimi" [ref=e1850] [cursor=pointer]:
+                        - /url: /match/4667769/matchfacts/player-match-card/770881
+                        - button "9.0 Hakimi" [ref=e1851]:
+                          - generic [ref=e1854]: "9.0"
+                          - generic [ref=e1855]: Hakimi
+                      - link "8.6 van Hecke" [ref=e1856] [cursor=pointer]:
+                        - /url: /match/4667787/matchfacts/player-match-card/974618
+                        - button "8.6 van Hecke" [ref=e1857]:
+                          - generic [ref=e1860]: "8.6"
+                          - generic [ref=e1861]: van Hecke
+                      - link "8.6 van Dijk" [ref=e1862] [cursor=pointer]:
+                        - /url: /match/4667787/matchfacts/player-match-card/209405
+                        - button "8.6 van Dijk" [ref=e1863]:
+                          - generic [ref=e1866]: "8.6"
+                          - generic [ref=e1867]: van Dijk
+                      - link "8.3 Chávez" [ref=e1868] [cursor=pointer]:
+                        - /url: /match/4667755/matchfacts/player-match-card/1432212
+                        - button "8.3 Chávez" [ref=e1869]:
+                          - generic [ref=e1872]: "8.3"
+                          - generic [ref=e1873]: Chávez
+                      - link "9.3 Gueye" [ref=e1874] [cursor=pointer]:
+                        - /url: /match/4667809/matchfacts/player-match-card/844544
+                        - button "9.3 Gueye" [ref=e1875]:
+                          - generic [ref=e1878]: "9.3"
+                          - generic [ref=e1879]: Gueye
+                      - link "9.1 Bellingham" [ref=e1880] [cursor=pointer]:
+                        - /url: /match/4667829/matchfacts/player-match-card/1077894
+                        - button "9.1 Bellingham" [ref=e1881]:
+                          - generic [ref=e1884]: "9.1"
+                          - generic [ref=e1885]: Bellingham
+                      - link "9.6 Dembélé" [ref=e1886] [cursor=pointer]:
+                        - /url: /match/4667808/matchfacts/player-match-card/692984
+                        - button "9.6 Dembélé" [ref=e1887]:
+                          - generic [ref=e1889]:
+                            - generic [ref=e1890]: "9.6"
+                            - img [ref=e1891]
+                          - generic [ref=e1899]: Dembélé
+                      - link "8.9 Guimarães" [ref=e1900] [cursor=pointer]:
+                        - /url: /match/4667768/matchfacts/player-match-card/850354
+                        - button "8.9 Guimarães" [ref=e1901]:
+                          - generic [ref=e1904]: "8.9"
+                          - generic [ref=e1905]: Guimarães
+                      - link "9.3 Vinicius" [ref=e1906] [cursor=pointer]:
+                        - /url: /match/4667768/matchfacts/player-match-card/846033
+                        - button "9.3 Vinicius" [ref=e1907]:
+                          - generic [ref=e1910]: "9.3"
+                          - generic [ref=e1911]: Vinicius
+                      - link "8.9 Wissa" [ref=e1912] [cursor=pointer]:
+                        - /url: /match/4667824/matchfacts/player-match-card/666857
+                        - button "8.9 Wissa" [ref=e1913]:
+                          - generic [ref=e1916]: "8.9"
+                          - generic [ref=e1917]: Wissa
+              - generic [ref=e1919]:
+                - generic [ref=e1920]:
+                  - button [ref=e1921] [cursor=pointer]:
+                    - img [ref=e1922]
+                  - generic [ref=e1930]:
+                    - log [ref=e1932]
+                    - generic [ref=e1933] [cursor=pointer]:
+                      - generic [ref=e1934]:
+                        - generic [ref=e1935]: Round of 32
+                        - combobox [ref=e1936]
+                      - img [ref=e1939]
+                  - button [ref=e1941] [cursor=pointer]:
+                    - img [ref=e1942]
+                - generic [ref=e1949]:
+                  - heading "today" [level=3] [ref=e1950]
+                  - link "South Africa FT 0 - 1 Canada" [ref=e1951] [cursor=pointer]:
+                    - /url: /matches/canada-vs-south-africa/17s1wd#4653705
+                    - generic [ref=e1952]:
+                      - generic [ref=e1954]: South Africa
+                      - generic "Full time" [ref=e1957]: FT
+                    - generic [ref=e1960]: 0 - 1
+                    - generic [ref=e1961]:
+                      - generic [ref=e1963]: Canada
+                      - button "Follow" [ref=e1966]:
+                        - img [ref=e1967]
+                - generic [ref=e1971]:
+                  - heading "tomorrow" [level=3] [ref=e1972]
+                  - link "Brazil 11:00 AM Japan" [ref=e1973] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm#4653711
+                    - generic [ref=e1976]: Brazil
+                    - generic [ref=e1980]:
+                      - text: 11:00
+                      - generic [ref=e1981]: AM
+                    - generic [ref=e1982]:
+                      - generic [ref=e1984]: Japan
+                      - button "Follow" [ref=e1987]:
+                        - img [ref=e1988]
+                  - link "Germany 2:30 PM Paraguay" [ref=e1992] [cursor=pointer]:
+                    - /url: /matches/paraguay-vs-germany/1xn26z#4653703
+                    - generic [ref=e1995]: Germany
+                    - generic [ref=e1999]:
+                      - text: 2:30
+                      - generic [ref=e2000]: PM
+                    - generic [ref=e2001]:
+                      - generic [ref=e2003]: Paraguay
+                      - button "Follow" [ref=e2006]:
+                        - img [ref=e2007]
+                  - link "Netherlands 7:00 PM Morocco" [ref=e2011] [cursor=pointer]:
+                    - /url: /matches/morocco-vs-netherlands/1e327v#4653706
+                    - generic [ref=e2014]: Netherlands
+                    - generic [ref=e2018]:
+                      - text: 7:00
+                      - generic [ref=e2019]: PM
+                    - generic [ref=e2020]:
+                      - generic [ref=e2022]: Morocco
+                      - button "Follow" [ref=e2025]:
+                        - img [ref=e2026]
+                - generic [ref=e2030]:
+                  - heading "Tuesday, June 30" [level=3] [ref=e2031]
+                  - link "Ivory Coast 11:00 AM Norway" [ref=e2032] [cursor=pointer]:
+                    - /url: /matches/ivory-coast-vs-norway/1wsny5#4653712
+                    - generic [ref=e2035]: Ivory Coast
+                    - generic [ref=e2039]:
+                      - text: 11:00
+                      - generic [ref=e2040]: AM
+                    - generic [ref=e2041]:
+                      - generic [ref=e2043]: Norway
+                      - button "Follow" [ref=e2046]:
+                        - img [ref=e2047]
+                  - link "France 3:00 PM Sweden" [ref=e2051] [cursor=pointer]:
+                    - /url: /matches/france-vs-sweden/1x6dai#4653704
+                    - generic [ref=e2054]: France
+                    - generic [ref=e2058]:
+                      - text: 3:00
+                      - generic [ref=e2059]: PM
+                    - generic [ref=e2060]:
+                      - generic [ref=e2062]: Sweden
+                      - button "Follow" [ref=e2065]:
+                        - img [ref=e2066]
+                  - link "Mexico 7:00 PM Ecuador" [ref=e2070] [cursor=pointer]:
+                    - /url: /matches/ecuador-vs-mexico/1hlgxf#4653713
+                    - generic [ref=e2073]: Mexico
+                    - generic [ref=e2077]:
+                      - text: 7:00
+                      - generic [ref=e2078]: PM
+                    - generic [ref=e2079]:
+                      - generic [ref=e2081]: Ecuador
+                      - button "Follow" [ref=e2084]:
+                        - img [ref=e2085]
+                - generic [ref=e2089]:
+                  - heading "Wednesday, July 1" [level=3] [ref=e2090]
+                  - link "England 10:00 AM DR Congo" [ref=e2091] [cursor=pointer]:
+                    - /url: /matches/dr-congo-vs-england/1tbjj5#4653714
+                    - generic [ref=e2094]: England
+                    - generic [ref=e2098]:
+                      - text: 10:00
+                      - generic [ref=e2099]: AM
+                    - generic [ref=e2100]:
+                      - generic [ref=e2102]: DR Congo
+                      - button "Follow" [ref=e2105]:
+                        - img [ref=e2106]
+                  - link "Belgium 2:00 PM Senegal" [ref=e2110] [cursor=pointer]:
+                    - /url: /matches/senegal-vs-belgium/1rywdm#4653710
+                    - generic [ref=e2113]: Belgium
+                    - generic [ref=e2117]:
+                      - text: 2:00
+                      - generic [ref=e2118]: PM
+                    - generic [ref=e2119]:
+                      - generic [ref=e2121]: Senegal
+                      - button "Follow" [ref=e2124]:
+                        - img [ref=e2125]
+                  - link "USA 6:00 PM Bosnia and Herzegovina" [ref=e2129] [cursor=pointer]:
+                    - /url: /matches/usa-vs-bosnia-herzegovina/2c7uzr#4653709
+                    - generic [ref=e2132]: USA
+                    - generic [ref=e2136]:
+                      - text: 6:00
+                      - generic [ref=e2137]: PM
+                    - generic [ref=e2138]:
+                      - generic [ref=e2140]: Bosnia and Herzegovina
+                      - button "Follow" [ref=e2143]:
+                        - img [ref=e2144]
+                - generic [ref=e2148]:
+                  - heading "Thursday, July 2" [level=3] [ref=e2149]
+                  - link "Spain 1:00 PM Austria" [ref=e2150] [cursor=pointer]:
+                    - /url: /matches/spain-vs-austria/1urklb#4653708
+                    - generic [ref=e2153]: Spain
+                    - generic [ref=e2157]:
+                      - text: 1:00
+                      - generic [ref=e2158]: PM
+                    - generic [ref=e2159]:
+                      - generic [ref=e2161]: Austria
+                      - button "Follow" [ref=e2164]:
+                        - img [ref=e2165]
+                  - link "Portugal 5:00 PM Croatia" [ref=e2169] [cursor=pointer]:
+                    - /url: /matches/portugal-vs-croatia/2u2izf#4653707
+                    - generic [ref=e2172]: Portugal
+                    - generic [ref=e2176]:
+                      - text: 5:00
+                      - generic [ref=e2177]: PM
+                    - generic [ref=e2178]:
+                      - generic [ref=e2180]: Croatia
+                      - button "Follow" [ref=e2183]:
+                        - img [ref=e2184]
+                  - link "Switzerland 9:00 PM Algeria" [ref=e2188] [cursor=pointer]:
+                    - /url: /matches/algeria-vs-switzerland/1ekwbo#4653717
+                    - generic [ref=e2191]: Switzerland
+                    - generic [ref=e2195]:
+                      - text: 9:00
+                      - generic [ref=e2196]: PM
+                    - generic [ref=e2197]:
+                      - generic [ref=e2199]: Algeria
+                      - button "Follow" [ref=e2202]:
+                        - img [ref=e2203]
+                - generic [ref=e2207]:
+                  - heading "Friday, July 3" [level=3] [ref=e2208]
+                  - link "Australia 12:00 PM Egypt" [ref=e2209] [cursor=pointer]:
+                    - /url: /matches/australia-vs-egypt/2dqwke#4653716
+                    - generic [ref=e2212]: Australia
+                    - generic [ref=e2216]:
+                      - text: 12:00
+                      - generic [ref=e2217]: PM
+                    - generic [ref=e2218]:
+                      - generic [ref=e2220]: Egypt
+                      - button "Follow" [ref=e2223]:
+                        - img [ref=e2224]
+                  - link "Argentina 4:00 PM Cape Verde" [ref=e2228] [cursor=pointer]:
+                    - /url: /matches/cape-verde-vs-argentina/1b81pp#4653715
+                    - generic [ref=e2231]: Argentina
+                    - generic [ref=e2235]:
+                      - text: 4:00
+                      - generic [ref=e2236]: PM
+                    - generic [ref=e2237]:
+                      - generic [ref=e2239]: Cape Verde
+                      - button "Follow" [ref=e2242]:
+                        - img [ref=e2243]
+                  - link "Colombia 7:30 PM Ghana" [ref=e2247] [cursor=pointer]:
+                    - /url: /matches/ghana-vs-colombia/1uqlxk#4653718
+                    - generic [ref=e2250]: Colombia
+                    - generic [ref=e2254]:
+                      - text: 7:30
+                      - generic [ref=e2255]: PM
+                    - generic [ref=e2256]:
+                      - generic [ref=e2258]: Ghana
+                      - button "Follow" [ref=e2261]:
+                        - img [ref=e2262]
+      - complementary
+    - contentinfo [ref=e2266]:
+      - generic [ref=e2269]:
+        - generic [ref=e2270]:
+          - img [ref=e2271]
+          - heading "FotMob is the essential football app." [level=3] [ref=e2274]
+        - navigation [ref=e2275]:
+          - list [ref=e2276]:
+            - listitem [ref=e2277]:
+              - link "Matches" [ref=e2278] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e2279]:
+              - link "News" [ref=e2280] [cursor=pointer]:
+                - /url: /news
+            - listitem [ref=e2281]:
+              - link "Transfer Center" [ref=e2282] [cursor=pointer]:
+                - /url: /transfers
+            - listitem [ref=e2283]:
+              - link "TV schedules" [ref=e2284] [cursor=pointer]:
+                - /url: /tv-guide
+            - listitem [ref=e2285]:
+              - link "About" [ref=e2286] [cursor=pointer]:
+                - /url: /aboutUs/company
+            - listitem [ref=e2287]:
+              - link "Careers" [ref=e2288] [cursor=pointer]:
+                - /url: /aboutUs/careers
+            - listitem [ref=e2289]:
+              - link "Advertise with us" [ref=e2290] [cursor=pointer]:
+                - /url: /aboutUs/advertise
+            - listitem [ref=e2291]:
+              - link "Lineup Builder" [ref=e2292] [cursor=pointer]:
+                - /url: /lineup-builder
+            - listitem [ref=e2293]:
+              - link "FAQ" [ref=e2294] [cursor=pointer]:
+                - /url: /faq
+            - listitem [ref=e2295]:
+              - link "FIFA Rankings Men" [ref=e2296] [cursor=pointer]:
+                - /url: /fifaranking?gender=men
+            - listitem [ref=e2297]:
+              - link "FIFA Rankings Women" [ref=e2298] [cursor=pointer]:
+                - /url: /fifaranking?gender=women
+            - listitem [ref=e2299]:
+              - link "Predictor" [ref=e2300] [cursor=pointer]:
+                - /url: https://predict.fotmob.com
+            - listitem [ref=e2301]:
+              - link "Newsletter" [ref=e2302] [cursor=pointer]:
+                - /url: https://newsletter.fotmob.com/subscribe/?utm_source=webfooter
+        - generic [ref=e2303]:
+          - heading "Get the app" [level=2] [ref=e2304]
+          - list [ref=e2305]:
+            - listitem [ref=e2306]:
+              - link "Download FotMob from Apple Store" [ref=e2307] [cursor=pointer]:
+                - /url: https://apps.apple.com/app/apple-store/id488575683?pt=338473&ct=fotmobdotcomfooter&mt=8
+                - img [ref=e2308]
+            - listitem [ref=e2315]:
+              - link "Download FotMob from Google App Store" [ref=e2316] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=com.mobilefootie.wc2010&referrer=utm_source%3Dfotmob.com%26utm_medium%3Dweb%26utm_campaign%3Dfotmobdotcomfooter
+                - img [ref=e2317]
+      - generic [ref=e2325]:
+        - generic [ref=e2326]:
+          - paragraph [ref=e2328]:
+            - generic [ref=e2329]: © Copyright 2026 FotMob
+          - generic [ref=e2330]:
+            - generic [ref=e2331]:
+              - link "Terms of use" [ref=e2332] [cursor=pointer]:
+                - /url: https://www.fotmob.com/tos.txt
+              - generic [ref=e2333]: •
+              - link "Cookie policy" [ref=e2334] [cursor=pointer]:
+                - /url: /cookiepolicy
+              - generic [ref=e2335]: •
+              - link "Privacy policy" [ref=e2336] [cursor=pointer]:
+                - /url: https://www.fotmob.com/privacy_fotmob.html
+              - generic [ref=e2337]: •
+              - link "Transparency act statement" [ref=e2338] [cursor=pointer]:
+                - /url: https://www.fotmob.com/transparency-act-statement.pdf
+            - generic [ref=e2339]: The use of automatic services (robots, crawler, indexing etc.) as well as other methods for systematic or regular use is not permitted.
+          - generic [ref=e2340]:
+            - generic [ref=e2341]: Follow us
+            - navigation [ref=e2342]:
+              - list [ref=e2343]:
+                - listitem [ref=e2344]:
+                  - link "Follow us on TikTok" [ref=e2345] [cursor=pointer]:
+                    - /url: https://www.tiktok.com/@fotmobapp
+                    - img [ref=e2346]
+                - listitem [ref=e2348]:
+                  - link "Follow us on Instagram" [ref=e2349] [cursor=pointer]:
+                    - /url: https://www.instagram.com/fotmobapp/
+                    - img [ref=e2350]
+                - listitem [ref=e2353]:
+                  - link "Follow us on Facebook" [ref=e2354] [cursor=pointer]:
+                    - /url: https://www.facebook.com/fotmob/
+                    - img [ref=e2355]
+                - listitem [ref=e2359]:
+                  - link "Follow us on LinkedIn" [ref=e2360] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/company/norapps/
+                    - img [ref=e2361]
+                - listitem [ref=e2363]:
+                  - link "Follow us on Twitter/X" [ref=e2364] [cursor=pointer]:
+                    - /url: https://twitter.com/FotMob
+                    - img [ref=e2365]
+        - generic [ref=e2368]: production:ab158bb5c6ae907ba504afdadac27a92a4dca7c2
+  - alert [ref=e2369]: FIFA World Cup matches, tables and news 2026

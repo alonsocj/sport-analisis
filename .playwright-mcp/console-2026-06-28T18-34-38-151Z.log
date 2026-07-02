@@ -1,0 +1,5 @@
+[     468ms] [WARNING] AdSense head tag doesn't support data-nscript attribute. @ https://www.fotmob.com/_next/static/chunks/pages/_app-ebee00a411c36c31.js:5
+[     479ms] [WARNING] [GPT] PubAdsService.disableInitialLoad is deprecated, use googletag.setConfig({disableInitialLoad: ...}) instead.
+https://goo.gle/gpt-message#170 @ https://www.fotmob.com/_next/static/chunks/pages/_app-ebee00a411c36c31.js:5
+[     784ms] [ERROR] Not signed in with the identity provider. @ https://www.fotmob.com/matches/canada-vs-south-africa/17s1wd#4653705:0
+[    9633ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with NetworkError: Error retrieving a token. @ https://www.fotmob.com/_next/static/chunks/pages/_app-ebee00a411c36c31.js:5

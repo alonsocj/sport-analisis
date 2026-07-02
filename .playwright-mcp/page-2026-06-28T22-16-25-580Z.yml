@@ -1,0 +1,246 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "Skip to main content" [ref=e3] [cursor=pointer]:
+      - /url: "#main-content"
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - link "Link to Home" [ref=e8] [cursor=pointer]:
+            - /url: /
+            - img [ref=e10]
+          - generic [ref=e18]:
+            - textbox "Search input" [ref=e19]:
+              - /placeholder: Search
+            - img
+        - generic [ref=e20]:
+          - generic [ref=e21]:
+            - link "News" [ref=e23] [cursor=pointer]:
+              - /url: /news
+            - link "Transfers" [ref=e25] [cursor=pointer]:
+              - /url: /transfers
+              - generic [ref=e26]: Transfers
+            - link "TV schedules" [ref=e28] [cursor=pointer]:
+              - /url: /tv-guide
+              - generic [ref=e29]: TV schedules
+            - button "Settings" [ref=e30] [cursor=pointer]:
+              - img [ref=e31]
+          - generic [ref=e34]:
+            - link "Download FotMob from Apple Store" [ref=e35] [cursor=pointer]:
+              - /url: https://apps.apple.com/app/apple-store/id488575683?pt=338473&ct=fotmobdotcomheader&mt=8
+              - img [ref=e36]
+            - link "Download FotMob from Google App Store" [ref=e43] [cursor=pointer]:
+              - /url: https://play.google.com/store/apps/details?id=com.mobilefootie.wc2010&referrer=utm_source%3Dfotmob.com%26utm_medium%3Dweb%26utm_campaign%3Dfotmobdotcomheader
+              - img [ref=e44]
+    - main [ref=e51]:
+      - complementary
+      - main [ref=e52]:
+        - iframe [ref=e56]:
+          - generic [ref=f11e2]:
+            - iframe [ref=f11e5]:
+              - generic [ref=f14e2] [cursor=pointer]:
+                - img [ref=f14e8]
+                - img [ref=f14e14]
+                - img [ref=f14e20]
+            - generic [ref=f11e6]:
+              - generic:
+                - img [ref=f11e10] [cursor=pointer]
+                - button [ref=f11e12] [cursor=pointer]:
+                  - img [ref=f11e13]
+        - generic [ref=e58]:
+          - generic [ref=e60]:
+            - generic:
+              - generic:
+                - img
+            - generic [ref=e61]:
+              - generic [ref=e62]:
+                - button "View team logo" [ref=e63] [cursor=pointer]
+                - generic [ref=e64]:
+                  - heading "Canada" [level=1] [ref=e65]
+                  - 'link "FIFA #30" [ref=e66] [cursor=pointer]':
+                    - /url: /fifaranking?gender=men
+                    - generic [ref=e67]: "FIFA #30"
+              - generic [ref=e68]:
+                - link "Sync to calendar" [ref=e70] [cursor=pointer]:
+                  - /url: /teams/5810/synccalendar/canada
+                  - generic [ref=e71]: Sync to calendar
+                  - img [ref=e72]
+                - button "Follow" [ref=e76] [cursor=pointer]
+            - navigation [ref=e77]:
+              - link "Overview" [ref=e78] [cursor=pointer]:
+                - /url: /teams/5810/overview/canada
+              - link "Table" [ref=e79] [cursor=pointer]:
+                - /url: /teams/5810/table/canada
+              - link "Fixtures" [ref=e80] [cursor=pointer]:
+                - /url: /teams/5810/fixtures/canada
+              - link "Squad" [ref=e81] [cursor=pointer]:
+                - /url: /teams/5810/squad/canada
+              - link "Player stats" [ref=e82] [cursor=pointer]:
+                - /url: /teams/5810/stats/canada/players
+              - link "Team stats" [ref=e83] [cursor=pointer]:
+                - /url: /teams/5810/stats/canada/teams
+              - link "History" [ref=e84] [cursor=pointer]:
+                - /url: /teams/5810/history/canada
+              - link "News" [ref=e85] [cursor=pointer]:
+                - /url: /teams/5810/news/canada
+          - generic [ref=e88]:
+            - generic [ref=e91]:
+              - generic [ref=e92]:
+                - button [ref=e94] [cursor=pointer]:
+                  - img [ref=e95]
+                - generic [ref=e103]: Fixtures
+                - button [disabled] [ref=e105]:
+                  - img [ref=e106]
+              - generic [ref=e113]:
+                - link "Thu, Jun 18 FIFA World Cup Canada 6 - 0 Qatar" [ref=e114] [cursor=pointer]:
+                  - /url: /matches/canada-vs-qatar/14u9ym#4667760
+                  - generic [ref=e115]:
+                    - generic [ref=e116]: Thu, Jun 18
+                    - generic [ref=e118]: FIFA World Cup
+                  - generic [ref=e120]:
+                    - generic [ref=e121]: Canada
+                    - generic [ref=e124]: 6 - 0
+                    - generic [ref=e125]: Qatar
+                - link "Wed, Jun 24 FIFA World Cup Switzerland 2 - 1 Canada" [ref=e126] [cursor=pointer]:
+                  - /url: /matches/canada-vs-switzerland/1aq0cl#4667761
+                  - generic [ref=e127]:
+                    - generic [ref=e128]: Wed, Jun 24
+                    - generic [ref=e130]: FIFA World Cup
+                  - generic [ref=e132]:
+                    - generic [ref=e133]: Switzerland
+                    - generic [ref=e136]: 2 - 1
+                    - generic [ref=e137]: Canada
+                - link "today FIFA World Cup South Africa 0 - 1 Canada" [ref=e138] [cursor=pointer]:
+                  - /url: /matches/canada-vs-south-africa/17s1wd#4653705
+                  - generic [ref=e139]:
+                    - generic [ref=e140]: today
+                    - generic [ref=e142]: FIFA World Cup
+                  - generic [ref=e144]:
+                    - generic [ref=e145]: South Africa
+                    - generic [ref=e148]: 0 - 1
+                    - generic [ref=e149]: Canada
+                - link "Sat, Jul 4 FIFA World Cup Canada 11:00 AM Netherlands/Morocco" [ref=e150] [cursor=pointer]:
+                  - /url: /matches/canada-vs-netherlandsmorocco/r3oon2sh#4653843
+                  - generic [ref=e151]:
+                    - generic [ref=e152]: Sat, Jul 4
+                    - generic [ref=e154]: FIFA World Cup
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: Canada
+                    - generic [ref=e161]:
+                      - text: 11:00
+                      - generic [ref=e162]: AM
+                    - generic [ref=e163]: Netherlands/Morocco
+            - generic [ref=e166]:
+              - generic [ref=e167]:
+                - heading "Next match" [level=2] [ref=e168]
+                - link "FIFA World Cup" [ref=e169] [cursor=pointer]:
+                  - /url: /leagues/77/overview
+                  - text: FIFA World Cup
+              - link "Canada 11:00 AM Jul 4 Netherlands/Morocco" [ref=e171] [cursor=pointer]:
+                - /url: /matches/canada-vs-netherlandsmorocco/r3oon2sh#4653843
+                - generic [ref=e174]: Canada
+                - generic [ref=e175]:
+                  - generic [ref=e176]: 11:00 AM
+                  - generic [ref=e178]: Jul 4
+                - generic [ref=e181]: Netherlands/Morocco
+      - complementary
+    - contentinfo [ref=e182]:
+      - generic [ref=e185]:
+        - generic [ref=e186]:
+          - img [ref=e187]
+          - heading "FotMob is the essential football app." [level=3] [ref=e190]
+        - navigation [ref=e191]:
+          - list [ref=e192]:
+            - listitem [ref=e193]:
+              - link "Matches" [ref=e194] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e195]:
+              - link "News" [ref=e196] [cursor=pointer]:
+                - /url: /news
+            - listitem [ref=e197]:
+              - link "Transfer Center" [ref=e198] [cursor=pointer]:
+                - /url: /transfers
+            - listitem [ref=e199]:
+              - link "TV schedules" [ref=e200] [cursor=pointer]:
+                - /url: /tv-guide
+            - listitem [ref=e201]:
+              - link "About" [ref=e202] [cursor=pointer]:
+                - /url: /aboutUs/company
+            - listitem [ref=e203]:
+              - link "Careers" [ref=e204] [cursor=pointer]:
+                - /url: /aboutUs/careers
+            - listitem [ref=e205]:
+              - link "Advertise with us" [ref=e206] [cursor=pointer]:
+                - /url: /aboutUs/advertise
+            - listitem [ref=e207]:
+              - link "Lineup Builder" [ref=e208] [cursor=pointer]:
+                - /url: /lineup-builder
+            - listitem [ref=e209]:
+              - link "FAQ" [ref=e210] [cursor=pointer]:
+                - /url: /faq
+            - listitem [ref=e211]:
+              - link "FIFA Rankings Men" [ref=e212] [cursor=pointer]:
+                - /url: /fifaranking?gender=men
+            - listitem [ref=e213]:
+              - link "FIFA Rankings Women" [ref=e214] [cursor=pointer]:
+                - /url: /fifaranking?gender=women
+            - listitem [ref=e215]:
+              - link "Predictor" [ref=e216] [cursor=pointer]:
+                - /url: https://predict.fotmob.com
+            - listitem [ref=e217]:
+              - link "Newsletter" [ref=e218] [cursor=pointer]:
+                - /url: https://newsletter.fotmob.com/subscribe/?utm_source=webfooter
+        - generic [ref=e219]:
+          - heading "Get the app" [level=2] [ref=e220]
+          - list [ref=e221]:
+            - listitem [ref=e222]:
+              - link "Download FotMob from Apple Store" [ref=e223] [cursor=pointer]:
+                - /url: https://apps.apple.com/app/apple-store/id488575683?pt=338473&ct=fotmobdotcomfooter&mt=8
+                - img [ref=e224]
+            - listitem [ref=e231]:
+              - link "Download FotMob from Google App Store" [ref=e232] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=com.mobilefootie.wc2010&referrer=utm_source%3Dfotmob.com%26utm_medium%3Dweb%26utm_campaign%3Dfotmobdotcomfooter
+                - img [ref=e233]
+      - generic [ref=e241]:
+        - generic [ref=e242]:
+          - paragraph [ref=e244]:
+            - generic [ref=e245]: © Copyright 2026 FotMob
+          - generic [ref=e246]:
+            - generic [ref=e247]:
+              - link "Terms of use" [ref=e248] [cursor=pointer]:
+                - /url: https://www.fotmob.com/tos.txt
+              - generic [ref=e249]: •
+              - link "Cookie policy" [ref=e250] [cursor=pointer]:
+                - /url: /cookiepolicy
+              - generic [ref=e251]: •
+              - link "Privacy policy" [ref=e252] [cursor=pointer]:
+                - /url: https://www.fotmob.com/privacy_fotmob.html
+              - generic [ref=e253]: •
+              - link "Transparency act statement" [ref=e254] [cursor=pointer]:
+                - /url: https://www.fotmob.com/transparency-act-statement.pdf
+            - generic [ref=e255]: The use of automatic services (robots, crawler, indexing etc.) as well as other methods for systematic or regular use is not permitted.
+          - generic [ref=e256]:
+            - generic [ref=e257]: Follow us
+            - navigation [ref=e258]:
+              - list [ref=e259]:
+                - listitem [ref=e260]:
+                  - link "Follow us on TikTok" [ref=e261] [cursor=pointer]:
+                    - /url: https://www.tiktok.com/@fotmobapp
+                    - img [ref=e262]
+                - listitem [ref=e264]:
+                  - link "Follow us on Instagram" [ref=e265] [cursor=pointer]:
+                    - /url: https://www.instagram.com/fotmobapp/
+                    - img [ref=e266]
+                - listitem [ref=e269]:
+                  - link "Follow us on Facebook" [ref=e270] [cursor=pointer]:
+                    - /url: https://www.facebook.com/fotmob/
+                    - img [ref=e271]
+                - listitem [ref=e275]:
+                  - link "Follow us on LinkedIn" [ref=e276] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/company/norapps/
+                    - img [ref=e277]
+                - listitem [ref=e279]:
+                  - link "Follow us on Twitter/X" [ref=e280] [cursor=pointer]:
+                    - /url: https://twitter.com/FotMob
+                    - img [ref=e281]
+        - generic [ref=e284]: production:ab158bb5c6ae907ba504afdadac27a92a4dca7c2
+  - alert [ref=e285]

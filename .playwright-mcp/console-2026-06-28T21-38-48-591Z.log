@@ -1,0 +1,13 @@
+[     377ms] [WARNING] AdSense head tag doesn't support data-nscript attribute. @ https://www.fotmob.com/_next/static/chunks/pages/_app-ebee00a411c36c31.js:5
+[     382ms] [WARNING] [GPT] PubAdsService.disableInitialLoad is deprecated, use googletag.setConfig({disableInitialLoad: ...}) instead.
+https://goo.gle/gpt-message#170 @ https://www.fotmob.com/_next/static/chunks/pages/_app-ebee00a411c36c31.js:5
+[    2314ms] [ERROR] Attestation check for Attribution Reporting on https://ad.doubleclick.net failed. @ https://www.fotmob.com/leagues/77/overview/world-cup:0
+[    2477ms] [ERROR] Attestation check for Attribution Reporting on https://ad.doubleclick.net failed. @ https://www.fotmob.com/leagues/77/overview/world-cup:0
+[    2625ms] [ERROR] Attestation check for Shared Storage on https://www.googleadservices.com failed. @ https://www.googleadservices.com/pagead/managed/js/activeview/current/reach_worklet.html:0
+[    2712ms] [ERROR] Not signed in with the identity provider. @ https://www.fotmob.com/leagues/77/overview/world-cup:0
+[    2972ms] [ERROR] Attestation check for Shared Storage on https://www.googleadservices.com failed. @ https://www.googleadservices.com/pagead/managed/js/activeview/current/reach_worklet.html:0
+[    3055ms] [ERROR] Attestation check for Attribution Reporting on https://ad.doubleclick.net failed. @ https://www.fotmob.com/leagues/77/overview/world-cup:0
+[    3069ms] [ERROR] Attestation check for Attribution Reporting on https://ad.doubleclick.net failed. @ https://www.fotmob.com/leagues/77/overview/world-cup:0
+[    3279ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sync.search.spotxchange.com/partner?adv_id=7025&gdpr=0&uid=CAESEAI26RYPPF5S358rlvmib2w&google_cver=1:0
+[    3280ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://sync.search.spotxchange.com/partner?adv_id=7025&gdpr=0&redir=https%3A%2F%2Fcm.g.doubleclick.net%2Fpixel%3Fgoogle_nid%3Dspotxchange_dbm%26google_hm%3D%24SPOTX_BASE64_USER_ID:0
+[    4980ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with NetworkError: Error retrieving a token. @ https://www.fotmob.com/_next/static/chunks/pages/_app-ebee00a411c36c31.js:5

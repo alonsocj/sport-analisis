@@ -1,0 +1,67 @@
+<h2>Detalle de partido: ¿cómo organizamos las estadísticas?</h2>
+<p class="subtitle">Eliges MEX vs RSA en el calendario… ¿qué aparece? Tres layouts. Todos incluyen hueco reservado para lo que viene (mercados over/under-córners-tarjetas y métricas de backtesting).</p>
+
+<div class="options">
+
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Columna única (scroll vertical)</h3>
+      <div class="mockup">
+        <div class="mockup-header">MEX 🇲🇽 vs 🇿🇦 RSA — 11 jun 2026</div>
+        <div class="mockup-body" style="font-size:11px">
+          <div class="placeholder" style="padding:8px;margin:4px 0">Barras 1X2 — 63.6% / 23.7% / 12.7%</div>
+          <div class="placeholder" style="padding:14px;margin:4px 0">Heatmap de marcadores (0-0 … 10-10) + top-5 marcadores probables</div>
+          <div class="placeholder" style="padding:8px;margin:4px 0">Comparativa: Elo · ataque/defensa · forma gf/ga_ma15</div>
+          <div class="placeholder" style="padding:8px;margin:4px 0;opacity:.5">[futuro] Mercados: O/U goles · córners · tarjetas</div>
+        </div>
+      </div>
+      <p><b>Pro:</b> simple, todo visible con scroll, nada escondido. <b>Contra:</b> página larga; comparar equipos exige bajar.</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Dos columnas: predicción | cara a cara</h3>
+      <div class="mockup">
+        <div class="mockup-header">MEX 🇲🇽 vs 🇿🇦 RSA — 11 jun 2026</div>
+        <div class="mockup-body" style="font-size:11px">
+          <div style="display:flex;gap:6px">
+            <div style="flex:1">
+              <div class="placeholder" style="padding:8px;margin:2px 0">1X2</div>
+              <div class="placeholder" style="padding:18px;margin:2px 0">Heatmap marcadores</div>
+            </div>
+            <div style="flex:1">
+              <div class="placeholder" style="padding:8px;margin:2px 0">MEX vs RSA: Elo 1854/1620</div>
+              <div class="placeholder" style="padding:8px;margin:2px 0">att/def + forma (barras espejo)</div>
+              <div class="placeholder" style="padding:8px;margin:2px 0;opacity:.5">[futuro] mercados</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p><b>Pro:</b> predicción y comparativa a la vez en pantalla; denso pero ordenado. <b>Contra:</b> en pantallas estrechas se apila igual que A.</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>Pestañas dentro del partido</h3>
+      <div class="mockup">
+        <div class="mockup-header">MEX 🇲🇽 vs 🇿🇦 RSA — 11 jun 2026</div>
+        <div class="mockup-body" style="font-size:11px">
+          <div style="display:flex;gap:4px;margin-bottom:6px">
+            <span style="border-bottom:2px solid #6a6;padding:2px 8px"><b>Predicción</b></span>
+            <span style="opacity:.6;padding:2px 8px">Equipos</span>
+            <span style="opacity:.6;padding:2px 8px">Historial Elo</span>
+            <span style="opacity:.35;padding:2px 8px">Mercados (futuro)</span>
+          </div>
+          <div class="placeholder" style="padding:18px">Contenido de la pestaña activa (1X2 + heatmap)</div>
+        </div>
+      </div>
+      <p><b>Pro:</b> escala perfecto al crecer (feature 4 y 5 = pestañas nuevas); cada vista respira. <b>Contra:</b> info repartida, hay que clicar pestañas.</p>
+    </div>
+  </div>
+
+</div>

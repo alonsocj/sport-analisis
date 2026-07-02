@@ -1,0 +1,30 @@
+{
+  "response": [
+    {
+      "bookmakers": [
+        {
+          "name": "BookA",
+          "bets": [
+            {
+              "name": "Match Winner",
+              "values": [
+                {
+                  "value": "Home",
+                  "odd": "1.80"
+                },
+                {
+                  "value": "Draw",
+                  "odd": "3.50"
+                },
+                {
+                  "value": "Away",
+                  "odd": "4.20"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+# Datos (capas bronze/silver/gold) — nunca versionar
+data/
+
+# Secretos
+.env
+.env.*
+
+# Entorno virtual
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+.cache/

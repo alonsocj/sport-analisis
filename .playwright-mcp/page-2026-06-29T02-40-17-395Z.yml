@@ -1,0 +1,1216 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "Skip to main content" [ref=e3] [cursor=pointer]:
+      - /url: "#main-content"
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - link "Link to Home" [ref=e8] [cursor=pointer]:
+            - /url: /
+            - img [ref=e10]
+          - generic [ref=e18]:
+            - textbox "Search input" [ref=e19]:
+              - /placeholder: Search
+            - img
+        - generic [ref=e20]:
+          - generic [ref=e21]:
+            - link "News" [ref=e23] [cursor=pointer]:
+              - /url: /news
+            - link "Transfers" [ref=e25] [cursor=pointer]:
+              - /url: /transfers
+              - generic [ref=e26]: Transfers
+            - link "TV schedules" [ref=e28] [cursor=pointer]:
+              - /url: /tv-guide
+              - generic [ref=e29]: TV schedules
+            - button "Settings" [ref=e30] [cursor=pointer]:
+              - img [ref=e31]
+          - generic [ref=e34]:
+            - link "Download FotMob from Apple Store" [ref=e35] [cursor=pointer]:
+              - /url: https://apps.apple.com/app/apple-store/id488575683?pt=338473&ct=fotmobdotcomheader&mt=8
+              - img [ref=e36]
+            - link "Download FotMob from Google App Store" [ref=e43] [cursor=pointer]:
+              - /url: https://play.google.com/store/apps/details?id=com.mobilefootie.wc2010&referrer=utm_source%3Dfotmob.com%26utm_medium%3Dweb%26utm_campaign%3Dfotmobdotcomheader
+              - img [ref=e44]
+    - main [ref=e51]:
+      - complementary
+      - main [ref=e52]:
+        - generic [ref=e55]:
+          - generic [ref=e56]:
+            - generic [ref=e58]:
+              - generic [ref=e59]:
+                - heading "Japan vs Brazil (2025-10-14T10:30:00.000Z)" [level=1] [ref=e60]
+                - generic [ref=e61]:
+                  - generic [ref=e63]:
+                    - button "matches" [ref=e65] [cursor=pointer]:
+                      - img [ref=e67]
+                      - generic [ref=e69]: matches
+                    - link "Friendlies" [ref=e71] [cursor=pointer]:
+                      - /url: /leagues/114/overview/friendlies
+                      - generic [ref=e72]: Friendlies
+                    - button "Follow" [ref=e75] [cursor=pointer]
+                  - list [ref=e78]:
+                    - listitem [ref=e79]:
+                      - generic [ref=e80]:
+                        - img [ref=e81]
+                        - time [ref=e84]: Tue, October 14, 2025, 4:30 AM
+                    - listitem [ref=e85]:
+                      - link "Ajinomoto Stadium" [ref=e86] [cursor=pointer]:
+                        - /url: https://www.google.com/maps/search/35.66427,139.52714/@35.66427,139.52714&map_action=map
+                        - img [ref=e87]
+                        - generic [ref=e94]: Ajinomoto Stadium
+                  - generic [ref=e96]:
+                    - 'link "Japan FIFA #19" [ref=e98] [cursor=pointer]':
+                      - /url: /teams/6715/overview/japan
+                      - generic [ref=e100]:
+                        - generic [ref=e101]: Japan
+                        - generic [ref=e102]: "FIFA #19"
+                    - generic [ref=e104]:
+                      - generic [ref=e105]: 3 - 2
+                      - generic [ref=e106]: Full time
+                    - 'link "Brazil FIFA #6" [ref=e108] [cursor=pointer]':
+                      - /url: /teams/8256/overview/brazil
+                      - generic [ref=e110]:
+                        - generic [ref=e111]: Brazil
+                        - generic [ref=e112]: "FIFA #6"
+                  - generic [ref=e115]:
+                    - img [ref=e116]
+                    - list [ref=e121]:
+                      - listitem [ref=e122]:
+                        - link "Minamino 52'" [ref=e123] [cursor=pointer]:
+                          - /url: /matches/japan-vs-brazil/1uqadm?player=408943#4947213:tab=facts
+                          - text: Minamino 52'
+                      - listitem [ref=e124]:
+                        - link "Nakamura 62'" [ref=e125] [cursor=pointer]:
+                          - /url: /matches/japan-vs-brazil/1uqadm?player=887704#4947213:tab=facts
+                          - text: Nakamura 62'
+                      - listitem [ref=e126]:
+                        - link "Ueda 71'" [ref=e127] [cursor=pointer]:
+                          - /url: /matches/japan-vs-brazil/1uqadm?player=942393#4947213:tab=facts
+                          - text: Ueda 71'
+                    - list [ref=e128]:
+                      - listitem [ref=e129]:
+                        - link "P. Henrique 26'" [ref=e130] [cursor=pointer]:
+                          - /url: /matches/japan-vs-brazil/1uqadm?player=1200802#4947213:tab=facts
+                          - text: P. Henrique 26'
+                      - listitem [ref=e131]:
+                        - link "Martinelli 32'" [ref=e132] [cursor=pointer]:
+                          - /url: /matches/japan-vs-brazil/1uqadm?player=1021586#4947213:tab=facts
+                          - text: Martinelli 32'
+              - navigation [ref=e133]:
+                - button "Facts" [ref=e134] [cursor=pointer]
+                - button "Commentary" [ref=e135] [cursor=pointer]
+                - button "Lineup" [ref=e136] [cursor=pointer]
+                - button "Stats" [ref=e137] [cursor=pointer]
+                - button "Head-to-Head" [ref=e138] [cursor=pointer]
+            - generic [ref=e141]:
+              - heading "Match review" [level=2] [ref=e143]
+              - 'link "Japan 3-2 Brazil: Ueda the hero again in dramatic second-half comeback Brazil threw away their two-goal advantage as Japan turned on the style after the break to seal a memorable 3-2 victory in Tokyo on Tuesday." [ref=e144] [cursor=pointer]':
+                - /url: /news/sya4r3ez5clu12rcpko9sguvt-japan-3-2-brazil-ueda-hero-again-dramatic-second-half-comeback
+                - generic [ref=e147]:
+                  - 'heading "Japan 3-2 Brazil: Ueda the hero again in dramatic second-half comeback" [level=3] [ref=e148]'
+                  - paragraph [ref=e149]: Brazil threw away their two-goal advantage as Japan turned on the style after the break to seal a memorable 3-2 victory in Tokyo on Tuesday.
+            - generic [ref=e151]:
+              - list [ref=e154]:
+                - heading "Top stats" [level=2] [ref=e156]
+                - generic [ref=e158]: Ball possession
+                - generic [ref=e159]:
+                  - generic [ref=e161]: 33%
+                  - generic [ref=e163]: 67%
+                - listitem [ref=e164]:
+                  - generic [ref=e166]: "15"
+                  - generic [ref=e167]: Total shots
+                  - generic [ref=e169]: "9"
+                - listitem [ref=e170]:
+                  - generic [ref=e172]: "6"
+                  - generic [ref=e173]: Shots on target
+                  - generic [ref=e175]: "4"
+                - listitem [ref=e176]:
+                  - generic [ref=e178]: "26"
+                  - generic [ref=e179]: Touches in opposition box
+                  - generic [ref=e181]: "25"
+              - button "All stats" [ref=e182] [cursor=pointer]:
+                - text: All stats
+                - img [ref=e183]
+            - generic [ref=e187]:
+              - heading "Events" [level=2] [ref=e189]
+              - generic [ref=e191]:
+                - generic [ref=e193]: 26‎’‎
+                - generic [ref=e194]:
+                  - img [ref=e196]
+                  - generic [ref=e204]:
+                    - generic [ref=e205]:
+                      - link "Paulo Henrique" [ref=e207] [cursor=pointer]:
+                        - /url: /matches/japan-vs-brazil/1uqadm?player=1200802#4947213:tab=facts
+                      - generic [ref=e208]: (0 - 1)
+                    - link "assist by Bruno Guimaraes" [ref=e211] [cursor=pointer]:
+                      - /url: /matches/japan-vs-brazil/1uqadm?player=850354#4947213:tab=facts
+              - generic [ref=e213]:
+                - generic [ref=e215]: 32‎’‎
+                - generic [ref=e216]:
+                  - img [ref=e218]
+                  - generic [ref=e226]:
+                    - generic [ref=e227]:
+                      - link "Gabriel Martinelli" [ref=e229] [cursor=pointer]:
+                        - /url: /matches/japan-vs-brazil/1uqadm?player=1021586#4947213:tab=facts
+                      - generic [ref=e230]: (0 - 2)
+                    - link "assist by Lucas Paquetá" [ref=e233] [cursor=pointer]:
+                      - /url: /matches/japan-vs-brazil/1uqadm?player=766435#4947213:tab=facts
+              - generic [ref=e235]: HT 0 - 2
+              - generic [ref=e237]:
+                - generic [ref=e238]:
+                  - img [ref=e240]
+                  - generic [ref=e249]:
+                    - link "Takumi Minamino" [ref=e251] [cursor=pointer]:
+                      - /url: /matches/japan-vs-brazil/1uqadm?player=408943#4947213:tab=facts
+                    - generic [ref=e252]: (1 - 2)
+                - generic [ref=e254]: 52‎’‎
+              - generic [ref=e256]:
+                - generic [ref=e257]:
+                  - img [ref=e258]
+                  - generic [ref=e264]:
+                    - link "Junya Ito" [ref=e266] [cursor=pointer]:
+                      - /url: /matches/japan-vs-brazil/1uqadm?player=604044#4947213:tab=facts
+                    - link "Takefusa Kubo" [ref=e268] [cursor=pointer]:
+                      - /url: /matches/japan-vs-brazil/1uqadm?player=848289#4947213:tab=facts
+                      - generic [ref=e269]: Takefusa Kubo
+                - generic [ref=e271]: 54‎’‎
+              - generic [ref=e273]:
+                - generic [ref=e275]: 57‎’‎
+                - generic [ref=e276]:
+                  - img [ref=e277]
+                  - generic [ref=e283]:
+                    - link "Rodrygo" [ref=e285] [cursor=pointer]:
+                      - /url: /matches/japan-vs-brazil/1uqadm?player=895362#4947213:tab=facts
+                    - link "Gabriel Martinelli" [ref=e287] [cursor=pointer]:
+                      - /url: /matches/japan-vs-brazil/1uqadm?player=1021586#4947213:tab=facts
+                      - generic [ref=e288]: Gabriel Martinelli
+              - generic [ref=e290]:
+                - generic [ref=e292]: 57‎’‎
+                - generic [ref=e293]:
+                  - img [ref=e294]
+                  - generic [ref=e300]:
+                    - link "Matheus Cunha" [ref=e302] [cursor=pointer]:
+                      - /url: /matches/japan-vs-brazil/1uqadm?player=863098#4947213:tab=facts
+                    - link "Vinicius Junior" [ref=e304] [cursor=pointer]:
+                      - /url: /matches/japan-vs-brazil/1uqadm?player=846033#4947213:tab=facts
+                      - generic [ref=e305]: Vinicius Junior
+              - generic [ref=e307]:
+                - generic [ref=e309]: 57‎’‎
+                - generic [ref=e310]:
+                  - img [ref=e311]
+                  - generic [ref=e317]:
+                    - link "Joelinton" [ref=e319] [cursor=pointer]:
+                      - /url: /matches/japan-vs-brazil/1uqadm?player=535936#4947213:tab=facts
+                    - link "Bruno Guimaraes" [ref=e321] [cursor=pointer]:
+                      - /url: /matches/japan-vs-brazil/1uqadm?player=850354#4947213:tab=facts
+                      - generic [ref=e322]: Bruno Guimaraes
+              - generic [ref=e324]:
+                - generic [ref=e325]:
+                  - img [ref=e327]
+                  - generic [ref=e335]:
+                    - generic [ref=e336]:
+                      - link "Keito Nakamura" [ref=e338] [cursor=pointer]:
+                        - /url: /matches/japan-vs-brazil/1uqadm?player=887704#4947213:tab=facts
+                      - generic [ref=e339]: (2 - 2)
+                    - link "assist by Junya Ito" [ref=e342] [cursor=pointer]:
+                      - /url: /matches/japan-vs-brazil/1uqadm?player=604044#4947213:tab=facts
+                - generic [ref=e344]: 62‎’‎
+              - generic [ref=e346]:
+                - generic [ref=e347]:
+                  - img [ref=e349]
+                  - generic [ref=e357]:
+                    - generic [ref=e358]:
+                      - link "Ayase Ueda" [ref=e360] [cursor=pointer]:
+                        - /url: /matches/japan-vs-brazil/1uqadm?player=942393#4947213:tab=facts
+                      - generic [ref=e361]: (3 - 2)
+                    - link "assist by Junya Ito" [ref=e364] [cursor=pointer]:
+                      - /url: /matches/japan-vs-brazil/1uqadm?player=604044#4947213:tab=facts
+                - generic [ref=e366]: 71‎’‎
+              - generic [ref=e368]:
+                - generic [ref=e369]:
+                  - img [ref=e370]
+                  - generic [ref=e376]:
+                    - link "Shuto Machino" [ref=e378] [cursor=pointer]:
+                      - /url: /matches/japan-vs-brazil/1uqadm?player=915111#4947213:tab=facts
+                    - link "Ayase Ueda" [ref=e380] [cursor=pointer]:
+                      - /url: /matches/japan-vs-brazil/1uqadm?player=942393#4947213:tab=facts
+                      - generic [ref=e381]: Ayase Ueda
+                - generic [ref=e383]: 74‎’‎
+              - generic [ref=e385]:
+                - generic [ref=e386]:
+                  - img [ref=e387]
+                  - generic [ref=e393]:
+                    - link "Ao Tanaka" [ref=e395] [cursor=pointer]:
+                      - /url: /matches/japan-vs-brazil/1uqadm?player=935728#4947213:tab=facts
+                    - link "Takumi Minamino" [ref=e397] [cursor=pointer]:
+                      - /url: /matches/japan-vs-brazil/1uqadm?player=408943#4947213:tab=facts
+                      - generic [ref=e398]: Takumi Minamino
+                - generic [ref=e400]: 74‎’‎
+              - generic [ref=e402]:
+                - generic [ref=e403]:
+                  - img [ref=e404]
+                  - generic [ref=e410]:
+                    - link "Yuki Soma" [ref=e412] [cursor=pointer]:
+                      - /url: /matches/japan-vs-brazil/1uqadm?player=955320#4947213:tab=facts
+                    - link "Keito Nakamura" [ref=e414] [cursor=pointer]:
+                      - /url: /matches/japan-vs-brazil/1uqadm?player=887704#4947213:tab=facts
+                      - generic [ref=e415]: Keito Nakamura
+                - generic [ref=e417]: 74‎’‎
+              - generic [ref=e419]:
+                - generic [ref=e421]: 75‎’‎
+                - generic [ref=e422]:
+                  - img [ref=e423]
+                  - generic [ref=e429]:
+                    - link "Richarlison" [ref=e431] [cursor=pointer]:
+                      - /url: /matches/japan-vs-brazil/1uqadm?player=654908#4947213:tab=facts
+                    - link "Lucas Paquetá" [ref=e433] [cursor=pointer]:
+                      - /url: /matches/japan-vs-brazil/1uqadm?player=766435#4947213:tab=facts
+                      - generic [ref=e434]: Lucas Paquetá
+              - generic [ref=e436]:
+                - generic [ref=e438]: 75‎’‎
+                - generic [ref=e439]:
+                  - img [ref=e440]
+                  - generic [ref=e446]:
+                    - link "Estevao" [ref=e448] [cursor=pointer]:
+                      - /url: /matches/japan-vs-brazil/1uqadm?player=1580774#4947213:tab=facts
+                    - link "Luiz Henrique" [ref=e450] [cursor=pointer]:
+                      - /url: /matches/japan-vs-brazil/1uqadm?player=1176214#4947213:tab=facts
+                      - generic [ref=e451]: Luiz Henrique
+              - generic [ref=e453]:
+                - generic [ref=e455]: 75‎’‎
+                - generic [ref=e456]:
+                  - img [ref=e457]
+                  - generic [ref=e463]:
+                    - link "Caio Henrique" [ref=e465] [cursor=pointer]:
+                      - /url: /matches/japan-vs-brazil/1uqadm?player=769525#4947213:tab=facts
+                    - link "Carlos Augusto" [ref=e467] [cursor=pointer]:
+                      - /url: /matches/japan-vs-brazil/1uqadm?player=940829#4947213:tab=facts
+                      - generic [ref=e468]: Carlos Augusto
+              - generic [ref=e470]:
+                - generic [ref=e471]:
+                  - img [ref=e472]
+                  - link "Ritsu Doan" [ref=e479] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=629805#4947213:tab=facts
+                - generic [ref=e481]: 78‎’‎
+              - generic [ref=e483]:
+                - generic [ref=e485]: 78‎’‎
+                - generic [ref=e486]:
+                  - img [ref=e487]
+                  - link "Estevao" [ref=e494] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=1580774#4947213:tab=facts
+              - generic [ref=e496]:
+                - generic [ref=e497]:
+                  - img [ref=e498]
+                  - generic [ref=e504]:
+                    - link "Henry Mochizuki" [ref=e506] [cursor=pointer]:
+                      - /url: /matches/japan-vs-brazil/1uqadm?player=1611204#4947213:tab=facts
+                    - link "Ritsu Doan" [ref=e508] [cursor=pointer]:
+                      - /url: /matches/japan-vs-brazil/1uqadm?player=629805#4947213:tab=facts
+                      - generic [ref=e509]: Ritsu Doan
+                - generic [ref=e511]: 84‎’‎
+              - generic [ref=e513]:
+                - generic [ref=e514]:
+                  - img [ref=e515]
+                  - generic [ref=e521]:
+                    - link "Koki Ogawa" [ref=e523] [cursor=pointer]:
+                      - /url: /matches/japan-vs-brazil/1uqadm?player=727837#4947213:tab=facts
+                    - link "Daichi Kamada" [ref=e525] [cursor=pointer]:
+                      - /url: /matches/japan-vs-brazil/1uqadm?player=621515#4947213:tab=facts
+                      - generic [ref=e526]: Daichi Kamada
+                - generic [ref=e528]: 84‎’‎
+              - generic [ref=e530]: FT 3 - 2
+            - generic [ref=e533]:
+              - generic [ref=e537]:
+                - button "Transfer value" [ref=e538] [cursor=pointer]
+                - button "Age" [ref=e539] [cursor=pointer]
+                - button "Club" [ref=e540] [cursor=pointer]
+              - generic [ref=e541]:
+                - generic "Team rating" [ref=e542]:
+                  - generic [ref=e544]: "7.2"
+                - generic [ref=e546]: Japan
+                - generic [ref=e547]: 3-4-2-1
+              - generic [ref=e548]:
+                - img [ref=e550]
+                - img [ref=e556]
+                - generic [ref=e560]:
+                  - link "6.4 1 Suzuki" [ref=e561] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=1053679#4947213:tab=facts
+                    - generic [ref=e562]:
+                      - generic [ref=e567]: "6.4"
+                      - generic "Zion Suzuki" [ref=e568]:
+                        - generic [ref=e569]: "1"
+                        - text: Suzuki
+                  - link "6.8 3 Taniguchi" [ref=e570] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=523731#4947213:tab=facts
+                    - generic [ref=e571]:
+                      - generic [ref=e576]: "6.8"
+                      - generic "Shogo Taniguchi" [ref=e577]:
+                        - generic [ref=e578]: "3"
+                        - text: Taniguchi
+                  - link "7.3 4 Watanabe" [ref=e579] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=1023887#4947213:tab=facts
+                    - generic [ref=e580]:
+                      - generic [ref=e585]: "7.3"
+                      - generic "Tsuyoshi Watanabe" [ref=e586]:
+                        - generic [ref=e587]: "4"
+                        - text: Watanabe
+                  - link "7.1 25 Suzuki" [ref=e588] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=1337765#4947213:tab=facts
+                    - generic [ref=e589]:
+                      - generic [ref=e594]: "7.1"
+                      - generic "Junnosuke Suzuki" [ref=e595]:
+                        - generic [ref=e596]: "25"
+                        - text: Suzuki
+                  - link "84‎’‎ 7.9 10 Doan" [ref=e597] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=629805#4947213:tab=facts
+                    - generic [ref=e598]:
+                      - generic [ref=e599]:
+                        - generic [ref=e602]:
+                          - generic [ref=e603]: 84‎’‎
+                          - img [ref=e605]
+                        - generic [ref=e609]: "7.9"
+                        - img [ref=e612]
+                      - generic "Ritsu Doan" [ref=e615]:
+                        - generic [ref=e616]: "10"
+                        - text: Doan
+                  - link "6.8 21 Sano" [ref=e617] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=1033111#4947213:tab=facts
+                    - generic [ref=e618]:
+                      - generic [ref=e623]: "6.8"
+                      - generic "Kaishu Sano" [ref=e624]:
+                        - generic [ref=e625]: "21"
+                        - text: Sano
+                  - link "84‎’‎ 6.9 15 Kamada" [ref=e626] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=621515#4947213:tab=facts
+                    - generic [ref=e627]:
+                      - generic [ref=e628]:
+                        - generic [ref=e631]:
+                          - generic [ref=e632]: 84‎’‎
+                          - img [ref=e634]
+                        - generic [ref=e638]: "6.9"
+                      - generic "Daichi Kamada" [ref=e639]:
+                        - generic [ref=e640]: "15"
+                        - text: Kamada
+                  - link "74‎’‎ 7.9 13 Nakamura" [ref=e641] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=887704#4947213:tab=facts
+                    - generic [ref=e642]:
+                      - generic [ref=e643]:
+                        - generic [ref=e646]:
+                          - generic [ref=e647]: 74‎’‎
+                          - img [ref=e649]
+                        - generic [ref=e653]: "7.9"
+                        - img [ref=e656]
+                      - generic "Keito Nakamura" [ref=e662]:
+                        - generic [ref=e663]: "13"
+                        - text: Nakamura
+                  - link "54‎’‎ 7.0 20 Kubo" [ref=e664] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=848289#4947213:tab=facts
+                    - generic [ref=e665]:
+                      - generic [ref=e666]:
+                        - generic [ref=e669]:
+                          - generic [ref=e670]: 54‎’‎
+                          - img [ref=e672]
+                        - generic [ref=e676]: "7.0"
+                      - generic "Takefusa Kubo" [ref=e677]:
+                        - generic [ref=e678]: "20"
+                        - text: Kubo
+                  - link "74‎’‎ 8.0 8 Minamino" [ref=e679] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=408943#4947213:tab=facts
+                    - generic [ref=e680]:
+                      - generic [ref=e681]:
+                        - generic [ref=e684]:
+                          - generic [ref=e685]: 74‎’‎
+                          - img [ref=e687]
+                        - generic [ref=e691]: "8.0"
+                        - img [ref=e694]
+                      - generic "Takumi Minamino" [ref=e700]:
+                        - generic [ref=e701]: "8"
+                        - text: Minamino
+                  - link "74‎’‎ 7.9 18 Ueda" [ref=e702] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=942393#4947213:tab=facts
+                    - generic [ref=e703]:
+                      - generic [ref=e704]:
+                        - generic [ref=e707]:
+                          - generic [ref=e708]: 74‎’‎
+                          - img [ref=e710]
+                        - generic [ref=e714]: "7.9"
+                        - img [ref=e717]
+                      - generic "Ayase Ueda" [ref=e723]:
+                        - generic [ref=e724]: "18"
+                        - text: Ueda
+                - generic [ref=e725]:
+                  - link "57‎’‎ 6.8 22 Martinelli" [ref=e726] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=1021586#4947213:tab=facts
+                    - generic [ref=e727]:
+                      - generic [ref=e728]:
+                        - generic [ref=e731]:
+                          - generic [ref=e732]: 57‎’‎
+                          - img [ref=e734]
+                        - generic [ref=e738]: "6.8"
+                        - img [ref=e741]
+                      - generic "Gabriel Martinelli" [ref=e747]:
+                        - generic [ref=e748]: "22"
+                        - text: Martinelli
+                  - link "57‎’‎ 6.4 7 Vinicius" [ref=e749] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=846033#4947213:tab=facts
+                    - generic [ref=e750]:
+                      - generic [ref=e751]:
+                        - generic [ref=e754]:
+                          - generic [ref=e755]: 57‎’‎
+                          - img [ref=e757]
+                        - generic [ref=e761]: "6.4"
+                      - generic "Vinicius Junior" [ref=e762]:
+                        - generic [ref=e763]: "7"
+                        - text: Vinicius
+                  - link "75‎’‎ 7.7 11 Paquetá" [ref=e764] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=766435#4947213:tab=facts
+                    - generic [ref=e765]:
+                      - generic [ref=e766]:
+                        - generic [ref=e769]:
+                          - generic [ref=e770]: 75‎’‎
+                          - img [ref=e772]
+                        - generic [ref=e776]: "7.7"
+                        - img [ref=e779]
+                      - generic "Lucas Paquetá" [ref=e783]:
+                        - generic [ref=e784]: "11"
+                        - text: Paquetá
+                  - link "75‎’‎ 7.0 19 Henrique" [ref=e785] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=1176214#4947213:tab=facts
+                    - generic [ref=e786]:
+                      - generic [ref=e787]:
+                        - generic [ref=e790]:
+                          - generic [ref=e791]: 75‎’‎
+                          - img [ref=e793]
+                        - generic [ref=e797]: "7.0"
+                      - generic "Luiz Henrique" [ref=e798]:
+                        - generic [ref=e799]: "19"
+                        - text: Henrique
+                  - link "57‎’‎ 7.7 8 Guimaraes" [ref=e800] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=850354#4947213:tab=facts
+                    - generic [ref=e801]:
+                      - generic [ref=e802]:
+                        - generic [ref=e805]:
+                          - generic [ref=e806]: 57‎’‎
+                          - img [ref=e808]
+                        - generic [ref=e812]: "7.7"
+                        - img [ref=e815]
+                      - generic "Bruno Guimaraes" [ref=e819]:
+                        - generic [ref=e820]: "8"
+                        - text: Guimaraes
+                  - link "7.5 5 Casemiro" [ref=e821] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=208494#4947213:tab=facts
+                    - generic [ref=e822]:
+                      - generic [ref=e827]: "7.5"
+                      - generic "Casemiro" [ref=e828]:
+                        - generic [ref=e829]: "5"
+                        - text: Casemiro
+                  - link "75‎’‎ 6.0 24 Augusto" [ref=e830] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=940829#4947213:tab=facts
+                    - generic [ref=e831]:
+                      - generic [ref=e832]:
+                        - generic [ref=e835]:
+                          - generic [ref=e836]: 75‎’‎
+                          - img [ref=e838]
+                        - generic [ref=e842]: "6.0"
+                      - generic "Carlos Augusto" [ref=e843]:
+                        - generic [ref=e844]: "24"
+                        - text: Augusto
+                  - link "5.2 14 Bruno" [ref=e845] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=750046#4947213:tab=facts
+                    - generic [ref=e846]:
+                      - generic [ref=e851]: "5.2"
+                      - generic "Fabricio Bruno" [ref=e852]:
+                        - generic [ref=e853]: "14"
+                        - text: Bruno
+                  - link "6.0 15 Beraldo" [ref=e854] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=1255209#4947213:tab=facts
+                    - generic [ref=e855]:
+                      - generic [ref=e860]: "6.0"
+                      - generic "Lucas Beraldo" [ref=e861]:
+                        - generic [ref=e862]: "15"
+                        - text: Beraldo
+                  - link "7.3 13 Henrique" [ref=e863] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=1200802#4947213:tab=facts
+                    - generic [ref=e864]:
+                      - generic [ref=e865]:
+                        - generic [ref=e869]: "7.3"
+                        - img [ref=e872]
+                      - generic "Paulo Henrique" [ref=e878]:
+                        - generic [ref=e879]: "13"
+                        - text: Henrique
+                  - link "5.1 1 Souza" [ref=e880] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=960887#4947213:tab=facts
+                    - generic [ref=e881]:
+                      - generic [ref=e886]: "5.1"
+                      - generic "Hugo Souza" [ref=e887]:
+                        - generic [ref=e888]: "1"
+                        - text: Souza
+              - generic [ref=e889]:
+                - generic "Team rating" [ref=e890]:
+                  - generic [ref=e892]: "6.5"
+                - generic [ref=e894]: Brazil
+                - generic [ref=e895]: 4-2-3-1
+              - heading "Substitutes" [level=2] [ref=e897]
+              - generic [ref=e898]:
+                - list [ref=e899]:
+                  - link "54‎’‎ 8.7 14 Ito Attacker" [ref=e902] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=604044#4947213:tab=facts
+                    - generic [ref=e903]:
+                      - generic [ref=e904]:
+                        - generic [ref=e907]:
+                          - generic [ref=e908]: 54‎’‎
+                          - img [ref=e910]
+                        - generic [ref=e913]:
+                          - generic [ref=e914]: "8.7"
+                          - img [ref=e915]
+                        - generic [ref=e923]:
+                          - img [ref=e925]
+                          - img [ref=e930]
+                      - generic "Junya Ito" [ref=e934]:
+                        - generic [ref=e935]: "14"
+                        - text: Ito
+                      - generic [ref=e936]: Attacker
+                  - link "74‎’‎ 6.5 17 Tanaka Midfielder" [ref=e939] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=935728#4947213:tab=facts
+                    - generic [ref=e940]:
+                      - generic [ref=e941]:
+                        - generic [ref=e944]:
+                          - generic [ref=e945]: 74‎’‎
+                          - img [ref=e947]
+                        - generic [ref=e951]: "6.5"
+                      - generic "Ao Tanaka" [ref=e952]:
+                        - generic [ref=e953]: "17"
+                        - text: Tanaka
+                      - generic [ref=e954]: Midfielder
+                  - link "74‎’‎ 6.2 7 Soma Midfielder" [ref=e957] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=955320#4947213:tab=facts
+                    - generic [ref=e958]:
+                      - generic [ref=e959]:
+                        - generic [ref=e962]:
+                          - generic [ref=e963]: 74‎’‎
+                          - img [ref=e965]
+                        - generic [ref=e969]: "6.2"
+                      - generic "Yuki Soma" [ref=e970]:
+                        - generic [ref=e971]: "7"
+                        - text: Soma
+                      - generic [ref=e972]: Midfielder
+                  - link "74‎’‎ 6.0 9 Machino Attacker" [ref=e975] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=915111#4947213:tab=facts
+                    - generic [ref=e976]:
+                      - generic [ref=e977]:
+                        - generic [ref=e980]:
+                          - generic [ref=e981]: 74‎’‎
+                          - img [ref=e983]
+                        - generic [ref=e987]: "6.0"
+                      - generic "Shuto Machino" [ref=e988]:
+                        - generic [ref=e989]: "9"
+                        - text: Machino
+                      - generic [ref=e990]: Attacker
+                  - link "84‎’‎ 26 Mochizuki Midfielder" [ref=e993] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=1611204#4947213:tab=facts
+                    - generic [ref=e994]:
+                      - generic [ref=e998]:
+                        - generic [ref=e999]: 84‎’‎
+                        - img [ref=e1001]
+                      - generic "Henry Mochizuki" [ref=e1003]:
+                        - generic [ref=e1004]: "26"
+                        - text: Mochizuki
+                      - generic [ref=e1005]: Midfielder
+                  - link "84‎’‎ 19 Ogawa Attacker" [ref=e1008] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=727837#4947213:tab=facts
+                    - generic [ref=e1009]:
+                      - generic [ref=e1013]:
+                        - generic [ref=e1014]: 84‎’‎
+                        - img [ref=e1016]
+                      - generic "Koki Ogawa" [ref=e1018]:
+                        - generic [ref=e1019]: "19"
+                        - text: Ogawa
+                      - generic [ref=e1020]: Attacker
+                - list [ref=e1021]:
+                  - link "57‎’‎ 6.6 17 Joelinton Midfielder" [ref=e1024] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=535936#4947213:tab=facts
+                    - generic [ref=e1025]:
+                      - generic [ref=e1026]:
+                        - generic [ref=e1029]:
+                          - generic [ref=e1030]: 57‎’‎
+                          - img [ref=e1032]
+                        - generic [ref=e1036]: "6.6"
+                      - generic "Joelinton" [ref=e1037]:
+                        - generic [ref=e1038]: "17"
+                        - text: Joelinton
+                      - generic [ref=e1039]: Midfielder
+                  - link "57‎’‎ 6.1 21 Cunha Midfielder" [ref=e1042] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=863098#4947213:tab=facts
+                    - generic [ref=e1043]:
+                      - generic [ref=e1044]:
+                        - generic [ref=e1047]:
+                          - generic [ref=e1048]: 57‎’‎
+                          - img [ref=e1050]
+                        - generic [ref=e1054]: "6.1"
+                      - generic "Matheus Cunha" [ref=e1055]:
+                        - generic [ref=e1056]: "21"
+                        - text: Cunha
+                      - generic [ref=e1057]: Midfielder
+                  - link "57‎’‎ 7.0 10 Rodrygo Attacker" [ref=e1060] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=895362#4947213:tab=facts
+                    - generic [ref=e1061]:
+                      - generic [ref=e1062]:
+                        - generic [ref=e1065]:
+                          - generic [ref=e1066]: 57‎’‎
+                          - img [ref=e1068]
+                        - generic [ref=e1072]: "7.0"
+                      - generic "Rodrygo" [ref=e1073]:
+                        - generic [ref=e1074]: "10"
+                        - text: Rodrygo
+                      - generic [ref=e1075]: Attacker
+                  - link "75‎’‎ 6.5 16 Caio Henrique Defender" [ref=e1078] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=769525#4947213:tab=facts
+                    - generic [ref=e1079]:
+                      - generic [ref=e1080]:
+                        - generic [ref=e1083]:
+                          - generic [ref=e1084]: 75‎’‎
+                          - img [ref=e1086]
+                        - generic [ref=e1090]: "6.5"
+                      - generic "Caio Henrique" [ref=e1091]:
+                        - generic [ref=e1092]: "16"
+                        - text: Caio Henrique
+                      - generic [ref=e1093]: Defender
+                  - link "75‎’‎ 5.7 20 Estevao Attacker" [ref=e1096] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=1580774#4947213:tab=facts
+                    - generic [ref=e1097]:
+                      - generic [ref=e1098]:
+                        - generic [ref=e1101]:
+                          - generic [ref=e1102]: 75‎’‎
+                          - img [ref=e1104]
+                        - generic [ref=e1108]: "5.7"
+                        - img [ref=e1111]
+                      - generic "Estevao" [ref=e1114]:
+                        - generic [ref=e1115]: "20"
+                        - text: Estevao
+                      - generic [ref=e1116]: Attacker
+                  - link "75‎’‎ 6.3 9 Richarlison Attacker" [ref=e1119] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm?player=654908#4947213:tab=facts
+                    - generic [ref=e1120]:
+                      - generic [ref=e1121]:
+                        - generic [ref=e1124]:
+                          - generic [ref=e1125]: 75‎’‎
+                          - img [ref=e1127]
+                        - generic [ref=e1131]: "6.3"
+                      - generic "Richarlison" [ref=e1132]:
+                        - generic [ref=e1133]: "9"
+                        - text: Richarlison
+                      - generic [ref=e1134]: Attacker
+              - button "Bench" [ref=e1136] [cursor=pointer]:
+                - text: Bench
+                - img [ref=e1137]
+              - generic [ref=e1139]:
+                - list [ref=e1140]:
+                  - link "12 Osako Keeper" [ref=e1143] [cursor=pointer]:
+                    - /url: /players/922808/keisuke-osako
+                    - generic [ref=e1144]:
+                      - generic "Keisuke Osako" [ref=e1147]:
+                        - generic [ref=e1148]: "12"
+                        - text: Osako
+                      - generic [ref=e1149]: Keeper
+                  - link "23 Hayakawa Keeper" [ref=e1152] [cursor=pointer]:
+                    - /url: /players/1232143/tomoki-hayakawa
+                    - generic [ref=e1153]:
+                      - generic "Tomoki Hayakawa" [ref=e1156]:
+                        - generic [ref=e1157]: "23"
+                        - text: Hayakawa
+                      - generic [ref=e1158]: Keeper
+                  - link "22 Seko Defender" [ref=e1161] [cursor=pointer]:
+                    - /url: /players/857120/ayumu-seko
+                    - generic [ref=e1162]:
+                      - generic "Ayumu Seko" [ref=e1165]:
+                        - generic [ref=e1166]: "22"
+                        - text: Seko
+                      - generic [ref=e1167]: Defender
+                  - link "2 Hashioka Defender" [ref=e1170] [cursor=pointer]:
+                    - /url: /players/878296/daiki-hashioka
+                    - generic [ref=e1171]:
+                      - generic "Daiki Hashioka" [ref=e1174]:
+                        - generic [ref=e1175]: "2"
+                        - text: Hashioka
+                      - generic [ref=e1176]: Defender
+                  - link "16 Ando Defender" [ref=e1179] [cursor=pointer]:
+                    - /url: /players/1315546/tomoya-ando
+                    - generic [ref=e1180]:
+                      - generic "Tomoya Ando" [ref=e1183]:
+                        - generic [ref=e1184]: "16"
+                        - text: Ando
+                      - generic [ref=e1185]: Defender
+                  - link "5 Nagatomo Defender" [ref=e1188] [cursor=pointer]:
+                    - /url: /players/98254/yuto-nagatomo
+                    - generic [ref=e1189]:
+                      - generic "Yuto Nagatomo" [ref=e1192]:
+                        - generic [ref=e1193]: "5"
+                        - text: Nagatomo
+                      - generic [ref=e1194]: Defender
+                  - link "6 Fujita Midfielder" [ref=e1197] [cursor=pointer]:
+                    - /url: /players/1092731/joel-chima-fujita
+                    - generic [ref=e1198]:
+                      - generic "Joel Chima Fujita" [ref=e1201]:
+                        - generic [ref=e1202]: "6"
+                        - text: Fujita
+                      - generic [ref=e1203]: Midfielder
+                  - link "24 Saito Attacker" [ref=e1206] [cursor=pointer]:
+                    - /url: /players/950861/koki-saito
+                    - generic [ref=e1207]:
+                      - generic "Koki Saito" [ref=e1210]:
+                        - generic [ref=e1211]: "24"
+                        - text: Saito
+                      - generic [ref=e1212]: Attacker
+                - list [ref=e1213]:
+                  - link "12 Bento Keeper" [ref=e1216] [cursor=pointer]:
+                    - /url: /players/1043761/bento-krepski
+                    - generic [ref=e1217]:
+                      - generic "Bento Krepski" [ref=e1220]:
+                        - generic [ref=e1221]: "12"
+                        - text: Bento
+                      - generic [ref=e1222]: Keeper
+                  - link "23 Victor Keeper" [ref=e1225] [cursor=pointer]:
+                    - /url: /players/749834/john-victor
+                    - generic [ref=e1226]:
+                      - generic "John Victor" [ref=e1229]:
+                        - generic [ref=e1230]: "23"
+                        - text: Victor
+                      - generic [ref=e1231]: Keeper
+                  - link "6 Santos Defender" [ref=e1234] [cursor=pointer]:
+                    - /url: /players/346000/douglas-santos
+                    - generic [ref=e1235]:
+                      - generic "Douglas Santos" [ref=e1238]:
+                        - generic [ref=e1239]: "6"
+                        - text: Santos
+                      - generic [ref=e1240]: Defender
+                  - link "4 Militao Defender" [ref=e1243] [cursor=pointer]:
+                    - /url: /players/844415/eder-militao
+                    - generic [ref=e1244]:
+                      - generic "Éder Militao" [ref=e1247]:
+                        - generic [ref=e1248]: "4"
+                        - text: Militao
+                      - generic [ref=e1249]: Defender
+                  - link "3 Gabriel Defender" [ref=e1252] [cursor=pointer]:
+                    - /url: /players/795179/gabriel
+                    - generic [ref=e1253]:
+                      - generic "Gabriel" [ref=e1256]:
+                        - generic [ref=e1257]: "3"
+                        - text: Gabriel
+                      - generic [ref=e1258]: Defender
+                  - link "2 Vitinho Defender" [ref=e1261] [cursor=pointer]:
+                    - /url: /players/905498/vitinho
+                    - generic [ref=e1262]:
+                      - generic "Vitinho" [ref=e1265]:
+                        - generic [ref=e1266]: "2"
+                        - text: Vitinho
+                      - generic [ref=e1267]: Defender
+                  - link "18 Andre Midfielder" [ref=e1270] [cursor=pointer]:
+                    - /url: /players/1174296/andre
+                    - generic [ref=e1271]:
+                      - generic "Andre" [ref=e1274]:
+                        - generic [ref=e1275]: "18"
+                        - text: Andre
+                      - generic [ref=e1276]: Midfielder
+                  - link "25 Gomes Midfielder" [ref=e1279] [cursor=pointer]:
+                    - /url: /players/1174672/joao-gomes
+                    - generic [ref=e1280]:
+                      - generic "Joao Gomes" [ref=e1283]:
+                        - generic [ref=e1284]: "25"
+                        - text: Gomes
+                      - generic [ref=e1285]: Midfielder
+                  - link "26 Igor Jesus Attacker" [ref=e1288] [cursor=pointer]:
+                    - /url: /players/1082102/igor-jesus
+                    - generic [ref=e1289]:
+                      - generic "Igor Jesus" [ref=e1292]:
+                        - generic [ref=e1293]: "26"
+                        - text: Igor Jesus
+                      - generic [ref=e1294]: Attacker
+            - generic [ref=e1296]:
+              - heading "Team form" [level=2] [ref=e1298]
+              - generic [ref=e1299]:
+                - list [ref=e1300]:
+                  - listitem [ref=e1301]:
+                    - link "Japan 2 - 2 Paraguay" [ref=e1302] [cursor=pointer]:
+                      - /url: /matches/japan-vs-paraguay/1hrsw4#4928747
+                      - generic [ref=e1303]: Japan
+                      - generic [ref=e1306]: 2 - 2
+                      - generic [ref=e1308]: Paraguay
+                  - listitem [ref=e1309]:
+                    - link "USA 2 - 0 Japan" [ref=e1310] [cursor=pointer]:
+                      - /url: /matches/usa-vs-japan/1homv1#4788892
+                      - generic [ref=e1311]: USA
+                      - generic [ref=e1314]: 2 - 0
+                      - generic [ref=e1315]: Japan
+                  - listitem [ref=e1316]:
+                    - link "Mexico 0 - 0 Japan" [ref=e1317] [cursor=pointer]:
+                      - /url: /matches/mexico-vs-japan/1hnrs4#4788891
+                      - generic [ref=e1318]: Mexico
+                      - generic [ref=e1321]: 0 - 0
+                      - generic [ref=e1322]: Japan
+                  - listitem [ref=e1323]:
+                    - link "Japan 6 - 0 Indonesia" [ref=e1324] [cursor=pointer]:
+                      - /url: /matches/indonesia-vs-japan/1emamb#4523735
+                      - generic [ref=e1325]: Japan
+                      - generic [ref=e1328]: 6 - 0
+                      - generic [ref=e1329]: Indonesia
+                  - listitem [ref=e1330]:
+                    - link "Australia 1 - 0 Japan" [ref=e1331] [cursor=pointer]:
+                      - /url: /matches/japan-vs-australia/1hphy8#4523732
+                      - generic [ref=e1332]: Australia
+                      - generic [ref=e1335]: 1 - 0
+                      - generic [ref=e1336]: Japan
+                - list [ref=e1337]:
+                  - listitem [ref=e1338]:
+                    - link "South Korea 0 - 5 Brazil" [ref=e1339] [cursor=pointer]:
+                      - /url: /matches/south-korea-vs-brazil/24sg4m#4947212
+                      - generic [ref=e1340]: South Korea
+                      - generic [ref=e1343]: 0 - 5
+                      - generic [ref=e1345]: Brazil
+                  - listitem [ref=e1346]:
+                    - link "Bolivia 1 - 0 Brazil" [ref=e1347] [cursor=pointer]:
+                      - /url: /matches/bolivia-vs-brazil/1msqov#4196561
+                      - generic [ref=e1348]: Bolivia
+                      - generic [ref=e1351]: 1 - 0
+                      - generic [ref=e1352]: Brazil
+                  - listitem [ref=e1353]:
+                    - link "Brazil 3 - 0 Chile" [ref=e1354] [cursor=pointer]:
+                      - /url: /matches/brazil-vs-chile/2onklx#4196556
+                      - generic [ref=e1355]: Brazil
+                      - generic [ref=e1358]: 3 - 0
+                      - generic [ref=e1359]: Chile
+                  - listitem [ref=e1360]:
+                    - link "Brazil 1 - 0 Paraguay" [ref=e1361] [cursor=pointer]:
+                      - /url: /matches/paraguay-vs-brazil/1ut6dm#4196550
+                      - generic [ref=e1362]: Brazil
+                      - generic [ref=e1365]: 1 - 0
+                      - generic [ref=e1366]: Paraguay
+                  - listitem [ref=e1367]:
+                    - link "Ecuador 0 - 0 Brazil" [ref=e1368] [cursor=pointer]:
+                      - /url: /matches/ecuador-vs-brazil/1unpzi#4196553
+                      - generic [ref=e1369]: Ecuador
+                      - generic [ref=e1372]: 0 - 0
+                      - generic [ref=e1373]: Brazil
+            - generic [ref=e1374]:
+              - heading "Next match" [level=2] [ref=e1376]
+              - generic [ref=e1377]:
+                - generic [ref=e1378]:
+                  - link "FIFA World Cup" [ref=e1380] [cursor=pointer]:
+                    - /url: /leagues/77/overview/world-cup
+                    - generic [ref=e1381]: FIFA World Cup
+                  - link "Brazil 11:00 AM tomorrow Japan" [ref=e1383] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm#4653711
+                    - generic [ref=e1385]: Brazil
+                    - generic [ref=e1386]:
+                      - generic [ref=e1387]: 11:00 AM
+                      - paragraph [ref=e1389]: tomorrow
+                    - generic [ref=e1391]: Japan
+                - generic [ref=e1393]:
+                  - link "FIFA World Cup" [ref=e1395] [cursor=pointer]:
+                    - /url: /leagues/77/overview/world-cup
+                    - generic [ref=e1396]: FIFA World Cup
+                  - link "Brazil 11:00 AM tomorrow Japan" [ref=e1398] [cursor=pointer]:
+                    - /url: /matches/japan-vs-brazil/1uqadm#4653711
+                    - generic [ref=e1400]: Brazil
+                    - generic [ref=e1401]:
+                      - generic [ref=e1402]: 11:00 AM
+                      - paragraph [ref=e1404]: tomorrow
+                    - generic [ref=e1406]: Japan
+            - generic [ref=e1408]:
+              - heading "About the match" [level=2] [ref=e1410]
+              - list [ref=e1412]:
+                - paragraph [ref=e1413]:
+                  - link "Japan" [ref=e1414] [cursor=pointer]:
+                    - /url: /teams/6715/overview/japan
+                  - text: faces
+                  - link "Brazil" [ref=e1415] [cursor=pointer]:
+                    - /url: /teams/8256/overview/brazil
+                  - text: at Ajinomoto Stadium on Tue, Oct 14, 2025, 10:30 UTC. This match is part of the
+                  - link "Friendlies" [ref=e1416] [cursor=pointer]:
+                    - /url: /leagues/114/overview/friendlies
+                  - text: . You can check the recent head-to-head encounters, as well as full H2H record on this page to see how
+                  - link "Japan" [ref=e1417] [cursor=pointer]:
+                    - /url: /teams/6715/overview/japan
+                  - text: and
+                  - link "Brazil" [ref=e1418] [cursor=pointer]:
+                    - /url: /teams/8256/overview/brazil
+                  - text: have fared against each other in the past. On FotMob, you can follow the
+                  - link "Japan" [ref=e1419] [cursor=pointer]:
+                    - /url: /teams/6715/overview/japan
+                  - text: vs
+                  - link "Brazil" [ref=e1420] [cursor=pointer]:
+                    - /url: /teams/8256/overview/brazil
+                  - text: "live score with a full set of match features, including:"
+                - listitem [ref=e1421]:
+                  - img [ref=e1422]
+                  - paragraph [ref=e1425]: "Live updates: Every goal, card, substitution and key moment instantly delivered on FotMob."
+                - listitem [ref=e1426]:
+                  - img [ref=e1427]
+                  - paragraph [ref=e1430]: "Real-time extensive stats powered by Opta: Possession, shots, corners, big chances created, xG, momentum, and shot maps."
+                - listitem [ref=e1431]:
+                  - img [ref=e1432]
+                  - paragraph [ref=e1435]:
+                    - text: "The lineups are:"
+                    - text: "Japan (3-4-2-1):"
+                    - link "Zion Suzuki" [ref=e1436] [cursor=pointer]:
+                      - /url: /players/1053679/zion-suzuki
+                    - text: "-"
+                    - link "Shogo Taniguchi" [ref=e1437] [cursor=pointer]:
+                      - /url: /players/523731/shogo-taniguchi
+                    - text: ","
+                    - link "Tsuyoshi Watanabe" [ref=e1438] [cursor=pointer]:
+                      - /url: /players/1023887/tsuyoshi-watanabe
+                    - text: ","
+                    - link "Junnosuke Suzuki" [ref=e1439] [cursor=pointer]:
+                      - /url: /players/1337765/junnosuke-suzuki
+                    - text: "-"
+                    - link "Ritsu Doan" [ref=e1440] [cursor=pointer]:
+                      - /url: /players/629805/ritsu-doan
+                    - text: ","
+                    - link "Kaishu Sano" [ref=e1441] [cursor=pointer]:
+                      - /url: /players/1033111/kaishu-sano
+                    - text: ","
+                    - link "Daichi Kamada" [ref=e1442] [cursor=pointer]:
+                      - /url: /players/621515/daichi-kamada
+                    - text: ","
+                    - link "Keito Nakamura" [ref=e1443] [cursor=pointer]:
+                      - /url: /players/887704/keito-nakamura
+                    - text: "-"
+                    - link "Takefusa Kubo" [ref=e1444] [cursor=pointer]:
+                      - /url: /players/848289/takefusa-kubo
+                    - text: ","
+                    - link "Takumi Minamino" [ref=e1445] [cursor=pointer]:
+                      - /url: /players/408943/takumi-minamino
+                    - text: "-"
+                    - link "Ayase Ueda" [ref=e1446] [cursor=pointer]:
+                      - /url: /players/942393/ayase-ueda
+                    - text: .
+                    - text: "Brazil (4-2-3-1):"
+                    - link "Hugo Souza" [ref=e1447] [cursor=pointer]:
+                      - /url: /players/960887/hugo-souza
+                    - text: "-"
+                    - link "Paulo Henrique" [ref=e1448] [cursor=pointer]:
+                      - /url: /players/1200802/paulo-henrique
+                    - text: ","
+                    - link "Lucas Beraldo" [ref=e1449] [cursor=pointer]:
+                      - /url: /players/1255209/lucas-beraldo
+                    - text: ","
+                    - link "Fabricio Bruno" [ref=e1450] [cursor=pointer]:
+                      - /url: /players/750046/fabricio-bruno
+                    - text: ","
+                    - link "Carlos Augusto" [ref=e1451] [cursor=pointer]:
+                      - /url: /players/940829/carlos-augusto
+                    - text: "-"
+                    - link "Casemiro" [ref=e1452] [cursor=pointer]:
+                      - /url: /players/208494/casemiro
+                    - text: ","
+                    - link "Bruno Guimaraes" [ref=e1453] [cursor=pointer]:
+                      - /url: /players/850354/bruno-guimaraes
+                    - text: "-"
+                    - link "Luiz Henrique" [ref=e1454] [cursor=pointer]:
+                      - /url: /players/1176214/luiz-henrique
+                    - text: ","
+                    - link "Lucas Paquetá" [ref=e1455] [cursor=pointer]:
+                      - /url: /players/766435/lucas-paqueta
+                    - text: ","
+                    - link "Vinicius Junior" [ref=e1456] [cursor=pointer]:
+                      - /url: /players/846033/vinicius-junior
+                    - text: "-"
+                    - link "Gabriel Martinelli" [ref=e1457] [cursor=pointer]:
+                      - /url: /players/1021586/gabriel-martinelli
+                    - text: .
+                - listitem [ref=e1458]:
+                  - img [ref=e1459]
+                  - paragraph [ref=e1462]: Injury and suspension information are provided on FotMob ahead of every match, giving you the latest team news before lineups are announced.
+                - listitem [ref=e1463]:
+                  - img [ref=e1464]
+                  - paragraph [ref=e1467]:
+                    - text: "Team form & Head-to-head history: Compare recent results and see how"
+                    - link "Japan" [ref=e1468] [cursor=pointer]:
+                      - /url: /teams/6715/overview/japan
+                    - text: and
+                    - link "Brazil" [ref=e1469] [cursor=pointer]:
+                      - /url: /teams/8256/overview/brazil
+                    - text: have performed against each other. The current head to head record for the teams are
+                    - link "Japan" [ref=e1470] [cursor=pointer]:
+                      - /url: /teams/6715/overview/japan
+                    - text: 0 win(s),
+                    - link "Brazil" [ref=e1471] [cursor=pointer]:
+                      - /url: /teams/8256/overview/brazil
+                    - text: 6 win(s), and 0 draw(s).
+                - listitem [ref=e1472]:
+                  - img [ref=e1473]
+                  - paragraph [ref=e1476]: "TV and streaming info: Find out where to watch the match. This match is broadcast live on ITV1 (Great Britain), ITVX (Great Britain), STV (Great Britain), STV Player (Great Britain), Peacock ES (USA), FOX (USA), FOX 4K (USA), FOX Sports 4K (USA), FOX One (USA), Telemundo (USA), Fubo Sports (USA), FOX Sports (USA), Telemundo 4K (USA), SBS Viceland (Australia), SBS One (Australia), RDS (Canada), TSN1 (Canada), TSN3 (Canada), TSN4 (Canada), RTÉ2 (Ireland), ITV (Ireland), RTÉ2 +1 (Ireland), RTÉ Player (Ireland), TVNZ+ (New Zealand), TVNZ 1 (New Zealand), Unite8 Sports 1 (India), SuperSport (Ghana), StarTimes (Ghana), Singtel TV GO (Singapore), Channel 5 (Singapore), meWATCH (Singapore), Aleph Arena (Philippines), Pilipinas Live (Philippines), tapmad (Pakistan), PTV Sports (Pakistan), Now Sports (Hong Kong), ViuTV6 (Hong Kong), TVM (TVMSport+) (Malta), PBS (Malta), Sukan+ (Malaysia), TV Okey (Malaysia), Unifi TV (Malaysia), T Sports (Bangladesh), Toffee (Bangladesh), Bioscope+ (Bangladesh)."
+                - listitem [ref=e1477]:
+                  - img [ref=e1478]
+                  - paragraph [ref=e1481]: "Live standings: Follow league tables and tournament info in real time."
+                - listitem [ref=e1482]:
+                  - img [ref=e1483]
+                  - paragraph [ref=e1486]: "Live odds & insights: Track match favorites and before, during and post match."
+                - listitem [ref=e1487]:
+                  - img [ref=e1488]
+                  - paragraph [ref=e1491]: "Commentary & ticker: Rich text commentary for major matches to follow the action even if you can't watch."
+                - paragraph [ref=e1492]:
+                  - text: All of these features make FotMob the best way to follow
+                  - link "Japan" [ref=e1493] [cursor=pointer]:
+                    - /url: /teams/6715/overview/japan
+                  - text: vs
+                  - link "Brazil" [ref=e1494] [cursor=pointer]:
+                    - /url: /teams/8256/overview/brazil
+                  - text: ", whether you're checking the scores or diving into detailed stats. FotMob also covers every team and competition worldwide, with fixtures, results, and squad info available on team pages."
+                - paragraph [ref=e1495]: FotMob is available on the web and as a free app for iOS and Android. Install the app to get notifications, live scores, and full match coverage so you never miss a moment.
+              - button "Expand" [ref=e1496] [cursor=pointer]
+          - generic [ref=e1497]:
+            - generic [ref=e1499]:
+              - link "Open Chōfu, Japan in Google Maps" [ref=e1500] [cursor=pointer]:
+                - /url: https://www.google.com/maps/search/35.66427,139.52714/@35.66427,139.52714&map_action=map
+                - img [ref=e1502]
+                - generic [ref=e1504]:
+                  - generic [ref=e1505]: Ajinomoto Stadium
+                  - generic [ref=e1506]: Chōfu, Japan
+              - generic [ref=e1507]:
+                - generic [ref=e1508]:
+                  - img [ref=e1509]
+                  - generic [ref=e1514]:
+                    - generic [ref=e1516]:
+                      - generic [ref=e1517]: Capacity
+                      - generic [ref=e1518]: 48,955
+                    - generic [ref=e1519]:
+                      - generic [ref=e1520]: Attendance
+                      - generic [ref=e1521]: 44,920
+                    - generic [ref=e1524]: 92%
+                - generic [ref=e1525]:
+                  - img [ref=e1526]
+                  - generic [ref=e1529]:
+                    - generic [ref=e1530]: Surface
+                    - generic [ref=e1531]: Grass
+              - generic [ref=e1532]:
+                - generic [ref=e1533]:
+                  - img [ref=e1534]
+                  - generic [ref=e1536]: Weather conditions
+                - generic "Cloudy" [ref=e1537]:
+                  - generic [ref=e1538]: 18°C
+                  - img [ref=e1539]
+            - generic [ref=e1542]:
+              - heading "Insights" [level=2] [ref=e1544]
+              - list [ref=e1545]:
+                - listitem [ref=e1546]:
+                  - paragraph [ref=e1548]: Brazil haven't lost to Japan in their last 6 meetings (6W, 0D).
+            - generic [ref=e1551]:
+              - heading "Who will win?" [level=2] [ref=e1553]
+              - generic [ref=e1554]:
+                - generic [ref=e1555]:
+                  - button "16%" [disabled] [ref=e1556]:
+                    - generic [ref=e1559]: 16%
+                  - button "X 21%" [disabled] [ref=e1560]:
+                    - generic [ref=e1561]: X
+                    - generic [ref=e1563]: 21%
+                  - button "63%" [disabled] [ref=e1564]:
+                    - generic [ref=e1567]: 63%
+                - generic [ref=e1569]:
+                  - generic [ref=e1570]: "Total votes: 93,284"
+                  - link "Play FotMob Predict" [ref=e1571] [cursor=pointer]:
+                    - /url: https://predict.fotmob.com
+                    - img [ref=e1572]
+                    - generic [ref=e1576]: Play FotMob Predict
+      - complementary
+    - contentinfo [ref=e1577]:
+      - generic [ref=e1580]:
+        - generic [ref=e1581]:
+          - img [ref=e1582]
+          - heading "FotMob is the essential football app." [level=3] [ref=e1585]
+        - navigation [ref=e1586]:
+          - list [ref=e1587]:
+            - listitem [ref=e1588]:
+              - link "Matches" [ref=e1589] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e1590]:
+              - link "News" [ref=e1591] [cursor=pointer]:
+                - /url: /news
+            - listitem [ref=e1592]:
+              - link "Transfer Center" [ref=e1593] [cursor=pointer]:
+                - /url: /transfers
+            - listitem [ref=e1594]:
+              - link "TV schedules" [ref=e1595] [cursor=pointer]:
+                - /url: /tv-guide
+            - listitem [ref=e1596]:
+              - link "About" [ref=e1597] [cursor=pointer]:
+                - /url: /aboutUs/company
+            - listitem [ref=e1598]:
+              - link "Careers" [ref=e1599] [cursor=pointer]:
+                - /url: /aboutUs/careers
+            - listitem [ref=e1600]:
+              - link "Advertise with us" [ref=e1601] [cursor=pointer]:
+                - /url: /aboutUs/advertise
+            - listitem [ref=e1602]:
+              - link "Lineup Builder" [ref=e1603] [cursor=pointer]:
+                - /url: /lineup-builder
+            - listitem [ref=e1604]:
+              - link "FAQ" [ref=e1605] [cursor=pointer]:
+                - /url: /faq
+            - listitem [ref=e1606]:
+              - link "FIFA Rankings Men" [ref=e1607] [cursor=pointer]:
+                - /url: /fifaranking?gender=men
+            - listitem [ref=e1608]:
+              - link "FIFA Rankings Women" [ref=e1609] [cursor=pointer]:
+                - /url: /fifaranking?gender=women
+            - listitem [ref=e1610]:
+              - link "Predictor" [ref=e1611] [cursor=pointer]:
+                - /url: https://predict.fotmob.com
+            - listitem [ref=e1612]:
+              - link "Newsletter" [ref=e1613] [cursor=pointer]:
+                - /url: https://newsletter.fotmob.com/subscribe/?utm_source=webfooter
+        - generic [ref=e1614]:
+          - heading "Get the app" [level=2] [ref=e1615]
+          - list [ref=e1616]:
+            - listitem [ref=e1617]:
+              - link "Download FotMob from Apple Store" [ref=e1618] [cursor=pointer]:
+                - /url: https://apps.apple.com/app/apple-store/id488575683?pt=338473&ct=fotmobdotcomfooter&mt=8
+                - img [ref=e1619]
+            - listitem [ref=e1626]:
+              - link "Download FotMob from Google App Store" [ref=e1627] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=com.mobilefootie.wc2010&referrer=utm_source%3Dfotmob.com%26utm_medium%3Dweb%26utm_campaign%3Dfotmobdotcomfooter
+                - img [ref=e1628]
+      - generic [ref=e1636]:
+        - generic [ref=e1637]:
+          - paragraph [ref=e1639]:
+            - generic [ref=e1640]: © Copyright 2026 FotMob
+          - generic [ref=e1641]:
+            - generic [ref=e1642]:
+              - link "Terms of use" [ref=e1643] [cursor=pointer]:
+                - /url: https://www.fotmob.com/tos.txt
+              - generic [ref=e1644]: •
+              - link "Cookie policy" [ref=e1645] [cursor=pointer]:
+                - /url: /cookiepolicy
+              - generic [ref=e1646]: •
+              - link "Privacy policy" [ref=e1647] [cursor=pointer]:
+                - /url: https://www.fotmob.com/privacy_fotmob.html
+              - generic [ref=e1648]: •
+              - link "Transparency act statement" [ref=e1649] [cursor=pointer]:
+                - /url: https://www.fotmob.com/transparency-act-statement.pdf
+            - generic [ref=e1650]: The use of automatic services (robots, crawler, indexing etc.) as well as other methods for systematic or regular use is not permitted.
+          - generic [ref=e1651]:
+            - generic [ref=e1652]: Follow us
+            - navigation [ref=e1653]:
+              - list [ref=e1654]:
+                - listitem [ref=e1655]:
+                  - link "Follow us on TikTok" [ref=e1656] [cursor=pointer]:
+                    - /url: https://www.tiktok.com/@fotmobapp
+                    - img [ref=e1657]
+                - listitem [ref=e1659]:
+                  - link "Follow us on Instagram" [ref=e1660] [cursor=pointer]:
+                    - /url: https://www.instagram.com/fotmobapp/
+                    - img [ref=e1661]
+                - listitem [ref=e1664]:
+                  - link "Follow us on Facebook" [ref=e1665] [cursor=pointer]:
+                    - /url: https://www.facebook.com/fotmob/
+                    - img [ref=e1666]
+                - listitem [ref=e1670]:
+                  - link "Follow us on LinkedIn" [ref=e1671] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/company/norapps/
+                    - img [ref=e1672]
+                - listitem [ref=e1674]:
+                  - link "Follow us on Twitter/X" [ref=e1675] [cursor=pointer]:
+                    - /url: https://twitter.com/FotMob
+                    - img [ref=e1676]
+        - generic [ref=e1679]: production:ab158bb5c6ae907ba504afdadac27a92a4dca7c2
+  - alert [ref=e1680]

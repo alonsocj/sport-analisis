@@ -1,0 +1,518 @@
+- generic:
+  - generic [ref=e3]:
+    - banner [ref=e6]:
+      - generic [ref=e9]:
+        - button "Deploy" [ref=e11] [cursor=pointer]:
+          - generic [ref=e13]: Deploy
+        - button "Main menu" [ref=e15] [cursor=pointer]:
+          - img [ref=e16]
+    - generic [ref=e19]:
+      - heading "⚽ Mundial 2026 — Análisis Predictivo" [level=1] [ref=e24]:
+        - text: ⚽ Mundial 2026 — Análisis Predictivo
+        - generic [ref=e25]:
+          - link "Link to heading":
+            - /url: "#mundial-2026-analisis-predictivo"
+            - img
+      - generic [ref=e27]:
+        - tablist [ref=e29]:
+          - tab "📅 Calendario" [ref=e30] [cursor=pointer]:
+            - paragraph [ref=e32]: 📅 Calendario
+          - tab "🏆 Selecciones" [ref=e33] [cursor=pointer]:
+            - paragraph [ref=e35]: 🏆 Selecciones
+          - tab "📈 Modelo" [ref=e36] [cursor=pointer]:
+            - paragraph [ref=e38]: 📈 Modelo
+          - tab "Knockouts" [active] [selected] [ref=e39] [cursor=pointer]:
+            - paragraph [ref=e41]: Knockouts
+        - tabpanel "Knockouts" [ref=e364]:
+          - generic [ref=e365]:
+            - generic [ref=e368]:
+              - generic [ref=e369]:
+                - paragraph [ref=e372]: Peso forma (gamma)
+                - button "Help for Peso forma (gamma)" [ref=e376] [cursor=pointer]:
+                  - img [ref=e377]
+              - generic [ref=e380]:
+                - slider "Peso forma (gamma)" [ref=e384]:
+                  - generic:
+                    - generic:
+                      - paragraph: "0.20"
+                - generic:
+                  - generic:
+                    - paragraph: "0.00"
+                  - generic:
+                    - paragraph: "1.00"
+            - status [ref=e388]:
+              - paragraph [ref=e392]:
+                - text: "Probabilidades con parametros as_of_date:"
+                - strong [ref=e393]: 2026-06-28
+                - text: ". Sede neutral: promedio de ambas orientaciones. gamma ="
+                - strong [ref=e394]: "0.20"
+                - text: .
+            - heading "2026-06-28" [level=3] [ref=e399]:
+              - text: 2026-06-28
+              - generic [ref=e400]:
+                - link "Link to heading":
+                  - /url: "#2026-06-28"
+                  - img
+            - generic [ref=e404]:
+              - generic [ref=e406]:
+                - paragraph [ref=e411]:
+                  - strong [ref=e412]: RSA
+                  - text: vs
+                  - strong [ref=e413]: CAN
+                - paragraph [ref=e418]: R32
+              - generic [ref=e420]:
+                - paragraph [ref=e425]:
+                  - text: "1:"
+                  - strong [ref=e426]: 12.4%
+                  - text: "| X:"
+                  - strong [ref=e427]: 23.7%
+                  - text: "| 2:"
+                  - strong [ref=e428]: 63.9%
+                - paragraph [ref=e433]:
+                  - text: "Avanza:"
+                  - strong [ref=e434]: RSA
+                  - text: 24.2% |
+                  - strong [ref=e435]: CAN
+                  - text: 75.8%
+              - generic [ref=e437]:
+                - paragraph [ref=e442]:
+                  - text: "Pick:"
+                  - strong [ref=e443]: CAN
+                - button "Ver detalle" [ref=e446] [cursor=pointer]:
+                  - paragraph [ref=e450]: Ver detalle
+            - heading "2026-06-29" [level=3] [ref=e455]:
+              - text: 2026-06-29
+              - generic [ref=e456]:
+                - link "Link to heading":
+                  - /url: "#2026-06-29"
+                  - img
+            - generic [ref=e460]:
+              - generic [ref=e462]:
+                - paragraph [ref=e467]:
+                  - strong [ref=e468]: GER
+                  - text: vs
+                  - strong [ref=e469]: PAR
+                - paragraph [ref=e474]: R32
+              - generic [ref=e476]:
+                - paragraph [ref=e481]:
+                  - text: "1:"
+                  - strong [ref=e482]: 64.3%
+                  - text: "| X:"
+                  - strong [ref=e483]: 22.1%
+                  - text: "| 2:"
+                  - strong [ref=e484]: 13.6%
+                - paragraph [ref=e489]:
+                  - text: "Avanza:"
+                  - strong [ref=e490]: GER
+                  - text: 75.4% |
+                  - strong [ref=e491]: PAR
+                  - text: 24.6%
+              - generic [ref=e493]:
+                - paragraph [ref=e498]:
+                  - text: "Pick:"
+                  - strong [ref=e499]: GER
+                - button "Ver detalle" [ref=e502] [cursor=pointer]:
+                  - paragraph [ref=e506]: Ver detalle
+            - generic [ref=e510]:
+              - generic [ref=e512]:
+                - paragraph [ref=e517]:
+                  - strong [ref=e518]: NED
+                  - text: vs
+                  - strong [ref=e519]: MAR
+                - paragraph [ref=e524]: R32
+              - generic [ref=e526]:
+                - paragraph [ref=e531]:
+                  - text: "1:"
+                  - strong [ref=e532]: 34.1%
+                  - text: "| X:"
+                  - strong [ref=e533]: 28.9%
+                  - text: "| 2:"
+                  - strong [ref=e534]: 37.0%
+                - paragraph [ref=e539]:
+                  - text: "Avanza:"
+                  - strong [ref=e540]: NED
+                  - text: 48.5% |
+                  - strong [ref=e541]: MAR
+                  - text: 51.5%
+              - generic [ref=e543]:
+                - paragraph [ref=e548]:
+                  - text: "Pick:"
+                  - strong [ref=e549]: MAR
+                - button "Ver detalle" [ref=e552] [cursor=pointer]:
+                  - paragraph [ref=e556]: Ver detalle
+            - generic [ref=e560]:
+              - generic [ref=e562]:
+                - paragraph [ref=e567]:
+                  - strong [ref=e568]: BRA
+                  - text: vs
+                  - strong [ref=e569]: JPN
+                - paragraph [ref=e574]: R32
+              - generic [ref=e576]:
+                - paragraph [ref=e581]:
+                  - text: "1:"
+                  - strong [ref=e582]: 52.7%
+                  - text: "| X:"
+                  - strong [ref=e583]: 23.7%
+                  - text: "| 2:"
+                  - strong [ref=e584]: 23.6%
+                - paragraph [ref=e589]:
+                  - text: "Avanza:"
+                  - strong [ref=e590]: BRA
+                  - text: 64.6% |
+                  - strong [ref=e591]: JPN
+                  - text: 35.4%
+              - generic [ref=e593]:
+                - paragraph [ref=e598]:
+                  - text: "Pick:"
+                  - strong [ref=e599]: BRA
+                - button "Ver detalle" [ref=e602] [cursor=pointer]:
+                  - paragraph [ref=e606]: Ver detalle
+            - heading "2026-06-30" [level=3] [ref=e611]:
+              - text: 2026-06-30
+              - generic [ref=e612]:
+                - link "Link to heading":
+                  - /url: "#2026-06-30"
+                  - img
+            - generic [ref=e616]:
+              - generic [ref=e618]:
+                - paragraph [ref=e623]:
+                  - strong [ref=e624]: FRA
+                  - text: vs
+                  - strong [ref=e625]: SWE
+                - paragraph [ref=e630]: R32
+              - generic [ref=e632]:
+                - paragraph [ref=e637]:
+                  - text: "1:"
+                  - strong [ref=e638]: 77.6%
+                  - text: "| X:"
+                  - strong [ref=e639]: 14.1%
+                  - text: "| 2:"
+                  - strong [ref=e640]: 8.3%
+                - paragraph [ref=e645]:
+                  - text: "Avanza:"
+                  - strong [ref=e646]: FRA
+                  - text: 84.7% |
+                  - strong [ref=e647]: SWE
+                  - text: 15.3%
+              - generic [ref=e649]:
+                - paragraph [ref=e654]:
+                  - text: "Pick:"
+                  - strong [ref=e655]: FRA
+                - button "Ver detalle" [ref=e658] [cursor=pointer]:
+                  - paragraph [ref=e662]: Ver detalle
+            - generic [ref=e666]:
+              - generic [ref=e668]:
+                - paragraph [ref=e673]:
+                  - strong [ref=e674]: CIV
+                  - text: vs
+                  - strong [ref=e675]: NOR
+                - paragraph [ref=e680]: R32
+              - generic [ref=e682]:
+                - paragraph [ref=e687]:
+                  - text: "1:"
+                  - strong [ref=e688]: 26.5%
+                  - text: "| X:"
+                  - strong [ref=e689]: 27.4%
+                  - text: "| 2:"
+                  - strong [ref=e690]: 46.1%
+                - paragraph [ref=e695]:
+                  - text: "Avanza:"
+                  - strong [ref=e696]: CIV
+                  - text: 40.2% |
+                  - strong [ref=e697]: NOR
+                  - text: 59.8%
+              - generic [ref=e699]:
+                - paragraph [ref=e704]:
+                  - text: "Pick:"
+                  - strong [ref=e705]: NOR
+                - button "Ver detalle" [ref=e708] [cursor=pointer]:
+                  - paragraph [ref=e712]: Ver detalle
+            - generic [ref=e716]:
+              - generic [ref=e718]:
+                - paragraph [ref=e723]:
+                  - strong [ref=e724]: MEX
+                  - text: vs
+                  - strong [ref=e725]: ECU
+                - paragraph [ref=e730]: R32
+              - generic [ref=e732]:
+                - paragraph [ref=e737]:
+                  - text: "1:"
+                  - strong [ref=e738]: 31.8%
+                  - text: "| X:"
+                  - strong [ref=e739]: 34.4%
+                  - text: "| 2:"
+                  - strong [ref=e740]: 33.8%
+                - paragraph [ref=e745]:
+                  - text: "Avanza:"
+                  - strong [ref=e746]: MEX
+                  - text: 49.0% |
+                  - strong [ref=e747]: ECU
+                  - text: 51.0%
+              - generic [ref=e749]:
+                - paragraph [ref=e754]:
+                  - text: "Pick:"
+                  - strong [ref=e755]: ECU
+                - button "Ver detalle" [ref=e758] [cursor=pointer]:
+                  - paragraph [ref=e762]: Ver detalle
+            - heading "2026-07-01" [level=3] [ref=e767]:
+              - text: 2026-07-01
+              - generic [ref=e768]:
+                - link "Link to heading":
+                  - /url: "#2026-07-01"
+                  - img
+            - generic [ref=e772]:
+              - generic [ref=e774]:
+                - paragraph [ref=e779]:
+                  - strong [ref=e780]: USA
+                  - text: vs
+                  - strong [ref=e781]: BIH
+                - paragraph [ref=e786]: R32
+              - generic [ref=e788]:
+                - paragraph [ref=e793]:
+                  - text: "1:"
+                  - strong [ref=e794]: 62.4%
+                  - text: "| X:"
+                  - strong [ref=e795]: 23.0%
+                  - text: "| 2:"
+                  - strong [ref=e796]: 14.5%
+                - paragraph [ref=e801]:
+                  - text: "Avanza:"
+                  - strong [ref=e802]: USA
+                  - text: 74.0% |
+                  - strong [ref=e803]: BIH
+                  - text: 26.0%
+              - generic [ref=e805]:
+                - paragraph [ref=e810]:
+                  - text: "Pick:"
+                  - strong [ref=e811]: USA
+                - button "Ver detalle" [ref=e814] [cursor=pointer]:
+                  - paragraph [ref=e818]: Ver detalle
+            - generic [ref=e822]:
+              - generic [ref=e824]:
+                - paragraph [ref=e829]:
+                  - strong [ref=e830]: BEL
+                  - text: vs
+                  - strong [ref=e831]: SEN
+                - paragraph [ref=e836]: R32
+              - generic [ref=e838]:
+                - paragraph [ref=e843]:
+                  - text: "1:"
+                  - strong [ref=e844]: 61.6%
+                  - text: "| X:"
+                  - strong [ref=e845]: 21.3%
+                  - text: "| 2:"
+                  - strong [ref=e846]: 17.0%
+                - paragraph [ref=e851]:
+                  - text: "Avanza:"
+                  - strong [ref=e852]: BEL
+                  - text: 72.3% |
+                  - strong [ref=e853]: SEN
+                  - text: 27.7%
+              - generic [ref=e855]:
+                - paragraph [ref=e860]:
+                  - text: "Pick:"
+                  - strong [ref=e861]: BEL
+                - button "Ver detalle" [ref=e864] [cursor=pointer]:
+                  - paragraph [ref=e868]: Ver detalle
+            - generic [ref=e872]:
+              - generic [ref=e874]:
+                - paragraph [ref=e879]:
+                  - strong [ref=e880]: ENG
+                  - text: vs
+                  - strong [ref=e881]: COD
+                - paragraph [ref=e886]: R32
+              - generic [ref=e888]:
+                - paragraph [ref=e893]:
+                  - text: "1:"
+                  - strong [ref=e894]: 67.5%
+                  - text: "| X:"
+                  - strong [ref=e895]: 23.4%
+                  - text: "| 2:"
+                  - strong [ref=e896]: 9.1%
+                - paragraph [ref=e901]:
+                  - text: "Avanza:"
+                  - strong [ref=e902]: ENG
+                  - text: 79.2% |
+                  - strong [ref=e903]: COD
+                  - text: 20.8%
+              - generic [ref=e905]:
+                - paragraph [ref=e910]:
+                  - text: "Pick:"
+                  - strong [ref=e911]: ENG
+                - button "Ver detalle" [ref=e914] [cursor=pointer]:
+                  - paragraph [ref=e918]: Ver detalle
+            - heading "2026-07-02" [level=3] [ref=e923]:
+              - text: 2026-07-02
+              - generic [ref=e924]:
+                - link "Link to heading":
+                  - /url: "#2026-07-02"
+                  - img
+            - generic [ref=e928]:
+              - generic [ref=e930]:
+                - paragraph [ref=e935]:
+                  - strong [ref=e936]: POR
+                  - text: vs
+                  - strong [ref=e937]: CRO
+                - paragraph [ref=e942]: R32
+              - generic [ref=e944]:
+                - paragraph [ref=e949]:
+                  - text: "1:"
+                  - strong [ref=e950]: 60.3%
+                  - text: "| X:"
+                  - strong [ref=e951]: 23.6%
+                  - text: "| 2:"
+                  - strong [ref=e952]: 16.2%
+                - paragraph [ref=e957]:
+                  - text: "Avanza:"
+                  - strong [ref=e958]: POR
+                  - text: 72.0% |
+                  - strong [ref=e959]: CRO
+                  - text: 28.0%
+              - generic [ref=e961]:
+                - paragraph [ref=e966]:
+                  - text: "Pick:"
+                  - strong [ref=e967]: POR
+                - button "Ver detalle" [ref=e970] [cursor=pointer]:
+                  - paragraph [ref=e974]: Ver detalle
+            - generic [ref=e978]:
+              - generic [ref=e980]:
+                - paragraph [ref=e985]:
+                  - strong [ref=e986]: ESP
+                  - text: vs
+                  - strong [ref=e987]: AUT
+                - paragraph [ref=e992]: R32
+              - generic [ref=e994]:
+                - paragraph [ref=e999]:
+                  - text: "1:"
+                  - strong [ref=e1000]: 70.9%
+                  - text: "| X:"
+                  - strong [ref=e1001]: 18.5%
+                  - text: "| 2:"
+                  - strong [ref=e1002]: 10.6%
+                - paragraph [ref=e1007]:
+                  - text: "Avanza:"
+                  - strong [ref=e1008]: ESP
+                  - text: 80.1% |
+                  - strong [ref=e1009]: AUT
+                  - text: 19.9%
+              - generic [ref=e1011]:
+                - paragraph [ref=e1016]:
+                  - text: "Pick:"
+                  - strong [ref=e1017]: ESP
+                - button "Ver detalle" [ref=e1020] [cursor=pointer]:
+                  - paragraph [ref=e1024]: Ver detalle
+            - heading "2026-07-03" [level=3] [ref=e1029]:
+              - text: 2026-07-03
+              - generic [ref=e1030]:
+                - link "Link to heading":
+                  - /url: "#2026-07-03"
+                  - img
+            - generic [ref=e1034]:
+              - generic [ref=e1036]:
+                - paragraph [ref=e1041]:
+                  - strong [ref=e1042]: ARG
+                  - text: vs
+                  - strong [ref=e1043]: CPV
+                - paragraph [ref=e1048]: R32
+              - generic [ref=e1050]:
+                - paragraph [ref=e1055]:
+                  - text: "1:"
+                  - strong [ref=e1056]: 91.7%
+                  - text: "| X:"
+                  - strong [ref=e1057]: 7.0%
+                  - text: "| 2:"
+                  - strong [ref=e1058]: 1.3%
+                - paragraph [ref=e1063]:
+                  - text: "Avanza:"
+                  - strong [ref=e1064]: ARG
+                  - text: 95.2% |
+                  - strong [ref=e1065]: CPV
+                  - text: 4.8%
+              - generic [ref=e1067]:
+                - paragraph [ref=e1072]:
+                  - text: "Pick:"
+                  - strong [ref=e1073]: ARG
+                - button "Ver detalle" [ref=e1076] [cursor=pointer]:
+                  - paragraph [ref=e1080]: Ver detalle
+            - generic [ref=e1084]:
+              - generic [ref=e1086]:
+                - paragraph [ref=e1091]:
+                  - strong [ref=e1092]: AUS
+                  - text: vs
+                  - strong [ref=e1093]: EGY
+                - paragraph [ref=e1098]: R32
+              - generic [ref=e1100]:
+                - paragraph [ref=e1105]:
+                  - text: "1:"
+                  - strong [ref=e1106]: 35.9%
+                  - text: "| X:"
+                  - strong [ref=e1107]: 36.8%
+                  - text: "| 2:"
+                  - strong [ref=e1108]: 27.3%
+                - paragraph [ref=e1113]:
+                  - text: "Avanza:"
+                  - strong [ref=e1114]: AUS
+                  - text: 54.3% |
+                  - strong [ref=e1115]: EGY
+                  - text: 45.7%
+              - generic [ref=e1117]:
+                - paragraph [ref=e1122]:
+                  - text: "Pick:"
+                  - strong [ref=e1123]: AUS
+                - button "Ver detalle" [ref=e1126] [cursor=pointer]:
+                  - paragraph [ref=e1130]: Ver detalle
+            - generic [ref=e1134]:
+              - generic [ref=e1136]:
+                - paragraph [ref=e1141]:
+                  - strong [ref=e1142]: SUI
+                  - text: vs
+                  - strong [ref=e1143]: ALG
+                - paragraph [ref=e1148]: R32
+              - generic [ref=e1150]:
+                - paragraph [ref=e1155]:
+                  - text: "1:"
+                  - strong [ref=e1156]: 44.5%
+                  - text: "| X:"
+                  - strong [ref=e1157]: 25.1%
+                  - text: "| 2:"
+                  - strong [ref=e1158]: 30.5%
+                - paragraph [ref=e1163]:
+                  - text: "Avanza:"
+                  - strong [ref=e1164]: SUI
+                  - text: 57.0% |
+                  - strong [ref=e1165]: ALG
+                  - text: 43.0%
+              - generic [ref=e1167]:
+                - paragraph [ref=e1172]:
+                  - text: "Pick:"
+                  - strong [ref=e1173]: SUI
+                - button "Ver detalle" [ref=e1176] [cursor=pointer]:
+                  - paragraph [ref=e1180]: Ver detalle
+            - generic [ref=e1184]:
+              - generic [ref=e1186]:
+                - paragraph [ref=e1191]:
+                  - strong [ref=e1192]: COL
+                  - text: vs
+                  - strong [ref=e1193]: GHA
+                - paragraph [ref=e1198]: R32
+              - generic [ref=e1200]:
+                - paragraph [ref=e1205]:
+                  - text: "1:"
+                  - strong [ref=e1206]: 78.2%
+                  - text: "| X:"
+                  - strong [ref=e1207]: 16.0%
+                  - text: "| 2:"
+                  - strong [ref=e1208]: 5.7%
+                - paragraph [ref=e1213]:
+                  - text: "Avanza:"
+                  - strong [ref=e1214]: COL
+                  - text: 86.3% |
+                  - strong [ref=e1215]: GHA
+                  - text: 13.7%
+              - generic [ref=e1217]:
+                - paragraph [ref=e1222]:
+                  - text: "Pick:"
+                  - strong [ref=e1223]: COL
+                - button "Ver detalle" [ref=e1226] [cursor=pointer]:
+                  - paragraph [ref=e1230]: Ver detalle
+  - img [ref=e362]

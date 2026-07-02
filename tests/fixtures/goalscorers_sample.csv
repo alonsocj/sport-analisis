@@ -1,0 +1,16 @@
+date,home_team,away_team,team,scorer,minute,own_goal,penalty
+2022-11-20,Argentina,Saudi Arabia,Argentina,Lionel Messi,10,False,True
+2022-11-20,Argentina,Saudi Arabia,Argentina,Lionel Messi,55,False,False
+2022-11-20,Argentina,Saudi Arabia,Saudi Arabia,Salem Al-Dawsari,48,False,False
+2022-11-20,Argentina,Saudi Arabia,Saudi Arabia,Saleh Al-Shehri,90,False,False
+2022-11-21,France,Australia,France,Adrien Rabiot,27,False,False
+2022-11-21,France,Australia,France,Olivier Giroud,32,False,False
+2022-11-21,France,Australia,France,Kylian Mbappe,68,False,False
+2022-11-21,France,Australia,Australia,Craig Goodwin,9,True,False
+2022-11-24,Brazil,Serbia,Brazil,Richarlison,62,False,False
+2022-11-24,Brazil,Serbia,Brazil,Richarlison,73,False,False
+2022-11-26,Argentina,Mexico,Argentina,Lionel Messi,64,False,False
+2022-11-26,Argentina,Mexico,Argentina,Enzo Fernandez,87,False,False
+2022-11-26,Argentina,Mexico,Mexico,,45,False,False
+invalid-date,Brazil,Serbia,Brazil,Vinicius Junior,10,False,False
+2022-11-28,France,Denmark,France,Kylian Mbappe,86,False,False

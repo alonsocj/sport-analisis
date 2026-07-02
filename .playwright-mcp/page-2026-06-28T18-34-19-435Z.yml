@@ -1,0 +1,459 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "Skip to main content" [ref=e3] [cursor=pointer]:
+      - /url: "#main-content"
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - link "Link to Home" [ref=e8] [cursor=pointer]:
+            - /url: /
+            - img [ref=e10]
+          - generic [ref=e18]:
+            - textbox "Search input" [ref=e19]:
+              - /placeholder: Search
+            - img
+        - generic [ref=e20]:
+          - generic [ref=e21]:
+            - link "News" [ref=e23] [cursor=pointer]:
+              - /url: /news
+            - link "Transfers" [ref=e25] [cursor=pointer]:
+              - /url: /transfers
+              - generic [ref=e26]: Transfers
+            - link "TV schedules" [ref=e28] [cursor=pointer]:
+              - /url: /tv-guide
+              - generic [ref=e29]: TV schedules
+            - button "Settings" [ref=e30] [cursor=pointer]:
+              - img [ref=e31]
+          - generic [ref=e34]:
+            - link "Download FotMob from Apple Store" [ref=e35] [cursor=pointer]:
+              - /url: https://apps.apple.com/app/apple-store/id488575683?pt=338473&ct=fotmobdotcomheader&mt=8
+              - img [ref=e36]
+            - link "Download FotMob from Google App Store" [ref=e43] [cursor=pointer]:
+              - /url: https://play.google.com/store/apps/details?id=com.mobilefootie.wc2010&referrer=utm_source%3Dfotmob.com%26utm_medium%3Dweb%26utm_campaign%3Dfotmobdotcomheader
+              - img [ref=e44]
+    - main [ref=e51]:
+      - complementary
+      - main [ref=e52]:
+        - iframe [ref=e56]:
+          - generic [ref=f12e2]:
+            - iframe [ref=f12e5]:
+              - generic [ref=f16e2] [cursor=pointer]:
+                - img [ref=f16e8]
+                - img [ref=f16e14]
+            - generic [ref=f12e6]:
+              - generic:
+                - img [ref=f12e10] [cursor=pointer]
+                - button [ref=f12e12] [cursor=pointer]:
+                  - img [ref=f12e13]
+        - generic [ref=e58]:
+          - generic [ref=e60]:
+            - generic:
+              - generic:
+                - img
+            - generic [ref=e61]:
+              - generic [ref=e62]:
+                - button "View league logo" [ref=e63] [cursor=pointer]
+                - generic [ref=e64]:
+                  - heading "FIFA World Cup" [level=1] [ref=e65]
+                  - generic [ref=e66]: International
+              - generic [ref=e67]:
+                - generic [ref=e68]:
+                  - link "Sync to calendar" [ref=e69] [cursor=pointer]:
+                    - /url: /leagues/77/synccalendar/fifa-world-cup
+                    - generic [ref=e70]: Sync to calendar
+                    - img [ref=e71]
+                  - link "TV schedules" [ref=e74] [cursor=pointer]:
+                    - /url: /tv-guide
+                    - generic [ref=e75]: TV schedules
+                    - img [ref=e76]
+                - generic [ref=e80]:
+                  - 'combobox "Selected: 2026" [ref=e83] [cursor=pointer]':
+                    - option "2026" [selected]
+                    - option "2022"
+                    - option "2018"
+                    - option "2014"
+                    - option "2010"
+                    - option "2006"
+                    - option "2002"
+                    - option "1998"
+                    - option "1994"
+                    - option "1990"
+                    - option "1986"
+                    - option "1982"
+                    - option "1978"
+                    - option "1974"
+                    - option "1970"
+                    - option "1966"
+                    - option "1962"
+                    - option "1958"
+                    - option "1954"
+                    - option "1950"
+                    - option "1938"
+                    - option "1934"
+                    - option "1930"
+                  - button "Follow" [ref=e84] [cursor=pointer]
+            - navigation [ref=e85]:
+              - link "Overview" [ref=e86] [cursor=pointer]:
+                - /url: /leagues/77/overview/world-cup
+              - link "Table" [ref=e87] [cursor=pointer]:
+                - /url: /leagues/77/table/world-cup
+              - link "Knockout" [ref=e88] [cursor=pointer]:
+                - /url: /leagues/77/playoff/world-cup
+              - link "Fixtures" [ref=e89] [cursor=pointer]:
+                - /url: /leagues/77/fixtures/world-cup
+              - link "Player stats" [ref=e90] [cursor=pointer]:
+                - /url: /leagues/77/stats/world-cup/players
+              - link "Team stats" [ref=e91] [cursor=pointer]:
+                - /url: /leagues/77/stats/world-cup/teams
+              - link "Seasons" [ref=e92] [cursor=pointer]:
+                - /url: /leagues/77/seasons/world-cup
+              - link "News" [ref=e93] [cursor=pointer]:
+                - /url: /leagues/77/news/world-cup
+          - generic [ref=e98]:
+            - generic [ref=e99]:
+              - generic [ref=e100]:
+                - link "GER PAR tomorrow" [ref=e102] [cursor=pointer]:
+                  - /url: /matches/paraguay-vs-germany/1xn26z#4653703
+                  - generic [ref=e103]:
+                    - generic [ref=e104]:
+                      - generic [ref=e106]: GER
+                      - generic [ref=e108]: PAR
+                    - generic [ref=e109]: tomorrow
+                - link "FRA SWE Jun 30" [ref=e114] [cursor=pointer]:
+                  - /url: /matches/france-vs-sweden/1x6dai#4653704
+                  - generic [ref=e115]:
+                    - generic [ref=e116]:
+                      - generic [ref=e118]: FRA
+                      - generic [ref=e120]: SWE
+                    - generic [ref=e121]: Jun 30
+                - link "RSA CAN today" [ref=e125] [cursor=pointer]:
+                  - /url: /matches/canada-vs-south-africa/17s1wd#4653705
+                  - generic [ref=e126]:
+                    - generic [ref=e127]:
+                      - generic [ref=e129]: RSA
+                      - generic [ref=e131]: CAN
+                    - generic [ref=e132]: today
+                - link "NED MAR tomorrow" [ref=e137] [cursor=pointer]:
+                  - /url: /matches/morocco-vs-netherlands/1e327v#4653706
+                  - generic [ref=e138]:
+                    - generic [ref=e139]:
+                      - generic [ref=e141]: NED
+                      - generic [ref=e143]: MAR
+                    - generic [ref=e144]: tomorrow
+                - link "POR CRO Jul 2" [ref=e148] [cursor=pointer]:
+                  - /url: /matches/portugal-vs-croatia/2u2izf#4653707
+                  - generic [ref=e149]:
+                    - generic [ref=e150]:
+                      - generic [ref=e152]: POR
+                      - generic [ref=e154]: CRO
+                    - generic [ref=e155]: Jul 2
+                - link "ESP AUT Jul 2" [ref=e160] [cursor=pointer]:
+                  - /url: /matches/spain-vs-austria/1urklb#4653708
+                  - generic [ref=e161]:
+                    - generic [ref=e162]:
+                      - generic [ref=e164]: ESP
+                      - generic [ref=e166]: AUT
+                    - generic [ref=e167]: Jul 2
+                - link "USA BIH Jul 1" [ref=e171] [cursor=pointer]:
+                  - /url: /matches/usa-vs-bosnia-herzegovina/2c7uzr#4653709
+                  - generic [ref=e172]:
+                    - generic [ref=e173]:
+                      - generic [ref=e175]: USA
+                      - generic [ref=e177]: BIH
+                    - generic [ref=e178]: Jul 1
+                - link "BEL SEN Jul 1" [ref=e183] [cursor=pointer]:
+                  - /url: /matches/senegal-vs-belgium/1rywdm#4653710
+                  - generic [ref=e184]:
+                    - generic [ref=e185]:
+                      - generic [ref=e187]: BEL
+                      - generic [ref=e189]: SEN
+                    - generic [ref=e190]: Jul 1
+              - generic [ref=e193]:
+                - link "TBD TBD Jul 4" [ref=e197] [cursor=pointer]:
+                  - /url: /matches/francesweden-vs-germanyparaguay/2zz10n12a#4653842
+                  - generic [ref=e198]:
+                    - generic [ref=e199]:
+                      - generic [ref=e201]: TBD
+                      - generic [ref=e203]: TBD
+                    - generic [ref=e204]: Jul 4
+                - link "TBD TBD Jul 4" [ref=e211] [cursor=pointer]:
+                  - /url: /matches/south-africacanada-vs-netherlandsmorocco/2zow6w4sk#4653843
+                  - generic [ref=e212]:
+                    - generic [ref=e213]:
+                      - generic [ref=e215]: TBD
+                      - generic [ref=e217]: TBD
+                    - generic [ref=e218]: Jul 4
+                - link "TBD TBD Jul 6" [ref=e224] [cursor=pointer]:
+                  - /url: /matches/portugalcroatia-vs-spainaustria/305zrh05l#4653844
+                  - generic [ref=e225]:
+                    - generic [ref=e226]:
+                      - generic [ref=e228]: TBD
+                      - generic [ref=e230]: TBD
+                    - generic [ref=e231]: Jul 6
+                - link "TBD TBD Jul 6" [ref=e238] [cursor=pointer]:
+                  - /url: /matches/usabosnia-herzegovina-vs-belgiumsenegal/2zzdvjp0w#4653845
+                  - generic [ref=e239]:
+                    - generic [ref=e240]:
+                      - generic [ref=e242]: TBD
+                      - generic [ref=e244]: TBD
+                    - generic [ref=e245]: Jul 6
+              - generic [ref=e248]:
+                - link "EF1 EF2 Jul 9" [ref=e252] [cursor=pointer]:
+                  - /url: /matches/winner-ef-1-vs-winner-ef-2/1gzlq2j4i#4653851
+                  - generic [ref=e253]:
+                    - generic [ref=e254]:
+                      - generic [ref=e256]: EF1
+                      - generic [ref=e258]: EF2
+                    - generic [ref=e259]: Jul 9
+                - link "EF5 EF6 Jul 10" [ref=e266] [cursor=pointer]:
+                  - /url: /matches/winner-ef-5-vs-winner-ef-6/1gzm787ex#4653853
+                  - generic [ref=e267]:
+                    - generic [ref=e268]:
+                      - generic [ref=e270]: EF5
+                      - generic [ref=e272]: EF6
+                    - generic [ref=e273]: Jul 10
+              - link "WQ1 WQ2 Jul 14" [ref=e280] [cursor=pointer]:
+                - /url: /matches/winner-qf-1-vs-winner-qf-2/4xvci#4653855
+                - generic [ref=e281]:
+                  - generic [ref=e282]:
+                    - generic [ref=e284]: WQ1
+                    - generic [ref=e286]: WQ2
+                  - generic [ref=e287]: Jul 14
+            - generic [ref=e291]:
+              - generic [ref=e292]:
+                - link "LS1 LS2 Jul 18" [ref=e294] [cursor=pointer]:
+                  - /url: /matches/loser-sf-1-vs-loser-sf-2/4oe88#4653857
+                  - generic [ref=e295]:
+                    - generic [ref=e296]:
+                      - generic [ref=e298]: LS1
+                      - generic [ref=e300]: LS2
+                    - generic [ref=e301]: Jul 18
+                - generic [ref=e303]: Bronze-final
+              - generic [ref=e304]:
+                - link "WS1 WS2 Jul 19" [ref=e306] [cursor=pointer]:
+                  - /url: /matches/winner-sf-1-vs-winner-sf-2/4oqgw#4653858
+                  - generic [ref=e307]:
+                    - generic [ref=e308]:
+                      - generic [ref=e310]: WS1
+                      - generic [ref=e312]: WS2
+                    - generic [ref=e313]: Jul 19
+                - generic [ref=e315]: Final
+              - link "champion":
+                - /url: /leagues/[id]/[tab]/[[...slug]]
+                - generic:
+                  - generic:
+                    - img
+                    - generic:
+                      - img
+                  - generic: champion
+            - generic [ref=e316]:
+              - generic [ref=e317]:
+                - link "BRA JPN tomorrow" [ref=e322] [cursor=pointer]:
+                  - /url: /matches/japan-vs-brazil/1uqadm#4653711
+                  - generic [ref=e323]:
+                    - generic [ref=e324]:
+                      - generic [ref=e326]: BRA
+                      - generic [ref=e328]: JPN
+                    - generic [ref=e329]: tomorrow
+                - link "CIV NOR Jun 30" [ref=e333] [cursor=pointer]:
+                  - /url: /matches/ivory-coast-vs-norway/1wsny5#4653712
+                  - generic [ref=e334]:
+                    - generic [ref=e335]:
+                      - generic [ref=e337]: CIV
+                      - generic [ref=e339]: NOR
+                    - generic [ref=e340]: Jun 30
+                - link "MEX ECU Jun 30" [ref=e345] [cursor=pointer]:
+                  - /url: /matches/ecuador-vs-mexico/1hlgxf#4653713
+                  - generic [ref=e346]:
+                    - generic [ref=e347]:
+                      - generic [ref=e349]: MEX
+                      - generic [ref=e351]: ECU
+                    - generic [ref=e352]: Jun 30
+                - link "ENG COD Jul 1" [ref=e356] [cursor=pointer]:
+                  - /url: /matches/dr-congo-vs-england/1tbjj5#4653714
+                  - generic [ref=e357]:
+                    - generic [ref=e358]:
+                      - generic [ref=e360]: ENG
+                      - generic [ref=e362]: COD
+                    - generic [ref=e363]: Jul 1
+                - link "ARG CPV Jul 3" [ref=e368] [cursor=pointer]:
+                  - /url: /matches/cape-verde-vs-argentina/1b81pp#4653715
+                  - generic [ref=e369]:
+                    - generic [ref=e370]:
+                      - generic [ref=e372]: ARG
+                      - generic [ref=e374]: CPV
+                    - generic [ref=e375]: Jul 3
+                - link "AUS EGY Jul 3" [ref=e379] [cursor=pointer]:
+                  - /url: /matches/australia-vs-egypt/2dqwke#4653716
+                  - generic [ref=e380]:
+                    - generic [ref=e381]:
+                      - generic [ref=e383]: AUS
+                      - generic [ref=e385]: EGY
+                    - generic [ref=e386]: Jul 3
+                - link "SUI ALG Jul 2" [ref=e391] [cursor=pointer]:
+                  - /url: /matches/algeria-vs-switzerland/1ekwbo#4653717
+                  - generic [ref=e392]:
+                    - generic [ref=e393]:
+                      - generic [ref=e395]: SUI
+                      - generic [ref=e397]: ALG
+                    - generic [ref=e398]: Jul 2
+                - link "COL GHA Jul 3" [ref=e402] [cursor=pointer]:
+                  - /url: /matches/ghana-vs-colombia/1uqlxk#4653718
+                  - generic [ref=e403]:
+                    - generic [ref=e404]:
+                      - generic [ref=e406]: COL
+                      - generic [ref=e408]: GHA
+                    - generic [ref=e409]: Jul 3
+              - generic [ref=e410]:
+                - link "TBD TBD Jul 5" [ref=e415] [cursor=pointer]:
+                  - /url: /matches/braziljapan-vs-ivory-coastnorway/2zvjsp9xw#4653846
+                  - generic [ref=e416]:
+                    - generic [ref=e417]:
+                      - generic [ref=e419]: TBD
+                      - generic [ref=e421]: TBD
+                    - generic [ref=e422]: Jul 5
+                - link "TBD TBD Jul 5" [ref=e428] [cursor=pointer]:
+                  - /url: /matches/mexicoecuador-vs-englanddr-congo/305zcri9g#4653847
+                  - generic [ref=e429]:
+                    - generic [ref=e430]:
+                      - generic [ref=e432]: TBD
+                      - generic [ref=e434]: TBD
+                    - generic [ref=e435]: Jul 5
+                - link "TBD TBD Jul 7" [ref=e442] [cursor=pointer]:
+                  - /url: /matches/argentinacape-verde-vs-australiaegypt/2zz8peg2u#4653848
+                  - generic [ref=e443]:
+                    - generic [ref=e444]:
+                      - generic [ref=e446]: TBD
+                      - generic [ref=e448]: TBD
+                    - generic [ref=e449]: Jul 7
+                - link "TBD TBD Jul 7" [ref=e455] [cursor=pointer]:
+                  - /url: /matches/colombiaghana-vs-switzerlandalgeria/305zrh05m#4653849
+                  - generic [ref=e456]:
+                    - generic [ref=e457]:
+                      - generic [ref=e459]: TBD
+                      - generic [ref=e461]: TBD
+                    - generic [ref=e462]: Jul 7
+              - generic [ref=e465]:
+                - link "EF3 EF4 Jul 11" [ref=e470] [cursor=pointer]:
+                  - /url: /matches/winner-ef-3-vs-winner-ef-4/1gzlwxlmq#4653852
+                  - generic [ref=e471]:
+                    - generic [ref=e472]:
+                      - generic [ref=e474]: EF3
+                      - generic [ref=e476]: EF4
+                    - generic [ref=e477]: Jul 11
+                - link "EF7 EF8 Jul 11" [ref=e483] [cursor=pointer]:
+                  - /url: /matches/winner-ef-8-vs-winner-ef-7/1gzm787ew#4653854
+                  - generic [ref=e484]:
+                    - generic [ref=e485]:
+                      - generic [ref=e487]: EF7
+                      - generic [ref=e489]: EF8
+                    - generic [ref=e490]: Jul 11
+              - link "WQ3 WQ4 Jul 15" [ref=e498] [cursor=pointer]:
+                - /url: /matches/winner-qf-3-vs-winner-qf-4/4y7xe#4653856
+                - generic [ref=e499]:
+                  - generic [ref=e500]:
+                    - generic [ref=e502]: WQ3
+                    - generic [ref=e504]: WQ4
+                  - generic [ref=e505]: Jul 15
+      - complementary
+    - contentinfo [ref=e508]:
+      - generic [ref=e511]:
+        - generic [ref=e512]:
+          - img [ref=e513]
+          - heading "FotMob is the essential football app." [level=3] [ref=e516]
+        - navigation [ref=e517]:
+          - list [ref=e518]:
+            - listitem [ref=e519]:
+              - link "Matches" [ref=e520] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e521]:
+              - link "News" [ref=e522] [cursor=pointer]:
+                - /url: /news
+            - listitem [ref=e523]:
+              - link "Transfer Center" [ref=e524] [cursor=pointer]:
+                - /url: /transfers
+            - listitem [ref=e525]:
+              - link "TV schedules" [ref=e526] [cursor=pointer]:
+                - /url: /tv-guide
+            - listitem [ref=e527]:
+              - link "About" [ref=e528] [cursor=pointer]:
+                - /url: /aboutUs/company
+            - listitem [ref=e529]:
+              - link "Careers" [ref=e530] [cursor=pointer]:
+                - /url: /aboutUs/careers
+            - listitem [ref=e531]:
+              - link "Advertise with us" [ref=e532] [cursor=pointer]:
+                - /url: /aboutUs/advertise
+            - listitem [ref=e533]:
+              - link "Lineup Builder" [ref=e534] [cursor=pointer]:
+                - /url: /lineup-builder
+            - listitem [ref=e535]:
+              - link "FAQ" [ref=e536] [cursor=pointer]:
+                - /url: /faq
+            - listitem [ref=e537]:
+              - link "FIFA Rankings Men" [ref=e538] [cursor=pointer]:
+                - /url: /fifaranking?gender=men
+            - listitem [ref=e539]:
+              - link "FIFA Rankings Women" [ref=e540] [cursor=pointer]:
+                - /url: /fifaranking?gender=women
+            - listitem [ref=e541]:
+              - link "Predictor" [ref=e542] [cursor=pointer]:
+                - /url: https://predict.fotmob.com
+            - listitem [ref=e543]:
+              - link "Newsletter" [ref=e544] [cursor=pointer]:
+                - /url: https://newsletter.fotmob.com/subscribe/?utm_source=webfooter
+        - generic [ref=e545]:
+          - heading "Get the app" [level=2] [ref=e546]
+          - list [ref=e547]:
+            - listitem [ref=e548]:
+              - link "Download FotMob from Apple Store" [ref=e549] [cursor=pointer]:
+                - /url: https://apps.apple.com/app/apple-store/id488575683?pt=338473&ct=fotmobdotcomfooter&mt=8
+                - img [ref=e550]
+            - listitem [ref=e557]:
+              - link "Download FotMob from Google App Store" [ref=e558] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=com.mobilefootie.wc2010&referrer=utm_source%3Dfotmob.com%26utm_medium%3Dweb%26utm_campaign%3Dfotmobdotcomfooter
+                - img [ref=e559]
+      - generic [ref=e567]:
+        - generic [ref=e568]:
+          - paragraph [ref=e570]:
+            - generic [ref=e571]: © Copyright 2026 FotMob
+          - generic [ref=e572]:
+            - generic [ref=e573]:
+              - link "Terms of use" [ref=e574] [cursor=pointer]:
+                - /url: https://www.fotmob.com/tos.txt
+              - generic [ref=e575]: •
+              - link "Cookie policy" [ref=e576] [cursor=pointer]:
+                - /url: /cookiepolicy
+              - generic [ref=e577]: •
+              - link "Privacy policy" [ref=e578] [cursor=pointer]:
+                - /url: https://www.fotmob.com/privacy_fotmob.html
+              - generic [ref=e579]: •
+              - link "Transparency act statement" [ref=e580] [cursor=pointer]:
+                - /url: https://www.fotmob.com/transparency-act-statement.pdf
+            - generic [ref=e581]: The use of automatic services (robots, crawler, indexing etc.) as well as other methods for systematic or regular use is not permitted.
+          - generic [ref=e582]:
+            - generic [ref=e583]: Follow us
+            - navigation [ref=e584]:
+              - list [ref=e585]:
+                - listitem [ref=e586]:
+                  - link "Follow us on TikTok" [ref=e587] [cursor=pointer]:
+                    - /url: https://www.tiktok.com/@fotmobapp
+                    - img [ref=e588]
+                - listitem [ref=e590]:
+                  - link "Follow us on Instagram" [ref=e591] [cursor=pointer]:
+                    - /url: https://www.instagram.com/fotmobapp/
+                    - img [ref=e592]
+                - listitem [ref=e595]:
+                  - link "Follow us on Facebook" [ref=e596] [cursor=pointer]:
+                    - /url: https://www.facebook.com/fotmob/
+                    - img [ref=e597]
+                - listitem [ref=e601]:
+                  - link "Follow us on LinkedIn" [ref=e602] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/company/norapps/
+                    - img [ref=e603]
+                - listitem [ref=e605]:
+                  - link "Follow us on Twitter/X" [ref=e606] [cursor=pointer]:
+                    - /url: https://twitter.com/FotMob
+                    - img [ref=e607]
+        - generic [ref=e610]: production:ab158bb5c6ae907ba504afdadac27a92a4dca7c2
+  - alert [ref=e611]

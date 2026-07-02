@@ -1,0 +1,10 @@
+# Condiciones obligatorias del dictamen de seguridad (security-lead, 2026-06-09).
+# R15 de specs/app_streamlit/requirements.md.
+
+[browser]
+# Sin telemetría hacia Snowflake/Streamlit Inc.
+gatherUsageStats = false
+
+[server]
+# Solo localhost: nunca exponer la app a la red local (default sería 0.0.0.0).
+address = "localhost"

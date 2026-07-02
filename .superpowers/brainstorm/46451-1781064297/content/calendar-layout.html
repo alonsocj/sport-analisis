@@ -1,0 +1,84 @@
+<h2>¿Qué forma tiene el calendario para elegir partido?</h2>
+<p class="subtitle">Tres maneras de navegar los 104 partidos del Mundial 2026. Haz clic en la que prefieras (los datos son de ejemplo, estilo de los reales).</p>
+
+<div class="options">
+
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Rejilla mensual (calendario clásico)</h3>
+      <p>Vista tipo calendario de pared: junio/julio 2026, cada día con sus partidos como fichas clicables.</p>
+      <div class="mockup">
+        <div class="mockup-header">Junio 2026</div>
+        <div class="mockup-body">
+          <table style="width:100%;border-collapse:collapse;font-size:11px;text-align:center">
+            <tr style="opacity:.6"><td>L</td><td>M</td><td>X</td><td>J</td><td>V</td><td>S</td><td>D</td></tr>
+            <tr>
+              <td style="border:1px solid #4443;padding:4px">8</td>
+              <td style="border:1px solid #4443;padding:4px">9</td>
+              <td style="border:1px solid #4443;padding:4px">10</td>
+              <td style="border:1px solid #4443;padding:4px;background:#2a4a2a33"><b>11</b><br>🇲🇽 MEX–RSA</td>
+              <td style="border:1px solid #4443;padding:4px;background:#2a4a2a33"><b>12</b><br>CAN–BIH<br>USA–PAR</td>
+              <td style="border:1px solid #4443;padding:4px;background:#2a4a2a33"><b>13</b><br>KOR–CZE<br>BRA–MAR<br>+3</td>
+              <td style="border:1px solid #4443;padding:4px;background:#2a4a2a33"><b>14</b><br>ESP–???<br>+4</td>
+            </tr>
+          </table>
+          <p style="font-size:11px;opacity:.7">Clic en día → lista de partidos del día → clic en partido → estadísticas.</p>
+        </div>
+      </div>
+      <p><b>Pro:</b> se siente como calendario real, bueno cuando el torneo está en marcha. <b>Contra:</b> 2 clics hasta el partido; días con 6 partidos quedan apretados.</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Lista cronológica con tarjetas</h3>
+      <p>Una sola columna ordenada por fecha; cabeceras de día y cada partido como tarjeta con su 1X2 ya visible.</p>
+      <div class="mockup">
+        <div class="mockup-header">Próximos partidos</div>
+        <div class="mockup-body" style="font-size:12px">
+          <div class="label">Jueves 11 junio</div>
+          <div style="border:1px solid #4443;border-radius:6px;padding:6px;margin:4px 0">
+            🇲🇽 <b>MEX vs RSA</b> · Azteca &nbsp;<span style="opacity:.7">1: 63.6% · X: 23.7% · 2: 12.7%</span>
+          </div>
+          <div class="label">Viernes 12 junio</div>
+          <div style="border:1px solid #4443;border-radius:6px;padding:6px;margin:4px 0">
+            <b>CAN vs BIH</b> &nbsp;<span style="opacity:.7">67 · 22 · 11</span>
+          </div>
+          <div style="border:1px solid #4443;border-radius:6px;padding:6px;margin:4px 0">
+            <b>USA vs PAR</b> &nbsp;<span style="opacity:.7">37 · 28 · 35</span>
+          </div>
+          <p style="font-size:11px;opacity:.7">Scroll + filtros (fase, grupo, equipo). Clic en tarjeta → estadísticas.</p>
+        </div>
+      </div>
+      <p><b>Pro:</b> 1 clic al partido, el 1X2 ya se ve sin entrar; filtros fáciles. <b>Contra:</b> menos "calendario" visualmente; con 104 partidos hay scroll.</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>Híbrido: tira de días + tarjetas del día</h3>
+      <p>Tira horizontal de fechas (estilo apps de resultados: FlashScore/SofaScore); eliges día y abajo salen las tarjetas de ese día con su 1X2.</p>
+      <div class="mockup">
+        <div class="mockup-header">Calendario WC2026</div>
+        <div class="mockup-body" style="font-size:12px">
+          <div style="display:flex;gap:6px;margin-bottom:8px">
+            <span style="border:1px solid #4443;border-radius:14px;padding:3px 10px;opacity:.5">10 jun</span>
+            <span style="border:2px solid #6a6;border-radius:14px;padding:3px 10px"><b>11 jun</b> (1)</span>
+            <span style="border:1px solid #4443;border-radius:14px;padding:3px 10px">12 jun (4)</span>
+            <span style="border:1px solid #4443;border-radius:14px;padding:3px 10px">13 jun (5)</span>
+            <span style="border:1px solid #4443;border-radius:14px;padding:3px 10px">→</span>
+          </div>
+          <div style="border:1px solid #4443;border-radius:6px;padding:6px">
+            🇲🇽 <b>MEX vs RSA</b> · Azteca &nbsp;<span style="opacity:.7">1: 63.6% · X: 23.7% · 2: 12.7%</span>
+          </div>
+          <p style="font-size:11px;opacity:.7">Clic en tarjeta → estadísticas. La tira muestra nº de partidos por día.</p>
+        </div>
+      </div>
+      <p><b>Pro:</b> sensación de calendario + tarjetas ricas; escala bien (104 partidos, ~39 días). <b>Contra:</b> algo más de trabajo de implementación que B.</p>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,334 @@
+{
+  "response": [
+    {
+      "fixture": {
+        "id": 1000,
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 10,
+          "name": "X"
+        },
+        "away": {
+          "id": 20,
+          "name": "Y"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      }
+    },
+    {
+      "fixture": {
+        "id": 1001,
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 10,
+          "name": "X"
+        },
+        "away": {
+          "id": 20,
+          "name": "Y"
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 1
+      }
+    },
+    {
+      "fixture": {
+        "id": 1002,
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 10,
+          "name": "X"
+        },
+        "away": {
+          "id": 20,
+          "name": "Y"
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 0
+      }
+    },
+    {
+      "fixture": {
+        "id": 1003,
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 10,
+          "name": "X"
+        },
+        "away": {
+          "id": 20,
+          "name": "Y"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 1
+      }
+    },
+    {
+      "fixture": {
+        "id": 1004,
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 10,
+          "name": "X"
+        },
+        "away": {
+          "id": 20,
+          "name": "Y"
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 0
+      }
+    },
+    {
+      "fixture": {
+        "id": 1005,
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 10,
+          "name": "X"
+        },
+        "away": {
+          "id": 20,
+          "name": "Y"
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 1
+      }
+    },
+    {
+      "fixture": {
+        "id": 1006,
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 10,
+          "name": "X"
+        },
+        "away": {
+          "id": 20,
+          "name": "Y"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      }
+    },
+    {
+      "fixture": {
+        "id": 1007,
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 10,
+          "name": "X"
+        },
+        "away": {
+          "id": 20,
+          "name": "Y"
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 1
+      }
+    },
+    {
+      "fixture": {
+        "id": 1008,
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 10,
+          "name": "X"
+        },
+        "away": {
+          "id": 20,
+          "name": "Y"
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 0
+      }
+    },
+    {
+      "fixture": {
+        "id": 1009,
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 10,
+          "name": "X"
+        },
+        "away": {
+          "id": 20,
+          "name": "Y"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 1
+      }
+    },
+    {
+      "fixture": {
+        "id": 1010,
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 10,
+          "name": "X"
+        },
+        "away": {
+          "id": 20,
+          "name": "Y"
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 0
+      }
+    },
+    {
+      "fixture": {
+        "id": 1011,
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 10,
+          "name": "X"
+        },
+        "away": {
+          "id": 20,
+          "name": "Y"
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 1
+      }
+    },
+    {
+      "fixture": {
+        "id": 1012,
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 10,
+          "name": "X"
+        },
+        "away": {
+          "id": 20,
+          "name": "Y"
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      }
+    },
+    {
+      "fixture": {
+        "id": 1013,
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 10,
+          "name": "X"
+        },
+        "away": {
+          "id": 20,
+          "name": "Y"
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 1
+      }
+    },
+    {
+      "fixture": {
+        "id": 1014,
+        "status": {
+          "short": "FT"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 10,
+          "name": "X"
+        },
+        "away": {
+          "id": 20,
+          "name": "Y"
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 0
+      }
+    }
+  ]
+}

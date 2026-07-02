@@ -1,0 +1,10 @@
+[    1162ms] [WARNING] [GPT] PubAdsService.disableInitialLoad is deprecated, use googletag.setConfig({disableInitialLoad: ...}) instead.
+https://goo.gle/gpt-message#170 @ https://www.fotmob.com/_next/static/chunks/pages/_app-ebee00a411c36c31.js:5
+[    1212ms] [WARNING] AdSense head tag doesn't support data-nscript attribute. @ https://www.fotmob.com/_next/static/chunks/pages/_app-ebee00a411c36c31.js:5
+[    1568ms] [WARNING] [GPT] Using deprecated googletag.encryptedSignalProviders. Please use googletag.secureSignalProviders instead.
+https://goo.gle/gpt-message#155 @ https://www.fotmob.com/_next/static/chunks/pages/_app-ebee00a411c36c31.js:5
+[    2610ms] [ERROR] Attestation check for Attribution Reporting on https://ad.doubleclick.net failed. @ https://www.fotmob.com/leagues/77/playoff/world-cup:0
+[    2716ms] [ERROR] Attestation check for Attribution Reporting on https://ad.doubleclick.net failed. @ https://www.fotmob.com/leagues/77/playoff/world-cup:0
+[    2835ms] [ERROR] Attestation check for Shared Storage on https://www.googleadservices.com failed. @ https://www.googleadservices.com/pagead/managed/js/activeview/current/reach_worklet.html:0
+[    3053ms] [ERROR] Not signed in with the identity provider. @ https://www.fotmob.com/leagues/77/playoff/world-cup:0
+[    5005ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with NetworkError: Error retrieving a token. @ https://www.fotmob.com/_next/static/chunks/pages/_app-ebee00a411c36c31.js:5

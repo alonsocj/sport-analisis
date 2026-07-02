@@ -1,0 +1,248 @@
+[     400ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at ag (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:115272)
+    at i (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:189987)
+    at uI (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167954)
+    at https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167821
+    at uM (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167828)
+    at uS (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:162867)
+    at x (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:206545)
+    at MessagePort.R (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:207075)
+[     401ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at ag (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:115272)
+    at i (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:189987)
+    at uI (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167954)
+    at https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167821
+    at uM (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167828)
+    at uS (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:162867)
+    at x (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:206545)
+    at MessagePort.R (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:207075)
+[     402ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at ag (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:115272)
+    at i (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:189987)
+    at uI (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167954)
+    at https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167821
+    at uM (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167828)
+    at uS (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:162867)
+    at x (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:206545)
+    at MessagePort.R (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:207075)
+[     402ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at ag (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:115272)
+    at i (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:189987)
+    at uI (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167954)
+    at https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167821
+    at uM (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167828)
+    at uS (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:162867)
+    at x (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:206545)
+    at MessagePort.R (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:207075)
+[     402ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at ag (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:115272)
+    at i (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:189987)
+    at uI (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167954)
+    at https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167821
+    at uM (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167828)
+    at uS (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:162867)
+    at x (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:206545)
+    at MessagePort.R (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:207075)
+[     402ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at ag (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:115272)
+    at i (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:189987)
+    at uI (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167954)
+    at https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167821
+    at uM (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167828)
+    at uS (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:162867)
+    at x (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:206545)
+    at MessagePort.R (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:207075)
+[     402ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at ag (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:115272)
+    at i (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:189987)
+    at uI (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167954)
+    at https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167821
+    at uM (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167828)
+    at uS (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:162867)
+    at x (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:206545)
+    at MessagePort.R (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:207075)
+[     402ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at ag (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:115272)
+    at i (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:189987)
+    at uI (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167954)
+    at https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167821
+    at uM (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167828)
+    at uS (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:162867)
+    at x (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:206545)
+    at MessagePort.R (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:207075)
+[     402ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at ag (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:115272)
+    at i (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:189987)
+    at uI (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167954)
+    at https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167821
+    at uM (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167828)
+    at uS (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:162867)
+    at x (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:206545)
+    at MessagePort.R (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:207075)
+[     402ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at ag (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:115272)
+    at i (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:189987)
+    at uI (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167954)
+    at https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167821
+    at uM (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167828)
+    at uS (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:162867)
+    at x (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:206545)
+    at MessagePort.R (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:207075)
+[     402ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at ag (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:115272)
+    at i (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:189987)
+    at uI (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167954)
+    at https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167821
+    at uM (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167828)
+    at uS (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:162867)
+    at x (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:206545)
+    at MessagePort.R (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:207075)
+[     402ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at ag (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:115272)
+    at i (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:189987)
+    at uI (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167954)
+    at https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167821
+    at uM (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167828)
+    at uS (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:162867)
+    at x (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:206545)
+    at MessagePort.R (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:207075)
+[     402ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at ag (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:115272)
+    at i (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:189987)
+    at uI (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167954)
+    at https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167821
+    at uM (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167828)
+    at uS (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:162867)
+    at x (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:206545)
+    at MessagePort.R (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:207075)
+[     402ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at ag (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:115272)
+    at i (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:189987)
+    at uI (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167954)
+    at https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167821
+    at uM (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167828)
+    at uS (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:162867)
+    at x (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:206545)
+    at MessagePort.R (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:207075)
+[     402ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at ag (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:115272)
+    at i (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:189987)
+    at uI (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167954)
+    at https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167821
+    at uM (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167828)
+    at uS (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:162867)
+    at x (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:206545)
+    at MessagePort.R (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:207075)
+[     402ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at ag (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:115272)
+    at i (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:189987)
+    at uI (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167954)
+    at https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167821
+    at uM (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167828)
+    at uS (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:162867)
+    at x (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:206545)
+    at MessagePort.R (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:207075)
+[     402ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at ag (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:115272)
+    at i (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:189987)
+    at uI (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167954)
+    at https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167821
+    at uM (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167828)
+    at uS (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:162867)
+    at x (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:206545)
+    at MessagePort.R (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:207075)
+[     402ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at ag (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:115272)
+    at i (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:189987)
+    at uI (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167954)
+    at https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167821
+    at uM (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167828)
+    at uS (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:162867)
+    at x (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:206545)
+    at MessagePort.R (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:207075)
+[     403ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at ag (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:115272)
+    at i (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:189987)
+    at uI (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167954)
+    at https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167821
+    at uM (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167828)
+    at uS (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:162867)
+    at x (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:206545)
+    at MessagePort.R (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:207075)
+[     403ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at ag (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:115272)
+    at i (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:189987)
+    at uI (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167954)
+    at https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167821
+    at uM (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167828)
+    at uS (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:162867)
+    at x (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:206545)
+    at MessagePort.R (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:207075)
+[     403ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at ag (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:115272)
+    at i (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:189987)
+    at uI (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167954)
+    at https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167821
+    at uM (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167828)
+    at uS (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:162867)
+    at x (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:206545)
+    at MessagePort.R (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:207075)
+[     403ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at ag (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:115272)
+    at i (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:189987)
+    at uI (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167954)
+    at https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167821
+    at uM (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167828)
+    at uS (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:162867)
+    at x (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:206545)
+    at MessagePort.R (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:207075)
+[     403ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at ag (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:115272)
+    at i (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:189987)
+    at uI (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167954)
+    at https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167821
+    at uM (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167828)
+    at uS (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:162867)
+    at x (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:206545)
+    at MessagePort.R (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:207075)
+[     403ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at ag (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:115272)
+    at i (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:189987)
+    at uI (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167954)
+    at https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167821
+    at uM (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167828)
+    at uS (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:162867)
+    at x (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:206545)
+    at MessagePort.R (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:207075)
+[     403ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at ag (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:115272)
+    at i (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:189987)
+    at uI (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167954)
+    at https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167821
+    at uM (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167828)
+    at uS (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:162867)
+    at x (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:206545)
+    at MessagePort.R (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:207075)
+[     403ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at ag (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:115272)
+    at i (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:189987)
+    at uI (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167954)
+    at https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167821
+    at uM (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167828)
+    at uS (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:162867)
+    at x (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:206545)
+    at MessagePort.R (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:207075)
+[     403ms] Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at i (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:189656)
+    at uI (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167954)
+    at https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167821
+    at uM (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:167828)
+    at ux (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:164580)
+    at uS (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:163135)
+    at x (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:206545)
+    at MessagePort.R (https://www.fotmob.com/_next/static/chunks/framework-a7b6862a2a708c2d.js:1:207075)
+[     683ms] [WARNING] AdSense head tag doesn't support data-nscript attribute. @ https://www.fotmob.com/_next/static/chunks/pages/_app-ebee00a411c36c31.js:5
+[     697ms] [WARNING] [GPT] PubAdsService.disableInitialLoad is deprecated, use googletag.setConfig({disableInitialLoad: ...}) instead.
+https://goo.gle/gpt-message#170 @ https://www.fotmob.com/_next/static/chunks/pages/_app-ebee00a411c36c31.js:5
+[    1637ms] [ERROR] Not signed in with the identity provider. @ https://www.fotmob.com/matches/japan-vs-brazil/1uqadm#4947213:0
+[   61637ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with NetworkError: Error retrieving a token. @ https://www.fotmob.com/_next/static/chunks/pages/_app-ebee00a411c36c31.js:5

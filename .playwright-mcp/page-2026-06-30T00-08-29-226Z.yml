@@ -1,0 +1,154 @@
+- generic [active]:
+  - generic [ref=e3]:
+    - banner [ref=e6]:
+      - generic [ref=e9]:
+        - button "Deploy" [ref=e11] [cursor=pointer]:
+          - generic [ref=e13]: Deploy
+        - button "Main menu" [ref=e15] [cursor=pointer]:
+          - img [ref=e16]
+    - generic [ref=e19]:
+      - heading "⚽ Mundial 2026 — Análisis Predictivo" [level=1] [ref=e24]:
+        - text: ⚽ Mundial 2026 — Análisis Predictivo
+        - generic [ref=e25]:
+          - link "Link to heading":
+            - /url: "#mundial-2026-analisis-predictivo"
+            - img
+      - generic [ref=e27]:
+        - tablist [ref=e29]:
+          - tab "📅 Calendario" [selected] [ref=e30] [cursor=pointer]:
+            - paragraph [ref=e32]: 📅 Calendario
+          - tab "🏆 Selecciones" [ref=e33] [cursor=pointer]:
+            - paragraph [ref=e35]: 🏆 Selecciones
+          - tab "📈 Modelo" [ref=e36] [cursor=pointer]:
+            - paragraph [ref=e38]: 📈 Modelo
+          - tab "Knockouts" [ref=e39] [cursor=pointer]:
+            - paragraph [ref=e41]: Knockouts
+        - tabpanel "📅 Calendario" [ref=e44]:
+          - generic [ref=e45]:
+            - generic [ref=e47]:
+              - paragraph [ref=e51]: Selecciona un día
+              - radiogroup "button group" [ref=e52]:
+                - button "11 jun (2)" [ref=e53] [cursor=pointer]:
+                  - paragraph [ref=e57]: 11 jun (2)
+                - button "12 jun (2)" [ref=e58] [cursor=pointer]:
+                  - paragraph [ref=e62]: 12 jun (2)
+                - button "13 jun (4)" [ref=e63] [cursor=pointer]:
+                  - paragraph [ref=e67]: 13 jun (4)
+                - button "14 jun (4)" [ref=e68] [cursor=pointer]:
+                  - paragraph [ref=e72]: 14 jun (4)
+                - button "15 jun (4)" [ref=e73] [cursor=pointer]:
+                  - paragraph [ref=e77]: 15 jun (4)
+                - button "16 jun (4)" [ref=e78] [cursor=pointer]:
+                  - paragraph [ref=e82]: 16 jun (4)
+                - button "17 jun (4)" [ref=e83] [cursor=pointer]:
+                  - paragraph [ref=e87]: 17 jun (4)
+                - button "18 jun (4)" [ref=e88] [cursor=pointer]:
+                  - paragraph [ref=e92]: 18 jun (4)
+                - button "19 jun (4)" [ref=e93] [cursor=pointer]:
+                  - paragraph [ref=e97]: 19 jun (4)
+                - button "20 jun (4)" [ref=e98] [cursor=pointer]:
+                  - paragraph [ref=e102]: 20 jun (4)
+                - button "21 jun (4)" [ref=e103] [cursor=pointer]:
+                  - paragraph [ref=e107]: 21 jun (4)
+                - button "22 jun (4)" [ref=e108] [cursor=pointer]:
+                  - paragraph [ref=e112]: 22 jun (4)
+                - button "23 jun (4)" [ref=e113] [cursor=pointer]:
+                  - paragraph [ref=e117]: 23 jun (4)
+                - button "24 jun (6)" [ref=e118] [cursor=pointer]:
+                  - paragraph [ref=e122]: 24 jun (6)
+                - button "25 jun (6)" [ref=e123] [cursor=pointer]:
+                  - paragraph [ref=e127]: 25 jun (6)
+                - button "26 jun (6)" [ref=e128] [cursor=pointer]:
+                  - paragraph [ref=e132]: 26 jun (6)
+                - button "27 jun (6)" [ref=e133] [cursor=pointer]:
+                  - paragraph [ref=e137]: 27 jun (6)
+            - status [ref=e140]:
+              - paragraph [ref=e144]:
+                - text: "Las probabilidades usan los parámetros vigentes del modelo (as_of_date:"
+                - strong [ref=e145]: 2026-06-28
+                - text: "). No son predicciones congeladas pre-partido (evaluación walk-forward: feature 5)."
+            - generic [ref=e149]:
+              - generic [ref=e151]:
+                - paragraph [ref=e156]:
+                  - strong [ref=e157]: Algeria (ALG)
+                  - text: vs
+                  - strong [ref=e158]: Austria (AUT)
+                - paragraph [ref=e163]: 2026-06-27
+              - paragraph [ref=e170]:
+                - strong [ref=e171]: 3 – 3
+                - text: "| Prob desenlace (X):"
+                - strong [ref=e172]: 28.5%
+                - text: ❌
+              - button "Ver análisis" [ref=e177] [cursor=pointer]:
+                - paragraph [ref=e181]: Ver análisis
+            - generic [ref=e185]:
+              - generic [ref=e187]:
+                - paragraph [ref=e192]:
+                  - strong [ref=e193]: Colombia (COL)
+                  - text: vs
+                  - strong [ref=e194]: Portugal (POR)
+                - paragraph [ref=e199]: 2026-06-27
+              - paragraph [ref=e206]:
+                - strong [ref=e207]: 0 – 0
+                - text: "| Prob desenlace (X):"
+                - strong [ref=e208]: 29.0%
+                - text: ❌
+              - button "Ver análisis" [ref=e213] [cursor=pointer]:
+                - paragraph [ref=e217]: Ver análisis
+            - generic [ref=e221]:
+              - generic [ref=e223]:
+                - paragraph [ref=e228]:
+                  - strong [ref=e229]: Croatia (CRO)
+                  - text: vs
+                  - strong [ref=e230]: Ghana (GHA)
+                - paragraph [ref=e235]: 2026-06-27
+              - paragraph [ref=e242]:
+                - strong [ref=e243]: 2 – 1
+                - text: "| Prob desenlace (1):"
+                - strong [ref=e244]: 60.1%
+                - text: ✅
+              - button "Ver análisis" [ref=e249] [cursor=pointer]:
+                - paragraph [ref=e253]: Ver análisis
+            - generic [ref=e257]:
+              - generic [ref=e259]:
+                - paragraph [ref=e264]:
+                  - strong [ref=e265]: DR Congo (COD)
+                  - text: vs
+                  - strong [ref=e266]: Uzbekistan (UZB)
+                - paragraph [ref=e271]: 2026-06-27
+              - paragraph [ref=e278]:
+                - strong [ref=e279]: 3 – 1
+                - text: "| Prob desenlace (1):"
+                - strong [ref=e280]: 39.1%
+                - text: ✅
+              - button "Ver análisis" [ref=e285] [cursor=pointer]:
+                - paragraph [ref=e289]: Ver análisis
+            - generic [ref=e293]:
+              - generic [ref=e295]:
+                - paragraph [ref=e300]:
+                  - strong [ref=e301]: Jordan (JOR)
+                  - text: vs
+                  - strong [ref=e302]: Argentina (ARG)
+                - paragraph [ref=e307]: 2026-06-27
+              - paragraph [ref=e314]:
+                - strong [ref=e315]: 1 – 3
+                - text: "| Prob desenlace (2):"
+                - strong [ref=e316]: 86.8%
+                - text: ✅
+              - button "Ver análisis" [ref=e321] [cursor=pointer]:
+                - paragraph [ref=e325]: Ver análisis
+            - generic [ref=e329]:
+              - generic [ref=e331]:
+                - paragraph [ref=e336]:
+                  - strong [ref=e337]: Panama (PAN)
+                  - text: vs
+                  - strong [ref=e338]: England (ENG)
+                - paragraph [ref=e343]: 2026-06-27
+              - paragraph [ref=e350]:
+                - strong [ref=e351]: 0 – 2
+                - text: "| Prob desenlace (2):"
+                - strong [ref=e352]: 78.4%
+                - text: ✅
+              - button "Ver análisis" [ref=e357] [cursor=pointer]:
+                - paragraph [ref=e361]: Ver análisis
+  - img [ref=e362]

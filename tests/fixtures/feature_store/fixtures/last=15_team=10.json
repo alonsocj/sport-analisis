@@ -1,0 +1,48 @@
+{
+  "endpoint": "fixtures",
+  "params": {"team": 10, "last": 15},
+  "fetched_at": "2026-06-01T00:00:00+00:00",
+  "payload": {
+    "response": [
+      {
+        "fixture": {
+          "id": 2001,
+          "date": "2026-03-25T19:00:00+00:00",
+          "status": {"short": "FT"}
+        },
+        "league": {"name": "Friendlies"},
+        "teams": {
+          "home": {"id": 10, "name": "Mexico"},
+          "away": {"id": 26, "name": "Argentina"}
+        },
+        "goals": {"home": 2, "away": 1}
+      },
+      {
+        "fixture": {
+          "id": 2002,
+          "date": "2026-03-29T01:30:00+02:00",
+          "status": {"short": "FT"}
+        },
+        "league": {"name": "UEFA Nations League"},
+        "teams": {
+          "home": {"id": 9, "name": "Spain"},
+          "away": {"id": 2, "name": "France"}
+        },
+        "goals": {"home": 1, "away": 1}
+      },
+      {
+        "fixture": {
+          "id": 2003,
+          "date": "2026-06-11T19:00:00+00:00",
+          "status": {"short": "NS"}
+        },
+        "league": {"name": "FIFA World Cup"},
+        "teams": {
+          "home": {"id": 10, "name": "Mexico"},
+          "away": {"id": 12, "name": "Japan"}
+        },
+        "goals": {"home": null, "away": null}
+      }
+    ]
+  }
+}

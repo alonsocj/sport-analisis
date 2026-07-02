@@ -1,0 +1,265 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "Skip to main content" [ref=e3] [cursor=pointer]:
+      - /url: "#main-content"
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - link "Link to Home" [ref=e8] [cursor=pointer]:
+            - /url: /
+            - img [ref=e10]
+          - generic [ref=e18]:
+            - textbox "Search input" [ref=e19]:
+              - /placeholder: Search
+            - img
+        - generic [ref=e20]:
+          - generic [ref=e21]:
+            - link "News" [ref=e23] [cursor=pointer]:
+              - /url: /news
+            - link "Transfers" [ref=e25] [cursor=pointer]:
+              - /url: /transfers
+              - generic [ref=e26]: Transfers
+            - link "TV schedules" [ref=e28] [cursor=pointer]:
+              - /url: /tv-guide
+              - generic [ref=e29]: TV schedules
+            - button "Settings" [ref=e30] [cursor=pointer]:
+              - img [ref=e31]
+          - generic [ref=e34]:
+            - link "Download FotMob from Apple Store" [ref=e35] [cursor=pointer]:
+              - /url: https://apps.apple.com/app/apple-store/id488575683?pt=338473&ct=fotmobdotcomheader&mt=8
+              - img [ref=e36]
+            - link "Download FotMob from Google App Store" [ref=e43] [cursor=pointer]:
+              - /url: https://play.google.com/store/apps/details?id=com.mobilefootie.wc2010&referrer=utm_source%3Dfotmob.com%26utm_medium%3Dweb%26utm_campaign%3Dfotmobdotcomheader
+              - img [ref=e44]
+    - main [ref=e51]:
+      - complementary
+      - main [ref=e52]:
+        - generic [ref=e55]:
+          - generic [ref=e57]:
+            - generic:
+              - generic:
+                - img
+            - generic [ref=e58]:
+              - generic [ref=e59]:
+                - button "View team logo" [ref=e60] [cursor=pointer]
+                - generic [ref=e61]:
+                  - heading "Japan" [level=1] [ref=e62]
+                  - 'link "FIFA #18" [ref=e63] [cursor=pointer]':
+                    - /url: /fifaranking?gender=men
+                    - generic [ref=e64]: "FIFA #18"
+              - generic [ref=e65]:
+                - link "Sync to calendar" [ref=e67] [cursor=pointer]:
+                  - /url: /teams/6715/synccalendar/japan
+                  - generic [ref=e68]: Sync to calendar
+                  - img [ref=e69]
+                - button "Follow" [ref=e73] [cursor=pointer]
+            - navigation [ref=e74]:
+              - link "Overview" [ref=e75] [cursor=pointer]:
+                - /url: /teams/6715/overview/japan
+              - link "Table" [ref=e76] [cursor=pointer]:
+                - /url: /teams/6715/table/japan
+              - link "Fixtures" [ref=e77] [cursor=pointer]:
+                - /url: /teams/6715/fixtures/japan
+              - link "Squad" [ref=e78] [cursor=pointer]:
+                - /url: /teams/6715/squad/japan
+              - link "Player stats" [ref=e79] [cursor=pointer]:
+                - /url: /teams/6715/stats/japan/players
+              - link "Team stats" [ref=e80] [cursor=pointer]:
+                - /url: /teams/6715/stats/japan/teams
+              - link "History" [ref=e81] [cursor=pointer]:
+                - /url: /teams/6715/history/japan
+          - generic [ref=e84]:
+            - generic [ref=e87]:
+              - generic [ref=e88]:
+                - button [disabled] [ref=e90]:
+                  - img [ref=e91]
+                - generic [ref=e99]: Fixtures
+                - button [disabled] [ref=e101]:
+                  - img [ref=e102]
+              - generic [ref=e109]:
+                - link "Sun, Jun 14 FIFA World Cup Netherlands 2 - 2 Japan" [ref=e110] [cursor=pointer]:
+                  - /url: /matches/netherlands-vs-japan/1hn72b#4667783
+                  - generic [ref=e111]:
+                    - generic [ref=e112]: Sun, Jun 14
+                    - generic [ref=e114]: FIFA World Cup
+                  - generic [ref=e116]:
+                    - generic [ref=e117]: Netherlands
+                    - generic [ref=e120]: 2 - 2
+                    - generic [ref=e121]: Japan
+                - link "Sun, Jun 21 FIFA World Cup Tunisia 0 - 4 Japan" [ref=e122] [cursor=pointer]:
+                  - /url: /matches/japan-vs-tunisia/1hqd1q#4667785
+                  - generic [ref=e123]:
+                    - generic [ref=e124]: Sun, Jun 21
+                    - generic [ref=e126]: FIFA World Cup
+                  - generic [ref=e128]:
+                    - generic [ref=e129]: Tunisia
+                    - generic [ref=e132]: 0 - 4
+                    - generic [ref=e133]: Japan
+                - link "Thu, Jun 25 FIFA World Cup Japan 1 - 1 Sweden" [ref=e134] [cursor=pointer]:
+                  - /url: /matches/japan-vs-sweden/1x3r7y#4667788
+                  - generic [ref=e135]:
+                    - generic [ref=e136]: Thu, Jun 25
+                    - generic [ref=e138]: FIFA World Cup
+                  - generic [ref=e140]:
+                    - generic [ref=e141]: Japan
+                    - generic [ref=e144]: 1 - 1
+                    - generic [ref=e145]: Sweden
+                - link "tomorrow FIFA World Cup Brazil 5:00 PM Japan" [ref=e146] [cursor=pointer]:
+                  - /url: /matches/japan-vs-brazil/1uqadm#4653711
+                  - generic [ref=e147]:
+                    - generic [ref=e148]: tomorrow
+                    - generic [ref=e150]: FIFA World Cup
+                  - generic [ref=e152]:
+                    - generic [ref=e153]: Brazil
+                    - generic [ref=e157]:
+                      - text: 5:00
+                      - generic [ref=e158]: PM
+                    - generic [ref=e159]: Japan
+                - link "Jan 11, 2027 Asian Cup Grp. F Japan 2:00 PM Indonesia" [ref=e160] [cursor=pointer]:
+                  - /url: /matches/indonesia-vs-japan/1emamb#5498681
+                  - generic [ref=e161]:
+                    - generic [ref=e162]: Jan 11, 2027
+                    - generic [ref=e164]: Asian Cup Grp. F
+                  - generic [ref=e166]:
+                    - generic [ref=e167]: Japan
+                    - generic [ref=e171]:
+                      - text: 2:00
+                      - generic [ref=e172]: PM
+                    - generic [ref=e173]: Indonesia
+                - link "Jan 16, 2027 Asian Cup Grp. F Thailand 2:00 PM Japan" [ref=e174] [cursor=pointer]:
+                  - /url: /matches/thailand-vs-japan/1ajkkv#5498684
+                  - generic [ref=e175]:
+                    - generic [ref=e176]: Jan 16, 2027
+                    - generic [ref=e178]: Asian Cup Grp. F
+                  - generic [ref=e180]:
+                    - generic [ref=e181]: Thailand
+                    - generic [ref=e185]:
+                      - text: 2:00
+                      - generic [ref=e186]: PM
+                    - generic [ref=e187]: Japan
+                - link "Jan 20, 2027 Asian Cup Grp. F Japan 2:00 PM Qatar" [ref=e188] [cursor=pointer]:
+                  - /url: /matches/qatar-vs-japan/1be9fs#5498685
+                  - generic [ref=e189]:
+                    - generic [ref=e190]: Jan 20, 2027
+                    - generic [ref=e192]: Asian Cup Grp. F
+                  - generic [ref=e194]:
+                    - generic [ref=e195]: Japan
+                    - generic [ref=e199]:
+                      - text: 2:00
+                      - generic [ref=e200]: PM
+                    - generic [ref=e201]: Qatar
+            - generic [ref=e204]:
+              - generic [ref=e205]:
+                - heading "Next match" [level=2] [ref=e206]
+                - link "FIFA World Cup" [ref=e207] [cursor=pointer]:
+                  - /url: /leagues/77/overview
+                  - text: FIFA World Cup
+              - link "Brazil 5:00 PM tomorrow Japan" [ref=e209] [cursor=pointer]:
+                - /url: /matches/japan-vs-brazil/1uqadm#4653711
+                - generic [ref=e212]: Brazil
+                - generic [ref=e213]:
+                  - generic [ref=e214]: 5:00 PM
+                  - generic [ref=e216]: tomorrow
+                - generic [ref=e219]: Japan
+      - complementary
+    - contentinfo [ref=e220]:
+      - generic [ref=e223]:
+        - generic [ref=e224]:
+          - img [ref=e225]
+          - heading "FotMob is the essential football app." [level=3] [ref=e228]
+        - navigation [ref=e229]:
+          - list [ref=e230]:
+            - listitem [ref=e231]:
+              - link "Matches" [ref=e232] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e233]:
+              - link "News" [ref=e234] [cursor=pointer]:
+                - /url: /news
+            - listitem [ref=e235]:
+              - link "Transfer Center" [ref=e236] [cursor=pointer]:
+                - /url: /transfers
+            - listitem [ref=e237]:
+              - link "TV schedules" [ref=e238] [cursor=pointer]:
+                - /url: /tv-guide
+            - listitem [ref=e239]:
+              - link "About" [ref=e240] [cursor=pointer]:
+                - /url: /aboutUs/company
+            - listitem [ref=e241]:
+              - link "Careers" [ref=e242] [cursor=pointer]:
+                - /url: /aboutUs/careers
+            - listitem [ref=e243]:
+              - link "Advertise with us" [ref=e244] [cursor=pointer]:
+                - /url: /aboutUs/advertise
+            - listitem [ref=e245]:
+              - link "Lineup Builder" [ref=e246] [cursor=pointer]:
+                - /url: /lineup-builder
+            - listitem [ref=e247]:
+              - link "FAQ" [ref=e248] [cursor=pointer]:
+                - /url: /faq
+            - listitem [ref=e249]:
+              - link "FIFA Rankings Men" [ref=e250] [cursor=pointer]:
+                - /url: /fifaranking?gender=men
+            - listitem [ref=e251]:
+              - link "FIFA Rankings Women" [ref=e252] [cursor=pointer]:
+                - /url: /fifaranking?gender=women
+            - listitem [ref=e253]:
+              - link "Predictor" [ref=e254] [cursor=pointer]:
+                - /url: https://predict.fotmob.com
+            - listitem [ref=e255]:
+              - link "Newsletter" [ref=e256] [cursor=pointer]:
+                - /url: https://newsletter.fotmob.com/subscribe/?utm_source=webfooter
+        - generic [ref=e257]:
+          - heading "Get the app" [level=2] [ref=e258]
+          - list [ref=e259]:
+            - listitem [ref=e260]:
+              - link "Download FotMob from Apple Store" [ref=e261] [cursor=pointer]:
+                - /url: https://apps.apple.com/app/apple-store/id488575683?pt=338473&ct=fotmobdotcomfooter&mt=8
+                - img [ref=e262]
+            - listitem [ref=e269]:
+              - link "Download FotMob from Google App Store" [ref=e270] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=com.mobilefootie.wc2010&referrer=utm_source%3Dfotmob.com%26utm_medium%3Dweb%26utm_campaign%3Dfotmobdotcomfooter
+                - img [ref=e271]
+      - generic [ref=e279]:
+        - generic [ref=e280]:
+          - paragraph [ref=e282]:
+            - generic [ref=e283]: © Copyright 2026 FotMob
+          - generic [ref=e284]:
+            - generic [ref=e285]:
+              - link "Terms of use" [ref=e286] [cursor=pointer]:
+                - /url: https://www.fotmob.com/tos.txt
+              - generic [ref=e287]: •
+              - link "Cookie policy" [ref=e288] [cursor=pointer]:
+                - /url: /cookiepolicy
+              - generic [ref=e289]: •
+              - link "Privacy policy" [ref=e290] [cursor=pointer]:
+                - /url: https://www.fotmob.com/privacy_fotmob.html
+              - generic [ref=e291]: •
+              - link "Transparency act statement" [ref=e292] [cursor=pointer]:
+                - /url: https://www.fotmob.com/transparency-act-statement.pdf
+            - generic [ref=e293]: The use of automatic services (robots, crawler, indexing etc.) as well as other methods for systematic or regular use is not permitted.
+          - generic [ref=e294]:
+            - generic [ref=e295]: Follow us
+            - navigation [ref=e296]:
+              - list [ref=e297]:
+                - listitem [ref=e298]:
+                  - link "Follow us on TikTok" [ref=e299] [cursor=pointer]:
+                    - /url: https://www.tiktok.com/@fotmobapp
+                    - img [ref=e300]
+                - listitem [ref=e302]:
+                  - link "Follow us on Instagram" [ref=e303] [cursor=pointer]:
+                    - /url: https://www.instagram.com/fotmobapp/
+                    - img [ref=e304]
+                - listitem [ref=e307]:
+                  - link "Follow us on Facebook" [ref=e308] [cursor=pointer]:
+                    - /url: https://www.facebook.com/fotmob/
+                    - img [ref=e309]
+                - listitem [ref=e313]:
+                  - link "Follow us on LinkedIn" [ref=e314] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/company/norapps/
+                    - img [ref=e315]
+                - listitem [ref=e317]:
+                  - link "Follow us on Twitter/X" [ref=e318] [cursor=pointer]:
+                    - /url: https://twitter.com/FotMob
+                    - img [ref=e319]
+        - generic [ref=e322]: production:ab158bb5c6ae907ba504afdadac27a92a4dca7c2
+  - alert [ref=e323]

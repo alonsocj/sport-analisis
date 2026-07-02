@@ -1,0 +1,66 @@
+<h2>Estructura global de la app</h2>
+<p class="subtitle">El calendario es una parte; las vistas globales del dashboard viejo (ranking Elo, evolución, fuerzas att/def, forma) también necesitan sitio. ¿Cómo se navega la app entera?</p>
+
+<div class="options">
+
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Sidebar con secciones (app multipágina)</h3>
+      <div class="mockup">
+        <div class="mockup-header">Streamlit — sidebar nativa</div>
+        <div class="mockup-body" style="font-size:11px">
+          <div style="display:flex;gap:6px">
+            <div class="mock-sidebar" style="min-width:110px;padding:6px">
+              📅 <b>Calendario</b><br><br>
+              🏆 Selecciones<br><br>
+              📈 Modelo<br><br>
+              <span style="opacity:.4">🧪 Backtest (futuro)</span>
+            </div>
+            <div class="mock-content" style="flex:1;padding:6px">
+              <div class="placeholder" style="padding:4px;margin:2px 0">tira de días: 10 · <b>11</b> · 12 · 13 …</div>
+              <div class="placeholder" style="padding:10px;margin:2px 0">tarjetas del día → detalle con pestañas</div>
+            </div>
+          </div>
+          <p style="font-size:10px;opacity:.7;margin:4px 0 0">Selecciones: ranking Elo + ficha por equipo (evolución, forma). Modelo: fuerzas att/def, metadatos, convergencia.</p>
+        </div>
+      </div>
+      <p><b>Pro:</b> patrón estándar Streamlit (pages/), cada sección crece sin tocar las otras; backtest (feature 5) = página nueva. <b>Contra:</b> sidebar ocupa ancho.</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Una página, pestañas arriba</h3>
+      <div class="mockup">
+        <div class="mockup-header">Streamlit — st.tabs al tope</div>
+        <div class="mockup-body" style="font-size:11px">
+          <div style="display:flex;gap:4px;margin-bottom:6px">
+            <span style="border-bottom:2px solid #6a6;padding:2px 8px"><b>📅 Calendario</b></span>
+            <span style="opacity:.6;padding:2px 8px">🏆 Selecciones</span>
+            <span style="opacity:.6;padding:2px 8px">📈 Modelo</span>
+          </div>
+          <div class="placeholder" style="padding:16px">Todo en una sola página; las pestañas cambian el contenido</div>
+        </div>
+      </div>
+      <p><b>Pro:</b> un solo archivo de app, pantalla completa sin sidebar. <b>Contra:</b> pestañas anidadas (pestañas de app + pestañas del detalle de partido = dos niveles, confunde); estado se pierde al cambiar de pestaña con más facilidad.</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>Calendario céntrico, lo demás en sidebar plegable</h3>
+      <div class="mockup">
+        <div class="mockup-header">Streamlit — calendario como única página</div>
+        <div class="mockup-body" style="font-size:11px">
+          <div class="placeholder" style="padding:4px;margin:2px 0">tira de días + tarjetas + detalle (única vista)</div>
+          <div class="placeholder" style="padding:6px;margin:2px 0;opacity:.6">sidebar: filtros del calendario + mini-ranking Elo + metadatos del modelo</div>
+        </div>
+      </div>
+      <p><b>Pro:</b> máxima simplicidad, cero navegación. <b>Contra:</b> vistas globales (evolución Elo, fuerzas) quedan degradadas a la sidebar o se pierden — siendo que reemplazamos el dashboard, perder vistas duele.</p>
+    </div>
+  </div>
+
+</div>

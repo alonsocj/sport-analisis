@@ -1,0 +1,210 @@
+{
+  "project": "modelos-predictivos-mundial-2026",
+  "rule": "una feature a la vez; solo se trabaja la que esta en status pending",
+  "features": [
+    {
+      "id": 1,
+      "name": "ingesta_datos",
+      "description": "Ultimos 15 partidos por seleccion del Mundial 2026 + cuotas -> capa bronze",
+      "status": "done",
+      "sdd": true
+    },
+    {
+      "id": 2,
+      "name": "feature_store",
+      "description": "Normalizacion, medias moviles, ratings Elo (silver/gold)",
+      "status": "done",
+      "sdd": true
+    },
+    {
+      "id": 3,
+      "name": "modelo_resultado",
+      "description": "Poisson/Dixon-Coles para 1X2 y marcador",
+      "status": "done",
+      "sdd": true
+    },
+    {
+      "id": 4,
+      "name": "modelos_mercados",
+      "description": "Mercados de goles desde la matriz Dixon-Coles: over/under (lineas .5), BTTS, totales por equipo; CLI + pestana Mercados en la app",
+      "status": "done",
+      "sdd": true,
+      "note": "cerrada 2026-06-09 (solo goles, decision usuario): QA APROBADO CON OBSERVACIONES (oraculo 3x3 verificado independientemente; asercion de subcomandos endurecida a conjunto exacto post-review), security APROBADO; 16 tests nuevos; corners/tarjetas = extension futura (exigiria API real)"
+    },
+    {
+      "id": 5,
+      "name": "backtesting",
+      "description": "Backtest walk-forward anti-fuga: log-loss/Brier/calibracion vs baselines, grid opcional xi/reg_lambda, ROI opcional si hay CSV de cuotas, jac analitico (enmienda feature 3), seccion Backtest en la app",
+      "status": "done",
+      "sdd": true,
+      "note": "cerrada 2026-06-09: QA y security APROBADOS CON OBSERVACIONES (todas selladas post-review: test vacuo R10 con asserts reales, anti-fuga R2 refuerzo de borde </<= con mutacion demostrada, R9 recursivo, validacion refit_every en dominio); 25 tests nuevos; backtest real: modelo log-loss 0.894 / Brier 0.526 / 59.2% vs marginal 1.054/0.636/47.4% (2510 partidos, 30 refits en 7.5s gracias a jac analitico 7.9x); ROI opcional via CSV de cuotas del usuario"
+    },
+    {
+      "id": 6,
+      "name": "cli_prediccion",
+      "description": "CLI que predice un partido del Mundial 2026",
+      "status": "done",
+      "sdd": true
+    },
+    {
+      "id": 8,
+      "name": "dashboard_visual",
+      "description": "Dashboard HTML interactivo (plotly): Elo, fuerzas att/def, forma, heatmaps de marcadores y 1X2 de proximos partidos WC2026",
+      "status": "done",
+      "sdd": true,
+      "note": "solicitado por el usuario (2026-06-09); paralelo a feature 6 autorizado; plotly aprobado e instalado; codigo retirado 2026-06-10 con aprobacion del usuario; specs conservadas como registro SDD; reemplazado por feature 9"
+    },
+    {
+      "id": 7,
+      "name": "ingesta_publica",
+      "description": "Scraper/descarga de resultados internacionales desde fuente publica fiable (CC0) -> bronze; complementa API-Football sin consumir cuota",
+      "status": "done",
+      "sdd": true,
+      "note": "trabajo en paralelo con feature 2 autorizado explicitamente por el usuario (2026-06-09)"
+    },
+    {
+      "id": 9,
+      "name": "app_streamlit",
+      "description": "App Streamlit local (Calendario hibrido + Selecciones + Modelo) que REEMPLAZA al dashboard HTML (feature 8); solo visualiza, pipeline sigue por CLI",
+      "status": "done",
+      "sdd": true,
+      "note": "cerrada 2026-06-09: QA APROBADO (15/15 R con trazabilidad, BUG-1 sellado con test de mutacion), security APROBADO (streamlit 1.58.0 auditado, config.toml telemetria off + localhost); 35 tests nuevos, suite 172; retiro de src/report sigue siendo paso aparte con aprobacion"
+    },
+    {
+      "id": 10,
+      "name": "registro_y_evaluacion",
+      "description": "Log de predicciones (append-only, timestamp inyectado) + evaluate predicho-vs-ocurrido (log-loss/Brier/exactitud/calibracion/Brier mercados/error lambda) sobre el slate real WC2026; reconstruccion out-of-sample de la jornada 1",
+      "status": "done",
+      "sdd": true,
+      "note": "cerrada 2026-06-17: QA APROBADO CON OBSERVACIONES (R1-R13 trazables, 3 hallazgos BAJO sellados: imports muertos, ruta grep robusta, guarda _assert_under_data simetrica en log_predictions); 34 tests nuevos (suite 227). Reconstruccion real jornada 1 (as_of=2026-06-11, out-of-sample): v1 log-loss 1.015 / Brier 0.630 / 55% exactitud / RMSE-lambda 1.29 / Brier O-U2.5 0.256 / BTTS 0.279 -- v1 apenas supera uniforme en el torneo, justifica v2"
+    },
+    {
+      "id": 11,
+      "name": "factor_jugadores",
+      "description": "Factor de rendimiento de jugadores desde CC0 goalscorers.csv (mismo repo martj42, sin cuota): tasas de gol por jugador, ajuste de ataque por equipo, mercado anytime-scorer; entrada al modelo",
+      "status": "done",
+      "sdd": true,
+      "note": "cerrada 2026-06-17: QA APROBADO CON OBSERVACIONES (R1-R8 trazables, 2 BAJO selladas: build-features muestra descartes, asercion exacta); 46 tests nuevos (suite 273). Validado: ingest-goalscorers (47663 filas CC0), player_factor 6265 entradas, scorers ARG/ESP (Messi 29.8%). DEUDA conocida: nombres con/sin acento cuentan como jugadores distintos (Julian Alvarez vs Alvarez dividen cuota) -> candidato refinamiento de normalizacion. Multiplicador roster default identidad (cero regresion 1X2)"
+    },
+    {
+      "id": 12,
+      "name": "modelo_v2",
+      "description": "Mejoras del modelo: peso por importancia de partido (oficial >> amistoso, no solo decay temporal) + refit intra-torneo (incorpora jornada jugada para la siguiente) + re-grid xi/lambda con datos del torneo",
+      "status": "done",
+      "sdd": true,
+      "note": "cerrada 2026-06-17: QA APROBADO CON OBSERVACIONES (gates criticos PASAN: equivalencia v1 con default identidad tol 1e-9, anti-fuga con importancia, trazabilidad R1-R8; 3 hallazgos sellados: H2 normalizacion Unicode 'Copa America', H1 test grid no-vacuo, H3 assert v2!=v1); 23 tests nuevos (suite 296). HALLAZGO CLAVE: el peso por importancia NO bate a v1 -- backtest historico v1=0.8660 < mejor-grid-v2=0.8717 (imp_scale 2.0/xi 0.5/lambda 0.5); jornada 1 v1 log-loss 1.015 < v2 1.020. v1 sigue siendo el modelo desplegado por defecto. Mecanismo v2 (importancia + refit intra-torneo + version dc-v2) entregado y disponible; su valor real = refit incorporando jornada jugada, medible al jugarse la jornada 2. NO se adopta importancia por defecto"
+    },
+    {
+      "id": 13,
+      "name": "simulacion_montecarlo",
+      "description": "Simulacion Monte Carlo del torneo completo (~10k sims): grupos -> clasificacion -> bracket eliminatorias -> % de avance por seleccion + % de ganar el titulo; consume el mejor modelo disponible",
+      "status": "done",
+      "sdd": true,
+      "note": "cerrada 2026-06-17: QA APROBADO CON OBSERVACIONES (motor correcto: DC con tau, jugados fijos no re-muestreados, P monotona por ronda, suma P(titulo)=1, 32 a R32; R1-R10 trazables; 2 hallazgos sellados: H1 test roster verificado algebraicamente, H2 suite 56s->21s con SMALL_N; H3 bracket terceros simplificado documentado/aceptado). 41 tests nuevos (suite 337). Validacion real (simulate --n 10000 --seed 42 --as-of 2026-06-17, condicionada a jornada 1): ARG 26.8% titulo, ESP 13.3%, ENG 8.3%, BRA 7.1%, FRA 6.6%. dc-v1 por defecto; --model-version/--roster soportados. Reporte en data/reports/simulacion/. CIERRE ROADMAP v2"
+    },
+    {
+      "id": 14,
+      "name": "elo_externo_ensemble",
+      "description": "Scraper eloratings.net (Elo de selecciones, free) + sub-modelo Elo->1X2 ensamblado con Dixon-Coles (peso ajustado por backtest); Elo externo como prior live; default w=0 = sin regresion; medido vs v1 con harness F10",
+      "status": "done",
+      "sdd": true,
+      "note": "cerrada 2026-06-17 (codigo+QA): QA APROBADO CON OBSERVACIONES (gates criticos PASAN: no-regresion w=0, ensemble funcional en predict-log con elo_history as-of leak-free + etiqueta dc-ens, anti-fuga guard EloExternoEnBacktestError, parser lxml seguro pandas.read_html flavor=lxml; 1 BAJO sellado: aviso UserWarning si falta elo_history). Gap corregido: --elo-weight era no-op en predict-log/simulate -> ahora aplica en predict+predict-log; simulate EXCLUIDO (ensemble es 1X2, sim es marcador). 31 tests nuevos (suite 368, sin warnings). lxml>=6.1.1 instalada (security APROBADO). VALIDACION LIVE (2026-06-18, OK usuario): ingest-elo requirio rework (fuente real es World.tsv, no HTML; codigos ISO alpha-2; SCO mal mapeado SC->SQ corregido); scraper OK, 48 selecciones mapeadas. Ensemble medido leak-free (elo_history): NO bate a v1 en jornada 1 (dc-v1 1.015 < dc-ens w0.3 1.058 < w0.5 1.100). Elo externo = snapshot post-jornada-1, no backtesteable. v1 sigue siendo el modelo desplegado. suite final 413"
+    },
+    {
+      "id": 15,
+      "name": "xg_proxy_wikipedia",
+      "description": "Scraper Wikipedia (tiros/SoT/posesion por partido WC, via MediaWiki API) -> proxy xG menos ruidoso que goles -> lambda alternativa mezclada con DC donde haya cobertura; default OFF; medido vs v1/v14 con harness F10",
+      "status": "done",
+      "sdd": true,
+      "note": "cerrada 2026-06-18 (codigo+QA+validacion live): QA APROBADO CON OBSERVACIONES (gates criticos PASAN: no-regresion v=0, anti-fuga, parser lxml seguro, degradacion elegante; 2 BAJO sellados: aviso si tabla sin columnas reconocidas, aviso+test si falta bronze). 40 tests nuevos (suite 413, sin warnings). MediaWiki API, UA identificable, rate-limit, cache 24h. VALIDACION LIVE (OK usuario): los articulos por partido del Mundial 2026 son redirects/stubs SIN tabla de tiros parseable -> cobertura 0% (8/8 has_stats=false); el xG-proxy degrada a DC puro (v1) como se diseno. CONCLUSION v3: ambas mejoras free construidas/seguras/default-OFF pero NINGUNA bate a v1 hoy (Elo ensemble peor en jornada 1; xG sin cobertura). v1 (Dixon-Coles) sigue siendo el mejor. DEUDA: ingest-wiki-stats aborta en error de red transitorio en vez de saltar el partido (robustez)"
+    },
+    {
+      "id": 16,
+      "name": "forma_reciente",
+      "description": "Bloque de forma reciente de ventana corta (hasta 3 partidos de grupo WC2026 + ultimos 5 pre-Mundial) ponderado por recencia y calidad de rival (Elo externo) -> factor multiplicativo exp(gamma*z) sobre las lambda del Dixon-Coles en inferencia (NO reentrena). Default gamma=0 == v1 exacto (no-regresion). Predice los proximos partidos WC2026; medido vs v1 con harness F10. Spec SDD en specs/forma_reciente/",
+      "status": "done",
+      "sdd": true,
+      "note": "cerrada 2026-06-28 (codigo+suite verde+validacion). Implementada por dev-lead: src/form/{config,window,metrics,factor}.py + predict_match(form_factor=)/run_simulation/backtest + flag --form-weight en predict/backtest/simulate. 45 tests nuevos, SUITE 458/458 verde (verificada por LEADER). Gates PASAN: no-regresion gamma=0==v1 (1e-9), anti-fuga date<as_of, degradacion (ventana vacia->1.0, rival sin Elo->peso neutro), 14 subcomandos intactos. VALIDACION LIVE: la forma agudiza favoritos y voltea solo llaves parejas (NED>MAR, MEX>ECU); gamma=0.5 sobreconfia (FRA 98%), gamma=0.2 razonable. NO validada que bata a v1 (out-of-sample knockout aun no jugado; backtest completo ~10min/gamma). Default OFF, consistente con F14/F15: v1 sigue siendo referencia. DEUDA: make_form_factor_fn es O(n) sobre silver completo por llamada -> barrer fechas se cuelga; cachear/filtrar silver antes de iterar lo arregla (bloquea el backtest con potencia)"
+    },
+    {
+      "id": 17,
+      "name": "knockouts_app",
+      "description": "Pestana 'Knockouts' en la app Streamlit: lee fixtures del bracket desde data/knockouts/r32_fixtures.csv (NO bronze -> no rompe simulate), predice cada llave en vivo reusando el factor de forma de F16 con un slider de peso gamma (0=v1). Render por fecha/ronda con 1X2 neutral + pick + P(avanza). Spec SDD en specs/knockouts_app/",
+      "status": "done",
+      "sdd": true,
+      "note": "cerrada 2026-06-28 (codigo+suite verde+smoke). dev-lead: src/app/tabs/knockouts.py (load_knockout_fixtures, neutral_prediction, render_knockouts con slider gamma) + pestana 'Knockouts' en main.py. 11 tests nuevos, SUITE 469/469 (verificada por LEADER). Gates PASAN: gamma=0==v1 (1e-9), neutral promedia orientaciones, CSV ausente degrada, 3 tabs previos intactos, form_builder 1x/render. Smoke con datos reales OK (RSA-CAN, GER-PAR, NED-MAR coinciden). App viva en :8502. DEUDA: @st.cache_data en form_builder (recalcula por rerender con gamma>0) pospuesto. Validacion visual del usuario OK (2026-06-28)"
+    },
+    {
+      "id": 18,
+      "name": "forma_perf",
+      "description": "Fix de performance O(n*N) de make_form_factor_fn (F16): build_window hacia iterrows() sobre el silver completo POR equipo (48x49k -> cuelgue en backtest). Solucion: indexar matches por equipo en UNA pasada + build_window_from_bucket. SIN cambio de comportamiento (equivalencia factores/z a 1e-9). Habilita el backtest --form-weight para el veredicto medido v1 vs forma. Spec SDD en specs/forma_perf/",
+      "status": "done",
+      "sdd": true,
+      "note": "cerrada 2026-06-28 (codigo+suite verde+veredicto re-verificado por LEADER). dev-lead: window.py indexa por equipo en 1 pasada (index_matches_by_team + build_window_from_bucket); make_form_factor_fn usa el indice -> O(M+N*bucket). Equivalencia 1e-9 con F16, API estable. 11 tests nuevos, SUITE 480/480 (suite ahora 19s vs 70s). VEREDICTO MEDIDO (backtest WC 2026-06-14..28, 191 partidos eval ~64 WC, re-corrido por LEADER): la forma BATE a v1 en metricas probabilisticas -> log-loss v1=0.8883 / g=0.2=0.8727 / g=0.3=0.8711 (-1.9%); Brier 0.5202->0.5119 (-1.6% en g=0.2); exactitud -0.5pp (59.7->59.2%). PRIMER add-on que bate a v1 (F14 Elo y F15 xG no pudieron). Optimo g in [0.2,0.3]. CAVEAT: muestra chica + medido sobre continuacion de GRUPOS (J2/J3), no knockouts -> indicativo, no probado para eliminatorias. DECISION (usuario 'deja lo que sea mejor'): slider tab Knockouts arranca en g=0.2; default CLI/libreria queda en g=0 (baseline v1 + tests intactos)"
+    },
+    {
+      "id": 19,
+      "name": "forma_vs_v1_panel",
+      "description": "Panel 'Forma reciente vs v1' en el tab Modelo de la app: lee data/reports/forma_vs_v1.json (comparativa consolidada del backtest F18) y muestra tabla gamma x {log-loss, Brier, exactitud} con delta vs v1 + verdict + ventana + n_eval + caveat. Solo lectura+render, NO recalcula. Spec SDD en specs/forma_vs_v1_panel/",
+      "status": "done",
+      "sdd": true,
+      "note": "cerrada 2026-06-28 (codigo+suite verde). dev-lead: _render_forma_vs_v1 + DEFAULT_FORMA_VS_V1 en src/app/tabs/modelo.py (tabla gamma x log-loss/Brier/exactitud con Delta vs v1, verdict en st.success, caveat; 5 guardias de degradacion). 7 tests nuevos, SUITE 487/487 (verificada por LEADER). No toca otros tabs/cli/simulation/models. App viva en :8502 -> tab Modelo muestra el veredicto medido. PENDIENTE menor: validacion visual del usuario"
+    },
+    {
+      "id": 20,
+      "name": "knockouts_analisis_app",
+      "description": "Enriquecer el tab Knockouts: por llave, expander con mercados de goles (O/U totales + BTTS via market_summary) + top-K anytime-scorers por equipo (via player_factor). App-only, reusa markets/players sin modificarlos -> mercados/goleadores a v1 (etiquetado); el 1X2/P(avanza) sigue con el slider de forma. Spec SDD en specs/knockouts_analisis_app/",
+      "status": "done",
+      "sdd": true,
+      "note": "cerrada 2026-06-28 (codigo+suite verde). dev-lead: _compute_analisis_data (cacheado) + _render_analisis_llave en knockouts.py -> expander por llave con market_summary (O/U+BTTS+totales) + anytime-scorers top-3/equipo (player_factor, lambda v1), etiqueta v1, degrada sin player_factor. 7 tests nuevos, SUITE 494/494 (verificada por LEADER). No toca markets/players/cli/otras pestanas. App :8502. PENDIENTE menor: validacion visual usuario"
+    },
+    {
+      "id": 21,
+      "name": "roster_fotmob",
+      "description": "Ingesta de disponibilidad de jugadores desde fotmob (subcomando ingest-roster, red real verificada: requests HTTP 200, content.lineup.{home,away}Team.{starters,subs,unavailable}). Mapea a codigos FIFA -> data/rosters/r32_rosters.csv compatible con el flag --roster existente (disponibles) + r32_unavailable.csv (display). El panel de goleadores (F20) filtra no disponibles y renormaliza shares. Spec SDD en specs/roster_fotmob/",
+      "status": "done",
+      "sdd": true,
+      "note": "cerrada 2026-06-28 (codigo+suite verde+scrape real validado). dev-lead: src/ingestion/roster.py (transporte inyectable, fetch playoff+lineups, bronze+meta, FOTMOB_ALIASES, normalize a CSV --roster-compatible + unavailable) + subcomando ingest-roster (15 subcomandos) + panel goleadores F20 filtra+renormaliza. 25 tests nuevos, SUITE 519/519. LEADER conecto main.py (pasa rosters_csv/unavailable_csv a render_knockouts) -> filtro ACTIVO en :8502. VALIDACION REAL (scrape fotmob, OK usuario): 16/16 partidos con lineup, 32/32 equipos mapeados; bajas detectadas: RSA-Zwane, CAN-Kone, EGY-Mohamed Salah(!), BRA-Raphinha, FRA-Saliba/Thuram, ARG-Romero. scorers RSA con roster: lambda_efectivo 0.667->0.480, Zwane fuera del top, renormalizado. DEUDA: reason='Unknown' (parser no extrae motivo/fecha de unavailability); sin TTL cache (re-descarga siempre); ambas severidad baja"
+    },
+    {
+      "id": 22,
+      "name": "knockouts_detalle_app",
+      "description": "Pagina de detalle por llave en el tab Knockouts (espejo de la fase de grupos/Calendario): tarjetas + detalle con sub-pestanas Prediccion/Mercados/Goleadores/Equipos/Elo. Prediccion neutral (matriz promediada) + slider forma + TOP-10 marcadores. Absorbe F20/F21 al detalle. Reusa fig_1x2/fig_heatmap/fig_comparativa/fig_elo_lines sin modificarlas. Spec SDD en specs/knockouts_detalle_app/",
+      "status": "done",
+      "sdd": true,
+      "note": "cerrada 2026-06-28 (codigo+suite verde+smoke). dev-lead: _neutral_matrix_pred (matriz neutral M=(ab+ba.T)/2, MatchPrediction sintetico con top_scores=10) + _render_tarjeta_ko + _render_detalle_ko (sub-pestanas Prediccion/Mercados/Goleadores/Equipos/Elo, patron Calendario via session_state selected_ko). Reusa fig_1x2/fig_heatmap/fig_comparativa/fig_elo_lines sin tocarlas; figures.py y calendario.py intactos. 13 tests nuevos, SUITE 532/532 (verificada LEADER). Smoke top-10 RSA-CAN OK (0-1 16.7%, 0-0 13.1%...). App :8502. DEUDA baja: boton ver-detalle comparte columna por mock de tests; _render_llave/_render_analisis_llave huerfanas (las usan tests F20/F21). PENDIENTE menor: validacion visual usuario"
+    },
+    {
+      "id": 23,
+      "name": "fotmob_stats",
+      "description": "FUNDACION de datos para nuevos mercados: subcomando ingest-fotmob-stats que scrapea stats por partido de fotmob (content.stats.Periods.All: posesion, xG, tiros, SoT, corners, tarjetas) de los WC2026 jugados y POBLA las 10 columnas avanzadas del silver (hoy vacias 0/49475, eran para xG-Wikipedia/F15 con 0% cobertura) + anade home_xg/away_xg. Merge por (date,home,away). No-regresion sin bronze. Habilita F24+ (mercados corners/tarjetas/tiros + goles con xG real). Spec SDD en specs/fotmob_stats/",
+      "status": "done",
+      "sdd": true,
+      "note": "cerrada 2026-06-28 (codigo+suite verde+scrape real validado, COBERTURA 100%). dev-lead: src/ingestion/fotmob_stats.py (transporte inyectable, fetch_match_urls desde fixtures.allMatches de la overview page, parse stats.Periods.All, mapeo titulos incl xG y cards=AM+R, bronze+meta) + subcomando ingest-fotmob-stats (16 subcomandos) + merge en silver.py (home_xg/away_xg anadidas). 26 tests, SUITE 558. ITERACION DE BUGS (LEADER via SendMessage): BUG1 fetch_match_urls miraba pageProps.matches en vez de fixtures.allMatches (0 partidos); BUG2 fecha vacia en bronze (no merge); BUG3 orientacion home/away fotmob != silver (swap por codigo). LEADER ademas: anadio aliases Czechia/Turkiye (0 descartados) y arreglo BUG4 (desfase fecha UTC vs local en kickoffs nocturnos) con tolerancia +-1 dia en _load_fotmob_stats_index. VALIDACION REAL: scrape 73/73 partidos, build-features -> 72/72 grupos con stats+xG (100%). Ej MEX-RSA: shots 16/3, xG 1.46/0.07, corners 3/1. DEUDA baja: falta test unitario de la tolerancia +-1 dia (validada en datos reales). FUNDACION lista para F24+ mercados (corners/tarjetas/tiros/xG-goles)"
+    },
+    {
+      "id": 24,
+      "name": "corners_market",
+      "description": "Primer mercado sobre la fundacion F23: modelo de tasa de corners por equipo con SHRINKAGE bayesiano hacia la media global (obligatorio: 3 partidos/equipo hoy -> media cruda es ruido), corners esperados por partido (ataque local x defensa visitante), over/under total y por equipo via Poisson. Subcomando 'corners' + integracion en el sub-tab Mercados del detalle KO. Spec SDD en specs/corners_market/",
+      "status": "done",
+      "sdd": true,
+      "note": "cerrada 2026-06-28 (codigo+suite verde+validado). dev-lead: src/markets/corners.py (team_corner_rates con shrinkage bayesiano leak-free lambda=(n*media+k*mu_global)/(n+k) k=5, expected_corners multiplicativo, corners_over_under Poisson, corners_summary con n_matches) + subcomando corners (17 subcom) + seccion Corners O/U en sub-tab Mercados del detalle KO. 15 tests, SUITE 573. LEADER conecto main.py (silver_csv) -> visible en :8502. VALIDADO: corners CAN RSA --as-of 2026-06-29 -> lambda_home 7.29 (CAN 11.7 crudo encogido hacia mu_global 4.3), total 10.57, aviso muestra chica OK. DEUDA cosmetica: typo 'corneres' en salida CLI; docstring viejo en test_cli_xg. Mercado debil hoy (3 partidos/equipo) por diseno -> tira a la media; mejora por jornada"
+    },
+    {
+      "id": 25,
+      "name": "count_markets",
+      "description": "Generaliza el mercado de conteo (mismo motor que corners F24: shrinkage+Poisson) a tarjetas, tiros y tiros a puerta via src/markets/counts.py parametrizado por columna de stat. Subcomando count-market --stat {cards,shots,sot} + secciones en el sub-tab Mercados del detalle KO. Tarjetas con aviso de ruido (dependen del arbitro, no disponible). Spec SDD en specs/count_markets/",
+      "status": "done",
+      "sdd": true,
+      "note": "cerrada 2026-06-28 (codigo+suite verde+validado). dev-lead: src/markets/counts.py (motor generico STAT_SPECS para cards/shots/sot, count_rates shrinkage, count_over_under Poisson; importa _poisson_sf de corners.py sin duplicar) + subcomando count-market --stat (18 subcom) + secciones en sub-tab Mercados del detalle KO (tarjetas con st.warning de ruido arbitro). 31 tests, SUITE 604. App :8502. VALIDADO: cards CAN-RSA total 3.64 (O3.5 49%), shots 24.4 (O24.5 48%), shrinkage + aviso OK. Misma muestra chica que corners (3 partidos/equipo). SIGUIENTE Y ULTIMO mercado: F26 xG-goles"
+    },
+    {
+      "id": 26,
+      "name": "forma_xg",
+      "description": "Mejora la forma reciente (F16) usando xG real (F23) en la ventana: xG-diff donde hay cobertura (partidos WC), fallback a gol-diff donde no (pre-WC). Interruptor use_xg + flag CLI --form-xg en predict/backtest/simulate. Default OFF = F16 exacto (no-regresion 1e-9). Es la palanca real del xG (la ruta F15 era inerte por baja cobertura global). Medible vs forma-goles. Spec SDD en specs/forma_xg/",
+      "status": "done",
+      "sdd": true,
+      "note": "cerrada 2026-06-28 (codigo+suite verde+VEREDICTO POSITIVO). dev-lead: MatchInWindow con xg_for/xg_against, team_form(use_xg) mezcla xG-diff/gol-diff por partido con fallback, make_form_factor_fn/factory propagan use_xg, flag --form-xg en predict/backtest/simulate. 18 tests, SUITE 622. use_xg=False ≡ F16 (1e-9). VEREDICTO MEDIDO (LEADER, backtest WC --refit-every week --form-weight 0.2, 102 partidos): forma-xG BATE a forma-goles -> log-loss 0.8537->0.8491 (-0.5%), Brier 0.5104->0.5064 (-0.8%), exactitud 56.9->58.8% (+1.9pp). 2o add-on que aporta (tras la forma misma). OJO: con --refit-every month sale identico (la ventana usa as_of=inicio-semana/mes; solo refit semanal alcanza los partidos con xG). LEADER wireo el app (knockouts usan use_xg=True -> mejor modelo). CAVEAT: muestra chica, continuacion de grupos no knockouts. DEUDA: el toggle xG no esta como control en el app (es default-on en knockouts)"
+    }
+  ]
+}
