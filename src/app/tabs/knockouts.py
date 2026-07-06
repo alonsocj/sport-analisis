@@ -32,16 +32,21 @@ from ...models.dixon_coles import (
     predict_match,
 )
 from ...players.factor import AnytimeScorer, PlayerRate, compute_anytime_scorers, load_player_factor
+from ...features.lineup_view import build_lineup_view, find_lineup_doc
 from ...form import FormFactorFn, make_form_factor_fn
 
 # ---------------------------------------------------------------------------
 # Rutas por defecto (R1)
 # ---------------------------------------------------------------------------
 
-DEFAULT_KO_CSV: Path = Path("data/knockouts/r32_fixtures.csv")
+# F30: el tab principal de eliminatorias pasa a Round of 16 (octavos); r32 queda como
+# dato histórico de training (F27). r8 = cuartos (Round of 8).
+DEFAULT_KO_CSV: Path = Path("data/knockouts/r16_fixtures.csv")
+DEFAULT_R8_CSV: Path = Path("data/knockouts/r8_fixtures.csv")
 _DEFAULT_SILVER_CSV: Path = Path("data/silver/matches.csv")
 _DEFAULT_ELO_CSV: Path = Path("data/gold/external_elo.csv")
 _DEFAULT_PLAYER_FACTOR_PATH: Path = Path("data/gold/player_factor.csv")
+_DEFAULT_LINEUPS_DIR: Path = Path("data/bronze/lineups")  # F31: bronze de alineaciones
 
 # Rutas de rosters Feature 21 (R3)
 _DEFAULT_ROSTERS_CSV: Path = Path("data") / "rosters" / "r32_rosters.csv"
@@ -770,6 +775,7 @@ def _render_tarjeta_ko(
     params: DixonColesParams,
     fixture: KnockoutFixture,
     form_factor: FormFactorFn | None,
+    state_key: str = "ko",
 ) -> None:
     """Tarjeta compacta de llave con 1X2/P(avanza) y boton Ver detalle (R1 F22).
 
@@ -817,9 +823,9 @@ def _render_tarjeta_ko(
             )
         with cols[2]:
             st.markdown(f"Pick: **{pick}**")
-            btn_key = f"ko-det-{fixture.date}-{fixture.home_code}-{fixture.away_code}"
+            btn_key = f"ko-det-{state_key}-{fixture.date}-{fixture.home_code}-{fixture.away_code}"
             if st.button("Ver detalle", key=btn_key):
-                st.session_state["selected_ko"] = (
+                st.session_state[f"selected_ko_{state_key}"] = (
                     fixture.date,
                     fixture.home_code,
                     fixture.away_code,
@@ -831,6 +837,77 @@ def _render_tarjeta_ko(
 # ---------------------------------------------------------------------------
 
 
+def _fmt_market_value(value: int | None) -> str:
+    """Formatea un valor de mercado en € legible (p.ej. 172246935 → '€172.2M')."""
+    if not isinstance(value, int) or value <= 0:
+        return ""
+    if value >= 1_000_000:
+        return f"€{value / 1_000_000:.1f}M"
+    if value >= 1_000:
+        return f"€{value / 1_000:.0f}K"
+    return f"€{value}"
+
+
+def _render_alineacion_subtab(
+    fixture: KnockoutFixture,
+    analisis_data: dict,
+    lineups_dir: Path,
+) -> None:
+    """Sub-pestaña Alineación: XI probable + tarjeta del jugador destacado (F31, R5)."""
+    doc = find_lineup_doc(lineups_dir, fixture.date, fixture.home_code, fixture.away_code)
+    if doc is None:
+        st.caption(
+            "Sin alineación disponible para esta llave. Ejecuta "
+            "`python -m src.cli ingest-lineups` (red real) para poblarla."
+        )
+        return
+
+    # Scorers (P(marca)) para la amenaza de gol del destacado; vacío si no hay player_factor.
+    def _scorers_for(key: str) -> list[tuple[str, float]]:
+        lst = analisis_data.get(key) or []
+        return [(s.scorer, s.prob_score) for s in lst]
+
+    view = build_lineup_view(
+        doc, fixture.home_code, fixture.away_code,
+        _scorers_for("scorers_home"), _scorers_for("scorers_away"),
+    )
+    lt = view.get("lineup_type") or ""
+    lt_label = {"predicted": "XI probable", "standard": "XI confirmado",
+                "lastStarting11": "último XI"}.get(lt, lt or "alineación")
+    st.caption(f"Fuente: fotmob ({lt_label}). Destacado = mayor valor de mercado.")
+
+    cols = st.columns(2)
+    for col, code in ((cols[0], fixture.home_code), (cols[1], fixture.away_code)):
+        side = view["home"] if code == fixture.home_code else view["away"]
+        with col:
+            st.markdown(f"### {code}")
+            crack = side.get("crack")
+            if crack:
+                with st.container(border=True):
+                    st.markdown(f"⭐ **{crack['name']}**")
+                    meta = []
+                    if crack.get("club"):
+                        meta.append(crack["club"])
+                    mv = _fmt_market_value(crack.get("market_value"))
+                    if mv:
+                        meta.append(mv)
+                    if meta:
+                        st.caption(" · ".join(meta))
+                    if crack.get("goal_share") is not None:
+                        st.write(f"⚽ P(marca): **{100 * crack['goal_share']:.1f}%**")
+                    if crack.get("rating") is not None:
+                        st.write(f"★ Rating fotmob: **{crack['rating']:.2f}**")
+            xi = side.get("xi") or []
+            if xi:
+                st.markdown("**XI probable**")
+                for p in xi:
+                    dorsal = f"{p['shirt_number']:>2}" if p.get("shirt_number") is not None else " ·"
+                    mark = " ⭐" if p.get("is_crack") else ""
+                    st.write(f"`{dorsal}` {p['pos_label']} · {p['name']}{mark}")
+            else:
+                st.caption(f"Sin XI para {code}.")
+
+
 def _render_detalle_ko(
     fixture: KnockoutFixture,
     app_data: AppData,
@@ -839,8 +916,9 @@ def _render_detalle_ko(
     rosters_csv: Path | None = None,
     unavailable_csv: Path | None = None,
     silver_csv: Path | None = None,
+    lineups_dir: Path | None = None,
 ) -> None:
-    """Pagina de detalle de una llave con 5 sub-pestanas (R2 F22).
+    """Pagina de detalle de una llave con 6 sub-pestanas (R2 F22; +Alineación F31).
 
     Sub-pestanas: Prediccion / Mercados / Goleadores / Equipos / Elo. Reusa
     figuras existentes (fig_1x2, fig_heatmap, fig_comparativa, fig_elo_lines) y
@@ -865,6 +943,8 @@ def _render_detalle_ko(
     """
     from ..data import team_profile
 
+    _lineups_dir: Path = lineups_dir if lineups_dir is not None else _DEFAULT_LINEUPS_DIR
+
     # Pre-calcular datos de mercados y goleadores (cached) antes de abrir tabs
     rosters_csv_str = str(rosters_csv) if rosters_csv is not None else ""
     unavail_csv_str = str(unavailable_csv) if unavailable_csv is not None else ""
@@ -884,7 +964,9 @@ def _render_detalle_ko(
             f" — {fixture.stage} ({fixture.date})"
         )
 
-        sub_tabs = st.tabs(["Predicción", "Mercados", "Goleadores", "Equipos", "Elo"])
+        sub_tabs = st.tabs(
+            ["Predicción", "Mercados", "Goleadores", "Equipos", "Elo", "Alineación"]
+        )
 
         # ------------------------------------------------------------------
         # Sub-pestaña 0: Prediccion neutral con top-10 (R3 F22)
@@ -1147,6 +1229,12 @@ def _render_detalle_ko(
                     f"{fixture.home_code} / {fixture.away_code}."
                 )
 
+        # ------------------------------------------------------------------
+        # Sub-pestaña 5: Alineación — XI probable + jugador destacado (F31, R5)
+        # ------------------------------------------------------------------
+        with sub_tabs[5]:
+            _render_alineacion_subtab(fixture, analisis_data, _lineups_dir)
+
 
 # ---------------------------------------------------------------------------
 # Render principal (R1–R4)
@@ -1161,8 +1249,13 @@ def render_knockouts(
     rosters_csv: Path | None = None,
     unavailable_csv: Path | None = None,
     silver_csv: Path | None = None,
+    state_key: str = "ko",
+    lineups_dir: Path | None = None,
 ) -> None:
-    """Renderiza la pestana Knockouts con slider gamma, llaves y panel de analisis (F20, F21).
+    """Renderiza una pestana de eliminatorias con slider gamma, llaves y panel de analisis.
+
+    F30: ``state_key`` namespacea los widgets (slider) y el session_state de detalle para
+    permitir MULTIPLES tabs de KO (Round of 16, Round of 8) sin colision de IDs.
 
     El factor de forma se construye UNA sola vez por render (no por llave ni
     por fecha) usando form_builder inyectable, cumpliendo el gate de eficiencia
@@ -1217,6 +1310,7 @@ def render_knockouts(
         step=0.05,
         help="0 = v1 puro. gamma=0.2 es el optimo medido (backtest WC: bate a v1 en "
         "log-loss y Brier). Mueve a 0 para comparar con v1.",
+        key=f"gamma_{state_key}",
     )
 
     # --- Cargar fixtures (R1) ---
@@ -1273,10 +1367,10 @@ def render_knockouts(
     for date in sorted(groups.keys()):
         st.subheader(date)
         for fix in groups[date]:
-            _render_tarjeta_ko(app_data.params, fix, form_factor)
+            _render_tarjeta_ko(app_data.params, fix, form_factor, state_key=state_key)
 
-    # --- Detalle de llave seleccionada (R1 F22) ---
-    selected_ko = st.session_state.get("selected_ko")
+    # --- Detalle de llave seleccionada (R1 F22; namespaced por tab en F30) ---
+    selected_ko = st.session_state.get(f"selected_ko_{state_key}")
     if selected_ko is not None:
         sel_date, sel_home, sel_away = selected_ko
         detail_fix = next(
@@ -1297,4 +1391,5 @@ def render_knockouts(
                 rosters_csv=_rosters_csv,
                 unavailable_csv=_unavailable_csv,
                 silver_csv=_silver_csv_ko,
+                lineups_dir=lineups_dir if lineups_dir is not None else _DEFAULT_LINEUPS_DIR,
             )

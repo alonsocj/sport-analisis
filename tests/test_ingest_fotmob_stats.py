@@ -639,12 +639,16 @@ EXPECTED_SUBCOMMANDS_F23 = frozenset(
         "ingest-fotmob-stats",  # Feature 23
         "corners",              # Feature 24
         "count-market",         # Feature 25
+        "ingest-ko",            # Feature 27
+        "build-ko-fixtures",    # Feature 27
+        "ingest-lineups",       # Feature 28
+        "build-lineup-strength",# Feature 28
     }
 )
 
 
 def test_subcomandos_exactos_intactos():
-    """R4: el parser tiene EXACTAMENTE 18 subcomandos; los previos intactos + ingest-fotmob-stats + corners + count-market."""
+    """El parser tiene EXACTAMENTE 20 subcomandos; los previos intactos + ingest-ko/build-ko-fixtures (F27)."""
     from src.cli import build_parser
 
     parser = build_parser()

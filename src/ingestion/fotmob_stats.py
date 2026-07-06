@@ -117,6 +117,10 @@ class RawMatchStats:
     date: str = ""
     home: dict[str, float | None] = field(default_factory=dict)
     away: dict[str, float | None] = field(default_factory=dict)
+    # F27-R2: marcador del partido (goles). None si el partido no ha terminado o
+    # no se pudo extraer. Persistido en el JSON bronze para hacerlo auto-suficiente.
+    home_goals: int | None = None
+    away_goals: int | None = None
 
 
 @dataclass
@@ -341,6 +345,9 @@ def _write_bronze(
         "away_name": raw.away_name,
         "date": raw.date,
         "has_stats": raw.has_stats,
+        # F27-R2: marcador (goles) para que el JSON sea auto-suficiente. None si no aplica.
+        "home_goals": raw.home_goals,
+        "away_goals": raw.away_goals,
         "home": raw.home,
         "away": raw.away,
     }
@@ -446,6 +453,42 @@ def fetch_match_urls(
     return refs
 
 
+def parse_match_score(html: str) -> tuple[int | None, int | None]:
+    """Extrae el marcador (home_goals, away_goals) del __NEXT_DATA__ del partido (F27-R2).
+
+    Lee ``props.pageProps.header.teams[*].score`` (0=home, 1=away). Es independiente
+    de las stats: un partido finished siempre tiene marcador aunque no publique stats.
+    Devuelve ``(None, None)`` si la estructura no está o los valores no son enteros.
+
+    Args:
+        html: HTML de la página de partido de fotmob.
+
+    Returns:
+        Tuple ``(home_goals, away_goals)`` con enteros o ``None``.
+    """
+    try:
+        data = _extract_next_data(html)
+    except (ValueError, json.JSONDecodeError):
+        return (None, None)
+    page_props = (data.get("props") or {}).get("pageProps", {})
+    header = page_props.get("header") or {}
+    teams = header.get("teams") or []
+    if len(teams) < 2:
+        return (None, None)
+
+    def _score(team: Any) -> int | None:
+        if not isinstance(team, dict):
+            return None
+        val = team.get("score")
+        if isinstance(val, bool):  # bool es subclase de int; excluir explícitamente
+            return None
+        if isinstance(val, int):
+            return val
+        return None
+
+    return (_score(teams[0]), _score(teams[1]))
+
+
 def parse_match_stats(html: str) -> dict[str, Any]:
     """Parsea las stats de un partido desde el HTML de fotmob (R1).
 
@@ -504,6 +547,8 @@ def fetch_and_persist(
     *,
     sleeper: StatsSleeper | None = None,
     rate_limit_seconds: float = DEFAULT_RATE_LIMIT_SECONDS,
+    home_goals: int | None = None,
+    away_goals: int | None = None,
 ) -> RawMatchStats:
     """Descarga las stats de un partido fotmob y persiste el bronze (R1).
 
@@ -545,6 +590,8 @@ def fetch_and_persist(
             has_stats=False,
             home_name=match_ref.home_team,
             away_name=match_ref.away_team,
+            home_goals=home_goals,
+            away_goals=away_goals,
         )
 
     # Intento de parseo
@@ -578,6 +625,13 @@ def fetch_and_persist(
     if not date:
         date = match_ref.date
 
+    # F27-R2: marcador. Prioridad al override explícito (p.ej. del bracket playoff);
+    # si no, se parsea de la página (independiente de las stats: un finished sin stats
+    # igual tiene marcador).
+    hg, ag = home_goals, away_goals
+    if hg is None and ag is None:
+        hg, ag = parse_match_score(html)
+
     raw = RawMatchStats(
         match_ref=match_ref,
         has_stats=has_stats,
@@ -586,6 +640,8 @@ def fetch_and_persist(
         date=date,
         home=home_stats,
         away=away_stats,
+        home_goals=hg,
+        away_goals=ag,
     )
 
     # Persistir bronze (R1)

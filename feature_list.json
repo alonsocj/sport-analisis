@@ -205,6 +205,46 @@
       "status": "done",
       "sdd": true,
       "note": "cerrada 2026-06-28 (codigo+suite verde+VEREDICTO POSITIVO). dev-lead: MatchInWindow con xg_for/xg_against, team_form(use_xg) mezcla xG-diff/gol-diff por partido con fallback, make_form_factor_fn/factory propagan use_xg, flag --form-xg en predict/backtest/simulate. 18 tests, SUITE 622. use_xg=False ≡ F16 (1e-9). VEREDICTO MEDIDO (LEADER, backtest WC --refit-every week --form-weight 0.2, 102 partidos): forma-xG BATE a forma-goles -> log-loss 0.8537->0.8491 (-0.5%), Brier 0.5104->0.5064 (-0.8%), exactitud 56.9->58.8% (+1.9pp). 2o add-on que aporta (tras la forma misma). OJO: con --refit-every month sale identico (la ventana usa as_of=inicio-semana/mes; solo refit semanal alcanza los partidos con xG). LEADER wireo el app (knockouts usan use_xg=True -> mejor modelo). CAVEAT: muestra chica, continuacion de grupos no knockouts. DEUDA: el toggle xG no esta como control en el app (es default-on en knockouts)"
+    },
+    {
+      "id": 27,
+      "name": "ingesta_r16_fotmob",
+      "description": "Refresh KO desde fotmob (complementa): scrape bracket playoff + 18 partidos jugados (16 R32 + 2 R16), captura marcador en el extractor fotmob, materializa filas KO en silver (martj42 llega tarde), genera r16/r8_fixtures.csv, rebuild gold; base de datos para la v3 del modelo",
+      "status": "done",
+      "sdd": true,
+      "note": "cerrada 2026-07-04: F27 base de datos v3. Scrape real fotmob autorizado; 18 KO persistidos (16 R32 + 2 R16: PAR0-1FRA, CAN0-3MAR) con marcador+stats. HALLAZGO: JSON fotmob_stats no traía marcador -> extractor extendido (parse_match_score, header.teams). silver ahora MATERIALIZA filas KO (martj42 corta 06-27); enriquecimiento de grupos intacto (no-regresion). r16_fixtures.csv (8) + r8_fixtures.csv (1 FRA-MAR) generados. build-features: silver 49475->49493 (+18). 13 tests nuevos (suite 635, cero regresion; 12 tests de conjunto-exacto de subcomandos actualizados 18->20). R1-R8 trazables. Sin libs nuevas, sin secretos, escritura bajo data/."
+    },
+    {
+      "id": 28,
+      "name": "jugadores_xi_fotmob",
+      "description": "Alineaciones (XI confirmado/predicho) + ratings por jugador desde fotmob content.lineup -> bronze; feature de fuerza de alineacion por equipo/partido (rating medio titulares, split ataque/defensa) para el modelo v3",
+      "status": "done",
+      "sdd": true,
+      "note": "cerrada 2026-07-04: extractor content.lineup (fotmob_lineup.py) + fuerza-XI (lineup_strength.py). Scrape real: 31 partidos, 24 con XI (nombres 100%). Esquema posiciones VERIFICADO 0=GK/1=DEF/2=MID/3=ATT. HALLAZGO CLAVE: seasonRating de fotmob ESPARSO ~25% (12/48 lados); de los 6 octavos por jugar SOLO BRA-NOR trae ratings. lineup_strength.csv = 12 filas (xi/att/def_rating). Nombres del XI completos pero el rating de calidad no -> feature fuerza-XI debil como driver. 10 tests nuevos (suite 642, cero regresion; subcomandos 20->22). R1-R6 trazables."
+    },
+    {
+      "id": 29,
+      "name": "modelo_v3",
+      "description": "Modelo v3: integra fuerza-XI + re-fit con datos KO (R32/R16); mide log-loss/Brier/exactitud vs forma-xG en el slate jugado; adopta solo si bate al baseline (honesto)",
+      "status": "done",
+      "sdd": true,
+      "note": "cerrada 2026-07-04: modelo v3 = forma-xG re-entrenado con datos frescos (F27), SIN jugadores (decision usuario; seasonRating esparso F28). re-fit train as_of 2026-07-05 (8197 partidos). MEDIDO backtest ventana 28-jun->05-jul (50 partidos incl 18 KO, walk-forward refit week): v1 log-loss 0.7457/Brier 0.4219/72% -> forma-xG g=0.2 0.6996/0.3934/76% (-6.2%/-6.8%/+4pp). forma-xG BATE a v1 en datos frescos. g=0.3/0.4 mejoran monotono = OVERFIT muestra chica -> produccion g=0.2-0.3 (no 0.4). Predicciones octavos por jugar (neutral, g=0.2): ESP64 BEL74 BRA78 ENG66 ARG87 COL61 (avanza). CAVEAT R32: sobrevalora favorito/subestima underdog -> templar vs mercado. Sin mecanismo nuevo (consistente F12/F14/F15)."
+    },
+    {
+      "id": 30,
+      "name": "app_r16_r8",
+      "description": "App: renombrar tab Knockouts -> Round of 16 (8 octavos, 2 jugados) y anadir tab Round of 8 (cuartos) con r16/r8_fixtures.csv",
+      "status": "done",
+      "sdd": true,
+      "note": "cerrada 2026-07-04: tab \"Knockouts\"(R32) -> \"Round of 16\"(octavos, r16_fixtures.csv) + nuevo tab \"Round of 8\"(cuartos, r8_fixtures.csv). render_knockouts reusado con state_key para namespacear slider (gamma_r16/gamma_r8) y session_state de detalle (sin DuplicateWidgetID). DEFAULT_KO_CSV->r16, +DEFAULT_R8_CSV. R32 sale de la UI (queda training data). 5 tests F30 + fix test detalle (clave selected_ko_r16). Smoke real: 5 tabs, cero excepcion. Suite 646."
+    },
+    {
+      "id": 31,
+      "name": "alineacion_destacado_app",
+      "description": "Sub-pestana Alineacion en el detalle KO: XI probable (11: nombre/dorsal/posicion) por equipo + tarjeta del jugador destacado (mayor marketValue, con amenaza de gol via player_factor y rating si existe). Extiende el extractor fotmob para capturar marketValue/dorsal/club/edad",
+      "status": "done",
+      "sdd": true,
+      "note": "cerrada 2026-07-04: sub-pestana \"Alineacion\" en el detalle KO (6a sub-pestana). HALLAZGO: fotmob marketValue tiene COBERTURA 100% (incluso XI predicho de octavos), a diferencia de seasonRating (~25%) -> el \"destacado\" se ancla en marketValue + amenaza de gol (player_factor, cruce sin acentos) + rating si existe. Extractor ampliado (market_value/shirt_number/club/age). lineup_view.py PURO (find_doc/pick_crack/build_view). UI: 2 columnas, tarjeta del crack + XI probable ordenado POR->DEL con crack marcado. Re-scrape 24 XI. Verificado real: POR->Vitinha, ESP->Lamine Yamal, USA->Pulisic, BEL->Doku. 10 tests (suite 654), 3 tests detalle actualizados (5->6 sub-pestanas). state_key/lineups_dir inyectables."
     }
   ]
 }

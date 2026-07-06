@@ -168,6 +168,10 @@ def test_subcomandos_exactos_intactos() -> None:
         "ingest-roster",
         "ingest-fotmob-stats",
         "count-market",  # Feature 25
+        "ingest-ko",            # Feature 27
+        "build-ko-fixtures",    # Feature 27
+        "ingest-lineups",       # Feature 28
+        "build-lineup-strength",# Feature 28
     }
     esperados = previos_17 | {"corners"}
 
@@ -176,8 +180,8 @@ def test_subcomandos_exactos_intactos() -> None:
         f"  Faltantes: {esperados - set(sub.choices)}\n"
         f"  Sobrantes: {set(sub.choices) - esperados}"
     )
-    assert len(set(sub.choices)) == 18, (
-        f"Esperados 18 subcomandos, got {len(set(sub.choices))}"
+    assert len(set(sub.choices)) == 22, (
+        f"Esperados 22 subcomandos, got {len(set(sub.choices))}"
     )
 
 

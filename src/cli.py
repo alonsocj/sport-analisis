@@ -79,6 +79,20 @@ from .ingestion.fotmob_stats import (
     DEFAULT_BRONZE_DIR as FOTMOB_STATS_DEFAULT_BRONZE_DIR,
     ingest_fotmob_stats,
 )
+from .ingestion.fotmob_ko import (
+    DEFAULT_KNOCKOUTS_DIR as KO_DEFAULT_DIR,
+    fetch_bracket,
+    ingest_ko,
+    write_ko_fixtures,
+)
+from .ingestion.fotmob_lineup import (
+    DEFAULT_BRONZE_DIR as LINEUP_DEFAULT_BRONZE_DIR,
+    ingest_lineups,
+)
+from .features.lineup_strength import (
+    build_lineup_strength,
+    write_lineup_strength,
+)
 from .ingestion.public_data import (
     PublicDownloadError,
     PublicSchemaError,
@@ -1847,6 +1861,109 @@ def cmd_ingest_fotmob_stats(args: argparse.Namespace) -> int:
 
 
 # ---------------------------------------------------------------------------
+# ingest-ko / build-ko-fixtures (Feature 27, R1/R3/R6)
+# ---------------------------------------------------------------------------
+
+
+def cmd_ingest_ko(args: argparse.Namespace) -> int:
+    """``ingest-ko [--league-id 77] [--out DIR] [--knockouts-dir DIR]``.
+
+    Séptimo subcomando con red real (fotmob.com; regla STOP de CLAUDE.md): descarga el
+    bracket del playoff, escribe ``r16_fixtures.csv``/``r8_fixtures.csv`` y persiste
+    marcador + stats de los partidos KO jugados en el bronze de fotmob_stats. En tests se
+    monkeypatchea ``src.cli.ingest_ko``.
+    """
+    import time  # noqa: PLC0415
+
+    fetched_at = datetime.now(timezone.utc).isoformat()
+    league_id: int = getattr(args, "league_id", 77) or 77
+    out_dir = Path(getattr(args, "out", None) or str(FOTMOB_STATS_DEFAULT_BRONZE_DIR))
+    ko_dir = Path(getattr(args, "knockouts_dir", None) or str(KO_DEFAULT_DIR))
+
+    try:
+        result = ingest_ko(
+            fetched_at=fetched_at,
+            league_id=league_id,
+            transport=None,  # red real; tests monkeypatchean ingest_ko
+            bronze_dir=out_dir,
+            knockouts_dir=ko_dir,
+            sleeper=time.sleep,
+        )
+    except Exception as exc:  # noqa: BLE001
+        return _error(
+            f"ingest-ko falló ({exc}); verifica conectividad con fotmob.com "
+            "y reintenta (regla STOP de CLAUDE.md)"
+        )
+
+    print(
+        f"✅ ingest-ko: bracket con {result.n_matches_bracket} partidos, "
+        f"{result.n_finished} jugados, {result.n_persisted} persistidos con marcador"
+    )
+    for stage, path in result.fixtures_written.items():
+        print(f"✅ Fixtures {stage}: {path}")
+    print(f"✅ Bronze: {out_dir}/")
+    return 0
+
+
+def cmd_build_ko_fixtures(args: argparse.Namespace) -> int:
+    """``build-ko-fixtures [--league-id 77] [--knockouts-dir DIR]``.
+
+    Sólo escribe los CSV de fixtures (octavos/cuartos) desde el bracket, sin persistir
+    stats. Red real (regla STOP). En tests se monkeypatchea ``src.cli.fetch_bracket``.
+    """
+    from .ingestion.fotmob_stats import _default_transport  # noqa: PLC0415
+
+    league_id: int = getattr(args, "league_id", 77) or 77
+    ko_dir = Path(getattr(args, "knockouts_dir", None) or str(KO_DEFAULT_DIR))
+    try:
+        bracket = fetch_bracket(_default_transport(), league_id=league_id)
+        written = write_ko_fixtures(bracket, ko_dir)
+    except Exception as exc:  # noqa: BLE001
+        return _error(f"build-ko-fixtures falló ({exc}); verifica conectividad (STOP)")
+
+    for stage, path in written.items():
+        print(f"✅ Fixtures {stage}: {path}")
+    return 0
+
+
+# ---------------------------------------------------------------------------
+# ingest-lineups / build-lineup-strength (Feature 28, R5)
+# ---------------------------------------------------------------------------
+
+
+def cmd_ingest_lineups(args: argparse.Namespace) -> int:
+    """``ingest-lineups [--league-id 77] [--out DIR]``: scrape XI + ratings desde fotmob.
+
+    Red real (regla STOP). En tests se monkeypatchea ``src.cli.ingest_lineups``.
+    """
+    import time  # noqa: PLC0415
+
+    fetched_at = datetime.now(timezone.utc).isoformat()
+    league_id: int = getattr(args, "league_id", 77) or 77
+    out_dir = Path(getattr(args, "out", None) or str(LINEUP_DEFAULT_BRONZE_DIR))
+    try:
+        result = ingest_lineups(
+            fetched_at=fetched_at, league_id=league_id, transport=None,
+            bronze_dir=out_dir, sleeper=time.sleep,
+        )
+    except Exception as exc:  # noqa: BLE001
+        return _error(f"ingest-lineups falló ({exc}); verifica conectividad (STOP)")
+    print(f"✅ ingest-lineups: {result.n_matches} partidos, {result.n_with_lineup} con XI")
+    print(f"✅ Bronze: {out_dir}/")
+    return 0
+
+
+def cmd_build_lineup_strength(args: argparse.Namespace) -> int:
+    """``build-lineup-strength [--bronze-dir DIR] [--gold-dir DIR]``: deriva fuerza-XI (offline)."""
+    bronze_dir = Path(getattr(args, "bronze_dir", None) or "data/bronze")
+    gold_dir = Path(getattr(args, "gold_dir", None) or "data/gold")
+    df = build_lineup_strength(bronze_dir)
+    path = write_lineup_strength(df, gold_dir)
+    print(f"✅ build-lineup-strength: {len(df)} filas (equipo,partido) → {path}")
+    return 0
+
+
+# ---------------------------------------------------------------------------
 # corners (Feature 24, R4)
 # ---------------------------------------------------------------------------
 
@@ -2843,6 +2960,83 @@ def build_parser() -> argparse.ArgumentParser:
         ),
     )
     p.set_defaults(func=cmd_ingest_fotmob_stats)
+
+    # -----------------------------------------------------------------------
+    # ingest-ko (Feature 27, R1/R3/R6)
+    # -----------------------------------------------------------------------
+    p = sub.add_parser(
+        "ingest-ko",
+        help=(
+            "Descarga el bracket de eliminatorias desde fotmob, escribe "
+            "r16_fixtures.csv/r8_fixtures.csv y persiste marcador+stats de los KO "
+            "jugados en bronze (Feature 27). Red real — regla STOP."
+        ),
+    )
+    p.add_argument(
+        "--league-id", type=int, default=77, dest="league_id",
+        help="ID de la liga fotmob (default: 77 = Mundial 2026).",
+    )
+    p.add_argument(
+        "--out", default=None, metavar="DIR",
+        help=f"Directorio bronze fotmob_stats (default: {FOTMOB_STATS_DEFAULT_BRONZE_DIR}).",
+    )
+    p.add_argument(
+        "--knockouts-dir", default=None, dest="knockouts_dir", metavar="DIR",
+        help=f"Directorio de fixtures KO (default: {KO_DEFAULT_DIR}).",
+    )
+    p.set_defaults(func=cmd_ingest_ko)
+
+    # -----------------------------------------------------------------------
+    # build-ko-fixtures (Feature 27, R6)
+    # -----------------------------------------------------------------------
+    p = sub.add_parser(
+        "build-ko-fixtures",
+        help=(
+            "Escribe r16_fixtures.csv/r8_fixtures.csv desde el bracket fotmob, sin "
+            "persistir stats (Feature 27, R6). Red real — regla STOP."
+        ),
+    )
+    p.add_argument(
+        "--league-id", type=int, default=77, dest="league_id",
+        help="ID de la liga fotmob (default: 77 = Mundial 2026).",
+    )
+    p.add_argument(
+        "--knockouts-dir", default=None, dest="knockouts_dir", metavar="DIR",
+        help=f"Directorio de fixtures KO (default: {KO_DEFAULT_DIR}).",
+    )
+    p.set_defaults(func=cmd_build_ko_fixtures)
+
+    # -----------------------------------------------------------------------
+    # ingest-lineups (Feature 28, R5)
+    # -----------------------------------------------------------------------
+    p = sub.add_parser(
+        "ingest-lineups",
+        help=(
+            "Descarga alineaciones (XI confirmado/predicho) + ratings por jugador desde "
+            "fotmob y persiste en bronze (Feature 28). Red real — regla STOP."
+        ),
+    )
+    p.add_argument("--league-id", type=int, default=77, dest="league_id",
+                   help="ID de la liga fotmob (default: 77).")
+    p.add_argument("--out", default=None, metavar="DIR",
+                   help=f"Directorio bronze lineups (default: {LINEUP_DEFAULT_BRONZE_DIR}).")
+    p.set_defaults(func=cmd_ingest_lineups)
+
+    # -----------------------------------------------------------------------
+    # build-lineup-strength (Feature 28, R5)
+    # -----------------------------------------------------------------------
+    p = sub.add_parser(
+        "build-lineup-strength",
+        help=(
+            "Deriva la fuerza de alineación por (partido, equipo) desde el bronze de "
+            "lineups (Feature 28, offline). Sin red."
+        ),
+    )
+    p.add_argument("--bronze-dir", default=None, dest="bronze_dir", metavar="DIR",
+                   help="Directorio bronze base (default: data/bronze).")
+    p.add_argument("--gold-dir", default=None, dest="gold_dir", metavar="DIR",
+                   help="Directorio gold (default: data/gold).")
+    p.set_defaults(func=cmd_build_lineup_strength)
 
     # -----------------------------------------------------------------------
     # corners (Feature 24, R4)

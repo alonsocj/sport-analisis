@@ -218,7 +218,7 @@ def test_subcomandos_exactos_intactos():
     assert "ingest-wiki-stats" in subcommands
 
     # Exactamente 18 subcomandos (ni más ni menos) — count-market añadido en Feature 25
-    assert len(subcommands) == 18, (
+    assert len(subcommands) == 22, (
         f"Se esperaban 18 subcomandos, se encontraron {len(subcommands)}: {subcommands}"
     )
 
@@ -229,7 +229,7 @@ def test_subcomandos_exactos_intactos():
         assert func is not None, f"Subcomando '{name}' sin función registrada"
         funciones.add(id(func))
 
-    assert len(funciones) == 18, "Hay subcomandos compartiendo función (no permitido)"
+    assert len(funciones) == 22, "Hay subcomandos compartiendo función (no permitido)"
 
 
 def test_ingest_wiki_stats_funcion_correcta():

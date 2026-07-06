@@ -351,8 +351,9 @@ def test_seleccion_abre_detalle(tmp_path: Path, monkeypatch) -> None:
 
     app_path = Path(__file__).parent.parent / "src" / "app" / "main.py"
     at = AppTest.from_file(str(app_path), default_timeout=20.0)
-    # Pre-setear selected_ko simula haber clickeado "Ver detalle" en un render anterior
-    at.session_state["selected_ko"] = ("2026-06-29", "ARG", "BRA")
+    # Pre-setear selected_ko simula haber clickeado "Ver detalle" en un render anterior.
+    # F30: el tab principal es Round of 16 con state_key="r16" → clave namespaceada.
+    at.session_state["selected_ko_r16"] = ("2026-06-29", "ARG", "BRA")
     at.run()
 
     assert not at.exception, f"AppTest con selected_ko lanzó: {at.exception}"
@@ -404,7 +405,7 @@ def test_subpestanas_presentes(tmp_path: Path) -> None:
     ):
         _render_detalle_ko(fixture, app_data, None, pf_path)
 
-    expected = ["Predicción", "Mercados", "Goleadores", "Equipos", "Elo"]
+    expected = ["Predicción", "Mercados", "Goleadores", "Equipos", "Elo", "Alineación"]
     assert captured_labels == expected, (
         f"Sub-pestanas: {captured_labels}; esperadas: {expected}"
     )
@@ -516,7 +517,7 @@ def test_degradacion_equipo_desconocido(tmp_path: Path) -> None:
     mc.__enter__ = mock.MagicMock(return_value=mc)
     mc.__exit__ = mock.MagicMock(return_value=False)
 
-    tabs_mocks = [mock.MagicMock() for _ in range(5)]
+    tabs_mocks = [mock.MagicMock() for _ in range(6)]  # F31: +Alineación
 
     with (
         mock.patch("streamlit.container", return_value=mc),
@@ -569,7 +570,7 @@ def test_degradacion_sin_elo(tmp_path: Path) -> None:
     mc = mock.MagicMock()
     mc.__enter__ = mock.MagicMock(return_value=mc)
     mc.__exit__ = mock.MagicMock(return_value=False)
-    tabs_mocks = [mock.MagicMock() for _ in range(5)]
+    tabs_mocks = [mock.MagicMock() for _ in range(6)]  # F31: +Alineación
 
     with (
         mock.patch("streamlit.container", return_value=mc),

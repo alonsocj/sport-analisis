@@ -187,6 +187,10 @@ class TestSubcomandosExactos:
             "ingest-fotmob-stats",  # Feature 23
             "corners",              # Feature 24
             "count-market",         # Feature 25
+            "ingest-ko",            # Feature 27
+            "build-ko-fixtures",    # Feature 27
+            "ingest-lineups",       # Feature 28
+            "build-lineup-strength",# Feature 28
         }
 
         assert subcommands == expected, (
@@ -209,7 +213,7 @@ class TestSubcomandosExactos:
                 break
 
         n_subcommands = len(subparsers_action.choices)
-        assert n_subcommands == 18, (
+        assert n_subcommands == 22, (
             f"Se esperan exactamente 18 subcomandos, se encontraron {n_subcommands}: "
             f"{sorted(subparsers_action.choices.keys())}"
         )

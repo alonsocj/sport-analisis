@@ -216,6 +216,10 @@ def test_subcomandos_exactos_con_funcion_propia():
         "ingest-fotmob-stats",  # Feature 23
         "corners",              # Feature 24
         "count-market",         # Feature 25
+        "ingest-ko",            # Feature 27
+        "build-ko-fixtures",    # Feature 27
+        "ingest-lineups",       # Feature 28
+        "build-lineup-strength",# Feature 28
     }
     esperadas = {
         "ingest-public": cli.cmd_ingest_public,
@@ -236,6 +240,10 @@ def test_subcomandos_exactos_con_funcion_propia():
         "ingest-fotmob-stats": cli.cmd_ingest_fotmob_stats,      # Feature 23
         "corners": cli.cmd_corners,                              # Feature 24
         "count-market": cli.cmd_count_market,                    # Feature 25
+        "ingest-ko": cli.cmd_ingest_ko,                          # Feature 27
+        "build-ko-fixtures": cli.cmd_build_ko_fixtures,          # Feature 27
+        "ingest-lineups": cli.cmd_ingest_lineups,                # Feature 28
+        "build-lineup-strength": cli.cmd_build_lineup_strength,  # Feature 28
     }
     argv_minimos = {
         "ingest-public": ["ingest-public"],
@@ -251,11 +259,15 @@ def test_subcomandos_exactos_con_funcion_propia():
         "ingest-wiki-stats": ["ingest-wiki-stats"],                           # Feature 15
         "ingest-roster": ["ingest-roster"],                                   # Feature 21
         "ingest-fotmob-stats": ["ingest-fotmob-stats"],                       # Feature 23
+        "ingest-ko": ["ingest-ko"],                                           # Feature 27
+        "build-ko-fixtures": ["build-ko-fixtures"],                           # Feature 27
+        "ingest-lineups": ["ingest-lineups"],                                 # Feature 28
+        "build-lineup-strength": ["build-lineup-strength"],                   # Feature 28
     }
     for name, argv in argv_minimos.items():
         args = parser.parse_args(argv)
         assert args.func is esperadas[name], name
-    assert len(set(esperadas.values())) == 18  # una función POR subcomando (18 total, R3 f25)
+    assert len(set(esperadas.values())) == 22  # una función POR subcomando (22 total, F28)
 
 
 # ---------------------------------------------------------------------------

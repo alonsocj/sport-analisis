@@ -365,6 +365,113 @@ def _load_fotmob_stats_index(
     return index
 
 
+def _load_fotmob_ko_candidates(bronze_dir: Path) -> list[dict[str, Any]]:
+    """Candidatos a materializar en silver desde fotmob_stats con MARCADOR (F27-R4).
+
+    Lee cada ``bronze/fotmob_stats/*.json`` una vez y devuelve las filas de partidos
+    con ``home_goals``/``away_goals`` enteros (los KO jugados, ausentes de martj42).
+    A diferencia del índice de stats, NO exige ``has_stats``: un partido finished sin
+    stats igual tiene marcador y debe entrar al training set. Los stats (si los hay) los
+    puebla luego ``_apply_fotmob_stats`` por la misma clave.
+
+    Returns:
+        Lista de dicts ``(date, home_code, away_code, home_name, away_name,
+        home_goals, away_goals)`` en orientación fotmob.
+    """
+    stats_dir = bronze_dir / "fotmob_stats"
+    if not stats_dir.is_dir():
+        return []
+    from ..ingestion.fotmob_stats import _fotmob_stats_to_fifa_code  # noqa: PLC0415
+
+    def _as_int(v: Any) -> int | None:
+        return v if isinstance(v, int) and not isinstance(v, bool) else None
+
+    out: list[dict[str, Any]] = []
+    for path in sorted(stats_dir.glob("*.json")):
+        if path.name.endswith(".meta.json"):
+            continue
+        try:
+            doc = json.loads(path.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError) as exc:
+            logger.warning("Bronze fotmob_stats ilegible, omitiendo: %s (%s)", path, exc)
+            continue
+        hg = _as_int(doc.get("home_goals"))
+        ag = _as_int(doc.get("away_goals"))
+        if hg is None or ag is None:  # sin marcador → no materializa (grupos viejos)
+            continue
+        home_name = doc.get("home_name", "")
+        away_name = doc.get("away_name", "")
+        home_code = _fotmob_stats_to_fifa_code(home_name)
+        away_code = _fotmob_stats_to_fifa_code(away_name)
+        date = doc.get("date", "")
+        if not home_code or not away_code or not date:
+            logger.warning(
+                "Bronze fotmob_stats con marcador pero sin mapeo/fecha, omitiendo: %s", path
+            )
+            continue
+        out.append(
+            {
+                "date": date,
+                "home_code": home_code,
+                "away_code": away_code,
+                "home_name": home_name,
+                "away_name": away_name,
+                "home_goals": hg,
+                "away_goals": ag,
+            }
+        )
+    return out
+
+
+def _materialize_ko_rows(
+    bronze_dir: Path,
+    merged: dict[tuple[str, str, str], dict[str, Any]],
+) -> list[dict[str, Any]]:
+    """Fabrica filas silver para KO fotmob no presentes en martj42 (F27-R4/R5).
+
+    Dedupe robusto a inversión home/away y a desfase de ±1 día (BUG2/BUG3): un partido
+    que ya tenga fila (grupos de martj42) NO se materializa. Devuelve las filas nuevas
+    (``source="fotmob"``, stats null; las puebla ``_apply_fotmob_stats``).
+    """
+    from datetime import datetime as _dt, timedelta as _td  # noqa: PLC0415
+
+    def _neighbors(d: str) -> list[str]:
+        try:
+            base = _dt.strptime(d, "%Y-%m-%d")
+        except ValueError:
+            return [d]
+        return [d] + [(base + _td(days=k)).strftime("%Y-%m-%d") for k in (-1, 1)]
+
+    existing_pairs: set[tuple[str, frozenset]] = set()
+    for (d, h, a) in merged:
+        pair = frozenset({h, a})
+        for nb in _neighbors(d):
+            existing_pairs.add((nb, pair))
+
+    new_rows: list[dict[str, Any]] = []
+    for cand in _load_fotmob_ko_candidates(bronze_dir):
+        pair = frozenset({cand["home_code"], cand["away_code"]})
+        if (cand["date"], pair) in existing_pairs:
+            continue  # R5: ya existe (grupos) → no duplica
+        existing_pairs.add((cand["date"], pair))  # evita duplicar entre candidatos
+        home_code, away_code = cand["home_code"], cand["away_code"]
+        row: dict[str, Any] = {
+            "date": cand["date"],
+            "home_code": home_code,
+            "away_code": away_code,
+            "home_team": canonical_name(home_code, cand["home_name"]),
+            "away_team": canonical_name(away_code, cand["away_name"]),
+            "home_goals": cand["home_goals"],
+            "away_goals": cand["away_goals"],
+            "tournament": "FIFA World Cup",
+            "neutral": True,
+            "source": "fotmob",
+        }
+        row.update({c: None for c in STAT_COLUMNS})
+        new_rows.append(row)
+    return new_rows
+
+
 def _apply_fotmob_stats(
     df: pd.DataFrame,
     fotmob_index: dict[tuple[str, frozenset], dict],
@@ -465,6 +572,12 @@ def build_silver(bronze_dir: Path | str) -> pd.DataFrame:
         merged[key] = row
     for key, row in public_by_key.items():
         merged.setdefault(key, row)
+
+    # F27-R4/R5: materializar filas KO desde fotmob (martj42 llega tarde; R32/R16 no están
+    # en results.csv). Dedupe contra las filas ya presentes; enriquecimiento de grupos intacto.
+    for ko_row in _materialize_ko_rows(Path(bronze_dir), merged):
+        key = (ko_row["date"], ko_row["home_code"], ko_row["away_code"])
+        merged.setdefault(key, ko_row)
 
     rows: list[dict[str, Any]] = []
     for row in merged.values():

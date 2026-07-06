@@ -44,6 +44,10 @@ EXPECTED_SUBCOMMANDS = frozenset(
         "ingest-fotmob-stats",  # Feature 23
         "corners",              # Feature 24
         "count-market",         # Feature 25
+        "ingest-ko",            # Feature 27
+        "build-ko-fixtures",    # Feature 27
+        "ingest-lineups",       # Feature 28
+        "build-lineup-strength",# Feature 28
     }
 )
 

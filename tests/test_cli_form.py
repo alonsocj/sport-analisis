@@ -227,8 +227,12 @@ class TestSubcomandosIntactosR6:
             "ingest-fotmob-stats",  # Feature 23
             "corners",              # Feature 24
             "count-market",         # Feature 25
+            "ingest-ko",            # Feature 27
+            "build-ko-fixtures",    # Feature 27
+            "ingest-lineups",       # Feature 28
+            "build-lineup-strength",# Feature 28
         }, "Feature 16 NO debe añadir subcomandos nuevos — solo flags a los existentes"
-        assert len(sub.choices) == 18, f"Esperados 18, encontrados {len(sub.choices)}"
+        assert len(sub.choices) == 22, f"Esperados 22, encontrados {len(sub.choices)}"
 
     def test_subcomandos_sin_form_weight_sin_atributo_por_defecto(self):
         """R6: subcomandos que NO son predict/backtest/simulate no tienen form_weight."""
