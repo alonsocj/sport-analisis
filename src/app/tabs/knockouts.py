@@ -31,6 +31,8 @@ from ...models.dixon_coles import (
     UnknownTeamError,
     predict_match,
 )
+from ...markets.by_half import prob_late_goal, prob_over_half, prob_team_scores
+from ...models.half_signal import DEFAULT_PRIOR_1T, half_lambdas, split_lambda
 from ...players.factor import AnytimeScorer, PlayerRate, compute_anytime_scorers, load_player_factor
 from ...features.lineup_view import build_lineup_view, find_lineup_doc
 from ...form import FormFactorFn, make_form_factor_fn
@@ -47,16 +49,12 @@ _DEFAULT_SILVER_CSV: Path = Path("data/silver/matches.csv")
 _DEFAULT_ELO_CSV: Path = Path("data/gold/external_elo.csv")
 _DEFAULT_PLAYER_FACTOR_PATH: Path = Path("data/gold/player_factor.csv")
 _DEFAULT_LINEUPS_DIR: Path = Path("data/bronze/lineups")  # F31: bronze de alineaciones
+_DEFAULT_HALF_SIGNAL_PATH: Path = Path("data/gold/half_signal.csv")  # F32: señal por mitad
 
 # Rutas de rosters Feature 21 (R3)
 _DEFAULT_ROSTERS_CSV: Path = Path("data") / "rosters" / "r32_rosters.csv"
 _DEFAULT_UNAVAILABLE_CSV: Path = Path("data") / "rosters" / "r32_unavailable.csv"
 
-# Literal de aviso (R1)
-_AVISO_SIN_LLAVES: str = (
-    "No se encontraron llaves de eliminacion. "
-    "Verifica que exista: `data/knockouts/r32_fixtures.csv`"
-)
 
 
 # ---------------------------------------------------------------------------
@@ -908,6 +906,95 @@ def _render_alineacion_subtab(
                 st.caption(f"Sin XI para {code}.")
 
 
+def _load_half_signal_df(path: Path) -> dict[str, dict]:
+    """Carga el gold half_signal a dict por código (o {} si no existe) para la app (F32)."""
+    import pandas as pd  # noqa: PLC0415
+
+    if not Path(path).is_file():
+        return {}
+    df = pd.read_csv(path)
+    out: dict[str, dict] = {}
+    for _, r in df.iterrows():
+        out[str(r["team_code"])] = r.to_dict()
+    return out
+
+
+def _render_mitades_subtab(
+    fixture: KnockoutFixture, params: DixonColesParams, signal: dict[str, dict]
+) -> None:
+    """Sub-pestaña Mitades (F32): tendencias 1T/2T por equipo + mercados por mitad."""
+    h, a = fixture.home_code, fixture.away_code
+    st.caption(
+        "Tendencias 1T/2T y mercados por mitad (Feature 32). Reparte el λ del modelo por "
+        "mitad con la señal por-equipo (ajuste por rival) o el prior de liga si falta cobertura."
+    )
+    if h not in signal or a not in signal:
+        st.info(
+            f"Sin señal por-mitad para {h} o {a} en `{_DEFAULT_HALF_SIGNAL_PATH}`. "
+            "Se usará el reparto por prior de liga en los mercados."
+        )
+
+    # --- Tendencias por equipo (del gold) ---
+    cols = st.columns(2)
+    for col, code in zip(cols, (h, a)):
+        with col:
+            st.markdown(f"**{code}**")
+            row = signal.get(code)
+            if not row:
+                st.caption("sin datos por-mitad")
+                continue
+            def _f(key):
+                v = row.get(key)
+                return "—" if v is None or (isinstance(v, float) and v != v) else f"{v:.2f}"
+            st.markdown(
+                f"| | 1T | 2T |\n|---|---|---|\n"
+                f"| xG a favor | {_f('xg_for_1t')} | {_f('xg_for_2t')} |\n"
+                f"| xG en contra | {_f('xg_ag_1t')} | {_f('xg_ag_2t')} |\n"
+                f"| Goles a favor | {int(row['gf_1t'])} | {int(row['gf_2t'])} |\n"
+                f"| Goles en contra | {int(row['ga_1t'])} | {int(row['ga_2t'])} |\n"
+                f"\n<sub>n={int(row['n'])} partidos</sub>",
+                unsafe_allow_html=True,
+            )
+
+    # --- Mercados por mitad ---
+    try:
+        pred = predict_match(params, h, a)
+    except UnknownTeamError:
+        st.caption(f"Mercados no disponibles: {h} o {a} no está en los parámetros.")
+        return
+    if h in signal and a in signal:
+        l1h, l2h = half_lambdas(
+            pred.lambda_home,
+            {"1T": signal[h]["att_1t"], "2T": signal[h]["att_2t"]},
+            {"1T": signal[a]["def_1t"], "2T": signal[a]["def_2t"]},
+        )
+        l1a, l2a = half_lambdas(
+            pred.lambda_away,
+            {"1T": signal[a]["att_1t"], "2T": signal[a]["att_2t"]},
+            {"1T": signal[h]["def_1t"], "2T": signal[h]["def_2t"]},
+        )
+        reparto = "ajuste por rival"
+    else:
+        l1h, l2h = split_lambda(pred.lambda_home, DEFAULT_PRIOR_1T)
+        l1a, l2a = split_lambda(pred.lambda_away, DEFAULT_PRIOR_1T)
+        reparto = "prior de liga"
+
+    st.markdown(f"**Mercados por mitad** <sub>(reparto: {reparto})</sub>", unsafe_allow_html=True)
+    st.write(
+        f"- **1T** over 0.5: {100 * prob_over_half(l1h, l1a, 0.5):.1f}%  ·  "
+        f"over 1.5: {100 * prob_over_half(l1h, l1a, 1.5):.1f}%"
+    )
+    st.write(
+        f"- **2T** over 0.5: {100 * prob_over_half(l2h, l2a, 0.5):.1f}%  ·  "
+        f"over 1.5: {100 * prob_over_half(l2h, l2a, 1.5):.1f}%"
+    )
+    st.write(
+        f"- **Marca en 2T**: {h} {100 * prob_team_scores(l2h):.1f}%  ·  "
+        f"{a} {100 * prob_team_scores(l2a):.1f}%"
+    )
+    st.write(f"- **Gol en 76-90**: {100 * prob_late_goal(l2h, l2a, 0.42):.1f}%")
+
+
 def _render_detalle_ko(
     fixture: KnockoutFixture,
     app_data: AppData,
@@ -965,7 +1052,7 @@ def _render_detalle_ko(
         )
 
         sub_tabs = st.tabs(
-            ["Predicción", "Mercados", "Goleadores", "Equipos", "Elo", "Alineación"]
+            ["Predicción", "Mercados", "Goleadores", "Equipos", "Elo", "Alineación", "Mitades"]
         )
 
         # ------------------------------------------------------------------
@@ -1235,6 +1322,13 @@ def _render_detalle_ko(
         with sub_tabs[5]:
             _render_alineacion_subtab(fixture, analisis_data, _lineups_dir)
 
+        # ------------------------------------------------------------------
+        # Sub-pestaña 6: Mitades (Feature 32) — tendencias 1T/2T + mercados por mitad
+        # ------------------------------------------------------------------
+        with sub_tabs[6]:
+            _half_signal = _load_half_signal_df(_DEFAULT_HALF_SIGNAL_PATH)
+            _render_mitades_subtab(fixture, app_data.params, _half_signal)
+
 
 # ---------------------------------------------------------------------------
 # Render principal (R1–R4)
@@ -1316,7 +1410,11 @@ def render_knockouts(
     # --- Cargar fixtures (R1) ---
     fixtures = load_knockout_fixtures(_fixtures_path)
     if not fixtures:
-        st.warning(_AVISO_SIN_LLAVES)
+        # Mensaje dinámico con la ruta REAL (no hardcodear r32; F30 usa r16/r8).
+        st.warning(
+            "No se encontraron llaves de eliminacion. "
+            f"Verifica que exista: `{_fixtures_path}`"
+        )
         return
 
     as_of: str = app_data.params.as_of_date

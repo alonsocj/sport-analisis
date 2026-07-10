@@ -245,6 +245,14 @@
       "status": "done",
       "sdd": true,
       "note": "cerrada 2026-07-04: sub-pestana \"Alineacion\" en el detalle KO (6a sub-pestana). HALLAZGO: fotmob marketValue tiene COBERTURA 100% (incluso XI predicho de octavos), a diferencia de seasonRating (~25%) -> el \"destacado\" se ancla en marketValue + amenaza de gol (player_factor, cruce sin acentos) + rating si existe. Extractor ampliado (market_value/shirt_number/club/age). lineup_view.py PURO (find_doc/pick_crack/build_view). UI: 2 columnas, tarjeta del crack + XI probable ordenado POR->DEL con crack marcado. Re-scrape 24 XI. Verificado real: POR->Vitinha, ESP->Lamine Yamal, USA->Pulisic, BEL->Doku. 10 tests (suite 654), 3 tests detalle actualizados (5->6 sub-pestanas). state_key/lineups_dir inyectables."
+    },
+    {
+      "id": 32,
+      "name": "senal_por_mitad",
+      "description": "Senal de tendencia por mitad (1T/2T) derivada de fotmob (Periods.FirstHalf/SecondHalf + eventos de gol con minuto). Post-proceso que parte el lambda de Dixon-Coles en lambda_1T/lambda_2T por equipo (conserva el total, solo reparte) con shrinkage por muestra chica; alimenta mercados por mitad (O/U 1T/2T, marca en 2T, gol 76-90). Aditiva y aislada: no toca el 1X2 actual. Spec SDD en specs/senal_por_mitad/. Motivada por research LEADER de cuartos WC2026 (perfiles por mitad verificados 100% vs silver).",
+      "status": "done",
+      "sdd": true,
+      "note": "implementada+integrada 2026-07-08 (aprobado usuario, TDD, 27 tests, suite 681 verde, no-regresion: subcomandos exactos + markets OFF byte-identico + app sub-pestanas). Modulos: ingestion/fotmob_halves, features/half_silver, features/half_pipeline (matches_from_goalscorers/build_half_signal), models/half_signal (split_lambda conserva total/shrink_share/half_lambdas ajuste-rival/load_half_signal), markets/by_half, backtest/half_calibration. Artefacto durable data/gold/half_signal.csv (8 QF, shares shrunk k=12). CLI markets --by-half usa ajuste-rival (carga gold) o prior si falta. App: sub-pestana 'Mitades' en Knockouts (tendencias 1T/2T + mercados por mitad) VERIFICADA por render. PENDIENTE SOLO veredicto empirico R8: harness listo+testeado pero data actual da n=1 (gold solo 8 QF; partidos QF-vs-noQF) -> requiere per-mitad historico out-of-sample amplio (scrape, regla STOP). Nada commiteado."
     }
   ]
 }

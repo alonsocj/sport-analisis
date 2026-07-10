@@ -18,13 +18,19 @@ data/gold/*
 !data/gold/external_elo.csv
 !data/gold/player_factor.csv
 !data/gold/dixon_coles_params.json
+!data/gold/half_signal.csv
 data/silver/*
 !data/silver/matches.csv
 data/knockouts/*
 !data/knockouts/r32_fixtures.csv
+!data/knockouts/r16_fixtures.csv
+!data/knockouts/r8_fixtures.csv
 data/rosters/*
 !data/rosters/r32_rosters.csv
 !data/rosters/r32_unavailable.csv
+# F31: alineaciones (XI + destacado) que la sub-pestaña Alineación necesita en el deploy
+!data/bronze/lineups
+data/bronze/lineups/*.meta.json
 
 # Secretos
 .env

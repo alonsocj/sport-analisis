@@ -112,6 +112,13 @@ from .markets.goals import (
     _validate_line,
     market_summary,
 )
+from .markets.by_half import prob_late_goal, prob_over_half, prob_team_scores
+from .models.half_signal import (
+    DEFAULT_PRIOR_1T,
+    half_lambdas,
+    load_half_signal,
+    split_lambda,
+)
 from .models.dixon_coles import (
     DCConfig,
     DEFAULT_PARAMS_PATH_V2,
@@ -712,6 +719,38 @@ def _market_summary_to_dict(summary: MarketSummary) -> dict:
     }
 
 
+# Fracción del 2T atribuible al 76-90 (prior direccional; se afina con el histórico por-bucket).
+_LATE_BUCKET_SHARE: float = 0.42
+DEFAULT_HALF_SIGNAL_PATH = Path("data/gold/half_signal.csv")
+
+
+def _by_half_markets_dict(params, home: str, away: str, signal: dict | None = None) -> dict:
+    """Mercados por mitad para HOME vs AWAY (Feature 32, R5) repartiendo el λ del modelo.
+
+    Reparte λ_home/λ_away (de ``predict_match``) en 1T/2T. Si ``signal`` (gold
+    ``half_signal``) tiene AMBOS equipos → reparto **ajustado por rival** (ataque de A ×
+    defensa de B por mitad); si no → reparto por **prior de liga**. Conserva el total.
+    """
+    pred = predict_match(params, home, away)
+    signal = signal or {}
+    if home in signal and away in signal:
+        l1h, l2h = half_lambdas(pred.lambda_home, signal[home]["att"], signal[away]["def"])
+        l1a, l2a = half_lambdas(pred.lambda_away, signal[away]["att"], signal[home]["def"])
+        reparto = "ajuste_rival"
+    else:
+        l1h, l2h = split_lambda(pred.lambda_home, DEFAULT_PRIOR_1T)
+        l1a, l2a = split_lambda(pred.lambda_away, DEFAULT_PRIOR_1T)
+        reparto = "prior_liga"
+    return {
+        "reparto": reparto,
+        "prior_1t": DEFAULT_PRIOR_1T,
+        "ou_1t": {"over_0_5": prob_over_half(l1h, l1a, 0.5), "over_1_5": prob_over_half(l1h, l1a, 1.5)},
+        "ou_2t": {"over_0_5": prob_over_half(l2h, l2a, 0.5), "over_1_5": prob_over_half(l2h, l2a, 1.5)},
+        "marca_2t": {"home": prob_team_scores(l2h), "away": prob_team_scores(l2a)},
+        "gol_76_90": prob_late_goal(l2h, l2a, _LATE_BUCKET_SHARE),
+    }
+
+
 def cmd_markets(args: argparse.Namespace) -> int:
     """``markets HOME AWAY [--json] [--lines L1,L2,...]``: mercados de goles (Feature 4, R7).
 
@@ -753,7 +792,11 @@ def cmd_markets(args: argparse.Namespace) -> int:
 
     if args.json:
         # Salida JSON parseable (R7)
-        print(json.dumps(_market_summary_to_dict(summary), ensure_ascii=False))
+        doc = _market_summary_to_dict(summary)
+        if getattr(args, "by_half", False):  # Feature 32, R5/R6: aditivo, OFF = idéntico
+            _sig = load_half_signal(getattr(args, "half_signal", None) or DEFAULT_HALF_SIGNAL_PATH)
+            doc["by_half"] = _by_half_markets_dict(params, home, away, signal=_sig)
+        print(json.dumps(doc, ensure_ascii=False))
         return 0
 
     # Salida humana con porcentajes a 1 decimal (R7)
@@ -788,6 +831,20 @@ def cmd_markets(args: argparse.Namespace) -> int:
             f"   O{ml.line:.1f}: over {100 * ml.over:.1f}%  |  "
             f"under {100 * ml.under:.1f}%"
         )
+    if getattr(args, "by_half", False):  # Feature 32, R5/R6: aditivo, OFF = idéntico
+        _sig = load_half_signal(getattr(args, "half_signal", None) or DEFAULT_HALF_SIGNAL_PATH)
+        bh = _by_half_markets_dict(params, home, away, signal=_sig)
+        _rep = "ajuste por rival" if bh["reparto"] == "ajuste_rival" else "prior de liga"
+        print(f"✅ Por mitad (reparto: {_rep}):")
+        print(
+            f"   1T over0.5 {100 * bh['ou_1t']['over_0_5']:.1f}%  |  "
+            f"2T over0.5 {100 * bh['ou_2t']['over_0_5']:.1f}%"
+        )
+        print(
+            f"   Marca en 2T: {names[home]} {100 * bh['marca_2t']['home']:.1f}%  |  "
+            f"{names[away]} {100 * bh['marca_2t']['away']:.1f}%"
+        )
+        print(f"   Gol en 76-90: {100 * bh['gol_76_90']:.1f}%")
     return 0
 
 
@@ -2426,6 +2483,15 @@ def build_parser() -> argparse.ArgumentParser:
         "--json",
         action="store_true",
         help="Salida machine-readable: un único documento JSON en stdout.",
+    )
+    p.add_argument(
+        "--by-half",
+        action="store_true",
+        dest="by_half",
+        help=(
+            "Añade mercados por mitad (O/U 1T/2T, marca en 2T, gol 76-90) repartiendo "
+            "el λ del modelo. Sin este flag la salida es idéntica a la previa (Feature 32)."
+        ),
     )
     p.add_argument(
         "--lines",

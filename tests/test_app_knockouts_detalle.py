@@ -405,7 +405,7 @@ def test_subpestanas_presentes(tmp_path: Path) -> None:
     ):
         _render_detalle_ko(fixture, app_data, None, pf_path)
 
-    expected = ["Predicción", "Mercados", "Goleadores", "Equipos", "Elo", "Alineación"]
+    expected = ["Predicción", "Mercados", "Goleadores", "Equipos", "Elo", "Alineación", "Mitades"]
     assert captured_labels == expected, (
         f"Sub-pestanas: {captured_labels}; esperadas: {expected}"
     )
@@ -517,7 +517,7 @@ def test_degradacion_equipo_desconocido(tmp_path: Path) -> None:
     mc.__enter__ = mock.MagicMock(return_value=mc)
     mc.__exit__ = mock.MagicMock(return_value=False)
 
-    tabs_mocks = [mock.MagicMock() for _ in range(6)]  # F31: +Alineación
+    tabs_mocks = [mock.MagicMock() for _ in range(7)]  # F31: +Alineación; F32: +Mitades
 
     with (
         mock.patch("streamlit.container", return_value=mc),
@@ -570,7 +570,7 @@ def test_degradacion_sin_elo(tmp_path: Path) -> None:
     mc = mock.MagicMock()
     mc.__enter__ = mock.MagicMock(return_value=mc)
     mc.__exit__ = mock.MagicMock(return_value=False)
-    tabs_mocks = [mock.MagicMock() for _ in range(6)]  # F31: +Alineación
+    tabs_mocks = [mock.MagicMock() for _ in range(7)]  # F31: +Alineación; F32: +Mitades
 
     with (
         mock.patch("streamlit.container", return_value=mc),
