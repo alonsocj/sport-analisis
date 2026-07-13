@@ -3,7 +3,8 @@
 Obtiene el árbol de knockouts (``props.pageProps.playoff.rounds``) de la página de
 playoff de fotmob vía un transporte INYECTABLE (url → html), lo normaliza a una lista
 de ``KoMatch`` (por partido: ronda, equipos, marcador, id, estado) y deriva los CSV de
-fixtures ``r16_fixtures.csv`` (octavos) y ``r8_fixtures.csv`` (cuartos) para la app (F30).
+fixtures ``r16_fixtures.csv`` (octavos), ``r8_fixtures.csv`` (cuartos, F30) y
+``r4_fixtures.csv`` (semis, F33) para la app.
 
 Seguridad / diseño (coherente con F21/F23):
 - Transporte inyectable: cero red en tests.
@@ -194,10 +195,12 @@ def ko_match_to_ref(km: KoMatch) -> MatchRef:
     )
 
 
-# Etapa (ordinal) → nombre de archivo de fixtures. Sólo octavos y cuartos (para F30).
+# Etapa (ordinal) → nombre de archivo de fixtures. Octavos y cuartos (F30) + semis (F33).
+# La Final (ordinal 5) se añadirá cuando se resuelvan las semis (hoy sus equipos son TBD).
 _FIXTURE_FILES: dict[int, tuple[str, str]] = {
     2: ("R16", "r16_fixtures.csv"),
     3: ("QF", "r8_fixtures.csv"),
+    4: ("SF", "r4_fixtures.csv"),
 }
 _FIXTURE_HEADER = ("draw_order", "date", "stage", "home_code", "away_code", "source")
 
@@ -208,7 +211,8 @@ def write_ko_fixtures(
     *,
     source: str = "fotmob_official",
 ) -> dict[str, Path]:
-    """Escribe ``r16_fixtures.csv`` (octavos) y ``r8_fixtures.csv`` (cuartos) (R6).
+    """Escribe ``r16_fixtures.csv`` (octavos), ``r8_fixtures.csv`` (cuartos) y
+    ``r4_fixtures.csv`` (semis) (R6; F33).
 
     Mismo esquema que ``r32_fixtures.csv``. Sólo se escriben partidos con AMBOS
     códigos FIFA resueltos (los ``TBD`` / ``Winner QF x`` se omiten, no se fuerza

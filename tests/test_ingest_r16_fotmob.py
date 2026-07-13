@@ -200,7 +200,9 @@ def test_ko_sin_stats_persiste_con_marcador(tmp_path: Path):
 def test_write_r16_r8_fixtures_esquema(tmp_path: Path):
     bracket = parse_playoff_bracket(_bracket_next_data())
     written = write_ko_fixtures(bracket, tmp_path)
-    assert set(written) == {"R16", "QF"}
+    # F33: el writer emite además la etapa SF (r4). El bracket de muestra no tiene
+    # partidos SF → r4_fixtures.csv se escribe con solo el header (cero filas).
+    assert set(written) == {"R16", "QF", "SF"}
 
     r16 = (tmp_path / "r16_fixtures.csv").read_text(encoding="utf-8").splitlines()
     assert r16[0] == "draw_order,date,stage,home_code,away_code,source"
@@ -211,6 +213,24 @@ def test_write_r16_r8_fixtures_esquema(tmp_path: Path):
     r8 = (tmp_path / "r8_fixtures.csv").read_text(encoding="utf-8").splitlines()
     assert r8[0] == "draw_order,date,stage,home_code,away_code,source"
     assert r8[1] == "1,2026-07-09,QF,FRA,MAR,fotmob_official"
+
+    # F33: r4 existe con header pero sin filas (no hay SF en la muestra)
+    r4 = (tmp_path / "r4_fixtures.csv").read_text(encoding="utf-8").splitlines()
+    assert r4[0] == "draw_order,date,stage,home_code,away_code,source"
+    assert len(r4) == 1
+
+
+def test_write_sf_fixture(tmp_path: Path):
+    """F33: un KoMatch de SF (ambos códigos resueltos) → fila en r4_fixtures.csv."""
+    sf = KoMatch(round_ordinal=4, stage="SF", home_name="France", away_name="Spain",
+                 home_code="FRA", away_code="ESP", home_goals=None, away_goals=None,
+                 match_id="0", slug="", page_url="", utc_time="", date="2026-07-14",
+                 finished=False, started=False)
+    written = write_ko_fixtures([sf], tmp_path)
+    assert "SF" in written
+    r4 = (tmp_path / "r4_fixtures.csv").read_text(encoding="utf-8").splitlines()
+    assert r4[0] == "draw_order,date,stage,home_code,away_code,source"
+    assert r4[1] == "1,2026-07-14,SF,FRA,ESP,fotmob_official"
 
 
 def test_tbd_no_fuerza_codigo(tmp_path: Path):

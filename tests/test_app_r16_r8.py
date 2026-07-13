@@ -27,12 +27,16 @@ def _run_app(monkeypatch, tmp_path: Path):
     ko_csv = tk._make_ko_csv(tmp_path)  # sirve de r16 (fixtures válidas)
     r8_csv = tmp_path / "data" / "knockouts" / "r8_fixtures.csv"
     r8_csv.write_text(_R8_CSV, encoding="utf-8")
+    # F33: la app añade el tab Semifinal (r4); inyectar un r4 vacío mantiene el test hermético.
+    r4_csv = tmp_path / "data" / "knockouts" / "r4_fixtures.csv"
+    r4_csv.write_text("draw_order,date,stage,home_code,away_code,source\n", encoding="utf-8")
     paths = tk._write_apptest_inputs(tmp_path, ko_csv)
 
     main_mod._cached_load_app_data.clear()
     main_mod._cached_predict_for.clear()
     tk._patch_app_defaults(monkeypatch, paths)  # patchea DEFAULT_KO_CSV → r16
     monkeypatch.setattr(ko_mod, "DEFAULT_R8_CSV", r8_csv)
+    monkeypatch.setattr(ko_mod, "DEFAULT_R4_CSV", r4_csv)
 
     app_path = Path(__file__).parent.parent / "src" / "app" / "main.py"
     at = AppTest.from_file(str(app_path), default_timeout=20.0)
@@ -59,7 +63,7 @@ def test_tabs_previos_intactos(tmp_path: Path, monkeypatch) -> None:
     labels = [t.label for t in at.tabs]
     for tab in (TAB_CALENDARIO, TAB_SELECCIONES, TAB_MODELO):
         assert tab in labels, f"Falta {tab!r} en {labels}"
-    assert len(at.tabs) == 5  # 3 previos + Round of 16 + Round of 8
+    assert len(at.tabs) == 6  # 3 previos + Round of 16 + Round of 8 + Semifinal (F33)
 
 
 def test_dos_tabs_ko_sin_colision(tmp_path: Path, monkeypatch) -> None:

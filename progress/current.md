@@ -1,3 +1,39 @@
+# progress/current.md — Estado al 2026-07-13 (VERSIÓN SEMIFINALES)
+
+## Semifinales WC2026 — data update + retrain + F33 app_semifinal (2026-07-13)
+
+Cuartos jugados; se establece la versión del modelo para semis.
+
+**Resultados cuartos (fotmob, ingest-ko):** FRA 2-0 MAR · ESP 2-1 BEL · ARG 3-1 SUI ·
+NOR 1-2 ENG. **Semis:** FRA-ESP (14 jul) · ENG-ARG (15 jul). Final 19 jul (equipos TBD).
+
+**Data update (scrape autorizado):** `ingest-ko` (28 KO persistidos c/marcador+stats) →
+`ingest-lineups` (30/31 con XI) → `build-features --as-of-date 2026-07-13`
+(silver **49503**, gold + player_factor 6282) → `build-lineup-strength` (6 filas) →
+`train --as-of-date 2026-07-13` (**8207 partidos**, 284 equipos, converge 526 iter).
+silver corta ahora en 2026-07-11 (QF con xG: FRA 3.69, ESP 1.96, ARG 1.94, ENG 1.04 vis).
+
+**Predicciones SF** (forma-xG γ=0.2, sede neutral, como la app):
+- FRA-ESP: ESP avanza **53.8%** (1:34.6 X:23.2 2:42.2) — moneda al aire, λ 1.67-1.86.
+- ENG-ARG: ARG avanza **67.8%** (1:19.8 X:24.8 2:55.4) — favorito claro, λ 0.96-1.75.
+  CAVEAT medido (r32-calibracion): sesgo pro-favorito → templar ARG vs mercado.
+
+**F33 `app_semifinal` (DONE, SDD-lite, aprobado usuario):** tab aditivo "🏆 Semifinal"
+(r4) calcado de F30. Prod: `_FIXTURE_FILES += {4:(SF,r4_fixtures.csv)}` en
+`ingestion/fotmob_ko.py`; `DEFAULT_R4_CSV` en `app/tabs/knockouts.py`; `TAB_SEMIFINAL`
++ `tab[5]` en `app/main.py` (6 tabs de contenido; render_knockouts state_key='r4', cero
+UI nueva). `r4_fixtures.csv` = FRA-ESP + ENG-ARG (build-ko-fixtures). Tests:
+`test_app_semifinal.py` (4) + `test_write_sf_fixture` + esquema r4; actualizados
+test_app_r16_r8 (5→6 tabs, inyecta r4) y assert set(written)={R16,QF,SF}.
+**Suite 686 verde, init.sh verde**, smoke real-app OK (6 tabs, gamma_r4 namespaced).
+
+PENDIENTE (no bloqueante): (1) commit (regla STOP). (2) half_signal gold cubre los 4
+SF pero NO refolded con QF per-mitad (bronze solo `Periods.All`; requiere re-scrape
+per-mitad). (3) tab Final cuando se resuelvan las semis (ordinal 5 → r2). (4) player_factor
+usa shares CC0 pre-KO (goalscorers corta 2026-06-25) → cruzar goleadores con XI fotmob.
+
+---
+
 # progress/current.md — Estado al 2026-06-17 (post-jornada 1)
 
 ## ROADMAP v3 (mejoras con datos públicos free) — COMPLETO

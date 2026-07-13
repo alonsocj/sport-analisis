@@ -253,6 +253,14 @@
       "status": "done",
       "sdd": true,
       "note": "implementada+integrada 2026-07-08 (aprobado usuario, TDD, 27 tests, suite 681 verde, no-regresion: subcomandos exactos + markets OFF byte-identico + app sub-pestanas). Modulos: ingestion/fotmob_halves, features/half_silver, features/half_pipeline (matches_from_goalscorers/build_half_signal), models/half_signal (split_lambda conserva total/shrink_share/half_lambdas ajuste-rival/load_half_signal), markets/by_half, backtest/half_calibration. Artefacto durable data/gold/half_signal.csv (8 QF, shares shrunk k=12). CLI markets --by-half usa ajuste-rival (carga gold) o prior si falta. App: sub-pestana 'Mitades' en Knockouts (tendencias 1T/2T + mercados por mitad) VERIFICADA por render. PENDIENTE SOLO veredicto empirico R8: harness listo+testeado pero data actual da n=1 (gold solo 8 QF; partidos QF-vs-noQF) -> requiere per-mitad historico out-of-sample amplio (scrape, regla STOP). Nada commiteado."
+    },
+    {
+      "id": 33,
+      "name": "app_semifinal",
+      "description": "Version semifinales WC2026: expone la ronda SF (Round of 4) en el pipeline y la app, calcado del patron F30 (Round of 8). Writer de fixtures fotmob_ko emite ademas r4_fixtures.csv (etapa SF); la app anade un tab aditivo 'Semifinal' que reusa render_knockouts con state_key='r4' (pagina de detalle completa: Prediccion/Mercados/Goleadores/Equipos/Elo/Alineacion/Mitades). Sin UI nueva. Precede a la data update: ingest-ko/ingest-lineups + build-features + train --as-of-date 2026-07-13.",
+      "status": "done",
+      "sdd": false,
+      "note": "cerrada 2026-07-13 (aprobado usuario, SDD-lite = impl+tests con trazabilidad R->test, sin 3 specs por ser clon mecanico verificado de F30). Cambios prod: _FIXTURE_FILES += {4: (SF, r4_fixtures.csv)} en ingestion/fotmob_ko.py; DEFAULT_R4_CSV en app/tabs/knockouts.py; TAB_SEMIFINAL + tab[5] en app/main.py (6 tabs de contenido). Tests: test_app_semifinal.py (R1 tab presente + r4 default, R2 6 tabs aditivo, R3 slider gamma_r4 namespaced), test_write_sf_fixture + esquema r4 en test_ingest_r16_fotmob.py; actualizados test_app_r16_r8 (5->6 tabs, inyecta r4) y assert set(written) R16/QF/SF. Data update ejecutada: ingest-ko (28 KO persistidos, QF 2-0/2-1/3-1/1-2), ingest-lineups (30/31 XI), build-features (silver 49503, gold + player_factor 6282), train (8207 partidos, as_of 2026-07-13, converge). r4_fixtures.csv = FRA-ESP (14 jul) + ENG-ARG (15 jul). Predicciones SF (forma-xG g=0.2, neutral): ESP avanza 53.8% vs FRA (parejo); ARG avanza 67.8% vs ENG (templar por sesgo pro-favorito). Final (ordinal 5) pendiente: equipos TBD hoy. half_signal gold cubre los 4 SF pero NO refolded con QF per-mitad (bronze solo Periods.All; requiere re-scrape per-mitad)."
     }
   ]
 }

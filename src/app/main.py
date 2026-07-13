@@ -47,8 +47,10 @@ TAB_CALENDARIO: str = "📅 Calendario"
 TAB_SELECCIONES: str = "🏆 Selecciones"
 TAB_MODELO: str = "📈 Modelo"
 # F30: el tab Knockouts pasa a "Round of 16" (octavos) + se añade "Round of 8" (cuartos).
+# F33: se añade "Semifinal" (Round of 4).
 TAB_KNOCKOUTS: str = "🏟️ Round of 16"
 TAB_ROUND8: str = "🥊 Round of 8"
+TAB_SEMIFINAL: str = "🏆 Semifinal"
 
 # ---------------------------------------------------------------------------
 # Caches (R4: data.py queda limpio de streamlit)
@@ -135,8 +137,10 @@ def main() -> None:
         st.error(str(exc))
         return  # sin pestanas de contenido (R2)
 
-    # Cinco pestanas nivel app (F30: Round of 16 + Round of 8)
-    tabs = st.tabs([TAB_CALENDARIO, TAB_SELECCIONES, TAB_MODELO, TAB_KNOCKOUTS, TAB_ROUND8])
+    # Seis pestanas nivel app (F30: Round of 16 + Round of 8; F33: Semifinal)
+    tabs = st.tabs(
+        [TAB_CALENDARIO, TAB_SELECCIONES, TAB_MODELO, TAB_KNOCKOUTS, TAB_ROUND8, TAB_SEMIFINAL]
+    )
 
     with tabs[0]:
         from src.app.tabs.calendario import render_calendario
@@ -171,6 +175,18 @@ def main() -> None:
             unavailable_csv=Path("data/rosters/r32_unavailable.csv"),
             silver_csv=Path("data/silver/matches.csv"),
             state_key="r8",
+        )
+
+    with tabs[5]:
+        # Semifinal (Round of 4): fixtures r4 explícitos + session_state namespaced (F33)
+        from src.app.tabs.knockouts import render_knockouts, DEFAULT_R4_CSV
+        render_knockouts(
+            app_data,
+            fixtures_csv=DEFAULT_R4_CSV,
+            rosters_csv=Path("data/rosters/r32_rosters.csv"),
+            unavailable_csv=Path("data/rosters/r32_unavailable.csv"),
+            silver_csv=Path("data/silver/matches.csv"),
+            state_key="r4",
         )
 
 

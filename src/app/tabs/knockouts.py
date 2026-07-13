@@ -45,6 +45,8 @@ from ...form import FormFactorFn, make_form_factor_fn
 # dato histórico de training (F27). r8 = cuartos (Round of 8).
 DEFAULT_KO_CSV: Path = Path("data/knockouts/r16_fixtures.csv")
 DEFAULT_R8_CSV: Path = Path("data/knockouts/r8_fixtures.csv")
+# F33: semifinales (Round of 4). Tab aditivo, mismo render que R16/R8.
+DEFAULT_R4_CSV: Path = Path("data/knockouts/r4_fixtures.csv")
 _DEFAULT_SILVER_CSV: Path = Path("data/silver/matches.csv")
 _DEFAULT_ELO_CSV: Path = Path("data/gold/external_elo.csv")
 _DEFAULT_PLAYER_FACTOR_PATH: Path = Path("data/gold/player_factor.csv")
