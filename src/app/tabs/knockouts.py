@@ -47,6 +47,9 @@ DEFAULT_KO_CSV: Path = Path("data/knockouts/r16_fixtures.csv")
 DEFAULT_R8_CSV: Path = Path("data/knockouts/r8_fixtures.csv")
 # F33: semifinales (Round of 4). Tab aditivo, mismo render que R16/R8.
 DEFAULT_R4_CSV: Path = Path("data/knockouts/r4_fixtures.csv")
+# F34: Final (Round of 2) + 3er puesto. Tab aditivo con paneles de simulación.
+DEFAULT_R2_CSV: Path = Path("data/knockouts/r2_fixtures.csv")
+DEFAULT_R3P_CSV: Path = Path("data/knockouts/r3p_fixtures.csv")
 _DEFAULT_SILVER_CSV: Path = Path("data/silver/matches.csv")
 _DEFAULT_ELO_CSV: Path = Path("data/gold/external_elo.csv")
 _DEFAULT_PLAYER_FACTOR_PATH: Path = Path("data/gold/player_factor.csv")

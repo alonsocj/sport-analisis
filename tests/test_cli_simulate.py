@@ -191,6 +191,7 @@ class TestSubcomandosExactos:
             "build-ko-fixtures",    # Feature 27
             "ingest-lineups",       # Feature 28
             "build-lineup-strength",# Feature 28
+            "simulate-match",       # Feature 34
         }
 
         assert subcommands == expected, (
@@ -213,9 +214,9 @@ class TestSubcomandosExactos:
                 break
 
         n_subcommands = len(subparsers_action.choices)
-        assert n_subcommands == 22, (
-            f"Se esperan exactamente 18 subcomandos, se encontraron {n_subcommands}: "
-            f"{sorted(subparsers_action.choices.keys())}"
+        assert n_subcommands == 23, (
+            f"Se esperan exactamente 23 subcomandos (22 previos + simulate-match F34), "
+            f"se encontraron {n_subcommands}: {sorted(subparsers_action.choices.keys())}"
         )
 
     def test_subcomandos_previos_intactos(self):

@@ -477,12 +477,13 @@ class TestCliFormXgFlagR4:
             "build-ko-fixtures",    # Feature 27
             "ingest-lineups",       # Feature 28
             "build-lineup-strength",# Feature 28
+            "simulate-match",       # Feature 34
         }
         assert set(sub.choices) == expected, (
             f"Subcomandos inesperados: {set(sub.choices) - expected} o faltantes: "
             f"{expected - set(sub.choices)}"
         )
-        assert len(sub.choices) == 22, f"Esperados 22, encontrados {len(sub.choices)}"
+        assert len(sub.choices) == 23, f"Esperados 23, encontrados {len(sub.choices)}"
 
     def test_form_xg_no_en_schedule(self):
         """R4: subcomandos distintos de predict/backtest/simulate no tienen form_xg."""

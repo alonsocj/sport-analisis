@@ -51,6 +51,8 @@ TAB_MODELO: str = "📈 Modelo"
 TAB_KNOCKOUTS: str = "🏟️ Round of 16"
 TAB_ROUND8: str = "🥊 Round of 8"
 TAB_SEMIFINAL: str = "🏆 Semifinal"
+# F34: Final (Round of 2) + 3er puesto, con paneles de simulación Monte Carlo.
+TAB_FINAL: str = "🏆 Final"
 
 # ---------------------------------------------------------------------------
 # Caches (R4: data.py queda limpio de streamlit)
@@ -137,9 +139,10 @@ def main() -> None:
         st.error(str(exc))
         return  # sin pestanas de contenido (R2)
 
-    # Seis pestanas nivel app (F30: Round of 16 + Round of 8; F33: Semifinal)
+    # Siete pestanas nivel app (F30: R16 + R8; F33: Semifinal; F34: Final + 3er puesto)
     tabs = st.tabs(
-        [TAB_CALENDARIO, TAB_SELECCIONES, TAB_MODELO, TAB_KNOCKOUTS, TAB_ROUND8, TAB_SEMIFINAL]
+        [TAB_CALENDARIO, TAB_SELECCIONES, TAB_MODELO, TAB_KNOCKOUTS, TAB_ROUND8,
+         TAB_SEMIFINAL, TAB_FINAL]
     )
 
     with tabs[0]:
@@ -187,6 +190,19 @@ def main() -> None:
             unavailable_csv=Path("data/rosters/r32_unavailable.csv"),
             silver_csv=Path("data/silver/matches.csv"),
             state_key="r4",
+        )
+
+    with tabs[6]:
+        # Final (Round of 2) + 3er puesto con paneles de simulación Monte Carlo (F34)
+        from src.app.tabs.knockouts import DEFAULT_R2_CSV, DEFAULT_R3P_CSV
+        from src.app.tabs.final import render_final_tab
+        render_final_tab(
+            app_data,
+            r2_csv=DEFAULT_R2_CSV,
+            r3p_csv=DEFAULT_R3P_CSV,
+            rosters_csv=Path("data/rosters/r32_rosters.csv"),
+            unavailable_csv=Path("data/rosters/r32_unavailable.csv"),
+            silver_csv=Path("data/silver/matches.csv"),
         )
 
 

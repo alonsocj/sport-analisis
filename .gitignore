@@ -26,6 +26,8 @@ data/knockouts/*
 !data/knockouts/r16_fixtures.csv
 !data/knockouts/r8_fixtures.csv
 !data/knockouts/r4_fixtures.csv
+!data/knockouts/r2_fixtures.csv
+!data/knockouts/r3p_fixtures.csv
 data/rosters/*
 !data/rosters/r32_rosters.csv
 !data/rosters/r32_unavailable.csv

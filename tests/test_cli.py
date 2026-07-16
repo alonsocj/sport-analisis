@@ -220,6 +220,7 @@ def test_subcomandos_exactos_con_funcion_propia():
         "build-ko-fixtures",    # Feature 27
         "ingest-lineups",       # Feature 28
         "build-lineup-strength",# Feature 28
+        "simulate-match",       # Feature 34
     }
     esperadas = {
         "ingest-public": cli.cmd_ingest_public,
@@ -244,6 +245,7 @@ def test_subcomandos_exactos_con_funcion_propia():
         "build-ko-fixtures": cli.cmd_build_ko_fixtures,          # Feature 27
         "ingest-lineups": cli.cmd_ingest_lineups,                # Feature 28
         "build-lineup-strength": cli.cmd_build_lineup_strength,  # Feature 28
+        "simulate-match": cli.cmd_simulate_match,                # Feature 34
     }
     argv_minimos = {
         "ingest-public": ["ingest-public"],
@@ -267,7 +269,7 @@ def test_subcomandos_exactos_con_funcion_propia():
     for name, argv in argv_minimos.items():
         args = parser.parse_args(argv)
         assert args.func is esperadas[name], name
-    assert len(set(esperadas.values())) == 22  # una función POR subcomando (22 total, F28)
+    assert len(set(esperadas.values())) == 23  # una función POR subcomando (23 total, F34)
 
 
 # ---------------------------------------------------------------------------

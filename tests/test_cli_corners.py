@@ -172,6 +172,7 @@ def test_subcomandos_exactos_intactos() -> None:
         "build-ko-fixtures",    # Feature 27
         "ingest-lineups",       # Feature 28
         "build-lineup-strength",# Feature 28
+        "simulate-match",       # Feature 34
     }
     esperados = previos_17 | {"corners"}
 
@@ -180,8 +181,8 @@ def test_subcomandos_exactos_intactos() -> None:
         f"  Faltantes: {esperados - set(sub.choices)}\n"
         f"  Sobrantes: {set(sub.choices) - esperados}"
     )
-    assert len(set(sub.choices)) == 22, (
-        f"Esperados 22 subcomandos, got {len(set(sub.choices))}"
+    assert len(set(sub.choices)) == 23, (
+        f"Esperados 23 subcomandos, got {len(set(sub.choices))}"
     )
 
 

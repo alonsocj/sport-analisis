@@ -315,6 +315,7 @@ EXPECTED_SUBCOMMANDS_F21 = frozenset(
         "build-ko-fixtures",    # Feature 27
         "ingest-lineups",       # Feature 28
         "build-lineup-strength",# Feature 28
+        "simulate-match",       # Feature 34
     }
 )
 

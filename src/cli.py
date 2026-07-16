@@ -138,6 +138,9 @@ DEFAULT_FEATURES_CSV = Path("data/gold/team_features.csv")
 DEFAULT_RESULTS_CSV = Path("data/bronze/public_results/results.csv")
 DEFAULT_SCHEDULE_LIMIT = 10  # vista compacta de "qué predecir ahora" (design.md, R10)
 WC_TOURNAMENT = "FIFA World Cup"
+# Feature 34: simulador de un cruce fijo.
+DEFAULT_PREDICTIONS_DIR = Path("data/predictions")
+DEFAULT_MATCH_SIM_N = 50_000
 
 # Recordatorio del orden del flujo en los mensajes accionables (R12).
 _FLOW = "ingest-public → build-features → train → predict"
@@ -1537,6 +1540,109 @@ def cmd_simulate(args: argparse.Namespace) -> int:
     print(f"\n✅ Reporte escrito en {out_dir}/")
     print(f"   {json_path}")
     print(f"   {csv_path}")
+    return 0
+
+
+# ---------------------------------------------------------------------------
+# simulate-match (Feature 34, R7): Monte Carlo de un cruce fijo
+# ---------------------------------------------------------------------------
+
+_FIXTURE_SIM_MAP: dict[str, tuple[str, str]] = {
+    "r2": ("r2_fixtures.csv", "final_sim.csv"),
+    "r3p": ("r3p_fixtures.csv", "r3p_sim.csv"),
+}
+
+
+def _read_first_fixture(path: Path) -> tuple[str, str] | None:
+    """Lee el primer cruce resuelto (home_code, away_code) de un CSV de fixtures."""
+    if not path.is_file():
+        return None
+    with path.open(encoding="utf-8", newline="") as fh:
+        reader = csv.DictReader(fh)
+        for row in reader:
+            home = (row.get("home_code") or "").strip()
+            away = (row.get("away_code") or "").strip()
+            if home and away:
+                return home, away
+    return None
+
+
+def cmd_simulate_match(args: argparse.Namespace) -> int:
+    """``simulate-match``: Monte Carlo de un cruce fijo (Final / 3er puesto) (Feature 34, R7).
+
+    Resuelve los equipos desde ``--fixture {r2,r3p}`` (lee el CSV de knockouts) o desde
+    ``--home/--away``. Aplica forma (``--gamma``) y, opcionalmente, la amortiguación
+    ``--dead-rubber`` (3er puesto, R3). Persiste el resultado agregado y lo imprime.
+    Exit 0 éxito, 1 error de dominio.
+    """
+    from .simulation.match_sim import simulate_fixture, write_sim_result
+    from .simulation.montecarlo import MIN_N_SIMULATIONS
+    from .models.dead_rubber import DeadRubber
+
+    n = args.n_simulations
+    if n < MIN_N_SIMULATIONS:
+        return _error(f"--n debe ser >= {MIN_N_SIMULATIONS}; se recibió {n}.")
+
+    # Cargar parámetros entrenados
+    params_path = getattr(args, "params", None) or str(DEFAULT_PARAMS_PATH)
+    try:
+        params = load_params(params_path)
+    except NotFittedError as exc:
+        return _error(
+            f"no hay parámetros entrenados ({exc}); ejecuta primero "
+            f"`train --as-of-date YYYY-MM-DD` (flujo: {_FLOW})"
+        )
+
+    # Resolver el cruce (--fixture tiene prioridad sobre --home/--away)
+    fixture: str | None = getattr(args, "fixture", None)
+    default_out: Path
+    if fixture:
+        fx_file, out_name = _FIXTURE_SIM_MAP[fixture]
+        fx_path = KO_DEFAULT_DIR / fx_file
+        pair = _read_first_fixture(fx_path)
+        if pair is None:
+            return _error(
+                f"no hay un cruce resuelto en {fx_path}; ejecuta `ingest-ko` "
+                "tras las semifinales para fijar Final y 3er puesto."
+            )
+        home, away = pair
+        default_out = DEFAULT_PREDICTIONS_DIR / out_name
+    else:
+        home = getattr(args, "home", None)
+        away = getattr(args, "away", None)
+        if not home or not away:
+            return _error("indica --fixture {r2,r3p} o ambos --home y --away.")
+        default_out = DEFAULT_PREDICTIONS_DIR / f"{home}_{away}_sim.csv"
+
+    # Factor de forma (γ=0 → OFF, sin tocar disco)
+    gamma: float = getattr(args, "gamma", 0.0) or 0.0
+    form_xg: bool = bool(getattr(args, "form_xg", False))
+    form_factor = _build_form_factor(gamma, params.as_of_date, use_xg=form_xg)
+
+    # Amortiguación del 3er puesto (R3)
+    dead = DeadRubber() if getattr(args, "dead_rubber", False) else None
+
+    res = simulate_fixture(
+        home, away, params, n=n, seed=args.seed,
+        form_factor=form_factor, dead_rubber=dead,
+    )
+
+    out = Path(getattr(args, "out", None) or default_out)
+    write_sim_result(res, out)
+
+    # Salida legible
+    fav, fav_p = (res.home, res.p_home) if res.p_home >= res.p_away else (res.away, res.p_away)
+    mh, ma = res.modal_score
+    print(f"✅ simulate-match {res.home} vs {res.away} — n={n}, seed={args.seed}"
+          + ("  [dead-rubber ON]" if dead else ""))
+    print(f"   P(gana {res.home}) = {100*res.p_home:.1f}%   "
+          f"P(gana {res.away}) = {100*res.p_away:.1f}%   (favorito: {fav} {100*fav_p:.1f}%)")
+    print(f"   Camino: 90' {100*res.p_reg:.1f}%  ·  prórroga {100*res.p_et:.1f}%  ·  penales {100*res.p_pens:.1f}%")
+    print(f"   Marcador modal 90': {res.home} {mh}-{ma} {res.away}   E[goles]={res.e_goals:.2f}")
+    print("   Top marcadores 90': " + "  ".join(f"{h}-{a} ({100*p:.1f}%)" for (h, a), p in res.top_scores))
+    print(f"   Mercados: O1.5 {100*res.markets['over_1.5']:.0f}%  O2.5 {100*res.markets['over_2.5']:.0f}%  "
+          f"O3.5 {100*res.markets['over_3.5']:.0f}%  BTTS {100*res.markets['btts']:.0f}%")
+    print(f"✅ Artefacto → {out}")
     return 0
 
 
@@ -3212,6 +3318,40 @@ def build_parser() -> argparse.ArgumentParser:
         help="Salida machine-readable: un unico documento JSON en stdout.",
     )
     p.set_defaults(func=cmd_count_market)
+
+    # -----------------------------------------------------------------------
+    # simulate-match (Feature 34, R7): Monte Carlo de un cruce fijo (Final / 3er puesto)
+    # -----------------------------------------------------------------------
+    p = sub.add_parser(
+        "simulate-match",
+        help=(
+            "Simulación Monte Carlo de UN enfrentamiento fijo (Final o 3er puesto): "
+            "P(ganador), marcador modal, reparto 90'/prórroga/penales y mercados "
+            "(Feature 34, R4). --dead-rubber amortigua el 3er puesto (R3)."
+        ),
+    )
+    p.add_argument(
+        "--fixture",
+        choices=("r2", "r3p"),
+        default=None,
+        help="Lee el cruce del CSV: 'r2' (Final) o 'r3p' (3er puesto). Alterna con --home/--away.",
+    )
+    p.add_argument("--home", default=None, metavar="CODE", help="Código FIFA del local (si no se usa --fixture).")
+    p.add_argument("--away", default=None, metavar="CODE", help="Código FIFA del visitante (si no se usa --fixture).")
+    p.add_argument("--n", type=int, default=DEFAULT_MATCH_SIM_N, dest="n_simulations",
+                   help=f"Número de simulaciones (default {DEFAULT_MATCH_SIM_N}, mínimo 1000).")
+    p.add_argument("--seed", type=int, default=42, help="Seed del RNG (default 42, inyectada).")
+    p.add_argument("--params", default=str(DEFAULT_PARAMS_PATH), metavar="PATH",
+                   help=f"JSON de parámetros Dixon-Coles (default {DEFAULT_PARAMS_PATH}).")
+    p.add_argument("--gamma", type=float, default=0.0, dest="gamma", metavar="G",
+                   help="Peso γ del factor de forma (0.0–1.0; default 0.0 = OFF). WC2026 KO usa 0.2.")
+    p.add_argument("--form-xg", action="store_true", default=False, dest="form_xg",
+                   help="Activa señal xG en la ventana de forma (Feature 26).")
+    p.add_argument("--dead-rubber", action="store_true", default=False, dest="dead_rubber",
+                   help="Activa la amortiguación de motivación del 3er puesto (Feature 34, R3).")
+    p.add_argument("--out", default=None, metavar="PATH",
+                   help="Ruta del artefacto CSV (default data/predictions/{final,r3p}_sim.csv).")
+    p.set_defaults(func=cmd_simulate_match)
 
     return parser
 

@@ -18,7 +18,7 @@ Seguridad / diseño (coherente con F21/F23):
 from __future__ import annotations
 
 import csv
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from pathlib import Path
 from typing import Any, Callable
 
@@ -78,6 +78,7 @@ class KoMatch:
     date: str
     finished: bool
     started: bool
+    is_third_place: bool = False
 
 
 def _int_or_none(val: Any) -> int | None:
@@ -124,13 +125,21 @@ def parse_playoff_bracket(next_data: dict) -> list[KoMatch]:
     for idx, rnd in enumerate(rounds):
         ordinal = idx + 1
         stage = STAGES[idx] if idx < len(STAGES) else f"R{ordinal}"
+        round_name = str(rnd.get("name") or "")
         matchups = rnd.get("matchups") or []
         for matchup in matchups:
+            # F34 (R2): etiqueta fotmob del 3er puesto → marca el matchup.
+            matchup_name = str(matchup.get("name") or "")
+            is3p = _is_third_place_label(round_name, matchup_name)
             matches = matchup.get("matches")
             if not matches:
                 # Algunos matchups exponen home/away directamente
                 matches = [matchup] if ("home" in matchup or "away" in matchup) else []
             for mt in matches:
+                # La etiqueta 3P puede venir en la ronda, el matchup o el propio partido.
+                mt_name = str(mt.get("name") or mt.get("roundName") or "")
+                is3p_mt = is3p or _is_third_place_label(mt_name)
+                stage_mt = "3P" if is3p_mt else stage
                 home = mt.get("home") or {}
                 away = mt.get("away") or {}
                 home_name = str(home.get("name") or home.get("shortName") or "")
@@ -144,7 +153,7 @@ def parse_playoff_bracket(next_data: dict) -> list[KoMatch]:
                 out.append(
                     KoMatch(
                         round_ordinal=ordinal,
-                        stage=stage,
+                        stage=stage_mt,
                         home_name=home_name,
                         away_name=away_name,
                         home_code=_fotmob_stats_to_fifa_code(home_name),
@@ -158,9 +167,133 @@ def parse_playoff_bracket(next_data: dict) -> list[KoMatch]:
                         date=utc_time[:10] if len(utc_time) >= 10 else "",
                         finished=bool(status.get("finished")),
                         started=bool(status.get("started")),
+                        is_third_place=is3p_mt,
                     )
                 )
-    return out
+    return _infer_third_place(out)
+
+
+_THIRD_PLACE_TOKENS: tuple[str, ...] = ("3rd", "third", "3er", "tercer")
+
+
+def _is_third_place_label(*names: str) -> bool:
+    """True si algún nombre de ronda/matchup denota el partido por el 3er puesto (R2)."""
+    text = " ".join(n.lower() for n in names if n)
+    return any(tok in text for tok in _THIRD_PLACE_TOKENS)
+
+
+def _infer_third_place(matches: list[KoMatch]) -> list[KoMatch]:
+    """Marca el 3er puesto por emparejamiento si la etiqueta no lo resolvió (R2).
+
+    Regla en cascada (documentada en el spec):
+    1. Si algún ``KoMatch`` ya está marcado (por etiqueta) → no se toca nada.
+    2. Si la última ronda tiene ≥2 cruces y las semis (ordinal−1) están JUGADAS, el cruce
+       cuyos DOS equipos son perdedores de semis se marca 3P; el otro queda Final.
+    3. Si no se puede desambiguar (semis sin marcador, <2 perdedores) → conservador: no se
+       inventa el 3P.
+    """
+    if not matches or any(m.is_third_place for m in matches):
+        return matches
+
+    last_ord = max(m.round_ordinal for m in matches)
+    finals = [m for m in matches if m.round_ordinal == last_ord]
+    if len(finals) < 2:
+        return matches
+
+    # Perdedores de semis (ordinal − 1) con marcador resuelto.
+    losers: set[str] = set()
+    for m in matches:
+        if m.round_ordinal != last_ord - 1 or not m.finished:
+            continue
+        if m.home_goals is None or m.away_goals is None:
+            continue
+        if m.home_goals > m.away_goals:
+            losers.add(m.away_code)  # type: ignore[arg-type]
+        elif m.away_goals > m.home_goals:
+            losers.add(m.home_code)  # type: ignore[arg-type]
+    losers.discard(None)  # type: ignore[arg-type]
+    if len(losers) < 2:
+        return matches
+
+    result: list[KoMatch] = []
+    flagged = False
+    for m in matches:
+        if (not flagged and m.round_ordinal == last_ord
+                and m.home_code in losers and m.away_code in losers):
+            result.append(replace(m, is_third_place=True, stage="3P"))
+            flagged = True
+        else:
+            result.append(m)
+    return result
+
+
+def _day_before(iso_date: str) -> str:
+    """Devuelve la fecha ISO del día anterior a ``iso_date`` (fallback: la misma)."""
+    from datetime import datetime, timedelta
+
+    try:
+        d = datetime.strptime(iso_date[:10], "%Y-%m-%d")
+        return (d - timedelta(days=1)).strftime("%Y-%m-%d")
+    except (ValueError, TypeError):
+        return iso_date
+
+
+def synthesize_third_place(bracket: list[KoMatch]) -> KoMatch | None:
+    """Sintetiza el partido por el 3er puesto a partir de los perdedores de semis (R2).
+
+    Algunas ediciones de fotmob NO exponen el 3er puesto en ``playoff.rounds`` (WC2026: el
+    árbol tiene 5 rondas y la última un único cruce = la Final). Como los participantes del
+    3er puesto son DETERMINISTAS (los dos perdedores de semifinal), se derivan aquí.
+
+    Devuelve ``None`` si el bracket YA trae un 3er puesto, o si no hay exactamente dos
+    perdedores de semis resolubles (semis sin marcador / códigos ausentes). No se inventa.
+
+    La fecha se fija al día previo a la Final (convención habitual del 3er puesto). El
+    ``KoMatch`` sintetizado NO tiene ``slug``/``match_id`` → no se persiste stats de él.
+    """
+    if any(m.is_third_place for m in bracket):
+        return None
+    if not bracket:
+        return None
+
+    last_ord = max(m.round_ordinal for m in bracket)
+    finals = [m for m in bracket if m.round_ordinal == last_ord and not m.is_third_place]
+    if not finals:
+        return None
+    final = finals[0]
+
+    # Perdedores de semis (ordinal − 1), en orden de bracket, con marcador resuelto.
+    losers: list[str] = []
+    for m in bracket:
+        if m.round_ordinal != last_ord - 1 or not m.finished:
+            continue
+        if m.home_goals is None or m.away_goals is None:
+            continue
+        if m.home_goals > m.away_goals and m.away_code:
+            losers.append(m.away_code)
+        elif m.away_goals > m.home_goals and m.home_code:
+            losers.append(m.home_code)
+    if len(losers) != 2:
+        return None
+
+    return KoMatch(
+        round_ordinal=last_ord,
+        stage="3P",
+        home_name=losers[0],
+        away_name=losers[1],
+        home_code=losers[0],
+        away_code=losers[1],
+        home_goals=None,
+        away_goals=None,
+        match_id="",
+        slug="",
+        page_url="",
+        utc_time="",
+        date=_day_before(final.date),
+        finished=False,
+        started=False,
+        is_third_place=True,
+    )
 
 
 def fetch_bracket(transport: KoTransport, league_id: int = 77) -> list[KoMatch]:
@@ -195,13 +328,16 @@ def ko_match_to_ref(km: KoMatch) -> MatchRef:
     )
 
 
-# Etapa (ordinal) → nombre de archivo de fixtures. Octavos y cuartos (F30) + semis (F33).
-# La Final (ordinal 5) se añadirá cuando se resuelvan las semis (hoy sus equipos son TBD).
+# Etapa (ordinal) → nombre de archivo de fixtures. Octavos y cuartos (F30) + semis (F33)
+# + Final (ordinal 5, F34).
 _FIXTURE_FILES: dict[int, tuple[str, str]] = {
     2: ("R16", "r16_fixtures.csv"),
     3: ("QF", "r8_fixtures.csv"),
     4: ("SF", "r4_fixtures.csv"),
+    5: ("Final", "r2_fixtures.csv"),
 }
+# El 3er puesto comparte ordinal con la Final; se dirige por ``is_third_place`` (F34, R1).
+_THIRD_PLACE_FILE: tuple[str, str] = ("3P", "r3p_fixtures.csv")
 _FIXTURE_HEADER = ("draw_order", "date", "stage", "home_code", "away_code", "source")
 
 
@@ -225,11 +361,11 @@ def write_ko_fixtures(
     out_dir.mkdir(parents=True, exist_ok=True)
     written: dict[str, Path] = {}
 
-    for ordinal, (stage_label, filename) in _FIXTURE_FILES.items():
+    def _write(stage_label: str, filename: str, predicate) -> None:
         rows: list[tuple] = []
         draw = 0
         for km in bracket:
-            if km.round_ordinal != ordinal:
+            if not predicate(km):
                 continue
             if not (km.home_code and km.away_code):
                 continue  # equipo TBD → se omite (R6)
@@ -243,6 +379,19 @@ def write_ko_fixtures(
             writer.writerow(_FIXTURE_HEADER)
             writer.writerows(rows)
         written[stage_label] = path
+
+    for ordinal, (stage_label, filename) in _FIXTURE_FILES.items():
+        # La Final (ordinal 5) EXCLUYE el 3er puesto, que comparte ordinal (F34, R1).
+        _write(
+            stage_label,
+            filename,
+            lambda km, o=ordinal: km.round_ordinal == o and not km.is_third_place,
+        )
+
+    # 3er puesto → r3p_fixtures.csv (F34, R1).
+    tp_label, tp_file = _THIRD_PLACE_FILE
+    _write(tp_label, tp_file, lambda km: km.is_third_place)
+
     return written
 
 
@@ -290,6 +439,10 @@ def ingest_ko(
     """
     _transport = transport if transport is not None else _default_transport(user_agent)
     bracket = fetch_bracket(_transport, league_id=league_id)
+    # F34: si fotmob omite el 3er puesto del árbol, sintetizarlo de los perdedores de semis.
+    third = synthesize_third_place(bracket)
+    if third is not None:
+        bracket = bracket + [third]
     fixtures_written = write_ko_fixtures(bracket, knockouts_dir)
 
     finished = [km for km in bracket if km.finished and km.slug]

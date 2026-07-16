@@ -84,7 +84,7 @@ def test_seis_tabs_previos_intactos(tmp_path: Path, monkeypatch) -> None:
     labels = [t.label for t in at.tabs]
     for tab in (TAB_CALENDARIO, TAB_SELECCIONES, TAB_MODELO, TAB_KNOCKOUTS, TAB_ROUND8, TAB_SEMIFINAL):
         assert tab in labels, f"Falta {tab!r} en {labels}"
-    assert len(at.tabs) == 6  # 3 previos + Round of 16 + Round of 8 + Semifinal
+    assert len(at.tabs) == 7  # 3 previos + R16 + R8 + Semifinal + Final (F34)
 
 
 def test_slider_r4_sin_colision(tmp_path: Path, monkeypatch) -> None:

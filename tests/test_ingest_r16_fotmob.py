@@ -200,9 +200,10 @@ def test_ko_sin_stats_persiste_con_marcador(tmp_path: Path):
 def test_write_r16_r8_fixtures_esquema(tmp_path: Path):
     bracket = parse_playoff_bracket(_bracket_next_data())
     written = write_ko_fixtures(bracket, tmp_path)
-    # F33: el writer emite además la etapa SF (r4). El bracket de muestra no tiene
-    # partidos SF → r4_fixtures.csv se escribe con solo el header (cero filas).
-    assert set(written) == {"R16", "QF", "SF"}
+    # F33: el writer emite además la etapa SF (r4). F34: emite también Final (r2) y
+    # 3er puesto (r3p). El bracket de muestra no tiene esas etapas → se escriben con
+    # solo el header (cero filas).
+    assert set(written) == {"R16", "QF", "SF", "Final", "3P"}
 
     r16 = (tmp_path / "r16_fixtures.csv").read_text(encoding="utf-8").splitlines()
     assert r16[0] == "draw_order,date,stage,home_code,away_code,source"
